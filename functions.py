@@ -149,3 +149,61 @@
     Sugg : LLMops, RAG, MCP , 
 
 """
+
+# addition = lambda num1,num2 : num1 + num2
+# print(addition(200,100))
+
+# cube of a number
+
+# x = lambda num1: "Even" if num1%2==0 else "Odd"
+# print(x(2))
+
+
+# x = lambda num1,num2,num3: num1 * num2 * num3
+# print(x(10,20,30))
+
+
+# subs = ["GenAI","AgenticAI","Quantum","RAG"]
+# sort - len
+# sorted - predefined function,used to sort the lists
+# key, used to customize the sorted function
+# res = sorted(subs,key=lambda x:len(x),reverse=True)
+# print(res)
+
+# print( list( map(lambda x:x*x,(1,2,3,4,5)) ) )
+
+# [1,2,3,4,5] -- [0.5,1,1.5,2,2.5]
+
+# print( list(filter(lambda x:x%2==0,[1,2,3,4,5,6,7,8,9,10])) )
+
+# odd numbers
+
+# reduce() - find the sum of elements
+# from functools import reduce
+# print( reduce(lambda num1,num2:num1 + num2,[1,2,3,4,5]) )
+
+
+from functools import reduce
+
+# print( reduce(lambda num1,num2:num1+num2,list(filter(lambda num1:num1>900,list(map(lambda num1:num1*num1,[10,20,30,40,50]))))))
+
+#[100,400,900,1600,2500] # [1600,2500] # 4100
+
+# [1,2,3,4,5] -- [1000,2000,3000,4000,5000] -- [3000,4000,5000] --- 12000
+
+
+# sort based on salary
+# emps = [("Emp1",50000),("Emp2",30000),("Emp3",51000)]
+# emps.sort(key=lambda x:x[1]) # mutable
+# print(emps)
+
+# res = sorted(emps,key=lambda x:x[1]) # immutable
+# print(res)
+
+# largest number (among two numbers)
+# largest number (among three numbers)
+# last character of a string "Hello" -- o
+
+
+
+
