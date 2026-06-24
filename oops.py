@@ -17,6 +17,175 @@
             4) hirarichal
             5) hybrid
 """
+# Example-23
+class Test:
+    name = "JNTU"
+
+    @classmethod
+    def test_func(cls):
+        cls.name = "KLU"
+
+Test.test_func()
+print(Test.name)
+
+
+
+
+
+# Example-22
+# class Test:
+#     name = "JNTU"
+
+# Test.name = "KLU"
+
+# obj = Test()
+# print(obj.name)
+# print(Test.name)
+
+
+
+# Example-21
+# class Test:
+#     name = "JNTU"
+
+# obj = Test()
+# obj.name = "KLU"
+# print(obj.name)
+
+
+# Example-20
+# class Test:
+#     name = "JNTU"
+#     def __init__(self):
+#         pass
+#         #self.name = "STD1"
+
+# obj = Test()
+# print(obj.name)
+
+
+# Example-19
+# class Test:
+#     name = "JNTU"
+
+# obj1 = Test()
+# obj2 = Test()
+# print(obj1.name)
+# print(obj2.name)
+
+
+
+
+# Example-18
+# class Parent:
+#     def __init__(self):
+#         self.num1 = 100
+
+# class Child1(Parent):
+#     def __init__(self):
+#         super().__init__()
+#         self.num1 = 1000
+
+# class Child2(Parent):
+#     def __init__(self):
+#         super().__init__()
+#         #self.num1 = 10000
+
+# class Subchild(Child1,Child2):
+#     def __init__(self):
+#         Child1.__init__(self)
+#         Child2.__init__(self)
+#         #self.num1 = 100000
+
+# obj = Subchild()
+# print(obj.num1)
+
+
+
+# Example-17 (functions)
+
+# Example-16
+# class Parent:
+#     def __init__(self):
+#         self.x = 1000
+
+# class Child1(Parent):
+#     def __init__(self):
+#         super().__init__()
+#         self.y = 2000
+
+# class Child2(Parent):
+#     def __init__(self):
+#         super().__init__()
+#         self.y = 20000
+
+# obj1 = Child1()
+# print(obj1.x,obj1.y)
+
+# obj2 = Child2()
+# print(obj2.x,obj2.y)
+
+
+
+# Example-15 (Functions)
+
+
+# Example-14
+# class Parent1:
+#     def __init__(self,num1):
+#         self.num1 = num1
+
+# class Parent2:
+#     def __init__(self,num1):
+#         self.num1 = num1
+
+# class Child(Parent1,Parent2):
+#     def __init__(self, param1,param2,param3):
+#         Parent2.__init__(self,param2)
+#         Parent1.__init__(self,param1)
+#         #self.num1 = param3
+
+# obj = Child(1,10,100)
+# print(obj.num1)
+
+
+
+
+# Example-13
+# class Parent1:
+#     def __init__(self):
+#         self.num1 = 200
+# class Parent2:
+#     def __init__(self):
+#         self.num1 = 2000
+# class Child(Parent1,Parent2):
+#     def __init__(self):
+#         Parent1.__init__(self)
+#         Parent2.__init__(self)
+#         #self.num1 = 20000
+
+# obj = Child()
+# print(obj.num1)
+
+
+
+# Example-12
+# class Parent1:
+#     def __init__(self):
+#         self.num1 = 200
+
+# class Parent2:
+#     def __init__(self):
+#         self.num2 = 100
+
+# class Child(Parent1,Parent2):
+#     def __init__(self):
+#         Parent1.__init__(self)
+#         Parent2.__init__(self)
+
+# obj = Child()
+# print(f"Addition : {obj.num1 + obj.num2}")
+
 
 
 # Example-9
