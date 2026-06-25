@@ -17,16 +17,187 @@
             4) hirarichal
             5) hybrid
 """
+
+"""
+    class
+    object
+    inheritance (types)
+    public / private / protected
+    self
+    cls
+    instance
+    class level
+    abstract
+    overriding
+    overloading
+    static
+"""
+
+# Example-35
+# class Test:
+#     def test(self,*param):
+#         print(param)
+
+# obj = Test()
+# obj.test(10)
+# obj.test(10,20,30,40,50)
+
+
+# Example-34
+# class Test:
+#     def test(self,x):
+#         print(x)
+#     def test(self,x,y):
+#         print(x,y)
+
+# obj = Test()
+# obj.test(100,200)
+
+
+
+# Example-33
+# class Test:
+#     def __init__(self):
+#         self.x = 100
+#     def __init__(self, name):
+#         self.name = name
+# obj = Test("VPro")
+
+
+# Example-32
+# utility methods (static methods)
+# class Calculator:
+#     @staticmethod
+#     def add(x,y):
+#         return x+y
+
+
+# print(Calculator.add(200,100))
+
+
+
+# Example-31 (abstract methods)
+# from abc import ABC,abstractmethod
+
+# class Test(ABC):
+#     @abstractmethod
+#     def start_business(self):
+#         pass
+# class Child(Test):
+#     def start_business(self):
+#         return "Start Edu Tech / Software Solutions"
+# obj = Child()
+# print(obj.start_business())
+
+
+# class Test:
+#     # pass
+#     def __str__(self):
+#         return "VPro"
+
+# obj = Test()
+# print(obj)
+
+
+
+# Example-29 (Protected)
+# _
+# able to access with the "help of objects"
+# accessable in "child classes" also
+
+# class Parent:
+#     def __init__(self):
+#         self._x = 100
+
+# class Child(Parent):
+#     pass
+
+# obj = Child()
+# print(obj._x)
+
+
+
+# Example-28 (private function)
+# class Test:
+#     def __test(self):
+#         pass
+
+# obj = Test()
+# obj.__test()
+
+
+# Example-27
+# class Test:
+#     def __init__(self):
+#         self.__x = 100
+
+#     def setX(self):
+#         self.__x = 1000
+    
+#     def getX(self):
+#         return self.__x
+
+# obj = Test()
+# #print(obj.__x) # Err
+# print(obj.getX())    # 100
+# obj.setX()
+# print(obj.getX())
+
+
+
+# Example-26
+# class Parent:
+#     def __init__(self):
+#         self.__x = 200
+
+# class Child(Parent):
+#     pass
+
+# obj = Child()
+# print(obj.__x)
+
+
+# Example-25
+# private variables
+# __
+# unable to access with the help of "objects"
+# unable to access in "child classes"
+# able to access with "in the class"
+
+# class Test:
+#     def __init__(self):
+#         self.__x = 200
+
+# obj = Test()
+# print(obj.__x)
+
+
+# Example-24
+# method overriding
+# polymorphism
+# class Parent:
+#     def dbfunc(self):
+#         return "Oracle DB Conn Soon..!"
+
+# class Child(Parent):
+#     def dbfunc(self):
+#         return "VectorDB Conn Soon..!"
+
+# obj = Child()
+# res = obj.dbfunc()
+# print(res)
+
+
 # Example-23
-class Test:
-    name = "JNTU"
+# class Test:
+#     name = "JNTU"
 
-    @classmethod
-    def test_func(cls):
-        cls.name = "KLU"
+#     @classmethod
+#     def test_func(cls):
+#         cls.name = "KLU"
 
-Test.test_func()
-print(Test.name)
+# Test.test_func()
+# print(Test.name)
 
 
 
