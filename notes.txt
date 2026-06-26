@@ -1,0 +1,36 @@
+Numpy
+*****
+    Numpy stands for Numerical Python
+    Numpy able to perform mathematical operations on Arrays
+    1) 1-D Arrays
+    2) N-D Arrays
+    Numpy operations are faster compared to lists
+
+    we are able to download numpy with the help of "pip"
+
+    > pip install numpy
+
+    we will import numpy by below syntax
+
+    import numpy as np
+
+------------------------------------------------------
+virtual environment
+
+1) create "virtual environment"
+> python -m venv venv
+      (or)
+  python3 -m venv venv
+
+2) activate virtual environment
+
+> source venv/bin/activate (Mac Book)
+> venv\Scripts\activate (windows)
+
+3) create requirements.txt file
+        numpy
+
+4) install requirements.txt file
+    > pip install -r requirements.txt
+
+
