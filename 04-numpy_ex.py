@@ -1,5 +1,124 @@
 import numpy as np
 
+# Faq15
+# arr1 = np.arange(1,10)
+# arr2 = arr1.reshape(3,3)
+# arr1[0] = 100
+# arr2[2][2] = 900
+# print(arr1)
+
+
+# Faq14
+# count even numbers
+# arr1 = np.array([10,15,20,25,30,35])
+# x = np.count_nonzero(arr1 % 2 == 0)
+# print(x)
+
+
+# Faq13
+# Normalization
+# marks = np.array([50,60,70,80,90])
+# normalization = (marks - marks.min()) / (marks.max()-marks.min())
+# print(normalization)
+
+
+# Faq12
+# dot product
+# arr1 = np.array([1,2,3])
+# arr2 = np.array([4,5,6])
+# res = np.dot(arr1,arr2)
+# print(res) # (1*4) + (2*5) + (3*6)
+
+
+# Faq11
+# display diagnoal values
+# arr1 = np.array([[1,2,3],
+#                  [4,5,6],
+#                  [7,8,9]])
+# arr2 = np.diag(arr1)
+# print(arr2)
+
+
+# Faq10
+# Identity Matrix
+# arr1 = np.identity(4)
+# print(arr1)
+
+
+# Faq9
+# Stack Arrays Horizontally
+# arr1 = np.array([[1],[2],[3]])
+# arr2 = np.array([[4],[5],[6]])
+# arr3 = np.hstack((arr1,arr2))
+# print(arr3)
+
+
+
+
+# Faq8
+# Stack Arrays Vertically
+# arr1 = np.array([1,2,3])
+# arr2 = np.array([4,5,6])
+# arr3 = np.vstack((arr1,arr2))
+# print(arr3)
+
+
+
+# Faq7
+# Split an array
+# arr1 = np.arange(12)
+# parts = np.split(arr1,3)
+# print(parts)
+
+
+# Faq6
+# Concat Arrays
+# arr1 = np.array([1,2,3])
+# arr2 = np.array([4,5,6])
+# new_arr = np.concatenate((arr1,arr2))
+# print(new_arr)
+
+
+
+# Faq5
+# find top 3 elements
+# arr1 = np.array([10,50,20,40,30])
+# top = np.sort(arr1)[-3:]    #[10,20,30,40,50]
+# print(top)
+
+
+
+# Faq4
+# Reverse an array
+# arr1 = np.array([10,20,30,40,50])
+# new_arr = arr1[::-1]
+# print(new_arr)
+
+
+
+
+# Faq3
+# Find the duplicates
+# arr1 = np.array([10,20,30,10,20,30,40])
+# uniques,counts = np.unique(arr1,return_counts=True)
+# print(uniques)
+# print(counts)
+
+
+# Faq2
+# replace negative values with 0
+# profits = np.array([100,-50,30,-10,1000,-90])
+# new_arr = np.where(profits < 0,0,profits)
+# print(new_arr)
+
+
+# Faq1
+# Find Salaries >50000
+# salaries = np.array([10000,30000,20000,50000,90000,15000])
+# high_salaries = salaries[salaries > 50000]
+# print(high_salaries)
+
+
 # Example-17
 # arr1 = np.array([10,50,20,40,30])
 # print(arr1.argmax())
