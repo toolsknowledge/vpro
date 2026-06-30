@@ -34,3 +34,23 @@ virtual environment
     > pip install -r requirements.txt
 
 
+pandas
+******
+
+    1) Data Analysis
+    2) Data Cleaning
+    3) Data Transformation
+    4) Data Visualization Preparation
+    5) Handle CSV / Excel / JSON /.....
+    6) Tabular Data (Rows / Colums)
+    ---
+    ---
+    ---
+
+    //install pandas
+    pip install pandas
+
+    //import pandas
+    import pandas as pd
+
+
