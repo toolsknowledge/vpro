@@ -54,3 +54,96 @@ pandas
     import pandas as pd
 
 
+
+1) what is AI
+
+2) Layers of AI
+
+3) Machine Learning (ML)
+
+4) Deep Learning (DL)
+
+5) NLP (Natural Language Processing)
+
+6) Gen AI
+
+Agents
+
+7) Agentic AI
+
+8) Course Duration & Details
+
+9) Discussion
+
+
+Layers
+******
+
+1) Machine Learning (Plain Data)  (18 Algo with mathematical )
+
+2) Deep Learning (Images) (Face Auth)
+
+3) Natural Language Processing (NLP) (Human Languages) (Chat Module) 
+
+4) Generative AI (Gen AI)  (Text,Audio,Video,Code,Images,......)
+
+5) Agents (Predefined Agents) (n8n,......)
+
+6) Agentic AI (Custom Agents)
+
+Prereq : Python
+
+Start From Python. --- Numpy, Pandas, Matplotlib, Seaborn,....Loops, Conditions Variables
+
+Functions, OOPS, ........
+
+Couse Duration : 4 months
+
+3 projects (1. Agentic AI) (Gen AI) (Deep Learning)
+
+           (AWS)           (AZURE)     (GCP)
+                    DevOps (90%). GitHub / GitHub Hooks / Jenkins / Docker / EC2. (CICD)
+
+
+- LLM'S -- Transformers 10 + 10 = 19.9
+   Fine Tuning
+- RAG - Types of RAG
+
+- MCP (Server & MCP Client)
+
+- DB'S - Vector DB'S (Chroma DB / FAISS / ......)
+
+
+
+Java
+****
+    Agentic AI - Spring Boot & Microservices
+
+    Core - Agentic AI
+
+    ReactJS - Agentic AI
+
+    HR
+    **
+    Agent - Resume (Screen)
+
+Ex.
+        1hr
+
+        40 - 45min
+        (class)
+
+Python
+******
+
+Variables
+
+        LMS - Assessment / Assignments / Faqs (HCL / Infosys / TCS /.... (Freshers))
+
+
+C / C++ / .... Resume
+
+Agentic AI (Clear). 
+
+Quntum Computing
+
