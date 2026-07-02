@@ -54,6 +54,17 @@ pandas
     import pandas as pd
 
 
+Matplotlib
+**********
+    matplotlib used to draw the graphs
+    1) Line Plot
+    2) Bar
+    3) Pie
+    4) Scatter
+    5) Histo Plot
+    6) Subplot also
+
+
 
 1) what is AI
 
