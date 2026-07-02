@@ -147,3 +147,122 @@ Agentic AI (Clear).
 
 Quntum Computing
 
+
+4 months
+
+API Keys(LLM) - Claude, Open AI,......  
+
+VSCode
+Colab
+Jupyter Notebook
+--
+--
+--
+
+LMS Access
+
+AI
+ML
+DL
+NLP
+GEN AI
+Agents
+Agentic AI
+Fast API
+Automation
+
+Java
+dotnet
+ReactJS
+Deployments - 1) AWS.  2) Azure.   3) GCP. CI/CD Pipeline (GitHub / Jenkins / Docker)
+                Bedrock Services
+
+Python
+******
+1) Variables & DataTypes
+    msg = "VPro"
+
+    num1 = 2000
+    num2 = 1000
+
+    String, Integer, Boolean, List, Tuple, Dictionary,Set, None
+
+
+2) Functions - Business Logic
+        lambda
+
+        keyword Functions
+
+        variable length arguments
+
+        ---
+        ---
+        ---
+
+3) Loops & Conditions
+
+    for
+    while
+    do..while
+    --
+    --
+    --
+
+    if
+    ifelse
+    match
+    ---
+    ---
+    ---
+
+4) OOPS
+    class
+    object
+    inheritance
+    polymorphism
+    abstraction
+    encapsulation
+    super
+    self
+    cls
+    --
+    --
+
+5) Libraries
+    numpy
+        numerical python
+        1D-Arrays
+        MultiDimensional Arrays
+
+6) pandas
+        Excel Files / CSV Files / JSON Files /.....
+        Data Cleaning
+        Data Analysis
+        Prepare Data For Visualization
+
+7) matplotlib
+        Plots & Graphs
+
+        Line Plot
+        Pie Chart
+        Bar Graph
+        Scatter Plot    
+        ---
+        ---
+        ---
+
+8) seaborn (matplotlib)
+        styled graphs
+
+9) Fast API
+        Rest API'S
+            1) GET
+            2) POST
+            3) PUT
+            4) DELETE
+            5) HEAD
+            6) PATCH
+            7) PUT
+
+
+
