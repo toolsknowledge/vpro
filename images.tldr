@@ -6305,12 +6305,12 @@
 			"typeName": "shape"
 		},
 		{
-			"editingShapeId": "shape:WWVIDEo--9y_gexQMpxN5",
+			"editingShapeId": "shape:hTkLhq6gdeJAs4mTNNDzG",
 			"croppingShapeId": null,
 			"selectedShapeIds": [
-				"shape:WWVIDEo--9y_gexQMpxN5"
+				"shape:hTkLhq6gdeJAs4mTNNDzG"
 			],
-			"hoveredShapeId": "shape:WWVIDEo--9y_gexQMpxN5",
+			"hoveredShapeId": "shape:hTkLhq6gdeJAs4mTNNDzG",
 			"erasingShapeIds": [],
 			"hintingShapeIds": [],
 			"focusedGroupId": null,
@@ -7283,6 +7283,84 @@
 			},
 			"parentId": "page:page",
 			"index": "aqzye",
+			"typeName": "shape"
+		},
+		{
+			"x": -307.5650894708084,
+			"y": -3693.1216019590584,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:hTkLhq6gdeJAs4mTNNDzG",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 892.81640625,
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "16 years -- Java with Agentic AI and Quantum Computing (Stay). (Risk)"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "20 years - Admin (Acc & Sal) -- Admin with Agentic AI"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "ERP / SAP + Agentic AI"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:5_2fIXmqLtd5hvUQvg0NM",
+			"index": "b0axrI",
 			"typeName": "shape"
 		},
 		{
@@ -8945,8 +9023,8 @@
 			"typeName": "shape"
 		},
 		{
-			"x": -559.1666444473851,
-			"y": 446.6666489177128,
+			"x": 425.8333164122348,
+			"y": 3825.8331813083632,
 			"z": 1,
 			"meta": {},
 			"id": "camera:page:5_2fIXmqLtd5hvUQvg0NM",
