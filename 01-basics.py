@@ -1,7 +1,11 @@
+import keyword
+print(keyword.kwlist)
 
-from rich import print
-print("[red]Hello Python !!![/red]")
-print("[green bold]Agentic AI[/green bold]")
+
+
+# from rich import print
+# print("[red]Hello Python !!![/red]")
+# print("[green bold]Agentic AI[/green bold]")
 
 
 
