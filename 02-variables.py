@@ -1,3 +1,162 @@
+# x = 100
+
+# def test():
+#     global x
+#     x = x + 10
+#     print(x)
+    
+# print(x)
+# test()
+# print(x)
+
+
+
+# name = "Gen AI"
+
+# def test():
+#     name = "Agentic AI"
+#     print(name)
+
+# test()
+# print(name)
+
+
+
+
+# x = 100
+
+# def test():
+#     # x = 10      # Local Variable
+#     x = x + 1
+#     print(x)
+
+# test()
+
+
+
+
+# Global Variable
+# x = 100
+
+# def test():
+#     print(x)
+
+# test()
+
+
+
+
+# x = 100
+# del x
+# print(x)
+
+
+
+# == (compares values) is - memory location
+# list1 = [10,20,30]
+# list2 = [10,20,30]
+# print(list1 == list2)
+# print(list1 is list2)
+
+
+
+# list1 = []
+# list2 = []
+# list2.append(100)
+# print(list1)
+# print(list2)
+
+
+
+# list1 = list2 = []
+# list1.append(100)
+# print(list1)
+# print(list2)
+
+
+# a = b = c = 100
+# b = 200
+# print(a)
+# print(b)
+# print(c)
+
+
+# a = 10
+# b = 20
+
+# a, b = b, a
+# print(a)
+# print(b)
+
+
+
+
+# a = 10
+# b = 10
+
+# a, b = 10, 10
+# print(a)
+# print(b)
+
+# a = b = 10
+# print(a)
+# print(b)
+
+# None - empty / no value
+# salary = None
+# print(type(salary))
+
+# salary = 100000
+# print(salary)
+
+
+# Set - never allows duplicates, unordered, hetrogeneous, no indexes, "Search", Hashable, {} / set() constructor
+# s1 = {10,20,30,10,20,30}
+# print(s1)
+
+# s2 = set({10,20,10})
+# print(s2)
+
+# s3 = set([10,10])
+# print(s3)
+
+# s4 = set((10,20,10,20,30,20))
+# print(s4)
+
+# s5 = {}
+# s6 = set()
+# print(type(s5))
+# print(type(s6))
+
+# s7 = {"Hello","Hello",10,10,20}
+# print(s7)
+
+
+
+
+# dictionary - key & value pairs, keys are "immutable",values are "mutable", {} / dict() (constructor)
+# d1 = {
+#     "name" : "VPro",
+#     "sub" : "AgenticAI",
+#     "version" : 1
+# }
+# print(d1)
+# print(d1["name"])
+# print(d1.keys())
+# print(d1.values())
+# print(d1.items())
+# print(type(d1))
+
+# d1 = {}
+# print(type(d1))
+
+# d2 = {
+#     (10,20) : "Hello"
+# }
+# print(d2)
+
+
+
 # Tuple - collection of values, hetrogeneous, Ordered, index-0, (), immutable
 # tuple1 = (10,20,30,40,50)
 # print(tuple1)
