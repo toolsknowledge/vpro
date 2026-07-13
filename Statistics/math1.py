@@ -95,5 +95,67 @@
 # print(math.log2(8))
 
 
+# Correlation
+# import numpy as np
+# study_hours = [1,2,3,4,5]
+# marks = [20,40,60,80,100]
+
+# correlation = np.corrcoef(study_hours,marks)
+# print(correlation[0][1])
+
+
+# import pandas as pd
+# data = {
+#     "study_hours": [1,2,3,4,5],
+#     "marks" : [20,40,60,80,100]
+# }
+# df = pd.DataFrame(data)
+# print(df.corr())
+
+# Covariance
+# import numpy as np
+# study_hours = [1,2,3,4,5]
+# marks = [20,40,60,80,100]
+# covariance = np.cov(study_hours,marks)
+# print(covariance[0][1])
+
+# import pandas as pd
+# data = {
+#     "study_hours": [1,2,3,4,5],
+#     "marks" : [20,40,60,80,100]
+# }
+# df = pd.DataFrame(data)
+# print(df.cov())
+
+# Normal Distribution
+# import numpy as np
+# import matplotlib.pyplot as plt
+
+# data = np.random.normal(loc=60,scale=10,size=20)   
+# plt.hist(data,bins=3)
+# plt.title("Normal Distribution")
+# plt.xlabel("Marks")
+# plt.ylabel("Frequency")
+# plt.show()
+
+# High Bias
+# actual = [80,70,90]
+# predicted = [60,50,70]
+
+# bias = (sum(predicted) / len(predicted)) - (sum(actual) / len(actual))
+# print(bias)
+
+
+# Error = actual - predicted
+# actual = [80,70,90]
+# predicted = [60,50,70]
+
+# for a,p in zip(actual,predicted):
+#     error = a - p
+#     print(error)
+
+# num1, num2 (Features)  num1+num2 (Label)
+
+
 
 
