@@ -105,3 +105,15 @@ Rules to declare variables
         6) dictionary
         7) set
         8) None
+
+Functions
+*********
+        particular business logic called as function
+                (or)
+        set of statements also called as function
+
+        functions are used to reuse the "business logic"
+
+        "def" is the keyword, used to declare the functions
+
+        "pass" is the keyword, used to declare "empty functions"
