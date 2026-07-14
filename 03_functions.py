@@ -103,21 +103,112 @@
 # test()
 # print(x)
 
+# Example-12
+# def test(*param1):
+#     print(param1)
+
+# test(10,20,30,40,50)
 
 
+# Example-13
+# def test(*param1):
+#     print(param1)
+#     print(type(param1))
+#     print(len(param1))
+#     x = param1[0]   # x --> HTML
+#     y = tuple(x)    #["H","T","M","L"]
+#     z = y[::-1]
+#     print(z)
 
 
+# test("HTML","CSS","JS","ML","DL","NLP","GENAI","AGENTICAI")
+
+# Example-14 (Err: only one variable length parameter allowed)
+# def test(*param1,*param2):
+#     pass
 
 
+# Example-15
+# order
+# 1) positional parameters. 2) default parameters. 3) variable-length parameters 
+
+# def test(param1="100",param2,*param3):
+#     pass
+
+# def test(*param1,param2,param3="Hello"):
+#     print("Hello")
+
+# test(10,20)
+
+# def test(param1="Hello",param2):
+#     pass
+
+# def test(param1,param2=200,param3=100,*param4):
+#     print(param1,param2,param3,param4)
+
+# test(10)
+# test(10,20,30,40,50)
+# test(param1=10,param3=20)
 
 
+# Example-16
+# keyword-length parameters
+# def test(param1,param2="Hello",*param3,**param4):
+#     print(param1,param2,param3,param4)
+
+# test(10)
+# test(10,20,30,40,name="Hello")
 
 
+# Example-17
+# functions without name called as "lambda functions"
+# "lambda" is the keyword, used to declare the lambda functions
+
+# add = lambda num1,num2: num1+num2
+# res = add(200,100)
+# print(res)
+
+# Square of a number
+# Cube of a number
+
+# Example-18
+# even = lambda num1: num1%2 == 0
+# res = even(10)
+# print(res)
+
+# res1 = even(9)
+# print(res1)
+
+# Example-19
+# large = lambda num1,num2: num1 if num1>num2 else num2
+# print(large(200,100))
+# print(large(10,20))
+
+# find the largest among three
+
+# Example-20
+# map() - used to manipulate all elements from lists and tuples
+
+# res = list(map(lambda num1:num1*10,[1,2,3,4,5]))
+# print(res)
+
+# res = list(map(lambda num1:num1*100,(1,2,3,4,5)))
+# print(res)
 
 
+# res = tuple(map(lambda num1:num1*1000,[1,2,3,4,5]))
+# print(res)
 
+# res = tuple(map(lambda num1:num1*1000,(1,2,3,4,5)))
+# print(res)
 
+# Example-21
+# filter() - used to apply conditions
+# res = list(filter(lambda num1: num1%2==0,[1,2,3,4,5]))
+# print(res)
 
-
-
-
+# Example-22
+# reduce() - sum of all elements
+from functools import reduce
+res = reduce(lambda num1,num2:num1+num2,[1,2,3,4,5])
+print(res)
