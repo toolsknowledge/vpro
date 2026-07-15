@@ -209,6 +209,35 @@
 
 # Example-22
 # reduce() - sum of all elements
-from functools import reduce
-res = reduce(lambda num1,num2:num1+num2,[1,2,3,4,5])
-print(res)
+# from functools import reduce
+# res = reduce(lambda num1,num2:num1+num2,[1,2,3,4,5])
+# print(res)
+
+# Example-23 (Recurssive Functions)
+# def print_numbers(num):
+#     if num > 5:
+#         return
+#     print(num)
+#     print_numbers(num+1)
+
+# print_numbers(1)
+
+# Example-24
+# def factorial(num):
+#     if num == 1:
+#         return 1
+#     return num * factorial(num-1)   # 5 * 4 * 3 * 2 * 1    
+
+# print(factorial(5))
+
+
+# Example-25
+def sum(num):
+    if num == 1:
+        return 1
+    
+    return num + sum(num-1)     # 5 + 4 + 3 + 2 + 1
+
+print(sum(5))
+
+
