@@ -80,6 +80,67 @@
 # pass - 0 1 2 3 4
 
 
+# Example-10 (display the duplicates)
+# list1 = [1,1,2,3,2,2,3,1,4]     # list1.count(1) = 3
+# duplicates = set()
+# for element in list1:
+#     if list1.count(element)>1:  # 3 > 1
+#         duplicates.add(element)
+# print(duplicates)
+
+# Example-11 (Fibonacci Series)
+# a,b = 0,1
+# for _ in range(10):
+#     print(a,end=" ")
+#     a,b = b, a+b
+
+
+# Example-13 (Nested Loop)
+# for i in range(3):      # i=1
+#     for j in range(3):  # j=0
+#         print(i,"--->",j)
+
+# Example-14
+# for i in range(1,6):
+#     for j in range(1,11):
+#         print(i,"x",j,"=",i*j)
+#     print("-------------")
+
+# Example-15
+# for i in range(5):
+#     print(i)
+# else:
+#     print("Done !!!") 
+
+# Example-16
+# i=1 # Initilization
+# while i<=5: # condition
+#     print(i)
+#     i = i+1 # increment
+
+# Example-17
+# i = 5
+# while i > 0:
+#     print(i)
+#     i = i-1
+
+# Example - 18 (Infinite Loop)
+# name = ""
+# while True:
+#     name = input("enter your choice ?")
+#     print(name)
+
+#     if name == "q":
+#         break
+
+
+
+
+
+
+
+
+
 
 
 
