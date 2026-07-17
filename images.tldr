@@ -38,9 +38,9 @@
 			"editingShapeId": null,
 			"croppingShapeId": null,
 			"selectedShapeIds": [
-				"shape:OxU8DcRPunT1ZHs7VNyZ9"
+				"shape:vcJwdxjuNlaXplp4knDY7"
 			],
-			"hoveredShapeId": "shape:OxU8DcRPunT1ZHs7VNyZ9",
+			"hoveredShapeId": null,
 			"erasingShapeIds": [],
 			"hintingShapeIds": [],
 			"focusedGroupId": null,
@@ -1282,9 +1282,9 @@
 			"typeName": "shape"
 		},
 		{
-			"x": -196.52776996846714,
-			"y": -4787.499809761835,
-			"z": 1,
+			"x": 4790.524651707321,
+			"y": -323.8297836879857,
+			"z": 0.05,
 			"meta": {},
 			"id": "camera:page:t0MA1OXWWm-wfcdzkWP0H",
 			"typeName": "camera"
@@ -2254,6 +2254,21 @@
 			"typeName": "shape"
 		},
 		{
+			"editingShapeId": "shape:4eEOdDtx-yMbPLG-JWnOG",
+			"croppingShapeId": null,
+			"selectedShapeIds": [
+				"shape:4eEOdDtx-yMbPLG-JWnOG"
+			],
+			"hoveredShapeId": "shape:4eEOdDtx-yMbPLG-JWnOG",
+			"erasingShapeIds": [],
+			"hintingShapeIds": [],
+			"focusedGroupId": null,
+			"meta": {},
+			"id": "instance_page_state:page:BDFPXYDbQPNe919s3XXJT",
+			"pageId": "page:BDFPXYDbQPNe919s3XXJT",
+			"typeName": "instance_page_state"
+		},
+		{
 			"x": 570.99609375,
 			"y": 130.93531799316406,
 			"rotation": 0,
@@ -2586,6 +2601,108 @@
 			},
 			"parentId": "page:jQ-dibOyQ0PtzuxA0VP6T",
 			"index": "a6MOA",
+			"typeName": "shape"
+		},
+		{
+			"x": 212.46563824642055,
+			"y": 158.9174617211346,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:ErNpxiC4NZZ9r7pAh7EFk",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 474.763916015625,
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "1) ML (Machine Learning)"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "2) DL (Deep Learning)"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "3) NLP (Natural Langauge Processing)"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "4) Gen AI (Generative AI)"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "5) Agents"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "6) Agentic AI"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:BDFPXYDbQPNe919s3XXJT",
+			"index": "a2gBI",
 			"typeName": "shape"
 		},
 		{
@@ -3412,6 +3529,14 @@
 			"typeName": "shape"
 		},
 		{
+			"x": -109.95370085160815,
+			"y": -237.26851236399662,
+			"z": 1,
+			"meta": {},
+			"id": "camera:page:BDFPXYDbQPNe919s3XXJT",
+			"typeName": "camera"
+		},
+		{
 			"x": 368.2562832512241,
 			"y": 522.6236751487966,
 			"rotation": 0,
@@ -3910,6 +4035,72 @@
 			"typeName": "shape"
 		},
 		{
+			"x": 214.46397399902344,
+			"y": 46.228477478027344,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:geHNTBJ3zcNthoq9yz13L",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 250.54336547851562,
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "AI"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "***"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "Machines --> Smart"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:BDFPXYDbQPNe919s3XXJT",
+			"index": "a1E0Q",
+			"typeName": "shape"
+		},
+		{
 			"x": 670.5674559485029,
 			"y": 1243.3539143701435,
 			"rotation": 0,
@@ -4355,10 +4546,7 @@
 		{
 			"followingUserId": null,
 			"opacityForNextShape": 1,
-			"stylesForNextShape": {
-				"tldraw:geo": "ellipse",
-				"tldraw:color": "black"
-			},
+			"stylesForNextShape": {},
 			"brush": null,
 			"scribbles": [],
 			"cursor": {
@@ -4372,8 +4560,8 @@
 			"screenBounds": {
 				"x": 0,
 				"y": 0,
-				"w": 972.9166259765625,
-				"h": 527.0833129882812
+				"w": 802.0833129882812,
+				"h": 299.1898193359375
 			},
 			"insets": [
 				false,
@@ -4388,7 +4576,7 @@
 			"isChatting": false,
 			"highlightedUserIds": [],
 			"isFocused": true,
-			"devicePixelRatio": 2.880000114440918,
+			"devicePixelRatio": 3.4560000896453857,
 			"isCoarsePointer": false,
 			"isHoveringCanvas": true,
 			"openMenus": [],
@@ -4398,7 +4586,7 @@
 			"duplicateProps": null,
 			"cameraState": "idle",
 			"id": "instance:instance",
-			"currentPageId": "page:t0MA1OXWWm-wfcdzkWP0H",
+			"currentPageId": "page:BDFPXYDbQPNe919s3XXJT",
 			"typeName": "instance"
 		},
 		{
@@ -5183,6 +5371,48 @@
 			"typeName": "shape"
 		},
 		{
+			"x": 204.8611105195769,
+			"y": 380.4931522565747,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:4eEOdDtx-yMbPLG-JWnOG",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 86.86968231201172,
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "Python"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:BDFPXYDbQPNe919s3XXJT",
+			"index": "a367A",
+			"typeName": "shape"
+		},
+		{
 			"x": 757.6931013266255,
 			"y": 3912.570372024072,
 			"rotation": 0,
@@ -5397,6 +5627,13 @@
 			"parentId": "page:jQ-dibOyQ0PtzuxA0VP6T",
 			"index": "aAv3X",
 			"typeName": "shape"
+		},
+		{
+			"meta": {},
+			"id": "page:BDFPXYDbQPNe919s3XXJT",
+			"name": "Page 5",
+			"index": "a5YBU",
+			"typeName": "page"
 		}
 	]
 }
