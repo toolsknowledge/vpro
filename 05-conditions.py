@@ -102,3 +102,15 @@
 #         print("Grade B")
 #     case _:
 #         print("Pass")
+
+
+# Example-13
+fruit = "banana"
+if fruit == "apple":
+    print("Apple")
+elif fruit == "guvva":
+    print("Guvva")
+elif fruit == "banana":
+    print("Banana")
+else:
+    print("No Match !!!")
