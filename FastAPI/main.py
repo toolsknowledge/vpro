@@ -40,3 +40,65 @@ def login(credentials: schemas.UserLogin, db: Session = Depends(get_db)):
 
     token = auth.create_access_token(user.username)
     return {"login": "success", "access_token": token, "token_type": "bearer"}
+
+
+@app.post("/employees", response_model=schemas.EmployeeResponse, status_code=201)
+def create_employee(
+    emp: schemas.EmployeeCreate,
+    db: Session = Depends(get_db),
+    current_user: models.User = Depends(auth.get_current_user),
+):
+    if db.query(models.Employee).filter(models.Employee.email == emp.email).first():
+        raise HTTPException(status_code=400, detail="Employee email already exists")
+    new_emp = models.Employee(**emp.model_dump())
+    db.add(new_emp)
+    db.commit()
+    db.refresh(new_emp)
+    return new_emp
+
+@app.get("/employees", response_model=list[schemas.EmployeeResponse])
+def list_employees(
+    db: Session = Depends(get_db),
+    current_user: models.User = Depends(auth.get_current_user),
+):
+    return db.query(models.Employee).all()
+
+@app.get("/employees/{emp_id}", response_model=schemas.EmployeeResponse)
+def get_employee(
+    emp_id: int,
+    db: Session = Depends(get_db),
+    current_user: models.User = Depends(auth.get_current_user),
+):
+    emp = db.query(models.Employee).filter(models.Employee.id == emp_id).first()
+    if not emp:
+        raise HTTPException(status_code=404, detail="Employee not found")
+    return emp
+
+@app.put("/employees/{emp_id}", response_model=schemas.EmployeeResponse)
+def update_employee(
+    emp_id: int,
+    emp_update: schemas.EmployeeUpdate,
+    db: Session = Depends(get_db),
+    current_user: models.User = Depends(auth.get_current_user),
+):
+    emp = db.query(models.Employee).filter(models.Employee.id == emp_id).first()
+    if not emp:
+        raise HTTPException(status_code=404, detail="Employee not found")
+    for field, value in emp_update.model_dump(exclude_unset=True).items():
+        setattr(emp, field, value)
+    db.commit()
+    db.refresh(emp)
+    return emp
+
+@app.delete("/employees/{emp_id}")
+def delete_employee(
+    emp_id: int,
+    db: Session = Depends(get_db),
+    current_user: models.User = Depends(auth.get_current_user),
+):
+    emp = db.query(models.Employee).filter(models.Employee.id == emp_id).first()
+    if not emp:
+        raise HTTPException(status_code=404, detail="Employee not found")
+    db.delete(emp)
+    db.commit()
+    return {"message": "Employee deleted"}

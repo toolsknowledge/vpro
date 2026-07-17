@@ -14,6 +14,36 @@ ALGORITHM = "HS256"
 # Expire time to token
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
 
+from fastapi import Depends, HTTPException, status
+from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
+from sqlalchemy.orm import Session
+import models
+from database import get_db
+
+
+security = HTTPBearer()   # reads "Authorization: Bearer <token>" header
+
+def get_current_user(
+    credentials: HTTPAuthorizationCredentials = Depends(security),
+    db: Session = Depends(get_db),
+):
+    token = credentials.credentials
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        username = payload.get("sub")
+    except jwt.ExpiredSignatureError:
+        raise HTTPException(status.HTTP_401_UNAUTHORIZED, detail="Token expired")
+    except jwt.InvalidTokenError:
+        raise HTTPException(status.HTTP_401_UNAUTHORIZED, detail="Invalid token")
+
+    user = db.query(models.User).filter(models.User.username == username).first()
+    if not user:
+        raise HTTPException(status.HTTP_401_UNAUTHORIZED, detail="User not found")
+    return user
+
+
+
+
 # Generate Hashed Password
 def hash_password(password: str) -> str:
     return bcrypt.hashpw(password.encode(),bcrypt.gensalt()).decode()
