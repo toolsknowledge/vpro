@@ -104,6 +104,23 @@ Fast API (Framework)
               business logic
               security to business logic
 
+1) LLM (Large Language Model)
+
+2) RAG (Retrival Augumented Generation)
+
+3) MCP (Model Context Protocol)
+
+        MCP Client
+        MCP Server
+
+4) Agentic AI
+
+5) Single Agent
+
+6) Multi Agent
+
+7) LangGraph (Framework)
+
 
 
 
