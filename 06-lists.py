@@ -96,10 +96,62 @@
 # print(list2)
 # print(list1)
 
-list1 = [10,50,20,40,30,10,20]
+# list1 = [10,50,20,40,30,10,20]
 # print( list1[ len(list1) // 2 ] )
 
-x = 0
-if 40 in list1:
-    x = 40
-print(x)
+# x = 0
+# if 40 in list1:
+#     x = 40
+# print(x)
+
+
+# list1 = [[]]
+# list2 = list1 * 3
+# print(list2)
+
+
+# list1 = [10,20,30]
+# print(id(list1))
+
+# list1.append(40)
+# print(id(list1))
+
+
+# list1 = [10,20,30]
+# print(id(list1))
+# list2 = list1 + [40]
+# print(id(list2))
+
+
+# from functools import reduce
+# nums = [1,2,3,4,5]
+# cubes = map(lambda x:x*x*x,nums) # [1,8,27,64,125]
+# even = filter(lambda num:num%2 == 0,cubes)  # [8,64]
+# res = reduce(lambda num1,num2:num1+num2,even)
+# print(res)
+
+# nums = [0,1,False,2,'',3]
+# print( list( filter(None,nums) ) )
+
+# nums = [1,2,3,4,5]
+# res = [num*num for num in nums]
+# print(res)
+
+
+# nums = [1,2,3,4,5,6]
+# print( [num for num in nums if num%2 == 0] )
+
+# list1 = [1,2,3]
+# list1.append([4,5])
+# print(list1)
+
+# list1.extend([4,5])
+# print(list1)
+
+
+
+
+
+
+
+
