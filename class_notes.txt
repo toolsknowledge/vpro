@@ -1,0 +1,73 @@
+1) Python (Scratch)
+
+2) Fast API with MySQL : GET,POST,PUT DELETE,.....
+
+3) Machine Learning (18+ Algo)
+
+4) Deep Learning (Medical Appln)
+
+5) NLP (Natual Language Processing) - ChatBot
+
+6) Generative AI (Gen AI)
+
+7) Agentic AI
+
+8) Integrations -- Java, dotnet, ReactJS,.....
+
+9) Deployment - AWS, Azure, GCP
+
+
+Python
+******
+    Python is the "High Level Programming Language"
+    
+    Python is the Prerequisite to build
+    1) ML   2) DL   3) NLP  4) GenAI    5) Agentic AI 6) Automation Script(Testing)
+
+    Python is the "interpreted Language"
+
+    Python is dynamically typed
+    Ex.
+            x = 100
+
+            y = "VPro"
+
+            z = 10.1
+
+            flag = True
+
+Software Installations
+
+1) download and install python
+    website : https://www.python.org/downloads/
+
+    cmd
+    ***
+        > python --version
+               (or)
+        > python3 --version
+
+
+2) download and install visual studio code
+    visual studio code(VSCode) is the recomended IDE to build Python Applications
+
+    website : https://code.visualstudio.com/download?_exp_download=fb315fc982
+
+    Enable AutoSave : File ---> AutoSave
+        Applications will save automatically
+
+
+while saving the python code extension must be ".py"
+Ex.
+        demo.py
+
+we will execute by using either "python" / "python3"
+Ex.
+        python demo.py
+            (or)
+        python3 demo.py
+
+we will comment python code with the help of "#"
+
+commented code wont execute by python
+
