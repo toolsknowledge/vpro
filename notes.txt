@@ -1,0 +1,19 @@
+Course:
+    Python (Scratch to Python)
+
+    FastAPI (GET,POST,PUT,DELETE)
+
+    Gen AI
+
+    Agentic AI
+
+            ---- Resume (Project)
+    
+    ML + 18 Algo + Quantum Computing (Basics)
+
+    DL (Medical Project)
+
+    NLP (ChatBot Appln)
+
+    3 Appln ---> AWS,Azure,GCP (CI/CD Pipeline)
+    
