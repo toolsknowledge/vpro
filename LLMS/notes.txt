@@ -49,3 +49,21 @@ print(f"Original Text : {text}")
 print(f"Tokens : {tokens}")
 print(f"Token ID'S : {token_ids}")
 print(f"Total Tokens : {len(token_ids)}")
+
+
+context window
+**************
+how much content, wants to use to genarate results
+
+transformers
+************
+LLMS ---> also called as transformers
+RNN ---> Recurrent Neural Network (DP Model)
+            while increasing length of sentence (model forgets previous words and dependencies)
+
+LSTM (Long Short Term Memory) which one wants to remember and which one wants to forgets
+
+encoders and decoders models
+
+self attention mechanism ---> to capture dependencies (transformers)
+
