@@ -18,7 +18,7 @@ Advantages
 # Model Configuration
 # -------------------------------------
 
-MODEL_PATH = "../llm/model.pth"
+MODEL_PATH = "../llm/model.pth" 
 
 EMBEDDING_DIM = 16
 
