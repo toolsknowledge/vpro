@@ -71,3 +71,95 @@ we will comment python code with the help of "#"
 
 commented code wont execute by python
 
+
+variables
+*********
+    variables are used to "store" the data
+    Ex.
+        integer
+        string
+        boolean
+        ---
+        ---
+        ---
+    Ex.
+        msg = "Hello"
+        print(msg)
+
+Rules to declare variables
+1) variable declaration should contain
+        a-z,A-Z,0-9 and _ (underscore)
+
+2) variable declaration should not start with "digits"
+
+3) we are unable to use "predefined keywords" as variables
+    Ex.
+            if,else,elif,match,class,.........
+
+            import keyword
+            print(keyword.kwlist)
+
+Ex.
+            msg123
+            msg123_
+            msg_123
+            123msg (invalid)
+            _msg
+            $msg123 (invalid)
+            msg$123 (invalid)
+            if (invalid)
+            class (invalid)
+            match (invalid)
+            --
+            --
+            --
+
+4) variables are dynamically types
+
+        msg = "Hello"
+
+DataTypes representing "type of data"
+python supports below "DataTypes"
+1) integer
+2) string
+3) boolean
+4) list
+5) tuple
+6) dictionary
+7) set
+8) None
+
+integer
+*******
+    1) positive,negative or zero we can call "integer" datatype
+    Ex.
+            num1 = 100
+            num2 = -100
+            num3 = 0
+
+    2) never start integer with "0"
+    Ex.
+            num1 = 0100 (Error)
+
+    3) number allows "underscore"
+
+    Ex.
+            num1 = 10_000
+
+    4) Boolean (True/False) is the Child DataType of integer datatype
+
+        True - 1
+        False - 0
+
+    5) in python, we are able to store large numbers
+
+            large = 123456789123456789123456789123456789123456789123456789123456789
+
+    6) hexadecimal(0x),octal(0o) and binary(0b) automatically converted to "decimal numbers"
+    
+    7) datatype conversion possible
+            "10" ---> 10 int()
+        
+string
+******
+
