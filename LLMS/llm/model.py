@@ -33,8 +33,7 @@ Predicted Next Word
 import torch
 import torch.nn as nn
 
-
-class MiniLLM(nn.Module):
+class MiniLLM(nn.Module):       # Python - 18 - [0.2,0.33,0.44,-0.11]
 
     def __init__(self, vocab_size, embedding_dim):
 
@@ -49,7 +48,7 @@ class MiniLLM(nn.Module):
         # Hidden Layer
         self.linear1 = nn.Linear(
             embedding_dim,
-            64
+            512
         )
 
         # Activation Function
