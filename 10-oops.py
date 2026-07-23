@@ -90,3 +90,157 @@
 # res1 = obj1.test2()
 # print(res1)
 
+# Inheritance
+# getting the properties and behaviours from parent class to child class
+# 1) single level       2) multi level      3) multiple     4) hirarichal       5) hybrid
+
+# Example-7
+# class Parent:
+#     def __init__(self):
+#         self.name = "VPro"
+
+# class Child(Parent):
+#     pass
+
+# obj = Child()
+# print(obj.name)
+
+# Example-8
+# class Parent:
+#     def test1(self):
+#         print("Parent !!!")
+# class Child(Parent):
+#     def test2(self):
+#         print("Child !!!")
+# class Subchild(Child):
+#     def test3(self):
+#         print("Subchild !!!")
+
+
+# obj = Subchild()
+# obj.test1()
+# obj.test2()
+# obj.test3()
+
+# Example - 9
+# class Parent1:
+#     def test1(self):
+#         print("Parent1 !!!")
+
+# class Parent2:
+#     def test1(self):
+#         print("Parent2 !!!")
+
+# class Child(Parent2,Parent1):
+#     pass
+
+# obj = Child()
+# obj.test1()
+# obj.test2()
+
+# obj.test1()
+
+
+# Example - 10 (Hirarichal)
+# class Parent:
+#     def __init__(self):
+#         self.x = 100
+
+# class Child1(Parent):
+#     def __init__(self):
+#         super().__init__()
+#         self.y = 200
+
+# class Child2(Parent):
+#     def __init__(self):
+#         super().__init__()
+#         self.y = 300
+
+# Obj1 = Child1()
+# print(Obj1.x,"......",Obj1.y)
+
+# Obj2 = Child2()
+# print(Obj2.x,"......",Obj2.y)
+
+
+# Example - 11 (Hybrid - Hirarichal + Multiple)
+# class Parent:
+#     def __init__(self):
+#         self.x = 100
+
+# class Child1(Parent):
+#     def __init__(self):
+#         super().__init__()
+#         self.y = 200
+
+# class Child2(Parent):
+#     def __init__(self):
+#         super().__init__()
+#         self.y = 300
+
+# class Subchild(Child1,Child2):
+#     def __init__(self):
+#         super().__init__()
+#         self.a = 400
+
+# obj = Subchild()
+# print(obj.x, obj.y, obj.a)
+
+
+# Example - 12
+# super() - child class will call parent class members with the help of super()
+# class Parent:
+#     def __init__(self,param1):
+#         self.num1 = param1
+
+# class Child(Parent):
+#     def __init__(self, param1,param2):
+#         super().__init__(param1)
+#         self.num2 = param2
+
+# obj = Child(200,100)
+# print(obj.num1, obj.num2)
+
+
+# Example - 13
+# class Parent:
+#     def test(self):
+#         print("Parent !!!")
+
+# class Child(Parent):
+#     def wish(self):
+#         super().test()
+
+# obj = Child()
+# obj.wish()
+
+
+# Example-14
+# class Parent:
+#     def __init__(self):
+#         self.__x = 100
+
+# class Child(Parent):
+#     pass
+
+# obj = Child()
+# print(obj.__x)
+
+# Example - 15
+class Parent:
+    def __test(self):
+        print("Hello")
+
+    def wish(self):
+        self.__test()
+
+class Child(Parent):
+    pass
+
+obj = Child()
+obj.wish()
+
+
+
+
+
