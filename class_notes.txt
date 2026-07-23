@@ -162,4 +162,11 @@ integer
         
 string
 ******
+        "collection of characters" called as "string"
+        we will represent string in "3 ways"
+        1) "" (double quotes)
+        2) '' (single quotes)
+        3) """ """ (tripple quotes)
+
+        """ """ are used to declare the "paragraphs"
 
