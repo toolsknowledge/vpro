@@ -3249,12 +3249,12 @@
 			"typeName": "shape"
 		},
 		{
-			"editingShapeId": "shape:mp5pyAZk6wTOw102PNAEJ",
+			"editingShapeId": null,
 			"croppingShapeId": null,
 			"selectedShapeIds": [
 				"shape:mp5pyAZk6wTOw102PNAEJ"
 			],
-			"hoveredShapeId": "shape:mp5pyAZk6wTOw102PNAEJ",
+			"hoveredShapeId": null,
 			"erasingShapeIds": [],
 			"hintingShapeIds": [],
 			"focusedGroupId": null,
@@ -6371,9 +6371,9 @@
 			"typeName": "shape"
 		},
 		{
-			"x": 0,
-			"y": 0,
-			"z": 1,
+			"x": 31.492726033741008,
+			"y": 31.03023096745801,
+			"z": 0.8358300128078474,
 			"meta": {},
 			"id": "camera:page:eACUOWdJmhlZ5OnJsNhjx",
 			"typeName": "camera"
@@ -14692,7 +14692,7 @@
 				"x": 0,
 				"y": 0,
 				"w": 972.9166259765625,
-				"h": 474.3055419921875
+				"h": 304.8611145019531
 			},
 			"insets": [
 				false,
@@ -14709,7 +14709,7 @@
 			"isFocused": true,
 			"devicePixelRatio": 2.880000114440918,
 			"isCoarsePointer": false,
-			"isHoveringCanvas": true,
+			"isHoveringCanvas": false,
 			"openMenus": [],
 			"isChangingStyle": false,
 			"isReadonly": false,
