@@ -170,3 +170,18 @@ string
 
         """ """ are used to declare the "paragraphs"
 
+
+Boolean
+*******
+        we have two Boolean values
+        1) True
+        2) False
+
+        Boolean values are case sensitive
+
+        Boolean is the child class of "integer"
+
+        True - 1
+        False - 0
+
+
