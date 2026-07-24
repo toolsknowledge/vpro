@@ -227,20 +227,145 @@
 # print(obj.__x)
 
 # Example - 15
-class Parent:
-    def __test(self):
-        print("Hello")
+# class Parent:
+#     def __test(self):
+#         print("Hello")
 
-    def wish(self):
-        self.__test()
+#     def wish(self):
+#         self.__test()
 
-class Child(Parent):
-    pass
+# class Child(Parent):
+#     pass
 
-obj = Child()
-obj.wish()
+# obj = Child()
+# obj.wish()
+
+# Example - 16
+# Overriding - overriding Parent functionality with Child class functionality called as function overriding
+# Overriding comes under polymorphsim
+
+# class Parent:
+#     def db_func(self):
+#         return "MySQL Conn Soon....!"
+
+# class Child(Parent):
+#     def db_func(self):
+#         return "MongoDB Conn Soon....!"
+
+# obj1 = Child()
+# print(obj1.db_func())
+
+# Example - 17
+# Overloadng - "same function name" with multiple parameters called as Overloading
+
+# class Test:
+#     def add(self,num1,num2):
+#         res = num1 + num2
+#         print(res)
+
+#     def add(self,num1,num2,num3):
+#         res = num1 + num2 + num3
+#         print(res)
+
+#     def add(self,num1,num2,num3,num4):
+#         res = num1 + num2 + num3 + num4
+#         print(res)
+
+# obj = Test()
+# obj.add(100,200,300,400)
+
+# class Test:
+#     def add(self,*nums):        # tuple - able to hold more than one paramere
+#         print(sum(nums))        # overloading
+
+# obj = Test()
+# obj.add(10,20)
+# obj.add(10,20,30)
+# obj.add(10,20,30,40)
 
 
+# Example - 18 (Class Level)
+# class Test:
+#     college = "CBIT !!!"
 
 
+# print( Test.college )
 
+# obj1 = Test()
+# print(obj1.college)
+
+# obj2 = Test()
+# print(obj2.college)
+
+# Example - 19
+# class Test:
+#     college = "CBIT !!!"
+
+#     def __init__(self):
+#         self.college = "KLU !!!"
+
+# print(Test.college)
+# obj = Test()
+# print(obj.college)
+
+
+# Example - 20
+# class Test:
+#     pass
+
+# obj = Test()
+# obj.x = 100 # adding instance variable
+
+# print(obj.x) # accessing instance variable
+
+# Example - 21
+# class Test:
+#     name = "Hello"
+
+# Test.name = "Gen AI"
+# print(Test.name)
+
+# Example - 22
+# class Test:
+#     name = "Hello"
+#     def test_func(cls):
+#         cls.name = "Agentic AI"
+
+# Test.test_func(Test)
+# print(Test.name)
+
+# Example - 23
+# from abc import ABC,abstractmethod
+# class Test(ABC):
+#     @abstractmethod
+#     def my_func(self):
+#         pass
+
+# class Test1(Test):
+#     def my_func(self):
+#         print("Hello")
+
+# obj = Test1()
+# obj.my_func()
+
+
+# Example - 24
+# from abc import ABC,abstractmethod
+# class Business(ABC):
+#     @abstractmethod
+#     def start_business(self):
+#         pass
+
+# class Frnd1(Business):
+#     def start_business(self):
+#         return "start dev center"
+
+# class Frnd2(Business):
+#     def start_business(self):
+#         return "start edu tech company"
+
+# obj1 = Frnd1()
+# print(obj1.start_business())
+
+# obj2 = Frnd2()
+# print(obj2.start_business())
