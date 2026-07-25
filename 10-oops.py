@@ -369,3 +369,100 @@
 
 # obj2 = Frnd2()
 # print(obj2.start_business())
+
+
+# Revise - 1
+# class Test:
+#     cmp = "TCS"
+
+# print(Test.cmp)
+
+# Revise - 2
+# class Test:
+#     cmp = "TCS !!!"
+
+#     def __init__(self):
+#         self.cmp = "Infosys !!!"
+
+# obj1 = Test()
+# print(obj1.cmp)
+
+# print(Test.cmp)
+
+# Revise - 3
+# class Test:
+#     cmp = "TCS !!!"
+
+# obj = Test()
+# print(obj.cmp)
+
+
+# Revise - 4
+# class Test:
+#     pass
+
+# obj = Test()
+# obj.cmp = "TCS !!!"
+
+# print(obj.cmp)
+
+
+# Revise - 5
+# class Test:
+#     cmp = "TCS !!!"
+
+# Test.cmp = "Infosys"
+
+# obj = Test()
+# print(obj.cmp)
+
+
+# Revide - 6
+# class Test:
+#     cmp = "TCS !!!"
+
+#     def hello(cls):
+#         cls.cmp = "Infosys !!!"
+
+# Test.hello(Test)
+# print(Test.cmp)
+
+
+# Revise - 7
+# class Test:
+#     cmp = "TCS !!!"
+
+#     def hello(cls,new_cmp):
+#         cls.cmp = new_cmp
+
+# Test.hello(Test,"Infosys !!!")
+# print(Test.cmp)
+
+
+# protected
+# class Bank:
+#     def __init__(self):
+#         self._balance = 10000
+
+# obj = Bank()
+
+# class Other:
+#     def __init__(self,my_obj):
+#         self.x = my_obj
+
+# other_obj = Other(obj)
+# print(other_obj.x._balance)
+
+# Encapsulation - wrapping the properties and behaviour
+# "class" keyword
+# class Test:
+#     cmp = "TCS !!!"
+
+#     def __init__(self):
+#         self.cmp = "Infosys !!!"
+
+#     def func_one(self):
+#         pass
+
+#     def func_two(cls):
+#         pass
