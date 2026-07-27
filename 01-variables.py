@@ -1,3 +1,93 @@
+print( int(True) )  # 1
+print( int(False) ) # 0
+print( int("1") )   # 1
+print( bool("") )   # False
+print( bool(" ") )  # True
+
+
+# print("P" in "Python")
+# print("Py" in "Python")
+# print("on" in "Python")
+
+
+# print( 10 / 3 )
+# print( 10 // 3 ) # Floor Devision
+# print( 10 % 3 )
+
+
+# t1 = 10,20,30
+# print(t1)
+
+# t2 = 10,
+# print(type(t2))
+
+
+# list1 = [10,20,30]
+# print(list1 * 2)
+
+# x1 = [1,2,3]
+# x2 = [11,22,33]
+# print(x1 + x2)
+
+
+# print( {1,1.0,True} )
+# print( {False,0,0.0} )
+
+# num1 = 100
+# Num1 = 200
+# NUM1 = 300
+# print(num1,Num1,NUM1)
+
+
+
+# num1 = num2 = num3 = 100
+# print(num1, num2, num3, sep="-----")
+
+# x,y,z = 100,200,300
+# print(x,y,z)
+
+
+
+# None
+# None representing empty / blank value
+# emp1 = None
+# print(emp1)
+# emp1 = "Gen AI Project"
+# print(emp1)
+
+# emp2 = None
+# print(emp2 == 0)    # False
+# print(type(emp2))   # NoneType
+
+
+# set
+# set never "allows duplicates"
+# {} / set()
+# set allows "hetrogeneous" elements
+# unordered
+
+# s1 = {10,20,30,10,20,40}
+# print(s1)
+
+# s2 = set([10,20,30,10,20,30])
+# print(s2)
+
+# s3 = set((10,20,10,30,10,20))
+# print(s3)
+
+# s4 = set([10,20,30])
+# print( 20 in s4 )
+# print( 300 in s4 )
+# print( 3000 not in s4 )
+
+# s4 = {}
+# print(type(s4))
+
+# s5 = set()
+# print(type(s5))
+
+
+
 # dictionary
 # key - value pairs
 # keys are immutable and values are mutable
