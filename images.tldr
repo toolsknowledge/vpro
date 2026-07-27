@@ -21,7 +21,7 @@
 			"com.tldraw.shape.text": 4,
 			"com.tldraw.shape.bookmark": 2,
 			"com.tldraw.shape.draw": 5,
-			"com.tldraw.shape.geo": 11,
+			"com.tldraw.shape.geo": 12,
 			"com.tldraw.shape.note": 13,
 			"com.tldraw.shape.line": 5,
 			"com.tldraw.shape.frame": 1,
@@ -473,16 +473,18 @@
 							"type": "paragraph"
 						}
 					]
-				}
+				},
+				"flipX": false,
+				"flipY": false
 			},
 			"parentId": "page:mFTJ6cpg_kA_joLp9LVxA",
 			"index": "a2DM6",
 			"typeName": "shape"
 		},
 		{
-			"x": -557.0101445094272,
-			"y": -3424.593188396543,
-			"z": 0.3373887467982566,
+			"x": -861.4572855428313,
+			"y": -3755.199284068961,
+			"z": 1,
 			"meta": {},
 			"id": "camera:page:page",
 			"typeName": "camera"
@@ -518,7 +520,9 @@
 							"type": "paragraph"
 						}
 					]
-				}
+				},
+				"flipX": false,
+				"flipY": false
 			},
 			"parentId": "page:mFTJ6cpg_kA_joLp9LVxA",
 			"index": "aH9vQ",
@@ -703,19 +707,19 @@
 							"type": "paragraph"
 						}
 					]
-				}
+				},
+				"flipX": false,
+				"flipY": false
 			},
 			"parentId": "page:mFTJ6cpg_kA_joLp9LVxA",
 			"index": "aNUhT",
 			"typeName": "shape"
 		},
 		{
-			"editingShapeId": "shape:uZyBhfldd33REY-zxQI11",
+			"editingShapeId": null,
 			"croppingShapeId": null,
-			"selectedShapeIds": [
-				"shape:uZyBhfldd33REY-zxQI11"
-			],
-			"hoveredShapeId": "shape:uZyBhfldd33REY-zxQI11",
+			"selectedShapeIds": [],
+			"hoveredShapeId": null,
 			"erasingShapeIds": [],
 			"hintingShapeIds": [],
 			"focusedGroupId": null,
@@ -725,12 +729,12 @@
 			"typeName": "instance_page_state"
 		},
 		{
-			"editingShapeId": null,
+			"editingShapeId": "shape:cC7EXP2u7H13tufI3nPST",
 			"croppingShapeId": null,
 			"selectedShapeIds": [
-				"shape:PMb-0W2VphwUlkYA420pc"
+				"shape:cC7EXP2u7H13tufI3nPST"
 			],
-			"hoveredShapeId": null,
+			"hoveredShapeId": "shape:cC7EXP2u7H13tufI3nPST",
 			"erasingShapeIds": [],
 			"hintingShapeIds": [],
 			"focusedGroupId": null,
@@ -830,7 +834,9 @@
 							"type": "paragraph"
 						}
 					]
-				}
+				},
+				"flipX": false,
+				"flipY": false
 			},
 			"parentId": "page:mFTJ6cpg_kA_joLp9LVxA",
 			"index": "a7QtE",
@@ -941,8 +947,8 @@
 			"typeName": "binding"
 		},
 		{
-			"x": -88.88888535676253,
-			"y": -1194.4443969814897,
+			"x": 0,
+			"y": 0,
 			"z": 1,
 			"meta": {},
 			"id": "camera:page:mFTJ6cpg_kA_joLp9LVxA",
@@ -979,7 +985,9 @@
 							"type": "paragraph"
 						}
 					]
-				}
+				},
+				"flipX": false,
+				"flipY": false
 			},
 			"parentId": "page:mFTJ6cpg_kA_joLp9LVxA",
 			"index": "aAmdj",
@@ -1345,10 +1353,7 @@
 		{
 			"followingUserId": null,
 			"opacityForNextShape": 1,
-			"stylesForNextShape": {
-				"tldraw:geo": "ellipse",
-				"tldraw:color": "black"
-			},
+			"stylesForNextShape": {},
 			"brush": null,
 			"scribbles": [],
 			"cursor": {
@@ -1362,7 +1367,7 @@
 			"screenBounds": {
 				"x": 0,
 				"y": 0,
-				"w": 972.9166259765625,
+				"w": 752.0833129882812,
 				"h": 474.3055419921875
 			},
 			"insets": [
@@ -1388,7 +1393,7 @@
 			"duplicateProps": null,
 			"cameraState": "idle",
 			"id": "instance:instance",
-			"currentPageId": "page:mFTJ6cpg_kA_joLp9LVxA",
+			"currentPageId": "page:page",
 			"typeName": "instance"
 		},
 		{
@@ -1756,10 +1761,72 @@
 							"type": "paragraph"
 						}
 					]
-				}
+				},
+				"flipX": false,
+				"flipY": false
 			},
 			"parentId": "page:mFTJ6cpg_kA_joLp9LVxA",
 			"index": "a33V6",
+			"typeName": "shape"
+		},
+		{
+			"x": 1055.1530252889252,
+			"y": 3903.414336673636,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:cC7EXP2u7H13tufI3nPST",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 182.15234375,
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "python is eazy"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "dataset.py"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a2WJn",
 			"typeName": "shape"
 		},
 		{
@@ -1895,7 +1962,9 @@
 							"type": "paragraph"
 						}
 					]
-				}
+				},
+				"flipX": false,
+				"flipY": false
 			},
 			"parentId": "page:mFTJ6cpg_kA_joLp9LVxA",
 			"index": "aGFJQ",
