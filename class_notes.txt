@@ -117,3 +117,37 @@ Functions
         "def" is the keyword, used to declare the functions
 
         "pass" is the keyword, used to declare "empty functions"
+
+
+numpy
+*****
+     numpy stands for "numerical python"
+     numpy library, used to perform "fast list operations"
+     numpy provides, so many predefined mathematical functions
+
+virtual environment
+*******************
+
+1) create environment
+
+        > python -m venv venv
+                (or)
+        > python3 -m venv venv
+
+
+2) activate virtual environment
+
+        > source venv/bin/activate (mac)
+
+        > venv\bin\activate (windows)
+
+3) create requirements.txt file
+
+        numpy
+
+4) install libraries
+        > pip install -r requirements.txt
+                (or)
+        > python -m pip install -r requirements.txt
+                (or)
+        > pip3 install -r requirements.txt
