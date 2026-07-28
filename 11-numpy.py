@@ -95,6 +95,105 @@
 # print(arr5)
 
 
+# Example - 7
+# import numpy as np
+# arr1 = np.array([10,20,30])
+# num = 2
+# print(arr1 + num)
+
+# arr2 = np.array([[10,20,30],
+#                  [40,50,60]])
+# x = 10
+# print(arr2 + x)
+
+
+# Example - 8
+# import numpy as np
+# arr1 = np.array([1,2,3,4,5,6])
+# arr2 = arr1.reshape(2,3)
+# arr3 = arr2.flatten()
+# print(arr3)
+
+# Example - 9
+# import numpy as np
+# arr1 = np.array([[1,2],
+#                  [3,4]])
+
+# print( np.linalg.inv(arr1) )                
+# print( np.linalg.det(arr1) )                # ad - bc
+# print( np.linalg.matrix_transpose(arr1) )
+
+
+# Example - 10
+# import numpy as np
+# print( np.random.rand(3) )
+# print( np.random.randint(1,10,6).reshape(2,3) )
+
+# Example - 11
+# import numpy as np
+# marks = np.array([60,65,70,75,80,85,90])
+# print(f"Average Marks : {np.mean(marks)}")
+# print(f"Max Marks : {np.max(marks)}")
+# print(f"Min Marks : {np.min(marks)}")
+
+
+# Example - 12
+# import numpy as np
+# sales = np.array([[200,300,250],
+#                   [400,500,450]])
+# print(np.sum(sales,axis=1)) # row wise sum
+# print(np.sum(sales,axis=0)) # column wise sum
+
+
+# Example - 13
+# import numpy as np
+# arr1 = np.array([100,200,300])
+# arr2 = arr1  # (Shallow Copy)
+# arr2[0] = 1000
+# print(arr1)
+
+# Example - 14
+# import numpy as np
+# arr1 = np.array([1,2,3])
+# arr2 = np.array([4,5,6])
+# print(np.add(arr1,arr2))
+# print(np.subtract(arr1,arr2))
+# print(np.multiply(arr1,arr2))
+# print(np.divide(arr2,arr1))
+
+# print(np.power(arr1,2))
+# print(np.mod([10,20,30],3))
+# print(np.remainder([10,20,30],3))
+
+# Example - 15
+# import numpy as np
+# arr1 = np.array([1,2])
+# arr2 = np.array([1,2])
+# print(np.equal(arr1,arr2))
+
+# x = np.array([4,2])
+# y = np.array([3,5])
+# print(np.greater(x,y))
+# print(np.less(x,y))
+
+# Example - 16
+import numpy as np
+# arr1 = np.array([10,50,20,40,30])
+# arr2 = np.sort(arr1)
+# print(arr2)
+# print(arr2[::-1])
+
+# arr1 = np.array([10,50,20,40,30])   # [0, 1, 2 , 3 , 4]
+# print(np.argsort(arr1)) # [0 2 4 3 1]
+
+# arr1 = np.array([10,50,20,40,30])
+# i = np.where(arr1>20)
+# print(type(i))
+# for element in i:
+#     print(arr1[element])
+
+# arr1 = np.array([1,2,2,3,3])
+# print(np.unique(arr1))
 
 
 
