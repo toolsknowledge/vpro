@@ -3,3 +3,5 @@ __pycache__
 node_modules
 model.pth
 .env
+.chroma_data
+*sqlite3
