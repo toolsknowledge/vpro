@@ -45,8 +45,8 @@
 
 
 # Example - 5
-import pandas as pd
-df = pd.read_csv("employees.csv")
+# import pandas as pd
+# df = pd.read_csv("employees.csv")
 # print(df)
 # print( df.head() )
 # print( df.tail() )
@@ -81,3 +81,137 @@ df = pd.read_csv("employees.csv")
 # print(df[:2])
 # print(df[:0+1])
 # print(df[10:11])
+
+
+
+# import pandas as pd
+# df = pd.read_csv("employees_simple.csv")
+# print(df)
+
+# df = pd.read_csv("employees_simple.csv")
+# print( df.to_string(index=False) )
+
+# df = pd.read_csv("employees_simple.csv")
+# df.set_index("Name",inplace=True)
+# print(df)
+
+# df = pd.read_csv("employees_simple.csv")
+# print(df)
+
+# print(df.loc[0])
+# print(df.loc[0:2])
+# print(df.loc[0,"Salary"])
+
+# print(df.iloc[2])
+# print(df.iloc[2,2])
+# print(df.iloc[0:2])
+
+# df = df.set_index("Name")
+# print(df)
+# print(df.loc["Sam"])
+# print(df.loc["David"])
+
+# print(df)
+# print(df.loc[:,["Name","Age"]])
+# print(df.loc[2:,["Name","Salary"]])
+# print(df.loc[0:1 :, ["Name","Age"]])
+
+
+# import pandas as pd
+# employees = {
+#     "EmpID" : [101,102,103,104,105],
+#     "Name" : ["Sam","John","David","Priya","Anjali"],
+#     "Department" : ["IT","HR","Finance","IT","Sales"],
+#     "Salary" : [55000,70000,45000,90000,60000],
+#     "Experience" :[2,5,1,8,4]
+# }
+# df = pd.DataFrame(employees)
+
+# print(df)
+# print( df.sort_values("Salary") )
+
+# print( df.sort_values("Salary",ascending=False) )
+
+# print(df.sort_values(
+#     by=["Department","Salary"],
+#     ascending=[True,True]
+# ))
+
+# print( df.sort_values("Salary",ascending=False).head(1))
+
+# print( df.groupby("Department")["Salary"].sum() )
+# print( df.groupby("Department")["Salary"].max() )
+# print( df.groupby("Department")["Salary"].min() )
+# print( df.groupby("Department")["Salary"].mean() )
+# print( df.groupby("Department")["EmpID"].count() )
+
+# print( df.groupby("Department")["Salary"].agg(["min","max","mean","sum","count"]))
+
+
+# import pandas as pd
+# emps = {
+#     "EmpID" : [101,102,103,104,105],
+#     "Name" : ["Sam","John","David","Priya","Anjali"]
+# }
+# df1 = pd.DataFrame(emps)
+
+# salaries = {
+#     "EmpID" : [101,102,103,104,106],
+#     "Salary" : [55000,70000,45000,90000,60000]
+# }
+# df2 = pd.DataFrame(salaries)
+
+# result = pd.merge(df1,df2,on="EmpID")
+# print(result)
+
+# result = pd.merge(df1,df2,on="EmpID",how="left")
+# print(result)
+
+# result = pd.merge(df1,df2,on="EmpID",how="right")
+# print(result)
+
+# import pandas as pd
+# df1 = pd.DataFrame({
+#     "Name" : ["Emp1","Emp2"]
+# })
+
+# df2 = pd.DataFrame({
+#     "Name" : ["Emp3","Emp4"]
+# })
+
+# print( pd.concat([df1,df2]) )
+# print( pd.concat([df1,df2],axis=1) )
+
+
+# import pandas as pd
+# employees = {
+#     "EmpID" : [101,102,103,104,105],
+#     "Name" : ["Sam","John","David","Priya","Anjali"],
+#     "Department" : ["IT","HR","Finance","IT","Sales"],
+#     "Salary" : [55000,70000,45000,90000,60000],
+#     "Experience" :[2,5,1,8,4]
+# }
+# df = pd.DataFrame(employees)
+
+# df["AnnualSalary"] = df["Salary"] * 12
+# print(df)
+
+# df.drop("Experience",axis=1,inplace=True)
+# print(df)
+
+
+import pandas as pd
+df = pd.read_csv("employees_null.csv")
+# print(df)
+# print(df.isnull())
+# print(df.isnull().sum())
+# print( df.fillna({"Name":"Unknown","Age":0,"Salary":0.0,"Bonus":0.0},inplace=True) )
+# print( df["Salary"].fillna(df["Salary"].mean(),inplace=True) ) 
+
+
+
+
+
+
+
+
