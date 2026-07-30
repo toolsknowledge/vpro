@@ -122,3 +122,99 @@
 # maximum = lambda num1,num2: num1 if num1>num2 else num2
 # res = maximum(100,200)
 # print(f"Result : {res}")
+
+
+# list1 = [1,2,3,4,5]
+# res = list( map(lambda num1:num1*100,list1) )
+# print(res)
+
+# list1 = [100,200,300,400,500]
+# res = list( filter(lambda num1:num1>=300,list1) )
+# print(res)
+
+# from functools import reduce
+# list1 = [1,2,3,4,5]
+# res = reduce(lambda num1,num2:num1+num2,list1)
+# print(f"Sum....{res}")
+
+# from functools import reduce
+# list1 = [1,2,3,4,5]
+# res1 = list( map(lambda num1:num1*10,list1) )       # [10,20,30,40,50]
+# res2 = list( filter(lambda num1:num1<=30,res1) )    # [10,20,30]
+# sum = reduce(lambda num1,num2:num1+num2,res2)       # [60]
+# print(sum)
+
+
+# Faq - 1
+# def test():
+#     return 10,20,30
+
+# t1 = test()
+# print(t1,type(t1))
+
+# Faq - 2
+# def add(num1,num2):
+#     res = num1 + num2
+#     print(res)
+
+# numbers = [200,100]
+# add(*numbers)
+
+
+# Faq - 3
+# def add(num1,num2):
+#     res = num1 + num2
+#     print(res)
+
+# d1 = {"num2":100,"num1":200}
+# add(**d1)
+
+# Faq - 4
+# Recurssive functions
+# function calling itself
+# def print_numbers(n):
+#     if n == 6:
+#         return
+
+#     print(n)
+#     print_numbers(n+1)
+
+# print_numbers(1)
+
+# def factorial(n):
+#     if n == 1:
+#         return 1
+
+#     return n * factorial(n-1)
+
+# print(factorial(5))     # 5 * factorial(4)
+                        # 5 * 4 * factorial(3)
+                        # 5 * 4 * 3 * factorial(2)
+                        # 5 * 4 * 3 * 2 * factorial(2)
+                        # 5 * 4 * 3 * 2 * 1
+                        # 120
+
+
+# Faq - 5
+def reverse(str):       
+    if len(str) == 0:
+        return ""
+    return reverse(str[1:]) + str[0]
+
+print( reverse("Hello") )           # reverse("ello") + H
+                                    # reverse("llo") + e + H
+                                    # reverse("lo") + l + e + H
+                                    # revesr("o") + l + l + e + H
+                                    # reverse("") + o + l + l + e + H
+                                    # "" + o + l + l + e + H
+                                    # olleH
+
+
+
+
+
+
+
+
+
+
