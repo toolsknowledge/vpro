@@ -42,3 +42,6 @@ How LLMS Trained Internally
         All this behavior is controlled by weights
 
 5) 
+
+
+
