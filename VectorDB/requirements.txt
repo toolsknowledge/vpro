@@ -1,2 +1,5 @@
 chromadb
 openai
+faiss-cpu
+numpy
+sentence-transformers
