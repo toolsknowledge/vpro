@@ -200,13 +200,106 @@
 # print(df)
 
 
-import pandas as pd
-df = pd.read_csv("employees_null.csv")
+# import pandas as pd
+# df = pd.read_csv("employees_null.csv")
 # print(df)
 # print(df.isnull())
 # print(df.isnull().sum())
 # print( df.fillna({"Name":"Unknown","Age":0,"Salary":0.0,"Bonus":0.0},inplace=True) )
 # print( df["Salary"].fillna(df["Salary"].mean(),inplace=True) ) 
+
+
+import pandas as pd
+df1 = pd.DataFrame({
+    "EmpID":[101,102,103,104],
+    "Name":["Sam","John","David","Priya"],
+    "Salary":[50000,60000,70000,80000]
+})
+
+df2 = pd.DataFrame({
+    "EmpID":[101,102,103,105],
+    "Name":["Sam","John","David","Anjali"],
+    "Salary":[50000,65000,70000,90000]
+})
+
+# print( df1.equals(df2) )
+# print(df1.compare(df2))
+# print(df2.compare(df1))
+
+# rows present in df1 and not present in df2
+# result = df1.merge(df2,how="left",indicator=True)
+# print(result)
+
+# print( df1.merge(df2) ) # common rows
+
+
+# compare old and new based on EmpID
+# result = df1.merge(df2,on="EmpID",how="outer",suffixes=("_old","_new"))
+# print(result)
+
+# compare two csv files
+# compare two excel files
+import pandas as pd
+data = {
+    "Employee": ["Sam", "John", "Sam", "David", "John", "David"],
+    "Department": ["IT", "HR", "IT", "HR", "IT", "IT"],
+    "Salary": [50000, 60000, 55000, 45000, 65000, 70000]
+}
+df = pd.DataFrame(data)
+
+# average salary
+# values = df.pivot_table(
+#     values="Salary",
+#     index="Employee"
+# )
+# print(values)
+
+# total salary
+# values = df.pivot_table(
+#     values="Salary",
+#     index="Employee",
+#     aggfunc="sum"
+# )
+# print(values)
+
+# values = df.pivot_table(
+#     values="Salary",
+#     index="Employee",
+#     columns="Department"
+# )
+# print(values)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
