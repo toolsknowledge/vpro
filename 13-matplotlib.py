@@ -56,15 +56,85 @@
 # plt.show()
 
 # Example-2
+# import matplotlib.pyplot as plt
+# months = ["Jan","Feb","Mar","Apr","May"]
+# sales = [100,150,180,200,240]
+# profit = [20,30,45,55,70]
+
+# plt.plot(months,sales, color="red", marker="D", label="Sales")
+# plt.plot(months,profit,color="green",marker="o", label="Profit")
+
+# plt.legend()
+# plt.savefig("multi_line_plot.png")
+# plt.show()
+
+
+# Example-3 (Bar Chart)
+# import matplotlib.pyplot as plt
+# import pandas as pd
+
+# months = ["Jan","Feb","Mar","Apr","May","Jun"]
+# sales = [100,120,140,180,220,300]
+
+# df = pd.read_csv("monthly_sales.csv")
+# x-axis
+# Month = df["Month"]
+# y-axis
+# Sales = df["Sales"]
+
+# plt.figure(figsize=(10,6))
+# bars = plt.bar(Month,Sales,color="skyblue",edgecolor="black",width=0.6,label="Sales")
+# for bar in bars:
+#     plt.text(bar.get_x() + bar.get_width()/2, bar.get_height()+3, bar.get_height(), ha="center", fontsize=10)
+
+# plt.title("Month - Sales",fontsize=18,fontweight="bold")
+# plt.xlabel("Months",fontsize=12)
+# plt.ylabel("Sales",fontsize=12)
+
+# plt.grid(axis='y',linestyle="--",alpha=0.7)
+# plt.xlim(2.5,5.5)
+# plt.ylim(100,400)
+
+# plt.annotate("Highest Sales",xy=(5,300),xytext=(4,330),arrowprops=dict(facecolor="red",shrink=0.05),fontsize=11,color='red')
+
+# plt.savefig("Bar.png")
+
+# plt.legend()
+# plt.show()
+
+# Example - 4 (Pie Chart)
 import matplotlib.pyplot as plt
-months = ["Jan","Feb","Mar","Apr","May"]
-sales = [100,150,180,200,240]
-profit = [20,30,45,55,70]
 
-plt.plot(months,sales, color="red", marker="D", label="Sales")
-plt.plot(months,profit,color="green",marker="o", label="Profit")
+subjects = ["Python","Java","React","SQL","AWS"]
+marks = [95,85,70,60,90]
+colors=["gold","skyblue","lightgreen","orange","pink"]
+explode = (0.1,0,0,0,0)
+plt.figure(figsize=(8,8))
+plt.pie(marks,
+        labels=subjects,
+        colors=colors,
+        explode=explode,
+        autopct='%1.3f%%',
+        startangle=90,
+        counterclock=True,
+        shadow=True,
+        radius=1.2,
+        pctdistance=0.7,
+        labeldistance=1.1,
+        
+        textprops={
+            'fontsize':12,
+            'color':'black'
+        },
+        wedgeprops={
+            'edgecolor':'black',
+            'linewidth':2
+        })
+plt.title("Marks Distribution")
+plt.legend(title="Subjects",
+           loc="upper right")
 
-plt.legend()
-plt.savefig("multi_line_plot.png")
-plt.show()
+plt.savefig("Pie.png")
+# plt.show()
+
 
