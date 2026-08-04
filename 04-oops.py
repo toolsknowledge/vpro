@@ -68,33 +68,102 @@
 
 
 # Example-6
-class Test:
-    def addition1(self):
-        num1 = 200
-        num2 = 100
-        res = num1 + num2
-        print(f"Addition : {res}")
+# class Test:
+#     def addition1(self):
+#         num1 = 200
+#         num2 = 100
+#         res = num1 + num2
+#         print(f"Addition : {res}")
 
-    def addition2(self,param1,param2):
-        res = param1 + param2
-        print(f"Addition : {res}")
+#     def addition2(self,param1,param2):
+#         res = param1 + param2
+#         print(f"Addition : {res}")
 
-    def addition3(self):
-        num1 = 200
-        num2 = 100
-        res = num1 + num2
-        return res
-    def addition4(self,param1,param2):
-        res = param1 + param2
-        return res
+#     def addition3(self):
+#         num1 = 200
+#         num2 = 100
+#         res = num1 + num2
+#         return res
+#     def addition4(self,param1,param2):
+#         res = param1 + param2
+#         return res
 
-obj1 = Test()
-obj1.addition1()
-obj1.addition2(200,100)
-x = obj1.addition3()
-print(f"Addition : {x}")
-y = obj1.addition4(200,100)
-print(f"Addition : {y}")
+# obj1 = Test()
+# obj1.addition1()
+# obj1.addition2(200,100)
+# x = obj1.addition3()
+# print(f"Addition : {x}")
+# y = obj1.addition4(200,100)
+# print(f"Addition : {y}")
 
 
+# oops - inheritance (getting data from parent class to child class called as inheritance)
+# 1) single level.  2) multilevel       3) multiple         4) hirarichal           5) hybrid
+# Example-7
+
+# class Parent:
+#     num1 = 200
+
+# class Child(Parent):
+#     pass
+
+# obj1 = Child()
+# x = obj1.num1
+# print(x)
+
+# class Parent:
+#     def test_func(self):
+#         print("Hello...!")
+
+# class Child(Parent):
+#     pass
+
+# obj = Child()
+# obj.test_func()
+
+# Example-8
+# class Parent:
+#     msg = "Agentic AI !!!"
+
+# class Child(Parent):
+#     msg1 = "Quantum Computing !!!"
+
+# class Subchild(Child):
+#     msg2 = "Cloud Deployment !!!"
+
+# obj1 = Subchild()
+# x = obj1.msg
+# y = obj1.msg1
+# z = obj1.msg2
+# print(x,y,z)
+
+
+# Example - 9
+# class Parent1:
+#     layer1 = "ML"
+
+# class Parent2:
+#     layer2 = "DL"
+
+# class Child(Parent1,Parent2):
+#     layer3 = "NLP"
+
+# obj = Child()
+# x = obj.layer1
+# y = obj.layer2
+# z = obj.layer3
+# print(x,y,z)
+
+# class Parent1:
+#     msg = "ML"
+
+# class Parent2:
+#     msg = "DL"
+
+# class Child(Parent2,Parent1):
+#     msg = "AgenticAI"
+
+# obj = Child()
+# x = obj.msg
+# print(x)
 
