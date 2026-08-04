@@ -103,38 +103,112 @@
 # plt.show()
 
 # Example - 4 (Pie Chart)
+# import matplotlib.pyplot as plt
+
+# subjects = ["Python","Java","React","SQL","AWS"]
+# marks = [95,85,70,60,90]
+# colors=["gold","skyblue","lightgreen","orange","pink"]
+# explode = (0.1,0,0,0,0)
+# plt.figure(figsize=(8,8))
+# plt.pie(marks,
+#         labels=subjects,
+#         colors=colors,
+#         explode=explode,
+#         autopct='%1.3f%%',
+#         startangle=90,
+#         counterclock=True,
+#         shadow=True,
+#         radius=1.2,
+#         pctdistance=0.7,
+#         labeldistance=1.1,
+        
+#         textprops={
+#             'fontsize':12,
+#             'color':'black'
+#         },
+#         wedgeprops={
+#             'edgecolor':'black',
+#             'linewidth':2
+#         })
+# plt.title("Marks Distribution")
+# plt.legend(title="Subjects",
+#            loc="upper right")
+
+# plt.savefig("Pie.png")
+# plt.show()
+
+
+# Example - 5
+# import matplotlib.pyplot as plt
+
+# subjects = ["Python","Java","React","SQL"]
+# marks = [95,85,75,90]
+
+# plt.figure(figsize=(12,8))
+
+# # Line Plot
+# plt.subplot(2,2,1)
+# plt.plot(subjects,marks,marker='o',linestyle="--")
+# plt.title("Line Plot")
+
+
+# # Bar Chart
+# plt.subplot(2,2,2)
+# plt.bar(subjects,marks,color="orange")
+# plt.title("Bar Chart")
+
+
+# # Pie Chart
+# plt.subplot(2,2,3)
+# plt.pie(marks,labels=subjects)
+
+
+# plt.show()
+
+
+# Example - 6 (Histoplot)
+# import matplotlib.pyplot as plt
+# marks = [
+#     35, 40, 42, 45, 48,
+#     50, 52, 55, 58, 60,
+#     62, 65, 68, 70, 72,
+#     75, 78, 80, 82, 85,
+#     88, 90, 92, 95
+# ]
+# plt.figure(figsize=(10,6))
+# bins - 6  
+# 60/6 = 10
+# 35 - 45       45 - 55         55-65       65-75       75 - 85     85 - 95
+# plt.hist(marks,
+#          bins=6,
+#          color='skyblue',
+#          edgecolor='black',
+#          linewidth=2,
+#          alpha=0.8,
+#          histtype='bar',
+#          rwidth=0.9,
+#          label='Students')
+# plt.title("Students Marks Distribution",fontsize=18,fontweight="bold")
+# plt.xlabel("Marks")
+# plt.ylabel("Students")
+# plt.legend()
+# plt.show()
+
+
+# Example-7
 import matplotlib.pyplot as plt
 
-subjects = ["Python","Java","React","SQL","AWS"]
-marks = [95,85,70,60,90]
-colors=["gold","skyblue","lightgreen","orange","pink"]
-explode = (0.1,0,0,0,0)
-plt.figure(figsize=(8,8))
-plt.pie(marks,
-        labels=subjects,
-        colors=colors,
-        explode=explode,
-        autopct='%1.3f%%',
-        startangle=90,
-        counterclock=True,
-        shadow=True,
-        radius=1.2,
-        pctdistance=0.7,
-        labeldistance=1.1,
-        
-        textprops={
-            'fontsize':12,
-            'color':'black'
-        },
-        wedgeprops={
-            'edgecolor':'black',
-            'linewidth':2
-        })
-plt.title("Marks Distribution")
-plt.legend(title="Subjects",
-           loc="upper right")
+study_hours = [1, 2, 3, 4, 5, 6, 7, 8]
+marks = [35, 42, 50, 60, 68, 75, 88, 95]
+sizes = [80, 100, 120, 140, 160, 180, 200, 220]
+colors = ['red', 'blue', 'green', 'orange',
+          'purple', 'brown', 'pink', 'cyan']
+plt.figure(figsize=(10,6))
+plt.scatter(study_hours,marks,s=sizes,c=colors,alpha=0.8,edgecolors='black',linewidths=2,label="Students")
+plt.title("Study Hours Vs Marks")
+plt.legend()
+plt.show()
 
-plt.savefig("Pie.png")
-# plt.show()
+
 
 
