@@ -210,52 +210,66 @@
 # plt.show()
 
 
+# Example-8
+# import matplotlib.pyplot as plt
+# marks = [
+#     35,40,45,50,55,
+#     60,65,70,75,80,
+#     85,90,95,98,150
+# ]
+# plt.figure(figsize=(8,6))
+# plt.boxplot(
+#     marks,
+#     notch=True,
+#     vert=True,
+#     patch_artist=True,
+#     widths=0.5,
+#     showmeans=True,
+#     showfliers=True,
+#     tick_labels=['Students'],
+#     boxprops=dict(
+#         facecolor='skyblue',
+#         color='blue',
+#         linewidth=2
+#     ),
+#     medianprops=dict(
+#         color='red',
+#         linewidth=3
+#     ),
+#     whiskerprops=dict(
+#         color='green',
+#         linewidth=2
+#     ),
+#     capprops=dict(
+#         color='black',
+#         linewidth=2
+#     ),
+#     flierprops=dict(
+#         marker='o',
+#         markerfacecolor='red',
+#         markersize=20
+#     )
+# )
+# plt.title(
+#     "Student Marks Analysis",
+#     fontsize=18
+# )
+# plt.ylabel("Marks")
+# plt.grid(axis='y')
+# plt.show()
+
 import matplotlib.pyplot as plt
-marks = [
-    35,40,45,50,55,
-    60,65,70,75,80,
-    85,90,95,98,150
-]
-plt.figure(figsize=(8,6))
+python = [90,95,88,80,75,92]
+java = [85,70,80,82,90,78]
+react = [60,65,70,68,75,80]
 plt.boxplot(
-    marks,
-    notch=True,
-    vert=True,
-    patch_artist=True,
-    widths=0.5,
-    showmeans=True,
-    showfliers=True,
-    tick_labels=['Students'],
-    boxprops=dict(
-        facecolor='skyblue',
-        color='blue',
-        linewidth=2
-    ),
-    medianprops=dict(
-        color='red',
-        linewidth=3
-    ),
-    whiskerprops=dict(
-        color='green',
-        linewidth=2
-    ),
-    capprops=dict(
-        color='black',
-        linewidth=2
-    ),
-    flierprops=dict(
-        marker='o',
-        markerfacecolor='red',
-        markersize=20
-    )
+    [python, java, react],
+    labels=['Python','Java','React']
 )
-plt.title(
-    "Student Marks Analysis",
-    fontsize=18
-)
-plt.ylabel("Marks")
-plt.grid(axis='y')
+plt.title("Course Marks Comparison")
 plt.show()
+
+
 
 
 
