@@ -1,0 +1,16 @@
+langchain                       # Framework for RAG Application                   
+langchain-community             # Framework (langchain) able to connect to tools (able to read pdf files)
+langchain-openai                # langchain will connect to chatgpt
+langchain-text-splitters        # split the text
+langchain-huggingface           # hugging face (models)
+langchain-chroma                # vector db (chromadb)
+chromadb                        # load chromadb
+sentence-transformers           # embeddings
+pypdf                           # load pdf file
+python-dotenv                   # .env file
+streamlit                       # frontend
+fastapi                         # api calls
+uvicorn                         # run fastapi
+openai                          # connect to chatgpt with api key
+
+
