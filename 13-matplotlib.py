@@ -258,16 +258,49 @@
 # plt.grid(axis='y')
 # plt.show()
 
+# import matplotlib.pyplot as plt
+# python = [90,95,88,80,75,92]
+# java = [85,70,80,82,90,78]
+# react = [60,65,70,68,75,80]
+# plt.boxplot(
+#     [python, java, react],
+#     labels=['Python','Java','React']
+# )
+# plt.title("Course Marks Comparison")
+# plt.show()
+
+
+# Example-9
+import seaborn as sns
 import matplotlib.pyplot as plt
-python = [90,95,88,80,75,92]
-java = [85,70,80,82,90,78]
-react = [60,65,70,68,75,80]
-plt.boxplot(
-    [python, java, react],
-    labels=['Python','Java','React']
+import pandas as pd
+
+df = pd.DataFrame({
+    'Python':[95,90,60,98],
+    'Java':[80,85,75,92],
+    'SQL':[70,75,65,88]
+},
+index=['Student A',
+       'Student B',
+       'Student C',
+       'Student D']
 )
-plt.title("Course Marks Comparison")
+plt.figure(figsize=(8,6))
+
+sns.heatmap(
+    df,
+    annot=True,
+    cmap='Reds',         #coolwarm viridis Blues Greens Reds YlGnBu magma plasma
+    linewidths=1, 
+    linecolor='black',
+    fmt='d',            # d .1f .2f
+    cbar=True
+)
+
+plt.title("Student Marks Heatmap")
+
 plt.show()
+
 
 
 
