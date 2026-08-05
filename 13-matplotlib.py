@@ -274,7 +274,6 @@
 import seaborn as sns
 import matplotlib.pyplot as plt
 import pandas as pd
-
 df = pd.DataFrame({
     'Python':[95,90,60,98],
     'Java':[80,85,75,92],
@@ -286,19 +285,16 @@ index=['Student A',
        'Student D']
 )
 plt.figure(figsize=(8,6))
-
 sns.heatmap(
     df,
     annot=True,
-    cmap='Reds',         #coolwarm viridis Blues Greens Reds YlGnBu magma plasma
+    cmap='YlGnBu',         #coolwarm viridis Blues Greens Reds YlGnBu magma plasma
     linewidths=1, 
     linecolor='black',
     fmt='d',            # d .1f .2f
     cbar=True
 )
-
 plt.title("Student Marks Heatmap")
-
 plt.show()
 
 
