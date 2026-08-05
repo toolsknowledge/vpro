@@ -19,13 +19,13 @@
 # Example-1
 # import matplotlib.pyplot as plt
 
-# x-axis data
+# # x-axis data
 # months = ["Jan","Feb","Mar","Apr","May","Jun"]
-# y-axis data
+# # y-axis data
 # sales = [120,150,180,170,210,250]
-# create Figure
+# # create Figure
 # plt.figure(figsize=(10,6))
-# draw the line plot
+# # draw the line plot
 # plt.plot(
 #     months,
 #     sales,
@@ -196,17 +196,87 @@
 
 
 # Example-7
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 
-study_hours = [1, 2, 3, 4, 5, 6, 7, 8]
-marks = [35, 42, 50, 60, 68, 75, 88, 95]
-sizes = [80, 100, 120, 140, 160, 180, 200, 220]
-colors = ['red', 'blue', 'green', 'orange',
-          'purple', 'brown', 'pink', 'cyan']
-plt.figure(figsize=(10,6))
-plt.scatter(study_hours,marks,s=sizes,c=colors,alpha=0.8,edgecolors='black',linewidths=2,label="Students")
-plt.title("Study Hours Vs Marks")
-plt.legend()
+# study_hours = [1, 2, 3, 4, 5, 6, 7, 8]
+# marks = [35, 42, 50, 60, 68, 75, 88, 95]
+# sizes = [80, 100, 120, 140, 160, 180, 200, 220]
+# colors = ['red', 'blue', 'green', 'orange',
+#           'purple', 'brown', 'pink', 'cyan']
+# plt.figure(figsize=(10,6))
+# plt.scatter(study_hours,marks,s=sizes,c=colors,alpha=0.8,edgecolors='black',linewidths=2,label="Students")
+# plt.title("Study Hours Vs Marks")
+# plt.legend()
+# plt.show()
+
+
+# Example-8
+import matplotlib.pyplot as plt
+# ------------------------------------
+# Student Marks     # medium, 25% 50% 75% max(outlier)
+# ------------------------------------
+marks = [
+    35,40,45,50,55,
+    60,65,70,75,80,
+    85,90,95,98,150
+]
+# ------------------------------------
+# Create Figure
+# ------------------------------------
+plt.figure(figsize=(8,6))
+# ------------------------------------
+# Box Plot
+# ------------------------------------
+plt.boxplot(
+    marks,
+    notch=True,
+    vert=True,
+    patch_artist=True,
+    widths=0.5,
+    showmeans=True,
+    showfliers=True,
+    tick_labels=['Students'],
+    boxprops=dict(
+        facecolor='skyblue',
+        color='blue',
+        linewidth=2
+    ),
+    medianprops=dict(
+        color='red',
+        linewidth=3
+    ),
+    whiskerprops=dict(
+        color='green',
+        linewidth=2
+    ),
+    capprops=dict(
+        color='black',
+        linewidth=2
+    ),
+    flierprops=dict(
+        marker='o',
+        markerfacecolor='red',
+        markersize=20
+    )
+)
+# ------------------------------------
+# Title
+# ------------------------------------
+plt.title(
+    "Student Marks Analysis",
+    fontsize=18
+)
+# ------------------------------------
+# Y Label
+# ------------------------------------
+plt.ylabel("Marks")
+# ------------------------------------
+# Grid
+# ------------------------------------
+plt.grid(axis='y')
+# ------------------------------------
+# Display
+# ------------------------------------
 plt.show()
 
 
