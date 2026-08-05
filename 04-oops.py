@@ -167,3 +167,120 @@
 # x = obj.msg
 # print(x)
 
+
+# Example-10 (Hirarichal)
+# class Parent:
+#     num1 = 200
+
+# class Child1(Parent):
+#     num2 = 100
+
+# class Child2(Parent):
+#     num2 = 1000
+
+# class Child3(Parent):
+#     num2 = 10000
+
+# obj1 = Child1()
+# x1 = obj1.num1
+# x2 = obj1.num2
+# print(x1,x2)
+
+# obj2 = Child2()
+# y1 = obj2.num1
+# y2 = obj2.num2
+# print(y1,y2)
+
+# obj3 = Child3()
+# z1 = obj3.num1
+# z2 = obj3.num2
+# print(z1,z2)
+
+
+# Example-11
+# class Parent:
+#     num1 = 100
+
+# class Child1(Parent):
+#     num2 = 200
+
+# class Child2(Parent):
+#     num2 = 300
+
+# class Subchild(Child2,Child1):
+#     pass
+
+# obj1 = Subchild()
+# x = obj1.num1
+# y = obj1.num2
+# print(x,y)
+
+
+# Example-12
+# class Parent:
+#     def __init__(self,param1):
+#         self.num1 = param1
+
+# class Child(Parent):
+#     def __init__(self, param1,param2):
+#         super().__init__(param1)
+#         self.num2 = param2
+
+
+# obj = Child(200,100)
+# x = obj.num1
+# y = obj.num2
+# print(x,y)
+
+
+# class Parent:
+#     def __init__(self,num1):
+#         self.num1 = num1
+
+# class Child(Parent):
+#     def __init__(self, num1,num2):
+#         super().__init__(num1)
+#         self.num2 = num2
+
+# class Subchild(Child):
+#     def __init__(self, num1, num2,num3):
+#         super().__init__(num1, num2)
+#         self.num3 = num3
+
+# obj1 = Subchild(1000,2000,3000)
+# x = obj1.num1
+# y = obj1.num2
+# z = obj1.num3
+# print(x,y,z)
+
+
+# class Parent:
+#     def test_func(self):
+#         print("Hello,VPro Skiils !!!")
+
+# class Child(Parent):
+#     def my_func(self):
+#         super().test_func()
+
+# obj = Child()
+# obj.my_func()
+
+
+
+
+# Example-13
+# class Test:
+#     def __init__(self,num1):
+#         self.num1 = num1
+
+#     def __init__(self, num1,num2):
+#         self.num1 = num1
+#         self.num2 = num2
+
+#     def __init__(self, num1,num2,num3):
+#         self.num1 = num1
+#         self.num2 = num2
+#         self.num3 = num3
+
+# obj = Test(30000,2000,100)
+# print(obj.num1, obj.num2, obj.num3)
