@@ -284,3 +284,127 @@
 
 # obj = Test(30000,2000,100)
 # print(obj.num1, obj.num2, obj.num3)
+
+
+# Example-14 (Overriding / Polymorphism)
+# class Parent:
+#     def test(self):
+#         print("Hello")
+
+# class Child(Parent):
+#     def test(self):
+#         print("Welcome")
+
+# obj = Child()
+# obj.test()
+
+# Example-15 (Overloading / Polymorphism)
+# class Test:
+    # def add(self,num1,num2,num3):
+    #     print(num1 + num2 + num3)
+
+    # def add(self,num1,num2,num3=100):
+    #         print(num1 + num2 + num3)
+
+    # def add(self,*num):
+    #     print(sum(num))
+
+# obj = Test()
+# obj.add(10,20)
+# obj.add(10,20,30)
+
+
+# Example-16 (Class Variables)
+# class Test:
+#     college = "CBIT"
+#     def __init__(self):
+#         self.college = "Vasavi"
+
+# x = Test.college
+# print(x)
+
+# obj1 = Test()
+# y = obj1.college
+# print(y)
+
+
+# Example-17
+# class Test:
+#     college = "CBIT"
+
+# print(Test.__dict__)
+
+# obj1 = Test()
+# print(obj1.__dict__)
+
+
+# class Test:
+#     pass
+
+# Test.cmp = "Oracle !!!"
+
+# x = Test.cmp
+# print(x)
+
+# class Test:
+#     cmp = "Oracle"
+
+# x = Test.cmp
+# print(x)
+
+# Test.cmp = "Microsoft"
+# y = Test.cmp
+# print(y)
+
+
+# Example-19
+# class Test:
+#     cmp = "Oracle !!!"
+#     @classmethod
+#     def change_cmp(self):
+#         self.cmp = "Microsoft !!!"
+
+# Test.change_cmp()
+# x = Test.cmp
+# print(x)
+
+# class Test:
+#     def __init__(self):
+#         x.name = "Hello"
+
+# obj = Test()
+# print(obj.name)
+
+# Example - 20
+# class Test:
+#     def __init__(self):
+#         self.wish = "Hello"
+#     def __str__(self):
+#         return "Test Class Object"
+
+# obj = Test()
+# print(obj)
+
+
+# Example-21
+from abc import abstractmethod,ABC
+class Test(ABC):
+    @abstractmethod
+    def wish(self):
+        pass
+
+class Impl1(Test):
+    def wish(self):
+        print("Good Evening !!!")
+
+class Impl2(Test):
+    def wish(self):
+        print("Very Good Evening !!!")
+
+obj = Impl2()
+obj.wish()
+
+
+
+
+
