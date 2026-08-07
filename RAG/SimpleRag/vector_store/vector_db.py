@@ -1,4 +1,5 @@
-from langchain_community.vectorstores import Chroma
+# from langchain_community.vectorstores import Chroma
+from langchain_chroma import Chroma
 PERSIST_DIRECTORY = "vector_store/chroma_db"
 def create_vector_db(chunks, embedding_model):
     """
