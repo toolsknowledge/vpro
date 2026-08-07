@@ -387,22 +387,83 @@
 
 
 # Example-21
-from abc import abstractmethod,ABC
-class Test(ABC):
-    @abstractmethod
-    def wish(self):
-        pass
+# from abc import abstractmethod,ABC
+# class Test(ABC):
+#     @abstractmethod
+#     def wish(self):
+#         pass
 
-class Impl1(Test):
-    def wish(self):
-        print("Good Evening !!!")
+# class Impl1(Test):
+#     def wish(self):
+#         print("Good Evening !!!")
 
-class Impl2(Test):
-    def wish(self):
-        print("Very Good Evening !!!")
+# class Impl2(Test):
+#     def wish(self):
+#         print("Very Good Evening !!!")
 
-obj = Impl2()
-obj.wish()
+# obj = Impl2()
+# obj.wish()
+
+
+# Example - 22 (static)
+# class Test:
+#     @staticmethod
+#     def calc(num1,num2):
+#         print(num1 + num2)
+
+# Test.calc(200,100)
+
+
+# class Test:
+#     def __init__(self):
+#         self.__x = "Hello"
+#     def access(self):
+#         print(self.__x)
+
+
+# obj = Test()
+# res = obj.__x
+# print(res)
+# obj.access()
+
+
+# class Bank:
+#     def __init__(self):
+#         self.__balance = 50000
+
+#     def get_balance(self,atm_pin):
+#         if atm_pin == 1234:
+#             print(self.__balance)
+#         else:
+#             print("Unauthorized !!!")
+
+# obj = Bank()
+# obj.get_balance(1234)
+# obj.get_balance(1235)
+
+
+# class Test:
+#     def __init__(self,emps):
+#         self.emps = emps
+
+#     def __len__(self):
+#         return len(self.emps)
+
+# obj = Test(["Python","ML","DL","NLP"])
+# print(len(obj))
+
+# class Cmp:
+#     def __init__(self,salary):
+#         self.salary = salary
+
+#     def __add__(self, other):
+#         return self.salary + other.salary
+
+
+# emp1 = Cmp(50000)
+# emp2 = Cmp(70000)
+# emp3 = Cmp(80000)
+# print(emp1+emp3)   
 
 
 
