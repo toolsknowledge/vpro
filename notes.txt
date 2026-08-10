@@ -1,0 +1,12 @@
+Python Installation
+*******************
+website : https://www.python.org/downloads/
+
+> python --version (or) python3 --version
+
+
+Visual Studio Code
+******************
+
+website : https://code.visualstudio.com/download?_exp_download=fb315fc982
+
