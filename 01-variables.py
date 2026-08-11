@@ -162,6 +162,105 @@
 # print(0.1 + 0.2 == 0.3 )
 
 
+# boolean
+# True - 1 & False - 0
+# in "True" T must be "capital" and in False "F" must be "capital"
+# boolean is the "child data" type for integer
+# flag = True
+# print(f"Boolean Value : {flag}")
+
+# flag1 = False
+# print(f"Boolean Value : {flag1}")
+
+# print(type(flag))
+
+# res = "GenAI" if flag else "Agentic AI"
+# print(res)
+
+# res1 = "GenAI" if flag1 else "Agentic AI"
+# print(res1)
+
+# age = 20
+# citizen = True
+# if age>18 and citizen:
+#     print("Eligible for Vote !!!")
+# else:
+#     print("Not Eligible")
+
+
+# list
+# colloection of elements
+# hetrogeneous  [1,"Hello",1.2,True]
+# ordered
+# positive / negative
+# mutable
+# [] / list() constructor
+# allows duplicates
+
+# list1 = [10,20,30,40,50]
+# list1.append(60)
+# list2 = [70,80]
+# list1.extend(list2)
+# list1.append(10)
+        # [10,20,30,40,50,60,70,80,10]
+# list1.remove(10)
+# list1.pop()
+# print(list1)
+
+# list1 = [10,20,30,40,50]
+# print(list1[0])
+# print(list1[-5])
+# print(list1[0:2])     # 0 & 1 included.  and 2 excluded
+# print(list1[:3])
+# print(list1[3:])
+# print(list1[::-1])
+# print(list1[::-2])
+# print(list1[::-3])
+# print(list1[::2])
+# print(list1[::3])
+
+# list1 = [10,20,30,40,50]
+# list1[0] = 1_000 # mutable      
+# print(list1)
+
+# tuple
+# colloection of elements
+# hetrogeneous  (1,"Hello",1.2,True)
+# ordered
+# positive / negative
+# immutable
+# () / tuple() constructor
+# allows duplicates
+
+# import sys
+# list1 = [10,20,30,40,50]
+# print(sys.getsizeof(list1))
+
+# tuple1 = (10,20,30,40,50)
+# print(sys.getsizeof(tuple1))
+
+
+# tuple1 = 10,20,30,40,50
+# print(type(tuple1))
+# print(tuple1[0:2])
+# print(tuple1[::2])
+# print(tuple1[::3])
+# print(tuple1[-4:-2])
+# print(tuple1[::-1])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
