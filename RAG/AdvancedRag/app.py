@@ -124,15 +124,12 @@ def ingest_document(file_path: Path):
     }
 
 @app.post("/upload")
-async def upload_document(file: UploadFile = File(...)):
+async def upload_document(file: UploadFile = File(...)):        # file : rag_notes.pdf
 
-    allowed_extensions = {
-        ".pdf",
-        ".txt"
-    }
-    extension = Path(
-        file.filename
-    ).suffix.lower()
+    allowed_extensions = {".pdf",".txt"}
+
+    extension = Path(file.filename).suffix.lower()      # rag_notes.pdf
+
     if extension not in allowed_extensions:
         raise HTTPException(
             status_code=400,
@@ -141,31 +138,20 @@ async def upload_document(file: UploadFile = File(...)):
             )
         )
 
-    file_path = (
-        DATA_DIR / file.filename
-    )
+    file_path = (DATA_DIR / file.filename)      # data / rag_notes.pdf
+
     content = await file.read()
-    file_path.write_bytes(
-        content
-    )
+    file_path.write_bytes(content)
 
     try:
-
-        result = ingest_document(
-            file_path
-        )
-
-
+        result = ingest_document(file_path)
         return {
             "message": (
                 "Document indexed successfully"
             ),
             **result
         }
-
-
     except Exception as e:
-
         raise HTTPException(
             status_code=500,
             detail=str(e)
@@ -630,9 +616,7 @@ ANSWER
 # ============================================================
 
 @app.post("/ask")
-def ask_question(
-    request: QuestionRequest
-):
+def ask_question(request: QuestionRequest):
 
     """
     Complete Advanced RAG query pipeline:
@@ -659,9 +643,7 @@ def ask_question(
     # STEP 1: GET USER QUESTION
     # --------------------------------------------------------
 
-    question = (
-        request.question.strip()
-    )
+    question = (request.question.strip())
 
 
     # Check empty question.
@@ -679,15 +661,12 @@ def ask_question(
     # STEP 2: QUERY EXPANSION
     # ========================================================
 
-    queries = expand_query(
-        question
-    )
+    queries = expand_query(question)
 
 
     # ========================================================
     # STEP 3: MULTI-QUERY RETRIEVAL
     # ========================================================
-
     candidates = (
         retrieve_candidates(
             queries,
