@@ -1,8 +1,10 @@
 # FastAPI - used to develop api calls
-from fastapi import FastAPI
+from fastapi import FastAPI,HTTPException
 
 # MongoClient - connect to mongodb database
 from pymongo import MongoClient
+
+import bcrypt
 
 # app used to develop GET,POST,PUT,DELETE.....
 app = FastAPI()
@@ -15,6 +17,29 @@ db = client["cmp_db"]
 
 # collection
 employees = db["employees"]
+
+
+SECRETE_KEY = "my-vpro-secret-key-123"
+ALGORITHM = "HS256"
+
+
+@app.post("/register")
+def register(username:str,password:str):
+    existed_user = employees.find_one({"username":username})
+    if existed_user:
+        raise HTTPException(
+            status_code=400,
+            detail="User already exists!"
+        )
+    hashed_password = bcrypt.hashpw(password.encode('utf-8'),bcrypt.gensalt())
+    employees.insert_one({
+        "username":username,
+        "password":hashed_password.decode('utf-8')
+    })
+    return {"message":"employee registered successfully !!!"}
+
+
+
 
 # post
 @app.post("/employees")
@@ -54,7 +79,26 @@ def read_emp(name:str):
 
     return {"msg":"employee not found !!!"}
     
+@app.put("/employees/{name}/{new_name}/{updated_salary}")
+def update_employee(name:str,new_name:str,updated_salary:float):
+    res = employees.update_one({"name":name},{"$set":{"name":new_name,"salary":updated_salary}})    
+    return {"message":"record updated successfully",
+            "modifies":res.modified_count}
 
+@app.delete("/employees/{name}")
+def delete_employee(name:str):
+    res = employees.delete_one({"name":name})
+    return {
+        "message" : "record deleted successfully !!!",
+        "count" : res.deleted_count
+    }
+
+
+# insert_one()
+# find()
+# find_one()
+# update_one()
+# delete_one()
 
 
    

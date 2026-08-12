@@ -1,5 +1,7 @@
 fastapi
 uvicorn
 pymongo
+bcrypt      # encrypt the pass
+PyJWT       # generate tokens (JSON WEB TOKEN)
 
 
