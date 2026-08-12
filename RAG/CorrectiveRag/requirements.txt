@@ -1,0 +1,6 @@
+langgraph                   # framework, handles multi-flow in RAG Application
+langchain                   # collabrate RAG Components
+langchain-openai            # langchain will connect to OpenAI
+langchain-chroma            # langchain will connect to chromadb
+chromadb                    # vectordb
+python-dotenv               # load .env file
