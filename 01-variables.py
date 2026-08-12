@@ -250,6 +250,119 @@
 
 
 
+# dictionary
+# key & value pairs
+# {} / dict()
+# keys are immutable and values are mutable
+# key and value separated by using ":"
+
+# d1 = {
+#     "key1" : "GenAI",
+#     "key2" : "AgenticAI",
+#     "key3" : "RAG"
+# }
+# print(d1)
+# print(d1.keys())
+# print(d1.values())
+# print(d1.items())
+# print(type(d1))
+
+# d2 = {
+#     (10,20) : (10,20)
+# }
+# print(d2)
+
+# d1 = {
+#     "key1" : "GenAI",
+#     "key2" : "AgenticAI",
+#     "key3" : "RAG"
+# }
+# for x in d1.keys():
+#     print(x)
+
+# for y in d1.values():
+#     print(y)
+
+# for k,v in d1.items():
+#     print(k,v)
+
+
+# Set
+# never allows duplicates
+# {} / set()
+# unordered
+
+# s1 = {10,20,10,20,30}  
+# print(s1)
+
+# s2 = {}
+# print(type(s2))
+
+# s3 = set()
+# print(type(s3))
+
+
+# list1 = [10,20,10,30,20]
+# s4 = set(list1)
+# print(s4)
+
+# tuple1 = (10,20,10)
+# s5 = set(tuple1)
+# print(s5)
+
+
+# None
+# None Representing "No-Value"
+# x = None
+# print(x)
+# print(type(x))
+
+# print(x == 0)
+# print(x == False)
+# print(x == "")
+
+# if x == None:
+#     x = "Project Assigned"
+
+# print(x)
+
+
+# String        Integer         Boolean                List             Tuple           Dict    Set     None
+
+# num1 = num2 = num3 = 1000
+# print(num1, num2, num3)
+
+# x,y,z = 1000,2000,3000
+# print(x,y,z)
+
+# a = 1000
+# b = 2000
+# print(f"Before Swap a : {a} and b:{b}")
+# b,a = a,b
+# print(f"After Swap a : {a} and b:{b}")
+
+# a,b,c = 10
+# print(a,b,c)
+
+
+# print( list(range(5)) )
+# print( tuple(range(10)) )
+# print( list(range(1,5)) )
+# print( list(range(1,10,2) ))
+# print( tuple(range(10,0,-1)) )
+
+# a = 10
+# b = 20
+# res = a if a>b else b
+# print(res)
+
+a = 10
+b = 15
+c = 20
+res = a if a>b and a>c else b if b>c else c
+print(res)
+
+
 
 
 
