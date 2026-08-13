@@ -6,6 +6,10 @@ from pymongo import MongoClient
 
 import bcrypt
 
+import jwt
+from datetime import datetime,timedelta
+
+
 # app used to develop GET,POST,PUT,DELETE.....
 app = FastAPI()
 
@@ -24,21 +28,70 @@ ALGORITHM = "HS256"
 
 
 @app.post("/register")
-def register(username:str,password:str):
-    existed_user = employees.find_one({"username":username})
+def register(username: str, password: str):
+    existed_user = employees.find_one({"username": username})
+
     if existed_user:
         raise HTTPException(
             status_code=400,
             detail="User already exists!"
         )
-    hashed_password = bcrypt.hashpw(password.encode('utf-8'),bcrypt.gensalt())
+
+    hashed_password = bcrypt.hashpw(
+        password.encode("utf-8"),
+        bcrypt.gensalt()
+    )
+
     employees.insert_one({
-        "username":username,
-        "password":hashed_password.decode('utf-8')
+        "username": username,
+        "password": hashed_password.decode("utf-8")
     })
-    return {"message":"employee registered successfully !!!"}
+
+    return {
+        "message": "employee registered successfully !!!"
+    }
 
 
+# login
+@app.post("/login")
+def login(username: str, password: str):
+    user = employees.find_one({"username": username})
+
+    if not user:
+        raise HTTPException(
+            status_code=401,
+            detail="Invalid User Name"
+        )
+
+    # password = plain text entered by user
+    # user["password"] = bcrypt hashed password from MongoDB
+    password_match = bcrypt.checkpw(
+        password.encode("utf-8"),
+        user["password"].encode("utf-8")
+    )
+
+    if not password_match:
+        raise HTTPException(
+            status_code=401,
+            detail="Invalid Password"
+        )
+
+    token = jwt.encode(
+        {
+            "username": username,
+            "exp": datetime.utcnow() + timedelta(minutes=30)
+        },
+        SECRETE_KEY,
+        algorithm=ALGORITHM
+    )
+
+    return {
+        "message": "login success !!!",
+        "token": token
+    }
+    
+
+    
 
 
 # post
