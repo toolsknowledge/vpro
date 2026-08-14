@@ -130,4 +130,107 @@
 #     print("Not Available !!!")
 
 
+# Example-12
+# students = {
+#     "Std1" : 95,
+#     "Std2" : 88,
+#     "Std3" : 97,
+#     "Std4" : 91
+# }
+# top = max(students, key=students.get)
+# print(top)
+# print(students[top])
+
+# Example-13
+# students = {
+#     "Dasari" : 95,
+#     "Samba" : 88,
+#     "Ravi" : 97,
+#     "Hareram" : 91
+# }
+# res = dict(sorted(students.items()))
+# print(res)
+
+# res = dict(sorted(students.items(),key=lambda item:item[1]))
+# print(res)
+
+
+# Example-14
+# expenses = {
+#     "Rent" : 40000,
+#     "Travel" : 20000,
+#     "Food" : 10000
+# }
+# res = sum( expenses.values() )
+# print(res)
+
+# Example-15
+# students = {
+#     "101" : "Dasari",
+#     "102" : "Ravi",
+#     "103" : "Samba"
+# }
+# res = {value:key for key,value in students.items()}
+# print(res)
+
+
+# Example-16
+# data = {
+#     "a":10,
+#     "b":20,
+#     "c":10,
+#     "d":30,
+#     "e":10
+# }
+# result = {}
+# for key,value in data.items():
+#     if value not in result.values():
+#         result[key] = value
+
+# print(result)
+
+# Example-17
+# students = [("Samba","MECH"),
+#             ("Dasari","MECH"),
+#             ("Ravi","CSE"),
+#             ("Vivek","AIML"),
+#             ("Siva","CSE")]
+
+# { "MECH":["Samba","Dasari"], "CSE":["Ravi","Siva"], "AIML":["Vivek"] }
+
+# result = {}
+# for name,dept in students:
+#     result.setdefault(dept,[]).append(name)
+# print(result)
+
+
+# Example-18
+# d1 = {
+#     "A" : 10,
+#     "B" : 20,
+#     "C" : 30
+# }
+
+# d2 = {
+#     "A" : 100,
+#     "C" : 300,
+#     "D" : 400
+# }
+
+# common = d1.keys() & d2.keys()
+# print(common)
+
+# d1 = {
+#     "A" : 10,
+#     "B" : 20,
+#     "C" : 30
+# }
+
+# d2 = {
+#     "A" : 100,
+#     "C" : 300,
+#     "D" : 400
+# }
+
+# {"A" : 110,"B":20,"C":330,"D":400}
 
