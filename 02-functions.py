@@ -82,6 +82,68 @@
 # print(f"Sum of values: {x}")
 
 
+# Example-11 (Default Parameters)
+# def test(param1="Hello"):
+#     print(param1)
+
+# test()
+# test("Welcome")
+# test(None)
 
 
+# Example-12
+# pos & defualt -- last (default)
+# default & variable-length -- last(variable-length)
+# pos, default and variable-length -- last (variable length)
+# def test(p1,p2,p3=100,p4=200,*p5):
+#     print(p1,p2,p3,p4,p5)
 
+# test()  # missing 2 required positional arguments
+# test(10,50)
+# test(10,100,1000,10000,2,20,200,2000,20000)
+
+# Example-13
+# def test(p1,p2=100,p3=()):
+#     print(p1,p2,type(p3))
+# test(p1=10,p3="100")
+
+# Example-14 (keyword-length parameter)
+# def test(**param1):
+#     print(param1)
+
+# test(key1=100,key2=200,key3=300)
+
+
+# Example-15
+# def test(p1,p2=100,*p3,**p4):
+#     print(p1,p2,p3,p4)
+
+# test()
+# test(10)
+# test(10,1000,1,2,3,4,5,key1=100,key2=200)
+
+# lambda - function without name
+# x = lambda num1:num1*num1
+# res = x(10)
+# print(res)
+
+
+# add = lambda x,y:x+y
+# print(add(1,2))
+
+# res = lambda num1:"Even" if num1%2==0 else "Odd"
+# print(res(10))
+# print(res(9))
+
+
+# res = lambda num1,num2,num3:(num1 if ((num1>num2) and (num1>num3)) else num2 if (num2>num3) else num3)
+# print(res(10,20,30))
+# print(res(100,20,30))
+
+# Curring
+# Closure
+# outer = lambda num1:lambda num2:lambda num3:num1+num2+num3
+# middle = outer(10)
+# inner = middle(20)
+# res = inner(30)
+# print(res)
