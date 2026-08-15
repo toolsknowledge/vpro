@@ -1,4 +1,0 @@
-openai 
-networkx 
-python-dotenv
-matplotlib

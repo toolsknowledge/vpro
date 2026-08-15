@@ -1,0 +1,8 @@
+fastapi                 # develop api calls GET,POST,PUT,DELETE
+uvicorn                 # light weight server to run api calls
+python-multipart        # used to upload the files
+pypdf                   # read pdf file
+sentence-transformers   # create embeddings
+chromadb                # chromadb
+openai                  # llm
+python-dotenv           # load .env file (api keys)

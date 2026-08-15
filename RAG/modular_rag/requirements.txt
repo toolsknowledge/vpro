@@ -1,5 +1,0 @@
-openai
-python-dotenv
-scikit-learn
-networkx
-numpy

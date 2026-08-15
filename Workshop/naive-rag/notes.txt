@@ -1,0 +1,12 @@
+1) npm create vite@latest   (nodejs)
+    naive-frontend
+    React
+    JavaScript
+
+2) upload logo.jpeg (public)
+
+3) create App.jsx (connect to naive-backend)
+          index.css (styles code)
+
+4) npm run dev
+    > http://localhost:5173/
