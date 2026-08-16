@@ -546,7 +546,6 @@ async def ask_question(question: str):
     # ==============================================
     # 1. SELF-RAG DECISION
     # ==============================================
-
     retrieve = should_retrieve(question)
 
 
@@ -555,9 +554,7 @@ async def ask_question(question: str):
     # ==============================================
 
     if not retrieve:
-
         answer = generate_answer(question)
-
         return {
             "question": question,
             "retrieve": False,
