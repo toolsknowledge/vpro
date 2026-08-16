@@ -1,0 +1,12 @@
+streamlit
+langchain
+langchain-community
+langchain-text-splitters
+langchain-chroma
+langchain-huggingface
+langchain-anthropic
+chromadb
+sentence-transformers
+pypdf
+rank-bm25
+python-dotenv
