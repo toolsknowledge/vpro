@@ -147,3 +147,25 @@
 # inner = middle(20)
 # res = inner(30)
 # print(res)
+
+
+# Example-16
+# print( list(map(lambda num1:num1*100,[1,2,3,4,5])) )
+# print( list( map(lambda x,y:x+y,(1,2,3,4,5),(10,11,12,13,14)) ) )
+# print( tuple(map(lambda num1,num2:num1-num2,[1,2],[1,2,3,4,5])) )
+# print( list( map(int,"10 20 30 40 50".split()) ) )
+# res = map(lambda x:x**x,[1,2,3,4,5]) # Iterator
+# x = list(res)
+# print(x)
+# y = list(res)
+# print(y)
+
+# print( tuple( filter(lambda num1:num1>=3,(1,2,3,4,5)) ) )
+# print( list( map(lambda num1:num1*num1, filter(lambda num1:num1%2 == 0,[1,2,3,4,5,6]) ) ) )
+# print( list( map(None,[1,2,3,4,5]) ) )
+
+# res = map(lambda res: list(map(lambda y: y * 100,res)),[[1, 2], [3, 4], [5, 6]])
+# print(list(res))
+
+# from functools import reduce
+# print(reduce(lambda num1,num2:num1+num2,[1,2,3,4,5]))
