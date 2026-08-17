@@ -1,0 +1,31 @@
+LLM
+***
+    Large Language Model
+    LLM Trained with huge amount of data (world) (billions....)
+
+    LLM --> able to answer, Code, Images, Videos, Next Word Prediction,......
+
+    Ex.
+            OpenAI, Antropic, Gemini, meta,........
+
+    
+    LLM'S able to understand vectors
+    to generate vectors we have ready made models available in market
+    Ex.
+            sentense-transformers
+
+            https://huggingface.co/join
+
+    we have three types of datatypes
+    1) RDBMS Ex.  Oracle MySQL SQLServer
+    2) NoSQL Ex.  MongoDB,CassandraDB, PouchDB,CockroachDB,......
+
+    3) vector databases
+        Ex.
+                ChromaDB
+                FAISS
+                PINECODE
+                Qdrant
+                ---
+                ---
+                ---
