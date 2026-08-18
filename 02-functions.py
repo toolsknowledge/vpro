@@ -244,7 +244,12 @@
 # print( list(range(5,0,-2)) )
 
 # Compression
-print( tuple(x*x for x in range(5) if x%2 == 0) )
+# print( tuple(x*x for x in range(5) if x%2 == 0) )
+
+# def test():
+#     pass
+
+# test()
 
 
 
