@@ -67,3 +67,78 @@
 # print(np.linalg.det(arr2))
 # print(np.linalg.inv(arr2))
 # print(np.linalg.matrix_transpose(arr2))
+
+
+# Example - 8
+# import numpy as np
+# marks = np.array([78,85,90,66,72])
+# print(f"Max Marks : {np.max(marks)}")
+# print(f"Min Marks : {np.min(marks)}")
+# print(f"Average Marks {np.mean(marks)}")
+
+# Examples - 9
+# import numpy as np
+# sales = np.array([[200,300,400],
+#                   [250,350,450]])
+# print(np.sum(sales,axis=1))
+# print(np.sum(sales,axis=0))
+
+# Example-10
+# print( [["VPro"] * 5 for _ in range(3)]  )
+
+# Example-11
+# import numpy as np
+# arr1 = np.array([[1,2,3],
+#                  [4,5,6]])
+# print(arr1 + 10)
+# print(arr1[0][0]) # 0th row and 0th col
+# print(arr1[0,1])  # 0th row and 1st col
+# print(arr1[1,2])  # 1st row and 2nd col
+# print(arr1[:1])   # 0th index included and 1st index excluded
+# print(arr1[:0+1])# 0th index included and 1st index excluded
+# print(arr1[1:2])  # 1th index included and 2st index excluded
+
+# print(arr1[:,1])
+# print(arr1[:,2])
+# print(arr1[:,0])
+# print(arr1[:,0:2])
+# print(arr1[0:2 :, 0:1])
+
+
+# Example-13
+# import numpy as np
+# arr1 = np.array([10,20,30,40,50])
+# arr2 = np.array([100,200,300,400,500])
+# for element in arr1:
+#     print(f"Elements are : {element}")
+
+# for index,element in enumerate(arr1):
+#     print(index,element)
+
+# for ele1,ele2 in zip(arr1,arr2):
+#     print(ele1,ele2)
+
+
+# arr1 = np.array([[1,2,3],
+#                  [4,5,6],
+#                  [7,8,9]])
+# for inner in arr1:
+#     for index,element in enumerate(inner):
+#         print(index,element,sep="--->",end="\n--------------")
+
+
+# Example-14
+# import numpy as np
+# arr1 = np.array([1,2,3])
+# arr2 = arr1
+# arr2 = np.append(arr2,4)
+# print(arr2)
+# print(arr1)
+
+# Example-15
+import numpy as np
+import sys
+arr1 = [10,20,30,40,50]
+arr2 = np.array([10,20,30,40,50])
+print(sys.getsizeof(arr1))
+print(sys.getsizeof(arr2))
