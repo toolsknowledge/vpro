@@ -169,3 +169,83 @@
 
 # from functools import reduce
 # print(reduce(lambda num1,num2:num1+num2,[1,2,3,4,5]))
+
+
+# Example-17
+# def countdown(n):
+#     if n == 0:
+#         return
+#     print(n)
+#     countdown(n-1)
+
+# countdown(5)
+
+# def factorial(n):
+#     if n==0:
+#         return 1
+#     return n * factorial(n-1)
+
+# print(factorial(5))
+
+
+
+# Faq1
+# def test_func(item,items=[]): # [10]
+#     items.append(item)        # [10,20]
+#     return items
+
+# print( test_func(10) )
+# print( test_func(20) )
+
+# def test_func(item,items=None):
+#     if items is None:
+#         items = []
+#     items.append(item)
+#     return items
+# print(test_func(10))
+# print(test_func(20))
+
+# list1 = [1,2,3]
+# list2 = [1,2,3]
+# print(list1 is list2)
+# print(list1 == list2)
+
+
+# list1 = [1,2,3]
+# list2 = list1
+# print(list1 is list2)
+# print(list1 == list2)
+
+# num1 = 257
+# num2 = 257
+# print(num1 == num2)
+# print(num1 is num2)
+
+
+# True - 1. False - 0 * "Boolean" is the child datatype of "Integer"
+# print(True + True + False)
+# print(isinstance(True,int))
+# print(isinstance(False,int))
+# print(isinstance(True,bool))
+
+# print(True == 1)
+# print(True is 1)    # False
+
+
+# list1 = [1,2,3]
+# list2 = list1
+# list2.append(4)
+# print(list1)
+
+# print( tuple(range(5)) )        #[0,1,2,3,4]
+# print( list(range(1,10)) )
+# print( list(range(0,5,2)) )       # 0 2 4
+# print( list(range(10,0,-1)))
+# print( list(range(5,0,-2)) )
+
+# Compression
+print( [x*x for x in range(5) if x%2 == 0] )
+
+
+
+
