@@ -1,0 +1,20 @@
+1) NodeJS
+    > node --version
+
+2) cd RAG
+   cd naive-rag
+   npm create vite@latest
+   1) naive-frontend
+   2) React
+   3) JavaScript
+
+   src
+    App.jsx
+    App.css
+    index.css
+    main.jsx
+
+   public
+        logo.jpeg
+
+3) npm run dev
