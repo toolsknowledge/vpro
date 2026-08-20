@@ -87,8 +87,8 @@
 # print(df)
 
 # Example - 5
-import pandas as pd
-df = pd.read_csv("students.csv")
+# import pandas as pd
+# df = pd.read_csv("students.csv")
 # df.drop(2,inplace=True)
 # print(df)
 
@@ -99,4 +99,56 @@ df = pd.read_csv("students.csv")
 # print(df)
 
 # df.drop(df.index[-2:],inplace=True)
+# print(df)
+
+
+
+# Example-6
+# import pandas as pd
+# data = {
+#     "Name": ["Ravi", "Sita", "John", "Anu"],
+#     "Age": [20, None, 21, 22],
+#     "Marks": [85, 90, None, 78],
+#     "City": ["Hyderabad", "Chennai", None, "Bangalore"]
+# }
+# df = pd.DataFrame(data)     # convert object to DataFrame
+
+# print(df.isna())          # know missing values in table (Ex. True (missed))
+# print(df.isnull())
+
+# print(df.isna().sum())        # know col wise missing count (Ex. Age:1, Marks:1,....)
+# print(df.isna().sum().sum())  # know the total missings in table (Ex. 3)
+
+# print(df[df.isna().any(axis=1)])  # know rows whose have null
+
+# print(df.columns[df.isna().any()])    # know which cols have null
+
+# print(df.isna().any().any())      # check table have missed data or not
+# print(df.isna().values.any())
+
+# print(df)
+# print("--------------------------------")
+# new_df = df.dropna()  # delete rows
+# print(new_df)
+
+# print(df.dropna(axis=1))    # delete colums
+
+# df["Age"] = df["Age"].fillna(0)
+# df["Marks"] = df["Marks"].fillna(df["Marks"].mean())
+# df["City"] = df["City"].fillna(df["City"].mode())
+# print(df)
+
+
+# Example-7
+# import pandas as pd
+# data = {
+#     "Temp" : [30,None,None,35,None]
+# }
+# df = pd.DataFrame(data)
+# print(df)
+# print("-----------------")
+# df["Temp"] = df["Temp"].ffill()
+# print(df)
+
+# df["Temp"] = df["Temp"].bfill()
 # print(df)

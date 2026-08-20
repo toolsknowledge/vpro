@@ -1,3 +1,12 @@
+data = {
+    "Name": ["Ravi", "Sita", "John", "Anu"],
+    "Age": [20, None, 21, 22],
+    "Marks": [85, 90, None, 78],
+    "City": ["Hyderabad", "Chennai", None, "Bangalore"]
+}
+
+
+
 1) Python (Scratch)
 
 2) Fast API with MySQL : GET,POST,PUT DELETE,.....
