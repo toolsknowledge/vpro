@@ -152,3 +152,82 @@
 
 # df["Temp"] = df["Temp"].bfill()
 # print(df)
+
+
+# Example-8
+# import pandas as pd
+# students = pd.DataFrame({
+#     "student_id" : [101,102,103,104],
+#     "name" : ["Ravi","Sita","John","Anu"]
+# })
+
+# marks = pd.DataFrame({
+#     "student_id" : [101,102,103,104],
+#     "marks":[80,90,78,88]
+# })
+
+# print(students)
+# print(marks)
+
+# result = pd.merge(students,marks,on="student_id")
+# print(result)
+
+# Example-9
+# import pandas as pd
+# students = pd.DataFrame({
+#     "student_id" : [101,102,103,104],
+#     "name" : ["Ravi","Sita","John","Anu"]
+# })
+
+# marks = pd.DataFrame({
+#     "student_id" : [101,102,103,105],
+#     "marks":[80,90,78,88]
+# })
+
+# result = pd.merge(students,marks,on="student_id",how="inner")
+# print(result)
+
+# result = pd.merge(students,marks,on="student_id",how="left")
+# print(result)
+
+# result = pd.merge(students,marks,on="student_id",how="right")
+# print(result)
+
+# result = pd.merge(students,marks,on="student_id",how="outer")
+# print(result)
+
+# Example-10
+# import pandas as pd
+# data = {
+#     "Name" : ["Ravi","Sita","John","Anu","Kiran","Rahul"],
+#     "Department":["Python","Java","Python","Java","Python","Java"],
+#     "Marks":[80,75,90,85,70,95]
+# }
+# df = pd.DataFrame(data)
+# print(df)
+# print("-----------------------")
+# print( df.groupby("Department")["Marks"].mean() )
+# print( df.groupby("Department")["Marks"].max() )
+# print( df.groupby("Department")["Marks"].min() )
+# print( df.groupby("Department")["Marks"].sum() )
+# print( df.groupby("Department")["Marks"].count() )
+# print( df.groupby("Department")["Marks"].size() )
+
+# print(df.groupby("Department")["Marks"].agg(["mean","max","min","sum","count"]))
+
+
+# Example-11
+import pandas as pd
+data = {
+    "Name" : ["Ravi","Sita","John","Anu","Kiran","Rahul"],         # count : 6 size : 7
+    "Department":["Python","Java","Python","Java","Python","Java"],
+    "Marks":[80,75,90,85,70,95],
+    "Fees" : [10000,20000,30000,40000,50000,60000]
+}
+df = pd.DataFrame(data)
+print(df)
+print("----------------------")
+print(df.groupby("Department").agg({
+    "Marks":"mean",
+    "Fees":"sum"
+}))
