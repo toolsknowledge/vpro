@@ -117,4 +117,122 @@
 # obj1.add3(200,100)
 
 
+# Example-8 (Inheritance) (Parent - Child)
+# class Parent:
+#     x = 100
+
+# class Child(Parent):
+#     y = 200
+
+# obj = Child()
+# num1 = obj.x
+# num2 = obj.y
+# print(num1 + num2)
+
+
+# Example-9
+# class Parent:
+#     def __init__(self,param1):
+#         self.num1 = param1
+
+# class Child(Parent):
+#     def __init__(self, param1,param2):
+#         super().__init__(param1)
+#         self.num2 = param2
+
+# obj = Child(200,100)
+# print(obj.num1 + obj.num2)
+
+
+# Example-10
+# class Parent:
+#     
+#       def square(self):
+#         num1 = 100
+#         res = num1 * num1
+#         print(res)
+#         return res
+# class Child(Parent):
+#     def cube(self):
+#         num1 = 100
+#         #res = num1 * num1 * num1
+#         res = super().square() * num1
+#         print(res)
+
+# class Subchild(Child):
+#     def multiplication(self):
+#         num1 = 100
+#         num2 = 200
+#         res = num1 * num2
+#         print(res)
+
+# obj = Subchild()
+# obj.square()
+# obj.cube()
+# obj.multiplication()
+
+
+# Example-11
+# class Parent1:
+#     num1 = 2000
+
+# class Parent2:
+#     num2 = 1000
+
+# class Child(Parent1,Parent2):
+#     num3 = 500
+
+# obj = Child()
+# print(obj.num1 + obj.num2 + obj.num3)
+
+# Example-12
+# class Parent1:
+#     num1 = 200
+# class Parent2:
+#     num1 = 2000
+# class Child(Parent2,Parent1):
+#     num1 = 20000
+
+# obj = Child()
+# print(obj.num1)
+
+# Example-13
+# class Parent:
+#     def test1(self):
+#         print("Hello")
+
+# class Child1(Parent):
+#     def test2(self):
+#         print("Batch-4")
+
+# class Child2(Parent):
+#     def test2(self):
+#         print("Python !!!")
+
+# obj = Child1()
+# obj.test1()
+# obj.test2()
+
+# obj1 = Child2()
+# obj1.test1()
+# obj1.test2()
+
+
+# Example-14
+# class Parent:
+#     x = 100
+
+# class Child1(Parent):
+#     y = 200
+
+# class Child2(Parent):
+#     y = 2000
+
+# class Subchild(Child2,Child1):
+#     z = 20000
+
+
+# obj = Subchild()
+# print(obj.x, obj.y, obj.z)
+
 
