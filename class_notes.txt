@@ -1,3 +1,61 @@
+Python
+******
+        Python is the "high level Programming Language"
+        Python is the "Prerequisite" to build
+                1) ML
+                2) DL
+                3) NLP
+                4) Gen AI
+                5) Agentic AI
+        file extension must be ".py"
+        Ex.
+                demo.py
+        we will execute python code with below commands
+        Ex.
+                python demo.py
+                   (or)
+                python3 demo.py
+        Python supports libraries
+        1) Arrays - numpy
+                Ex. [10,20,30,40,50]
+                    [[10,20,30],
+                     [40,50,60]]
+        2) Excel Sheets - pandas
+        3) Graphs - matplotlib
+        4) Styled Graphs - seaborn
+        5) Styled Text - colorama
+                ---
+                ---
+                ---
+        pip install numpy
+        pip install colorama
+                ---
+                ---
+                ---
+
+Install Python
+**************
+        https://www.python.org/downloads/
+
+        > python --version
+                (or)
+        > python3 --version
+
+
+Install visualstudio
+********************
+        
+
+
+
+
+
+
+
+
+
+
+
 data = {
     "Name": ["Ravi", "Sita", "John", "Anu"],
     "Age": [20, None, 21, 22],
