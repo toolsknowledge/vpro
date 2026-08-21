@@ -236,3 +236,99 @@
 # print(obj.x, obj.y, obj.z)
 
 
+# Example-15 (method overriding) (polymorphism)
+# class Parent:
+#     def db_conn(self):
+#         print("oracle conn soon...!")
+
+# class Child(Parent):
+#     def db_conn(self):
+#         print("postgress conn soon...!")
+
+
+# obj = Child()
+# obj.db_conn()
+
+
+# Example-16 (overloading)
+# class Test:
+#     def __init__(self):
+#         pass
+#     def __init__(self, param1):
+#         self.param1 = param1
+#     def __init__(self, param1,param2):
+#         self.param1 = param1
+#         self.param2 = param2
+
+# obj = Test(1000,2000)
+# print(obj.param1 + obj.param2)
+
+
+# class Test:
+#     def add(self,num1,num2):
+#         print(num1+num2)
+#     def add(self,num1,num2,num3):
+#         print(num1+num2+num3)
+
+# obj = Test()
+# obj.add(10,20,30)
+
+# class Test:
+#     def add(self,*param1):
+#         print( sum(param1) )
+
+# obj = Test()
+# obj.add(10,20)
+# obj.add(10,20,30)
+
+# private
+# unable to access with the help of "objects"
+# private members accessable with in the "class"
+# __ used to declare the private members
+
+# Example - 17
+# class Bank:
+#     def __init__(self):
+#         self.__balance = 50000
+
+# obj = Bank()
+# x = obj.__balance
+# print(x)
+
+# Example - 18 (Encapsulation)
+# class Bank:
+#     def __init__(self,balance):
+#         self.__balance = balance
+
+#     def get_balance(self):
+#         return self.__balance
+
+#     def set_balance(self,new_balance):
+#         self.__balance = new_balance
+
+# obj = Bank(50000)
+# print(obj.get_balance())
+
+# obj.set_balance(100000)
+# print(obj.get_balance())
+
+# class Test:
+#     def __func1(self):
+#         print("Hello")
+
+# obj = Test()
+# obj.__func1()
+
+
+# class Test:
+#     def __func1(self):
+#         print("Hello")
+#     def func2(self):
+#         self.__func1()
+
+# obj = Test()
+# obj.func2()
+
+
+
+
