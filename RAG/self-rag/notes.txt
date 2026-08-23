@@ -1,0 +1,17 @@
+Question
+
+Retrive Related Chunks
+
+Verify Chunks (LLM)
+
+YES                         NO ---> in knowledge base "answer not available"
+
+Generate Answer (LLM)
+
+Verify Answer (LLM)
+
+YES             NO
+
+Final Answer    Improve the Answer (LLM)
+
+                Final Answer

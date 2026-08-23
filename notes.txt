@@ -16,4 +16,18 @@ Course:
     NLP (ChatBot Appln)
 
     3 Appln ---> AWS,Azure,GCP (CI/CD Pipeline)
+
+
+    1) Read data from pdf file / website
+
+    2) iterate negative flow more than once
+
+    3) FastAPI
+
+    4) build userinterface
+
+
+
+
+    
     
