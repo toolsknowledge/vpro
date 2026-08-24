@@ -43,8 +43,8 @@
 			"typeName": "pointer"
 		},
 		{
-			"x": 0,
-			"y": 0,
+			"x": -108.79629347422292,
+			"y": -307.870362384503,
 			"z": 1,
 			"meta": {},
 			"id": "camera:page:k2mfyspJZMXKZdqWnMv8b",
@@ -56,6 +56,66 @@
 			"name": "Page 2",
 			"index": "a2MU5",
 			"typeName": "page"
+		},
+		{
+			"x": 184.19505598996005,
+			"y": 425.1618457416914,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:CdOT0zB771-WDF2rdgemr",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 414.0723876953125,
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "(10,20,30,40,50)"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "(100,......) Err (immutable) (tuples)"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:k2mfyspJZMXKZdqWnMv8b",
+			"index": "aFE0n",
+			"typeName": "shape"
 		},
 		{
 			"x": 212.7640380859375,
@@ -1085,6 +1145,48 @@
 			"typeName": "shape"
 		},
 		{
+			"x": 419.5104585604562,
+			"y": 306.78529787786186,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:A9JBntizDYfes_OmAf_XT",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 149.3877716064453,
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "mutable list"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:k2mfyspJZMXKZdqWnMv8b",
+			"index": "aE0en",
+			"typeName": "shape"
+		},
+		{
 			"x": 125.078125,
 			"y": 212.24609375,
 			"rotation": 0,
@@ -1137,7 +1239,7 @@
 			"brush": null,
 			"scribbles": [],
 			"cursor": {
-				"type": "cross",
+				"type": "default",
 				"rotation": 0
 			},
 			"isFocusMode": false,
@@ -1147,8 +1249,8 @@
 			"screenBounds": {
 				"x": 0,
 				"y": 0,
-				"w": 774.88427734375,
-				"h": 156.25
+				"w": 538.1944580078125,
+				"h": 355.3240661621094
 			},
 			"insets": [
 				false,
@@ -1214,6 +1316,66 @@
 			},
 			"parentId": "page:TGENFH5tI09yujjRyELg5",
 			"index": "a5lgb",
+			"typeName": "shape"
+		},
+		{
+			"x": 197.78555163906944,
+			"y": 267.87651301152886,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:vej16wAs__Tlnw3vdqw7-",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 209.60008239746094,
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "[10,20,30,40,50]"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "[100,20,30,40,50]"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:k2mfyspJZMXKZdqWnMv8b",
+			"index": "aDByA",
 			"typeName": "shape"
 		},
 		{
@@ -1291,12 +1453,12 @@
 			"typeName": "shape"
 		},
 		{
-			"editingShapeId": null,
+			"editingShapeId": "shape:CdOT0zB771-WDF2rdgemr",
 			"croppingShapeId": null,
 			"selectedShapeIds": [
-				"shape:5Qd-sK7kv_8Tw82Czzm6M"
+				"shape:CdOT0zB771-WDF2rdgemr"
 			],
-			"hoveredShapeId": null,
+			"hoveredShapeId": "shape:CdOT0zB771-WDF2rdgemr",
 			"erasingShapeIds": [],
 			"hintingShapeIds": [],
 			"focusedGroupId": null,
