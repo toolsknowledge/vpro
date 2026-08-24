@@ -133,26 +133,36 @@
 # plt.show()
 
 # Scatter Plot
-import matplotlib.pyplot as plt
-study_hours = [1, 2, 3, 4, 5, 6, 7, 8]
-marks = [35, 42, 50, 60, 68, 75, 88, 95]
-# Marker Size
-sizes = [80, 100, 120, 140, 160, 180, 200, 220]
-# Marker Colors
-colors = ['red', 'blue', 'green', 'orange',
-          'purple', 'brown', 'pink', 'cyan']
-plt.figure(figsize=(10,6))
-plt.scatter(study_hours,marks,s=sizes,c=colors,marker='o',alpha=0.8,edgecolors='black',linewidths=2,label='Students')
-plt.title("Student Study Hours Vs Marks",fontsize=18,fontweight='bold')
-plt.xlabel("Study Hours")
-plt.ylabel("Marks")
-plt.grid(linestyle='--',alpha=0.5)
-plt.xlim(0,9)
-plt.ylim(20,100)
-plt.annotate("Top Student",
-             xy=(8,95),
-             xytext=(6.5,90),
-             arrowprops=dict(facecolor='red'),fontsize=11)
-plt.legend()
-plt.savefig("scatter.png")
-plt.show()
+# import matplotlib.pyplot as plt
+# study_hours = [1, 2, 3, 4, 5, 6, 7, 8]
+# marks = [35, 42, 50, 60, 68, 75, 88, 95]
+# # Marker Size
+# sizes = [80, 100, 120, 140, 160, 180, 200, 220]
+# # Marker Colors
+# colors = ['red', 'blue', 'green', 'orange',
+#           'purple', 'brown', 'pink', 'cyan']
+# plt.figure(figsize=(10,6))
+# plt.scatter(study_hours,marks,s=sizes,c=colors,marker='o',alpha=0.8,edgecolors='black',linewidths=2,label='Students')
+# plt.title("Student Study Hours Vs Marks",fontsize=18,fontweight='bold')
+# plt.xlabel("Study Hours")
+# plt.ylabel("Marks")
+# plt.grid(linestyle='--',alpha=0.5)
+# plt.xlim(0,9)
+# plt.ylim(20,100)
+# plt.annotate("Top Student",
+#              xy=(8,95),
+#              xytext=(6.5,90),
+#              arrowprops=dict(facecolor='red'),fontsize=11)
+# plt.legend()
+# plt.savefig("scatter.png")
+# plt.show()
+
+
+# Histo
+marks = [
+    35, 40, 42, 45, 48,
+    50, 52, 55, 58, 60,
+    62, 65, 68, 70, 72,
+    75, 78, 80, 82, 85,
+    88, 90, 92, 95
+]
