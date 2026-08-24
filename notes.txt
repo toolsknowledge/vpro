@@ -1,33 +1,53 @@
-Course:
-    Python (Scratch to Python)
+Python is the "high level functional programming" language
+Python is the Prerequisite to build 
+    1) Machine Learning
+    2) Deep Learning
+    3) NLP (Natural Language Processing)
+    4) Gen AI
+    5) Agentic AI
+File Extension must be ".py"
+Ex. 
+        demo.py
+we will execute Python code with below tools
+    Ex.
+            python demo.py
+                (or)
+            python3 demo.py
 
-    FastAPI (GET,POST,PUT,DELETE)
+variables
+*********
+    variables are used to store the data
+    Ex.
+            int Ex. 100, 200
+            str Ex. Hello
+            bool Ex. True, False
+            list Ex. [10,20,30,40,50]
 
-    Gen AI
+    python is "dynamically" types functional language
 
-    Agentic AI
+    python supports following datatypes
+        1) int
+        2) str
+        3) bool
+        4) list
+        5) tuple
+        6) set
+        7) dict
+        8) None
 
-            ---- Resume (Project)
-    
-    ML + 18 Algo + Quantum Computing (Basics)
+    str
+    ***
+        collection of "characters" called as string
+        Ex.
+                "Hello, VPro"
 
-    DL (Medical Project)
+        we will declare string in 3 ways 
+            1)" " (double quotes)  
+            2) ' '(single quotes)  
+            3) """ """ (tripple quotes)
 
-    NLP (ChatBot Appln)
+        tripple quotes, used to declare "paragraphs"
 
-    3 Appln ---> AWS,Azure,GCP (CI/CD Pipeline)
-
-
-    1) Read data from pdf file / website
-
-    2) iterate negative flow more than once
-
-    3) FastAPI
-
-    4) build userinterface
-
-
-
-
-    
-    
+        Ex.
+                msg = "Hello"
+                print(msg)
