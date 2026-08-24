@@ -330,5 +330,110 @@
 # obj.func2()
 
 
+# Example-19
+# class Test:
+#     clg_name = "CBIT"   # class level variable
+
+# print(Test.clg_name)
+
+# Example-20
+# class Test:
+#     clg = "CBIT"    # class variable
+#     def __init__(self,name):
+#         self.x = name
+
+# obj1 = Test("Std1")
+# obj2 = Test("Std2")
+# print(obj1.x,Test.clg,sep="--->")
+# print(obj2.x,Test.clg,sep="--->")
+
+# Example-21
+# class Demo:
+#     pass
+
+# obj1 = Demo()
+
+# # add instance variables
+# obj1.num1 = 200
+# obj1.num2 = 100
+
+# print(obj1.num1 + obj1.num2)    # access instance variable
+
+
+# Example-22
+# class Demo:
+#     pass
+
+# Demo.clg = "CBIT"   # add class variable
+
+# print(Demo.clg) # access class variable
+
+# Example-23
+# class Demo:
+#     pass
+
+# added class varibles
+# Demo.num1 = 200
+# Demo.num2 = 100
+
+# obj1 = Demo()
+# access instance
+# print(obj1.num1 + obj1.num2)
+
+# Example-24
+# class Demo:
+#     pass
+
+# obj1 = Demo()
+# obj1.num1 = 200
+
+# Demo.num1 = 2000
+
+# print(obj1.num1)
+# print(Demo.num1)
+
+# Example-25
+# class Test:
+#     clg = "CBIT"
+
+# Test.clg = "CBIT College"
+
+# obj1 = Test()
+# print(obj1.clg)
+
+
+# Exampl-26
+# class Test:
+#     clg = "CBIT"
+
+#     @classmethod    # decorator
+#     def change_clg(cls,new_clg):
+#         cls.clg = new_clg
+
+# Test.change_clg("CBIT College")
+
+# print(Test.clg)
+# obj1 = Test()
+# print(obj1.clg)
+
+# Example-27
+# from abc import ABC,abstractmethod
+# class Test(ABC):
+#     @abstractmethod
+#     def add(self):
+#         pass
+
+# class Child(Test):
+#     def add(self):
+#         num1 = 200
+#         num2 = 100
+#         res = num1 + num2
+#         print(res)
+
+# obj = Child()
+# obj.add()
+
+
+
 
 
