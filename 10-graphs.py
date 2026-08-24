@@ -99,35 +99,60 @@
 # plt.show()
 
 # Pie Chart
+# import matplotlib.pyplot as plt
+# subjects = ["Python","Java","React","SQL","AWS"]
+# marks = [95,85,70,60,90]
+# colors = ['gold','skyblue','lightgreen','green','pink']
+# explode = (0.1,0,0,0,0)
+# plt.figure(figsize=(8,8))
+# plt.pie(marks,
+#         labels=subjects,
+#         colors=colors,
+#         autopct='%1.1f%%',
+#         startangle=90,
+#         shadow=True,
+#         counterclock=True,
+#         radius=1.0,
+#         pctdistance=0.6,
+#         labeldistance=0.8,
+#         explode=explode,
+#         wedgeprops={
+#             'edgecolor':'black',
+#             'linewidth':2
+#         },
+#         textprops={
+#             'fontsize':12,
+#             'color':'black'
+#         })
+# plt.title("Student Marks Distribution",
+#           fontsize=18,
+#           fontweight='bold')
+# plt.legend(title='Subjects',
+#            loc='upper right')
+# plt.savefig("marks.png")
+# plt.show()
+
+# Scatter Plot
 import matplotlib.pyplot as plt
-subjects = ["Python","Java","React","SQL","AWS"]
-marks = [95,85,70,60,90]
-colors = ['gold','skyblue','lightgreen','green','pink']
-explode = (0.1,0,0,0,0)
-plt.figure(figsize=(8,8))
-plt.pie(marks,
-        labels=subjects,
-        colors=colors,
-        autopct='%1.1f%%',
-        startangle=90,
-        shadow=True,
-        counterclock=True,
-        radius=1.0,
-        pctdistance=0.6,
-        labeldistance=0.8,
-        explode=explode,
-        wedgeprops={
-            'edgecolor':'black',
-            'linewidth':2
-        },
-        textprops={
-            'fontsize':12,
-            'color':'black'
-        })
-plt.title("Student Marks Distribution",
-          fontsize=18,
-          fontweight='bold')
-plt.legend(title='Subjects',
-           loc='upper right')
-plt.savefig("marks.png")
+study_hours = [1, 2, 3, 4, 5, 6, 7, 8]
+marks = [35, 42, 50, 60, 68, 75, 88, 95]
+# Marker Size
+sizes = [80, 100, 120, 140, 160, 180, 200, 220]
+# Marker Colors
+colors = ['red', 'blue', 'green', 'orange',
+          'purple', 'brown', 'pink', 'cyan']
+plt.figure(figsize=(10,6))
+plt.scatter(study_hours,marks,s=sizes,c=colors,marker='o',alpha=0.8,edgecolors='black',linewidths=2,label='Students')
+plt.title("Student Study Hours Vs Marks",fontsize=18,fontweight='bold')
+plt.xlabel("Study Hours")
+plt.ylabel("Marks")
+plt.grid(linestyle='--',alpha=0.5)
+plt.xlim(0,9)
+plt.ylim(20,100)
+plt.annotate("Top Student",
+             xy=(8,95),
+             xytext=(6.5,90),
+             arrowprops=dict(facecolor='red'),fontsize=11)
+plt.legend()
+plt.savefig("scatter.png")
 plt.show()
