@@ -159,26 +159,68 @@
 
 
 # Histogram
-import matplotlib.pyplot as plt
-marks = [
-    35, 40, 42, 45, 48,
-    50, 52, 55, 58, 60,
-    62, 65, 68, 70, 72,
-    75, 78, 80, 82, 85,
-    88, 90, 92, 95
-]
-# bins - 5
-# 95-35 = 60/5 = 12
+# import matplotlib.pyplot as plt
+# marks = [
+#     35, 40, 42, 45, 48,
+#     50, 52, 55, 58, 60,
+#     62, 65, 68, 70, 72,
+#     75, 78, 80, 82, 85,
+#     88, 90, 92, 95
+# ]
+# bins - 7
+# 95 - 35 = 60/7 = 8
 # 35 - 47  (bin1)
 # 47 - 59  (bin2)
 # 59 - 71  (bin3)
 # 71 - 83  (bin4)
 # 83 - 95  (bin5)
-plt.figure(figsize=(10,6))
-plt.hist(marks,bins=5,color='skyblue',edgecolor='black',alpha=0.8)
-plt.title("Student Marks Distribution")
-plt.xlabel("Marks")
-plt.ylabel("Students")
-plt.grid(axis='y')
-plt.savefig("hist.png")
+# plt.figure(figsize=(10,6))
+# plt.hist(marks,bins=5,color='skyblue',edgecolor='black',alpha=0.8)
+# plt.title("Student Marks Distribution")
+# plt.xlabel("Marks")
+# plt.ylabel("Students")
+# plt.grid(axis='y')
+# plt.savefig("hist.png")
+# plt.show()
+
+# Subplot
+# import matplotlib.pyplot as plt
+
+# plt.subplot(2,2,1)
+# plt.plot([1,2,3],[10,20,30])
+# plt.title("Line Plot")
+
+# plt.subplot(2,2,2)
+# plt.bar(['A','B','C'],[5,7,4])
+# plt.title("Bar Chart")
+
+# plt.show()
+
+
+# Box Plot (minimum, 25% 50% 75% 100% highest)
+import matplotlib.pyplot as plt
+marks = [35,40,45,50,55,60,65,70,75,80,85,90,95,98,150]
+plt.figure(figsize=(8,6))
+plt.boxplot(marks,
+            notch=False,
+            vert=True,
+            widths=0.1,
+            showfliers=True,
+            labels=['Students'],
+            patch_artist=True,
+            boxprops=dict(
+                facecolor='skyblue',
+                color='blue',
+                linewidth=3
+            ),
+            medianprops=dict(
+                color='red',
+                linewidth=3
+            ),
+            whiskerprops=dict(
+                color='green',
+                linewidth=2
+            )
+            )
+
 plt.show()
