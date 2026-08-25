@@ -434,6 +434,85 @@
 # obj.add()
 
 
+# FAQ-15
+# class Test:
+#     clg = "CBIT"
+
+# obj = Test()
+# obj.clg = "CBIT College"
+
+# print(Test.clg)
+# print(obj.clg)
+
+# dont use instance variables, class variables, self and cls
+# class Test:
+   
+#     def add():
+#         print(10+20)
+# Test.add()
+
+# class Test:
+#     def __str__(self):
+#         return "Hello"
+
+# obj = Test()
+# print(obj)
+
+
+# class Test:
+#     def __init__(self,emps):
+#         self.emps = emps
+#     def __len__(self):
+#         return len(self.emps)
+    
+
+# obj = Test(["Emp1","Emp2","Emp3","Emp4","Emp5"])
+# print(obj.emps)
+# print(len(obj))
+
+
+# class Test:
+#     pass
+
+# obj = Test()
+
+
+# class Test:
+#     num2 = 100
+#     def __init__(self):
+#         self.num1 = 200
+
+# obj = Test()
+# print(obj.__dict__)
+# print(Test.__dict__)
+
+# class Test:
+#     num1 = 1000
+#     def __init__(self):
+#         self.num2 = 100
+
+# obj = Test()
+# del Test.num1
+# del obj.num2
+# print(Test.__dict__)
+# print(obj.__dict__)
+
+
+# class Test:
+#     pass
+
+# obj = Test()
+# print(id(obj))
+
+
+
+
+
+
+
+
+
+
 
 
 
