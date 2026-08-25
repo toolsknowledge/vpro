@@ -158,7 +158,8 @@
 # plt.show()
 
 
-# Histo
+# Histogram
+import matplotlib.pyplot as plt
 marks = [
     35, 40, 42, 45, 48,
     50, 52, 55, 58, 60,
@@ -166,3 +167,18 @@ marks = [
     75, 78, 80, 82, 85,
     88, 90, 92, 95
 ]
+# bins - 5
+# 95-35 = 60/5 = 12
+# 35 - 47  (bin1)
+# 47 - 59  (bin2)
+# 59 - 71  (bin3)
+# 71 - 83  (bin4)
+# 83 - 95  (bin5)
+plt.figure(figsize=(10,6))
+plt.hist(marks,bins=5,color='skyblue',edgecolor='black',alpha=0.8)
+plt.title("Student Marks Distribution")
+plt.xlabel("Marks")
+plt.ylabel("Students")
+plt.grid(axis='y')
+plt.savefig("hist.png")
+plt.show()
