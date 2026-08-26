@@ -103,6 +103,88 @@
 # print(num3)
 
 
+# bool
+# True - 1 / False - 0
+# bool is "child" datatype of "int"
+
+# flag = True
+# flag1 = False
+# print(flag)
+# print(flag1)
+
+# print(True + True)
+# print(1 + True + 1)
+# print(True + False)
+# print(True / False) # ZeroDivisionError: division by zero
+# print(False / True)
+
+# Empty - False, Zero - False, None - False
+# print(bool(""))
+# print(bool( [] ))
+# print(bool( () ))
+# print(bool( {} ))
+# print(bool( set() ))
+# print(bool( None ))
+# print( bool( 0 ))
+# print( bool(0.0) )
+# print( bool(False) )
+
+# print( bool("VPro") )
+# print( bool([10]) )
+# print( bool((100)))
+# print( bool({"name":"Emp1"} ))
+# print( bool({10,10,20}) )
+# print(bool(100))
+# print(bool(100.123))
+# print(bool(-100))
+
+
+# List
+# collection of "hetrogeneous" and "indexed" elements
+# [] / list() (list constructor)
+# mutable (we can modify)
+# list1 = [10,20,30,40,50]
+# print(list1[0],list1[-5])
+# print(list1[2],list1[-3])
+# print(list1[0:2])
+# print(list1[:3])
+# print(list1[3:])
+# print(list1[-2:])
+# print(list1[-4:])
+# print(list1[-5:-2]) # -5, -4, -3 included and -2 excluded
+# print(list1[::-1])
+# print(list1[::-2])
+# print(list1[::-3])
+# print(list1[::2])
+# print(list1[::3])
+
+# list1[0] = 1000
+# print(list1)
+
+# print(list1[-5::2])
+# print(list1[-5::-2])
+
+
+# Tuple
+# collection of indexed and hetrogeneous elements
+# () / tuple()
+# immutable
+# t1 = (10,20,30,40,50)
+# print(t1[2])
+# print(t1[-3])
+# print(t1[:2])
+# print(t1[2:])
+# print(t1[:0+1]) # 0:1
+# print(t1[::-1])
+# print(t1[::-2])
+# print(t1[::2])
+# print(t1[::3])
+
+# t1[0] = 1000
+
+
+
+   
 
 
 
