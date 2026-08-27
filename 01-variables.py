@@ -182,6 +182,108 @@
 
 # t1[0] = 1000
 
+# import sys
+# list1 = [10,20,30,40,50]
+# tuple1 = (10,20,30,40,50)
+# print(sys.getsizeof(list1))
+# print(sys.getsizeof(tuple1))
+
+# dictionary
+# represent data in "key and value" pairs
+# keys are "immutable" and values are "mutable"
+# {} / dict()
+# key and value separated with the help of ":"
+
+# d1 = {
+#     "name" : "VPro",
+#     "batch" : 5,
+#     "time" : "06.00AM(IST)"
+# }
+# print(d1["name"])
+# print(d1["time"])
+# print(d1.keys())
+# print(d1.values())
+# print(d1.items())
+
+
+# Set
+# never allows "duplicates"
+# hetrogeneous
+# {} / Set()
+# unordered
+
+# s1 = {10,20,30,10,20,40}
+# print(s1)
+
+# list1 = [10,20,10,30,20,40]
+# print( set(list1) )
+
+# tuple1 = ("Hello","Hello")
+# print(set( tuple1) )
+
+
+# None - Empty / Blank / No-Value
+
+# chair = None
+# print(chair)
+
+# chair = None
+# if chair == None:
+#     chair = "Emp1"
+# print(chair)
+
+
+# num1,num2 = 200,100
+# print(num1, num2, sep="✍︎")
+
+# num1 = num2 = 1000
+# res = num1 + num2
+# print(res)
+
+# num1,num2 = 100,200         # num1 = 100, num2 = 200 
+# print(num1,num2)
+
+# num2,num1 = num1,num2
+# print(num1,num2)
+
+# str = "VPro"
+# print(type(str))
+
+# list1 = [10,20,30,40,50]
+# print(type(list1[0]))
+
+# chair = None
+# print(type(chair))
+
+# num1 = 0.2
+# print(type(num1))
+
+# x = {}
+# x["name"] = "Franco"
+# print(x)
+
+# y = set()
+# print(type(y))
+
+# == (compares values)
+print(100 == 100)
+
+list1 = [10,20,30]
+list2 = [10,20,30]
+print(list1 == list2)
+
+t1 = (10,20,30)
+t2 = (10,20,30)
+print(t1 == t2)
+
+print(list1 is list2)
+
+
+
+
+
+
+
 
 
    
