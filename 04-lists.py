@@ -82,14 +82,95 @@
 # list1.reverse()
 # print(list1)
 
-list1 = [10,20,30,40,50]
+# list1 = [10,20,30,40,50]
 # for element in list1:
 #     print(element,end=" ")
 
 # for index,element in enumerate(list1):
 #     print(index,element,sep="--->")
 
-i=0
-while i<len(list1):         # 1 < 5
-    print(list1[i])         # list1[1]
-    i = i+1                 # i = 2
+# i=0
+# while i<len(list1):         # 1 < 5
+#     print(list1[i])         # list1[1]
+#     i = i+1                 # i = 2
+
+# list1 = [10,20,30,40,50]
+# list2 = [1000,2000,3000,4000,5000]
+# for e1,e2 in zip(list1,list2):
+#     print(e1,e2,sep="----->")
+
+
+# list1 = [10,20,30,40,50,60,70,80,90,100]
+# pos : "0" - "9"
+# neg : "-10" - "-1"
+# print(list1[0:7:2])
+# print(list1[1:6:2])
+# print(list1[:1])
+# print(list1[::2])
+# print(list1[::-2])
+# print(list1[::3])         
+# print(list1[::-3])
+
+
+# list1 = [[10,20,30],
+#          [40,50,60],
+#          [70,80,90]]
+# print(list1[0][0])
+# print(list1[1][1])
+# print(list1[2][2])
+# for inner in list1:
+#     for index,element in enumerate(inner):
+#         print(index,element,sep="---")
+#     print("-------------------")
+
+
+# list1 = [[10,20],[30,40]]
+# list2 = list1
+# list1[0].append(30)
+# print(list2)
+
+# deep copy
+# import copy
+# list1 = [[10,20],[30,40]]
+# list2 = copy.deepcopy(list1)
+# list1[0][0] = 100
+# print(list1)
+# print(list2)
+
+# == (compare values)
+# is (compare memory)
+# list1 = [10,20,30]
+# list2 = [10,20,30]
+# list2 = list1
+# print(list1 == list2)
+# print(list1 is list2)
+
+# list1 = [10,20]
+# list2 = [30,40]
+# list3 = list1 + list2
+# print(list3)
+
+# list1.extend(list2)
+# print(list1)
+
+# list3 = [*list1,*list2]
+# print(list3)
+
+# list1 = [10,20,30]
+# list2 = list1 * 3
+# print(list2)
+
+# list1 = ["Hello",10,10.1,True,[10,20],(10,20),{"name":"Hello"},{10,20,10},None]
+# print(list1)
+
+# list1 = [10,20,30,10,20,30,40]
+# list2 = []
+# for element in list1:
+#     if list1.count(element)>1:
+#         list2.append(element)
+
+# print(set(list2))
+
+
+
+
