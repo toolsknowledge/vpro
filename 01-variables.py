@@ -278,6 +278,12 @@ print(t1 == t2)
 
 print(list1 is list2)
 
+# s1 = {10,20,30}
+# s2 = {10,20,30}
+# s2 = s1
+# print(s1 == s2)
+# print(s1 is s2)
+
 
 
 
