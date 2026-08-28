@@ -49,3 +49,14 @@
 # penguins = sns.load_dataset("penguins")
 # print(penguins.head())
 
+
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+marks = [[80,90,70],
+         [60,75,85],
+         [95,88,92]]
+
+sns.heatmap(marks,cmap="Reds", annot=True)
+plt.show()
+
