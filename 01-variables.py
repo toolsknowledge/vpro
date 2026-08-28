@@ -266,23 +266,34 @@
 # print(type(y))
 
 # == (compares values)
-print(100 == 100)
+# print(100 == 100)
 
-list1 = [10,20,30]
-list2 = [10,20,30]
-print(list1 == list2)
+# list1 = [10,20,30]
+# list2 = [10,20,30]
+# print(list1 == list2)
 
-t1 = (10,20,30)
-t2 = (10,20,30)
-print(t1 == t2)
+# t1 = (10,20,30)
+# t2 = (10,20,30)
+# print(t1 == t2)
 
-print(list1 is list2)
+# print(list1 is list2)
 
 # s1 = {10,20,30}
 # s2 = {10,20,30}
 # s2 = s1
 # print(s1 == s2)
 # print(s1 is s2)
+
+# num1 = 0.1
+# num2 = 0.2
+# num3 = num1 + num2      # 0.30000000000000004 (TCS)
+# print(num3 == 0.3)
+# print( num3 == 0.30000000000000004 )
+
+
+# Python & JS - 0.1 + 0.2 = 0.30000000000000004
+# Java,dotnet,php,......   0.3
+
 
 
 
