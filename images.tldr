@@ -872,6 +872,13 @@
 			"typeName": "shape"
 		},
 		{
+			"meta": {},
+			"id": "page:y-FU1I-CkPdyGzjvp7zS7",
+			"name": "Page 9",
+			"index": "a9sEv",
+			"typeName": "page"
+		},
+		{
 			"x": 425.3320302565893,
 			"y": 666.9140288631127,
 			"rotation": 0,
@@ -2013,9 +2020,9 @@
 			"typeName": "shape"
 		},
 		{
-			"x": 6878.59182340168,
-			"y": -3055.790364549859,
-			"z": 0.05,
+			"x": 359.066339774688,
+			"y": -6342.474151386092,
+			"z": 0.055785544782224535,
 			"meta": {},
 			"id": "camera:page:page",
 			"typeName": "camera"
@@ -2109,9 +2116,7 @@
 		{
 			"editingShapeId": null,
 			"croppingShapeId": null,
-			"selectedShapeIds": [
-				"shape:APdiUobbWIsB0_c3XCRsI"
-			],
+			"selectedShapeIds": [],
 			"hoveredShapeId": null,
 			"erasingShapeIds": [],
 			"hintingShapeIds": [],
@@ -2826,6 +2831,78 @@
 			"typeName": "shape"
 		},
 		{
+			"x": 307.2916564941406,
+			"y": 65.51106548309326,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:xWXOECW3N0gr_zDeUpwr0",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 347.1805419921875,
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "1, 2, 3, 4, 5"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "     x 100                    map()"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "100,200,300,400,500"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:y-FU1I-CkPdyGzjvp7zS7",
+			"index": "a1LW2",
+			"typeName": "shape"
+		},
+		{
 			"x": 580.1106565992045,
 			"y": 5950.295986910619,
 			"rotation": 0,
@@ -3439,8 +3516,8 @@
 			"typeName": "shape"
 		},
 		{
-			"x": -480.55553645999447,
-			"y": -128.47221711719502,
+			"x": 0,
+			"y": 0,
 			"z": 1,
 			"meta": {},
 			"id": "camera:page:cnIo9g7Q8EJAWglzppgez",
@@ -5836,6 +5913,21 @@
 			"meta": {},
 			"id": "instance_page_state:page:96ussvgDZF0zfmL85ghUp",
 			"pageId": "page:96ussvgDZF0zfmL85ghUp",
+			"typeName": "instance_page_state"
+		},
+		{
+			"editingShapeId": "shape:xWXOECW3N0gr_zDeUpwr0",
+			"croppingShapeId": null,
+			"selectedShapeIds": [
+				"shape:xWXOECW3N0gr_zDeUpwr0"
+			],
+			"hoveredShapeId": "shape:xWXOECW3N0gr_zDeUpwr0",
+			"erasingShapeIds": [],
+			"hintingShapeIds": [],
+			"focusedGroupId": null,
+			"meta": {},
+			"id": "instance_page_state:page:y-FU1I-CkPdyGzjvp7zS7",
+			"pageId": "page:y-FU1I-CkPdyGzjvp7zS7",
 			"typeName": "instance_page_state"
 		},
 		{
@@ -8259,6 +8351,14 @@
 			"typeName": "camera"
 		},
 		{
+			"x": -2.0833332505491087,
+			"y": -19.44444367179167,
+			"z": 1,
+			"meta": {},
+			"id": "camera:page:y-FU1I-CkPdyGzjvp7zS7",
+			"typeName": "camera"
+		},
+		{
 			"x": 963.7434595757065,
 			"y": 1924.1210146016563,
 			"rotation": 0,
@@ -9095,13 +9195,11 @@
 		{
 			"followingUserId": null,
 			"opacityForNextShape": 1,
-			"stylesForNextShape": {
-				"tldraw:geo": "ellipse"
-			},
+			"stylesForNextShape": {},
 			"brush": null,
 			"scribbles": [],
 			"cursor": {
-				"type": "cross",
+				"type": "default",
 				"rotation": 0
 			},
 			"isFocusMode": false,
@@ -9112,7 +9210,7 @@
 				"x": 0,
 				"y": 0,
 				"w": 942.361083984375,
-				"h": 278.4721984863281
+				"h": 261.1111145019531
 			},
 			"insets": [
 				false,
@@ -9137,7 +9235,7 @@
 			"duplicateProps": null,
 			"cameraState": "idle",
 			"id": "instance:instance",
-			"currentPageId": "page:cnIo9g7Q8EJAWglzppgez",
+			"currentPageId": "page:y-FU1I-CkPdyGzjvp7zS7",
 			"typeName": "instance"
 		},
 		{
