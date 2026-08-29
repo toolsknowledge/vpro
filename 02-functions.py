@@ -63,6 +63,82 @@
 
 
 
+# default parameters in functions
+# def test(param1=200,param2=100):
+#     res = param1 + param2
+#     print(res)
 
 
+# test()
+# test(2000,1000)
+# test(20000)
+# test(param2=10000)
 
+# formal parameters with default parameters
+# Note : in combination of "fommal(positional) and default", always "default paramreters" must be "last"
+# def test(param1,param2,param3="Hello",param4="Welcome"):
+#     print(param1,param2, param3, param4)
+
+# test()
+# test(100)
+# test(1,2)
+# test(1,2,3,4)
+# test(param2=200,param4=100,param1=1000,param3=2000)
+# test(None,None)
+
+# variable-length parameter (param1 - tuple)
+# def test(*param1):
+#     print(param1)
+
+# test()
+# test(10,20,30,40,50)
+# test("Python","ML","DL","NLP","GenAI","AgenticAI")
+
+# only one variable-length parameter allowed
+# def test(*param1,*param2):
+
+
+# param1 & param2 - formal parameters
+# param3 & param4 - default parameters
+# param5 - variable-length parameter
+# def test(param1,param2,param3="Hello",param4="Welcome",*param5):
+#     print(param1,param2,param3,param4,param5)
+
+# test()
+# test(1)
+# test(1,2)
+# test(1,2,3,4,5,6,7,8,9,10)
+
+
+# def test(param1,*param2,param3="Hello"):
+#     print(param1,param2,param3)
+
+# test()
+# test(10)
+# test(10,20,30)
+# test(10,20,30,40,50,60,70)
+
+
+# valid
+# def test(param1,param2="Hello"):
+#     pass
+
+# valid
+# def test(param1,*param2):
+#     pass
+
+# invalid
+# def test(param1="Hello",param2):
+#     pass
+
+# invalid
+# def test(*param1,param2):
+#     pass
+
+# valid
+# def test(param1,*param2,param3="Hello"):
+#     pass
+
+# invalid
+# def test(*param1,param2="Hello",param3):
+#     pass
