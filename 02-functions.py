@@ -142,3 +142,91 @@
 # invalid
 # def test(*param1,param2="Hello",param3):
 #     pass
+
+# default parameters
+# def addition(num1=200,num2=100):
+#     res = num1 + num2
+#     print(res)
+
+# addition()
+# addition(2000,1000)
+# addition(2000)
+# addition(num1=10000)
+# addition(num2=20000)
+# addition(None)
+
+
+# param1 & param2 - formal parameters
+# param3 & param4 - default parameters
+# Note : default parameters must be last 
+# def test(param1,param2,param3="Hello",param4="Welcome"):
+#     print(param1, param2, param3, param4)
+
+# test()
+# test(100)
+# test(100,200)
+# test(param4=400,param1=100,param3=300,param2=200)
+
+# variable-length parameter
+# because of "*", param1 converted to tuple
+# def test(*param1):
+#     print(param1)
+
+# test(10,20,30,40,50)
+# test()
+# test("Python","ML","DL","NLP","GenAI","AgenticAI")
+# test(None,"Hello",100)
+
+# Note : only one variable-length parameter allowed
+# def test(*param1,*param2):
+
+# param1 - formal (non-default)
+# param2 - default parameter
+# param3 - variable-length parameter
+
+# def test(param1,param2="Hello",*param3):
+#     print(param1,param2,param3)
+
+# test()
+# test(100)
+# test(100,200,300,400,500)
+
+
+# def test(param1,*param2,param3="Hello"):
+#     pass
+
+
+# Note : default parameter, must be followed by non-default parameter
+# Err
+# def test(param1,*param2,param3="Hello",param4):
+#     pass
+
+
+# keyword-length parameter
+# because of **, param1 converted to dictionary
+# we are able to pass only one dict parameter
+
+# def test(**param1):
+#     print(param1)
+
+# test(name="Hello",course="GenAI")
+
+
+# def test(param1,param2=100,*param3,**param4):
+#     print(param1,param2,param3,param4)
+
+# test()
+# test(10)
+# test(1,2,3,4,5,6,name="Good Morn...!")
+
+
+# Note1: default order must be "secondary" with non-default
+# Note2: only one tuple parameter
+# Note3: only one dictionary parameter
+# Note4: dictionary parameter always last
+# def test(param1,*param2,param3="Hello",**param4):
+#     print(param1,param2,param3,param4)
+
+# test()
+# test(None)
+
