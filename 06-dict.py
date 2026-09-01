@@ -161,6 +161,25 @@
 # print(result)
 
 
+# list1 = [{"num1":10},
+#          {"num1":20},
+#          {"num1":30}]
+# print(list1[0]["num1"] + list1[1]["num1"] + list1[2]["num1"])
+# res = 0
+# for d1 in list1:
+#     for x in d1.values():
+#         res += x
+# print(res)
+
+# d1 = {"a":10, "b":20, "c":10}
+# print( { value:key for key,value in d1.items() } )
+
+
+
+
+
+
+
 
 
 
