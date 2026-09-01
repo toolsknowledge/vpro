@@ -72,3 +72,4 @@
 
 res = lambda s:len(s)
 print( res("Hello") )
+
