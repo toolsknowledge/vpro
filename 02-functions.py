@@ -230,3 +230,51 @@
 # test()
 # test(None)
 
+
+"""
+    function without name called as "anonymous" function
+    lambda is the keyword, used to declare "anonymous" functions
+"""
+
+# x = lambda num1:num1 * num1
+# res = x(2)
+# print(res)
+
+# add = lambda num1,num2: num1 + num2
+# res = add(200,100)
+# print(res)
+
+# write logic for addition of 3 numbers
+
+
+
+# maximum = lambda a,b: a if a>b else b
+# res = maximum(20,10)
+# print(res)
+
+# logic for max number "among three"
+# maxi = lambda a,b,c: a if a>b and a>c else b if b>c else c
+# res = maxi(10,20,30)
+# print(res)
+
+# logic for even or odd
+
+
+# print( list( map(lambda num1:num1*10,[1,2,3,4,5]) ) )
+
+
+# print( list( filter(lambda num1:num1>=30,(10,20,30,40,50)) ) )
+
+
+# print( tuple( filter(lambda num1: num1 % 2 == 0,[1,2,3,4,5]) ) )
+
+# from functools import reduce
+# print( reduce(lambda a,b: a+b,(1,2,3,4,5)) )
+
+# [100,200,300,400,500] -->map() (1,2,3,4,5) -->filter() (1,2) -->reduce() 3.0
+
+# from functools import reduce
+# t1 = tuple( map(lambda num1:num1/100,[100,200,300,400,500]) )
+# t2 = tuple( filter(lambda num1:num1<=2,t1) )
+# res = reduce(lambda x,y:x+y,t2)
+# print(res)
