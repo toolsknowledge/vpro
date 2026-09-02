@@ -278,3 +278,69 @@
 # t2 = tuple( filter(lambda num1:num1<=2,t1) )
 # res = reduce(lambda x,y:x+y,t2)
 # print(res)
+
+
+# recursive functions
+# function calling itself called as recursive functions
+
+# def count(n):
+#     if n==0:
+#         return
+#     print(n)
+#     count(n-1)
+
+# count(5)
+
+
+# def fact(n):
+#     if n==1:
+#         return 1
+#     return n * fact(n-1)  # 5 * 4 * fact(3)
+
+# print(fact(5))
+
+# 5 * 4 * 3 * 2 * 1 = 120
+
+# def fibo(n):
+#     if n<= 1:
+#         return n
+#     return fibo(n-1) + fibo(n-2)
+
+#               fibo(5) + fibo(4)
+#               fibo(5) + fibo(4) + fibo(3) + fibo(3) + fibo(2) + fibo(1) + fibo(0)
+
+# print(fibo(6))
+
+# 0 1 1 2 3 5 
+
+# / --> positional-only prameter separator
+# def test(name,age,/):
+#     print(name, age)
+
+# test("Hello",20)
+# test(age=20,name="Hello")
+
+# param1 - positional
+# param2 - positional
+# param3 - positional / keyword
+
+# def test(param1,param2,/,param3):
+#     print(param1, param2, param3)
+# test(10,20,param3=30)
+# test(10,20,30)
+
+# param1 - positional
+# param2 - positional
+# param3 - positional / keyword
+# param4 - keyword
+# def test(param1,param2,/,param3,*,param4):
+#     print(param1,param2,param3,param4)
+
+# test(10,20,30,param4=40)
+# test(param1=10,param2=20,param3=30,40)
+
+# pass - empty function
+# def test():
+#     pass
+
+# test()
