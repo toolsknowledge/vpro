@@ -1,0 +1,9 @@
+pypdf                                   # read pdf file                       
+langchain                               # connect rag components Ex. pdf, chroma, llm, embeddings-models,....                 
+langchain-community                     # access free tools provided by langchain
+langchain-text-splitters
+langchain-chroma
+langchain-huggingface
+sentence-transformers                  # create embeddings
+langchain-anthropic                 
+langgraph                              # framework - handle multiple flows in application
