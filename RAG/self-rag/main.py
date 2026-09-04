@@ -1,38 +1,26 @@
-pip install pypdf scikit-learn anthropic python-dotenv
-
-ANTHROPIC_API_KEY=your_api_key_here
-
 import os
 from pathlib import Path
-
 from pypdf import PdfReader
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from anthropic import Anthropic
 from dotenv import load_dotenv
 
-
 # ============================================================
 # 1. LOAD ENVIRONMENT
 # ============================================================
-
 load_dotenv()
-
 API_KEY = os.getenv("ANTHROPIC_API_KEY")
-
 if not API_KEY:
     raise ValueError(
         "ANTHROPIC_API_KEY is missing. "
         "Create a .env file and add your Anthropic API key."
     )
-
 client = Anthropic(api_key=API_KEY)
-
 
 # ============================================================
 # 2. LOAD PDF
 # ============================================================
-
 def load_pdf(pdf_path):
     """
     Read text from a PDF file.
@@ -65,7 +53,6 @@ def load_pdf(pdf_path):
 # ============================================================
 # 3. CREATE CHUNKS
 # ============================================================
-
 def create_chunks(text, chunk_size=1000, overlap=200):
     """
     Split document into smaller pieces.
@@ -92,7 +79,6 @@ def create_chunks(text, chunk_size=1000, overlap=200):
 # ============================================================
 # 4. CREATE RETRIEVAL INDEX
 # ============================================================
-
 def create_index(chunks):
     """
     Convert chunks into TF-IDF vectors.
@@ -110,7 +96,6 @@ def create_index(chunks):
 # ============================================================
 # 5. RETRIEVE DOCUMENTS
 # ============================================================
-
 def retrieve_documents(
     question,
     chunks,
@@ -146,16 +131,14 @@ def retrieve_documents(
 # ============================================================
 # 6. ASK CLAUDE
 # ============================================================
-
 def ask_claude(prompt):
     """
     Send a prompt to Claude.
     """
 
     response = client.messages.create(
-        model="claude-sonnet-4-20250514",
+        model="claude-sonnet-4-6",
         max_tokens=1000,
-        temperature=0,
         messages=[
             {
                 "role": "user",
@@ -166,11 +149,9 @@ def ask_claude(prompt):
 
     return response.content[0].text.strip()
 
-
 # ============================================================
 # 7. SHOULD I RETRIEVE?
 # ============================================================
-
 def should_retrieve(question):
     """
     Self-RAG decides whether external documents
@@ -209,7 +190,6 @@ the PDF.
 # ============================================================
 # 8. CHECK DOCUMENT RELEVANCE
 # ============================================================
-
 def check_relevance(question, documents):
     """
     Check whether retrieved documents are relevant
@@ -250,7 +230,6 @@ NO
 # ============================================================
 # 9. GENERATE ANSWER
 # ============================================================
-
 def generate_answer(question, documents):
     """
     Generate an answer using retrieved documents.
@@ -293,7 +272,6 @@ ANSWER:
 # ============================================================
 # 10. CHECK WHETHER ANSWER IS SUPPORTED
 # ============================================================
-
 def check_support(question, answer, documents):
     """
     Check whether the generated answer is supported
@@ -337,7 +315,6 @@ NO
 # ============================================================
 # 11. CHECK ANSWER QUALITY
 # ============================================================
-
 def check_answer_quality(question, answer):
     """
     Evaluate answer quality.
@@ -375,7 +352,6 @@ NO
 # ============================================================
 # 12. REFINE QUESTION
 # ============================================================
-
 def refine_question(question):
     """
     Improve the question when retrieval is poor.
@@ -397,7 +373,6 @@ Return ONLY the improved question.
 # ============================================================
 # 13. SELF-RAG PIPELINE
 # ============================================================
-
 def self_rag(question, chunks, vectorizer, vectors):
     """
     Complete Self-RAG workflow.
@@ -718,463 +693,4 @@ def main():
 # ============================================================
 
 if __name__ == "__main__":
-    main()
-
-
-
-
-
-
-
-
-export ANTHROPIC_API_KEY="your-api-key"
-
-# ============================================
-# Corrective RAG with LangGraph
-# Student Level Application
-# ============================================
-
-from pypdf import PdfReader
-
-from langchain_text_splitters import RecursiveCharacterTextSplitter
-
-from langchain_huggingface import HuggingFaceEmbeddings
-
-from langchain_chroma import Chroma
-
-from langchain_anthropic import ChatAnthropic
-
-from langgraph.graph import StateGraph, END
-
-from typing import TypedDict
-
-
-# ============================================
-# CONFIGURATION
-# ============================================
-
-PDF_FILE = "sample.pdf"
-
-CHROMA_PATH = "chroma_db"
-
-COLLECTION_NAME = "crag_documents"
-
-
-# ============================================
-# LLM
-# ============================================
-
-llm = ChatAnthropic(
-    model="claude-sonnet-4-5",
-    temperature=0
-)
-
-
-# ============================================
-# EMBEDDING MODEL
-# ============================================
-
-embeddings = HuggingFaceEmbeddings(
-    model_name="sentence-transformers/all-MiniLM-L6-v2"
-)
-
-
-# ============================================
-# 1. LOAD PDF
-# ============================================
-
-def load_pdf():
-
-    reader = PdfReader(PDF_FILE)
-
-    text = ""
-
-    for page in reader.pages:
-
-        page_text = page.extract_text()
-
-        if page_text:
-            text += page_text + "\n"
-
-    return text
-
-
-# ============================================
-# 2. CREATE CHUNKS
-# ============================================
-
-def create_chunks(text):
-
-    splitter = RecursiveCharacterTextSplitter(
-        chunk_size=500,
-        chunk_overlap=50
-    )
-
-    chunks = splitter.create_documents([text])
-
-    return chunks
-
-
-# ============================================
-# 3. CREATE VECTOR STORE
-# ============================================
-
-def create_vector_store(chunks):
-
-    vector_store = Chroma.from_documents(
-        documents=chunks,
-        embedding=embeddings,
-        persist_directory=CHROMA_PATH,
-        collection_name=COLLECTION_NAME
-    )
-
-    return vector_store
-
-
-# ============================================
-# 4. RETRIEVE DOCUMENTS
-# ============================================
-
-def retrieve_documents(state):
-
-    question = state["question"]
-
-    vector_store = state["vector_store"]
-
-    documents = vector_store.similarity_search(
-        question,
-        k=3
-    )
-
-    state["documents"] = documents
-
-    return state
-
-
-# ============================================
-# 5. EVALUATE DOCUMENTS
-# ============================================
-
-def evaluate_documents(state):
-
-    question = state["question"]
-
-    documents = state["documents"]
-
-    context = "\n\n".join(
-        document.page_content
-        for document in documents
-    )
-
-    prompt = f"""
-You are evaluating retrieved documents.
-
-Question:
-{question}
-
-Retrieved Documents:
-{context}
-
-Are these documents relevant to answering the question?
-
-Reply with only:
-
-YES
-
-or
-
-NO
-"""
-
-    response = llm.invoke(prompt)
-
-    result = response.content.strip().upper()
-
-    if "YES" in result:
-        state["relevant"] = True
-    else:
-        state["relevant"] = False
-
-    return state
-
-
-# ============================================
-# 6. CORRECT RETRIEVAL
-# ============================================
-
-def correct_retrieval(state):
-
-    question = state["question"]
-
-    vector_store = state["vector_store"]
-
-    prompt = f"""
-Improve the following search query so that
-it retrieves better documents from a vector database.
-
-Original question:
-{question}
-
-Return only the improved search query.
-"""
-
-    response = llm.invoke(prompt)
-
-    improved_query = response.content.strip()
-
-    print("\nImproved Query:")
-    print(improved_query)
-
-    documents = vector_store.similarity_search(
-        improved_query,
-        k=3
-    )
-
-    state["documents"] = documents
-
-    return state
-
-
-# ============================================
-# 7. GENERATE ANSWER
-# ============================================
-
-def generate_answer(state):
-
-    question = state["question"]
-
-    documents = state["documents"]
-
-    context = "\n\n".join(
-        document.page_content
-        for document in documents
-    )
-
-    prompt = f"""
-Answer the user's question using the
-provided documents.
-
-Question:
-{question}
-
-Documents:
-{context}
-
-Give a simple and accurate answer.
-
-If the answer is not available in the documents,
-say:
-
-"I could not find the answer in the documents."
-"""
-
-    response = llm.invoke(prompt)
-
-    state["answer"] = response.content
-
-    return state
-
-
-# ============================================
-# LANGGRAPH STATE
-# ============================================
-
-class RAGState(TypedDict):
-
-    question: str
-
-    documents: list
-
-    relevant: bool
-
-    answer: str
-
-    vector_store: object
-
-
-# ============================================
-# DECISION
-# ============================================
-
-def check_relevance(state):
-
-    if state["relevant"]:
-
-        return "generate"
-
-    else:
-
-        return "correct"
-
-
-# ============================================
-# BUILD LANGGRAPH
-# ============================================
-
-def create_graph():
-
-    graph = StateGraph(RAGState)
-
-    # Add nodes
-
-    graph.add_node(
-        "retrieve",
-        retrieve_documents
-    )
-
-    graph.add_node(
-        "evaluate",
-        evaluate_documents
-    )
-
-    graph.add_node(
-        "correct",
-        correct_retrieval
-    )
-
-    graph.add_node(
-        "generate",
-        generate_answer
-    )
-
-    # Start
-
-    graph.set_entry_point("retrieve")
-
-    # Retrieve → Evaluate
-
-    graph.add_edge(
-        "retrieve",
-        "evaluate"
-    )
-
-    # Evaluate → Decision
-
-    graph.add_conditional_edges(
-        "evaluate",
-        check_relevance,
-        {
-            "generate": "generate",
-            "correct": "correct"
-        }
-    )
-
-    # Correct → Evaluate again
-
-    graph.add_edge(
-        "correct",
-        "evaluate"
-    )
-
-    # Generate → END
-
-    graph.add_edge(
-        "generate",
-        END
-    )
-
-    return graph.compile()
-
-
-# ============================================
-# MAIN PROGRAM
-# ============================================
-
-def main():
-
-    print("\n==============================")
-    print("     CORRECTIVE RAG")
-    print("==============================")
-
-    # ----------------------------------------
-    # Load PDF
-    # ----------------------------------------
-
-    print("\nLoading PDF...")
-
-    text = load_pdf()
-
-    print("PDF loaded successfully.")
-
-
-    # ----------------------------------------
-    # Create Chunks
-    # ----------------------------------------
-
-    print("\nCreating chunks...")
-
-    chunks = create_chunks(text)
-
-    print("Number of chunks:", len(chunks))
-
-
-    # ----------------------------------------
-    # Create Vector Store
-    # ----------------------------------------
-
-    print("\nCreating vector database...")
-
-    vector_store = create_vector_store(chunks)
-
-    print("ChromaDB created successfully.")
-
-
-    # ----------------------------------------
-    # Create LangGraph
-    # ----------------------------------------
-
-    app = create_graph()
-
-
-    # ----------------------------------------
-    # Ask Question
-    # ----------------------------------------
-
-    question = input(
-        "\nAsk your question: "
-    )
-
-
-    # ----------------------------------------
-    # Initial State
-    # ----------------------------------------
-
-    state = {
-
-        "question": question,
-
-        "documents": [],
-
-        "relevant": False,
-
-        "answer": "",
-
-        "vector_store": vector_store
-    }
-
-
-    # ----------------------------------------
-    # Run Corrective RAG
-    # ----------------------------------------
-
-    result = app.invoke(state)
-
-
-    # ----------------------------------------
-    # Final Answer
-    # ----------------------------------------
-
-    print("\n==============================")
-    print("FINAL ANSWER")
-    print("==============================")
-
-    print(result["answer"])
-
-
-# ============================================
-# RUN
-# ============================================
-
-if __name__ == "__main__":
-
     main()
