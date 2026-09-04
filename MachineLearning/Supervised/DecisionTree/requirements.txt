@@ -1,0 +1,14 @@
+# machine learning algorithms
+scikit-learn
+# numerical python
+numpy
+# read data from excel
+pandas
+# draw the graphs
+matplotlib
+# develop api calls GET,POST,PUT,DELETE
+fastapi
+# light weight http server, used to run api calls
+uvicorn
+# read data from excel files
+openpyxl
