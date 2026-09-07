@@ -142,15 +142,46 @@
 # print(arr2)
 
 
+# import numpy as np
 # arr1 = np.array([[10,20,30],
 #                  [40,50,60]])
-# row3 = [70,80,90]
-# arr2 = np.vstack((arr1,row3))
+# new_row = [70,80,90]
+# arr2 = np.vstack((arr1,new_row))
 # print(arr2)
 
+
+# import numpy as np
 # arr1 = np.array([[10,20],
 #                  [40,50],
 #                  [70,80]])
-# col3 = np.array( [[30],[60],[90]] )
-# arr2 = np.hstack((arr1,col3))
+# new_col = np.array([[30],[60],[90]])
+# arr2 = np.hstack((arr1,new_col))
 # print(arr2)
+
+
+# import numpy as np
+# arr1 = np.array([[10,20],
+#                  [30,40]])
+# arr1[1,0] = 300
+# print(arr1)
+
+
+# import numpy as np
+# arr1 = np.array([[10,20,30],
+#                  [40,50,60],
+#                  [70,80,90]])
+# arr2 = np.delete(arr1,2,axis=0)
+# print(arr2)
+
+
+
+# import numpy as np
+# arr1 = np.array([[10,20,30],
+#                  [40,50,60],
+#                  [70,80,90]])
+# arr2 = np.delete(arr1,0,axis=1)
+# print(arr2)
+
+
+
+
