@@ -182,6 +182,144 @@
 # print(obj2.num1 + obj2.num2)
 
 
+# class Parent:
+#     num1 = 400
+
+# class Child1(Parent):
+#     num2 = 300
+
+# class Child2(Parent):
+#     num2 = 3000
+
+# class Subchild(Child2,Child1):
+#     num3 = 30000
+
+# obj1 = Subchild()
+# print(obj1.num1, obj1.num2, obj1.num3)
+
+
+# class Parent:
+#     def property(self):
+#         print("1 Cr Money")
+
+
+# class Child(Parent):
+#     def property(self):
+#         print("1 cr money + 1kg gold")
+
+# obj = Child()
+# obj.property()
+
+
+# class Test:
+#     def add(self):
+#         num1 = 100
+#         num2 = 50
+#         res = num1 + num2
+#         print(res)
+
+#     def add(self,num1,num2):
+#         res = num1 + num2
+#         print(res)
+
+#     def add(self,num1,num2,num3):
+#         res = num1 + num2 + num3
+#         print(res)
+
+# obj = Test()
+# obj.add(30,20,10)
+
+
+# class Test:
+#     def add(self,*num1):
+#         print( sum(num1) )
+
+# obj1 = Test()
+# obj1.add(10,20)
+# obj1.add(10,20,30)
+# obj1.add(10,20,30,40)
+
+
+# class Test:
+#     def __init__(self):
+#         pass
+#     def __init__(self,param1,param2):
+#         self.num1 = param1
+#         self.num2 = param2
+#     def __init__(self, param1,param2,param3):
+#         self.num1 = param1
+#         self.num2 = param2
+#         self.num3 = param3
+# obj = Test(300,200,100)
+# res = obj.num1 + obj.num2 + obj.num3
+# print(res)
+
+# class Test:
+#     def __init__(self,*nums):
+#         self.nums = nums
+
+# obj = Test(10,20)
+# print(sum(obj.nums))
+# obj1 = Test(10,20,30)
+# print(sum(obj1.nums))
+
+
+# class Test:
+#     def __init__(self):
+#         self.__num1 = 200
+
+
+# obj = Test()
+# obj.__num1
+
+
+# class Test:
+#     def __init__(self):
+#         self.__num1 = 200
+
+# class Test1(Test):
+#     pass
+
+
+# obj = Test1()
+# obj.__num1
+
+
+# Encapsulation
+# class Test:
+#    def __init__(self,x):
+#       self.__msg = x
+
+#    def setMsg(self,new_x):
+#       self.__msg = new_x
+
+#    def getMsg(self):
+#       return self.__msg
+
+# obj = Test("Hello")
+# obj.setMsg("Welcome")
+# print(obj.getMsg())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
