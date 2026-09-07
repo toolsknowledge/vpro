@@ -33,8 +33,7 @@
                    (or)
        pip3 install -r requirements.txt
                    (or)
-       python -m pip install -r requirements.txt
-"""
+       python -m pip install -r requirements.txt """
 
 # import numpy as np
 # print(np.__version__)
@@ -181,6 +180,61 @@
 #                  [70,80,90]])
 # arr2 = np.delete(arr1,0,axis=1)
 # print(arr2)
+
+
+# vectorization
+# import numpy as np
+# arr1 = np.array([10,20,30])
+# arr2 = np.array([100,200,300])
+# arr3 = arr1 + arr2
+# print(arr3)
+# arr4 = arr3 - arr1
+# print(arr4)
+
+# broadcasting
+# import numpy as np
+# arr1 = np.array([10,20,30])
+# arr2 = arr1 + 10
+# print(arr2)
+
+
+# import numpy as np
+# arr1 = np.array([10,20,30,40,50,60])
+
+# arr2 = arr1.reshape(2,3)
+# print(arr2)
+
+# arr2 = arr1.reshape(-1,1)
+# print(arr2)
+
+# arr1 = np.array([[10,20,30],[40,50,60]])
+# arr2 = arr1.flatten()
+# print(arr2)
+
+
+# import numpy as np
+# arr1 = np.random.rand(3)
+# print(arr1)
+
+# arr2 = np.random.randint(1,10,5)
+# print(arr2)
+
+# import numpy as np
+# arr1 = np.array([10,20,30,40,50])
+# print(np.sum(arr1))
+# print(np.max(arr1))
+# print(np.min(arr1))
+# print(np.mean(arr1))
+
+
+# import numpy as np
+# arr1 = np.array([4,2])
+# arr2 = np.array([3,5])
+# print(np.greater(arr1,arr2))
+# print(np.less(arr1,arr2))
+# print(np.equal(arr1,arr2))
+
+
 
 
 
