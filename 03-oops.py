@@ -366,7 +366,6 @@
 # Test.abc()
 # print(Test.wish)
 
-
 class Test:
     num1 = 2000
 
