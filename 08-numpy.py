@@ -235,6 +235,57 @@
 # print(np.equal(arr1,arr2))
 
 
+# import numpy as np
+# arr1 = np.array([10,50,20,40,30])
+# res = np.sort(arr1)
+# res1 = np.sort(arr1)[::-1]
+# print(res)      # ascending
+# print(res1)     # decending
+# print(arr1)     # immutable
+
+
+# import numpy as np
+# # sort based on row (axis=1)
+# arr1 = np.array([[10,30,20],
+#                  [40,60,50]])
+# print(np.sort(arr1))
+
+
+# # sort based on col (axis=0)
+# arr2 = np.array([[2,10,5],
+#                  [1,9,6]])
+# print(np.sort(arr2,axis=0))
+
+
+# import numpy as np
+# arr1 = np.array([50,20,30,10,100])
+# print(np.argsort(arr1)) # [3,1,2,0,4]
+
+
+# import numpy as np
+# arr1 = np.array(["Apple","Cat","Banana"])
+# print(np.sort(arr1))
+# print(np.sort(arr1)[::-1])
+
+# import numpy as np
+# marks = np.array([90,50,70,60,45])
+# top = input("how many top students list required ?")
+# top_i = int(top)
+# print( np.sort(marks)[-top_i:][::-1] )
+
+
+import numpy as np
+arr1 = np.array([10,20,30])
+# arr2 = arr1
+# arr2 = arr1.view()
+arr2 = np.copy(arr1)
+arr2[0] = 1000
+print(arr1)
+
+# 279 & 280 - shallow copy [1000,20,30]
+# 281 - deep copy   [10,20,30]
+
+
 
 
 
