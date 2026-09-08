@@ -301,6 +301,101 @@
 # print(obj.getMsg())
 
 
+# class Test:
+#     clg_name = "CBIT"
+
+# print(Test.clg_name)
+
+
+# class Test:
+#     clg_name = "CBIT"
+
+# obj = Test()
+# print(obj.clg_name)
+
+
+# class Test:
+#     # class variable
+#     clg = "CBIT"                    # class name
+
+#     def __init__(self,param1):
+#         # instance variable
+#         self.clg = param1         # object
+
+# print(Test.clg)                     
+# obj = Test("Vasavi")
+# print(obj.clg)
+
+
+# class Test:
+#     # class variables
+#     num1 = 200
+#     num2 = 100
+
+# obj1 = Test()
+# print(obj1.num1 + obj1.num2)    # no instance variables. insted class variables are accessed
+
+
+# class Test:
+#     # class variable
+#     x = 100
+
+
+# obj = Test()        # access instance variables
+# obj.x = 1000        # adding instance variable
+
+# print(Test.x)
+# print(obj.x)
+
+
+
+# class Test:
+#     wish = "Hello"
+
+# Test.wish = "Welcome"       # change class level variable
+# print(Test.wish)
+
+# class Test:
+#     wish = "Hello"
+
+#     @classmethod
+#     def abc(cls):
+#         cls.wish = "Welcome"
+
+
+# Test.abc()
+# print(Test.wish)
+
+
+class Test:
+    num1 = 2000
+
+    @classmethod
+    def test1(cls):
+        return cls.num1
+
+    def __init__(self):
+        self.num2 = 100
+
+    def test2(self):
+        return self.num2
+
+
+print(Test.num1)        # 2000
+print(Test.test1())
+
+obj = Test()
+print(obj.num2)     
+print(obj.test2())
+
+
+
+
+
+
+
+
+
 
 
 
