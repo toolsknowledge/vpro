@@ -366,26 +366,99 @@
 # Test.abc()
 # print(Test.wish)
 
-class Test:
-    num1 = 2000
+# class Test:
+#     num1 = 2000
 
-    @classmethod
-    def test1(cls):
-        return cls.num1
+#     @classmethod
+#     def test1(cls):
+#         return cls.num1
 
-    def __init__(self):
-        self.num2 = 100
+#     def __init__(self):
+#         self.num2 = 100
 
-    def test2(self):
-        return self.num2
+#     def test2(self):
+#         return self.num2
 
 
-print(Test.num1)        # 2000
-print(Test.test1())
+# print(Test.num1)        # 2000
+# print(Test.test1())
 
-obj = Test()
-print(obj.num2)     
-print(obj.test2())
+# obj = Test()
+# print(obj.num2)     
+# print(obj.test2())
+
+# from abc import ABC,abstractmethod
+# class Parent(ABC):
+#     @abstractmethod
+#     def my_func(self):
+#         pass
+
+# class Child(Parent):
+#     def my_func(self):
+#         print("Hello,......")
+
+
+# obj = Child()
+# obj.my_func()
+
+
+# from abc import ABC,abstractmethod
+
+# class VPro(ABC):
+#     @abstractmethod
+#     def start_business(self):
+#         pass
+
+# class Frnd1(VPro):
+#     def start_business(self):
+#         print("Start Edu Tech !!!")
+
+# class Frnd2(VPro):
+#     def start_business(self):
+#         print("Start Startup !!!")
+
+# class Frnd3(VPro):
+#     def start_business(self):
+#         print("Food Business")
+
+# obj1 = Frnd1()
+# obj1.start_business()
+
+# obj2 = Frnd2()
+# obj2.start_business()
+
+
+# class Test:
+#     # class variable
+#     msg = "Hello"
+
+
+# obj = Test()
+# obj.msg = "Welcome"
+
+# print(Test.msg)
+# print(obj.msg)
+
+
+# class Test:
+#     # pass
+#     def __str__(self):
+#         return "VPro"
+
+# obj = Test()
+# print(obj)
+
+# class Test:
+#     def __init__(self, param1):
+#         self.param = param1
+
+#     def __len__(self):
+#         return len(self.param)
+
+
+# obj = Test([10, 20, 30, 40, 50])
+
+# print(len(obj))
 
 
 
