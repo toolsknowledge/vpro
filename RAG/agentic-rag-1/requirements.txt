@@ -1,6 +1,5 @@
-langgraph 
-langchain-anthropic 
-langchain-mcp-adapters 
-mcp
+langchain_anthropic 
+langchain_mcp_adapters 
+langchain 
+streamlit 
 python-dotenv
-langchain
