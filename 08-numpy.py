@@ -205,7 +205,7 @@
 # print(arr2)
 
 # arr2 = arr1.reshape(-1,1)
-# print(arr2)
+# print(arr2)       # [[10],[20],[30],.......]
 
 # arr1 = np.array([[10,20,30],[40,50,60]])
 # arr2 = arr1.flatten()
@@ -274,19 +274,74 @@
 # print( np.sort(marks)[-top_i:][::-1] )
 
 
-import numpy as np
-arr1 = np.array([10,20,30])
-# arr2 = arr1
-# arr2 = arr1.view()
-arr2 = np.copy(arr1)
-arr2[0] = 1000
-print(arr1)
+# import numpy as np
+# arr1 = np.array([10,20,30])
+# # arr2 = arr1
+# # arr2 = arr1.view()
+# arr2 = np.copy(arr1)
+# arr2[0] = 1000
+# print(arr1)
 
 # 279 & 280 - shallow copy [1000,20,30]
 # 281 - deep copy   [10,20,30]
 
 
+# import numpy as np
+# arr1 = np.array([[1,2],
+#                  [3,4]])
+# # print(np.transpose(arr1))
+# print( np.linalg.det(arr1) )
 
+
+# import numpy as np
+# arr1 = np.array([10,20,30,40,50])
+# arr2 = arr1[1:4]
+# arr3 = arr2.copy()
+# arr3[0] = 200
+# print(arr1)
+# print(arr2)
+# print(arr3)
+
+
+# import numpy as np
+# arr1 = np.array([10,20])
+# arr2 = np.array([30,40])
+# arr3 = np.concatenate((arr1,arr2))
+# print(arr3)     #[10 20 30 40]
+
+# arr4 = np.vstack((arr1,arr2))
+# print(arr4)
+# [[10 20]
+#  [30 40]]
+
+# arr5 = np.hstack((arr1,arr2))
+# print(arr5)     #[10 20 30 40]
+
+# import numpy as np
+# arr1 = np.array([10,20,30,40,50,60,70])
+
+# arr2 = np.where(arr1>=40,"Pass","Fail")
+# print(arr2)     #['Fail' 'Fail' 'Fail' 'Pass' 'Pass' 'Pass' 'Pass']
+
+
+# arr2 = arr1[arr1>=40]
+# print(arr2)
+
+# import numpy as np
+# arr1 = np.array([[10,20,30],
+#                  [40,50,60]])
+# print(np.sum(arr1))
+# print(np.sum(arr1,axis=0))
+# print(np.sum(arr1,axis=1))
+
+
+import numpy as np
+arr1 = np.array([[1,2],
+                 [3,4]])
+arr2 = np.array([[5,6],
+                 [7,8]])
+# print(arr1 * arr2)
+print(arr1 @ arr2)      # [[1*5+2*7],[1*6 + 2*8],[3*5 + 4*7],[3*6 + 4*8]]
 
 
 
