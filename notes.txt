@@ -1,3 +1,18 @@
+McP Server
+
+MCp Plugin
+
+LangGraph
+
+LangChain
+
+RAG System
+
+Initiate Project (Sat --> Deployment)
+
+
+
+
 pip install pypdf scikit-learn anthropic python-dotenv
 
 ANTHROPIC_API_KEY=your_api_key_here
