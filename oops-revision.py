@@ -169,6 +169,244 @@
 # obj.test2()
 # obj.test3()
 
+
+# class Parent1:
+#     def test1(self):
+#         print("100")
+
+# class Parent2:
+#     def test1(self):
+#         print("10000")
+
+# class Child(Parent1,Parent2):
+#     def test2(self):
+#         print("200")
+
+# obj = Child()
+# obj.test1()
+# obj.test2()
+
+
+# class Parent:
+#     def test1(self):
+#         print("1")
+
+# class Child1(Parent):
+#     def test2(self):
+#         print("11")
+
+# class Child2(Parent):
+#     def test2(self):
+#         print("111")
+
+# obj1 = Child1()
+# obj1.test1()
+# obj1.test2()
+
+# obj2 = Child2()
+# obj2.test1()
+# obj2.test2()
+
+
+# class Parent:
+#     num1 = 100
+
+# class Child1(Parent):
+#     num2 = 200
+
+# class Child2(Parent):
+#     num3 = 300
+
+# class Subchild(Child1,Child2):
+#     num4 = 400
+
+# obj = Subchild()
+# print(obj.num1, obj.num2, obj.num3, obj.num4)
+
+
+# class Test:
+#     # class member
+#     college = "CBIT"
+
+# print(Test.college)
+
+
+# class Test:
+#     college = "CBIT"
+
+# obj = Test()
+# print(obj.college)      # currently no instance member, so automatically class member will access
+
+
+
+# class Test:
+#     # class member
+#     college = "CBIT"        # Test.college
+
+#     def __init__(self):
+#         # instance member
+#         self.college = "Vasavi"     # obj.college
+
+
+# obj = Test()
+# print(obj.college)
+# print(Test.college)
+
+
+# class Test:
+#     college = "CBIT"
+
+# Test.college = "CBIT College"
+# print(Test.college)
+
+
+# class Test:
+#     college = "CBIT"
+
+#     @classmethod        # decorator
+#     def test(cls):
+#         cls.college = "CBIT College"
+
+
+# Test.test()
+# print(Test.college)
+
+
+# class Test:
+#     pass
+
+# obj = Test()
+# obj.msg = "Welcome"     # adding instance variable
+
+# print(Test.msg)
+
+
+# class Test:
+#     msg = "Hello"
+#     x = 100
+
+#     def __init__(self):
+#         self.msg = "Welcome"
+
+# print(Test.__dict__)        # used to find the class members
+# obj = Test()
+# print(obj.__dict__)         # used to find instance members
+
+
+# method overriding
+# polymorphsim
+# both Parent and Child, must contain same "method signature"
+
+# class Parent:
+#     def db_func(self):
+#         return "Oracle !!!"
+
+# class Child(Parent):
+#     def db_func(self):
+#         return "ChromaDB !!!"
+
+# obj = Child()
+# print( obj.db_func() )
+
+
+# method overloading (same method name, and different signatures)
+# polymorphsim
+# not supported by python
+
+# class Test:
+#     def test1(self):
+#         print("Hello")
+#     def test1(self,param1):
+#         print(param1)
+#     def test1(self,param1,param2):
+#         print(param1,param2)
+# obj = Test()
+# obj.test1(100,200)
+
+
+# class Test:
+#     def __init__(self):
+#         pass
+#     def __init__(self, param1):
+#         print(param1)
+#     def __init__(self, param1,param2):
+#         print(param1,param2)
+# obj = Test(1,2)
+
+
+# we can achieve overloading with the help of variable-length parameter
+# class Test:
+#     def add(self,*param1):
+#         print(sum(param1))
+
+# obj = Test()
+# obj.add(10,20)
+# obj.add(10,20,30)
+
+# unable to "return" with constructor
+# class Test:
+#     def __init__(self):
+#         return "Hello"
+
+# obj = Test()
+
+# while creating the object, python will add default contructor
+# class Test:
+#     pass
+
+# obj = Test()
+
+
+# class Test:
+#     pass
+
+# Test.x = 100        # adding class variable
+# print(Test.x)       # accessing class variable
+
+# obj1 = Test()
+# # obj1.x = 1000       # instance variable
+# print(obj1.x)       # accessing instance variable
+
+# abstract - dont know function implementation
+# child classes knows the implementation
+# @abstractmethod - used to declare the abstractmethod
+# from abc import ABC,abstractmethod
+# class Test(ABC):
+#     @abstractmethod
+#     def test(self):
+#         pass
+
+# class Child1(Test):
+#     def test(self):
+#         print("Child1 impl....")
+
+# obj1 = Child1()
+# obj1.test()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  
 
 
