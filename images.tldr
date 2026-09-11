@@ -513,6 +513,21 @@
 			"typeName": "shape"
 		},
 		{
+			"editingShapeId": "shape:g9CHvQugE77rC9G1V40Qb",
+			"croppingShapeId": null,
+			"selectedShapeIds": [
+				"shape:g9CHvQugE77rC9G1V40Qb"
+			],
+			"hoveredShapeId": "shape:g9CHvQugE77rC9G1V40Qb",
+			"erasingShapeIds": [],
+			"hintingShapeIds": [],
+			"focusedGroupId": null,
+			"meta": {},
+			"id": "instance_page_state:page:q-uvljEN0eLsqKWYljBmC",
+			"pageId": "page:q-uvljEN0eLsqKWYljBmC",
+			"typeName": "instance_page_state"
+		},
+		{
 			"x": 185.1670965154968,
 			"y": 725.0216732201781,
 			"rotation": 0,
@@ -908,9 +923,96 @@
 			"typeName": "shape"
 		},
 		{
-			"x": 2374.2077453603265,
-			"y": -3002.077299083353,
-			"z": 0.0881950503300363,
+			"x": 146.84243724743507,
+			"y": 348.7304606956467,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:uY9OSrpEwEfFvj0jLgoC7",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 971.730224609375,
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "2) VSCode (Visual Studio Code)"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "    Microsoft"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "website : "
+								},
+								{
+									"type": "text",
+									"marks": [
+										{
+											"type": "link",
+											"attrs": {
+												"href": "https://code.visualstudio.com/download?_exp_download=fb315fc982",
+												"target": "_blank",
+												"rel": "noopener noreferrer nofollow",
+												"class": null
+											}
+										}
+									],
+									"text": "https://code.visualstudio.com/download?_exp_download=fb315fc982"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:q-uvljEN0eLsqKWYljBmC",
+			"index": "a2fEE",
+			"typeName": "shape"
+		},
+		{
+			"x": 4525.37491589219,
+			"y": -2649.751204530344,
+			"z": 0.06381886226702697,
 			"meta": {},
 			"id": "camera:page:page",
 			"typeName": "camera"
@@ -1138,9 +1240,7 @@
 		{
 			"editingShapeId": null,
 			"croppingShapeId": null,
-			"selectedShapeIds": [
-				"shape:ec7RfCs-RKzac9Mj2aHo9"
-			],
+			"selectedShapeIds": [],
 			"hoveredShapeId": null,
 			"erasingShapeIds": [],
 			"hintingShapeIds": [],
@@ -1191,6 +1291,14 @@
 			"parentId": "page:8jUQwlIWSN_YD3UeBl4V4",
 			"index": "b02OWn",
 			"typeName": "shape"
+		},
+		{
+			"x": 57.291659791160036,
+			"y": -103.12500042827116,
+			"z": 0.5,
+			"meta": {},
+			"id": "camera:page:q-uvljEN0eLsqKWYljBmC",
+			"typeName": "camera"
 		},
 		{
 			"x": -299.30011884481905,
@@ -1499,7 +1607,9 @@
 		{
 			"editingShapeId": null,
 			"croppingShapeId": null,
-			"selectedShapeIds": [],
+			"selectedShapeIds": [
+				"shape:eZvrkOqRPSZUlDlZjAfij"
+			],
 			"hoveredShapeId": null,
 			"erasingShapeIds": [],
 			"hintingShapeIds": [],
@@ -1880,9 +1990,9 @@
 			"typeName": "shape"
 		},
 		{
-			"x": 9563.678676199583,
-			"y": -1504.020182543309,
-			"z": 0.05,
+			"x": 0,
+			"y": 0,
+			"z": 1,
 			"meta": {},
 			"id": "camera:page:8jUQwlIWSN_YD3UeBl4V4",
 			"typeName": "camera"
@@ -2207,6 +2317,153 @@
 			},
 			"parentId": "page:8jUQwlIWSN_YD3UeBl4V4",
 			"index": "ajhdX",
+			"typeName": "shape"
+		},
+		{
+			"x": 193.3973388671875,
+			"y": 52.25694561004639,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:kZbGfMoGh2jFFwOOdNlrc",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 501.9765319824219,
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "1) Python"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\t\t\t"
+								},
+								{
+									"type": "text",
+									"marks": [
+										{
+											"type": "link",
+											"attrs": {
+												"href": "https://www.python.org/downloads/",
+												"target": "_blank",
+												"rel": "noopener noreferrer nofollow",
+												"class": null
+											}
+										}
+									],
+									"text": "https://www.python.org/downloads/"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "      "
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "      cmd"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\t\t\t****"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\t\t\t\t\t\t> python --version"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "                       (or)"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "            > python3 --version"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						}
+					]
+				}
+			},
+			"parentId": "page:q-uvljEN0eLsqKWYljBmC",
+			"index": "a1Iyv",
 			"typeName": "shape"
 		},
 		{
@@ -2688,6 +2945,13 @@
 			"parentId": "page:8jUQwlIWSN_YD3UeBl4V4",
 			"index": "aOXx2",
 			"typeName": "shape"
+		},
+		{
+			"meta": {},
+			"id": "page:q-uvljEN0eLsqKWYljBmC",
+			"name": "Page 3",
+			"index": "a3u5I",
+			"typeName": "page"
 		},
 		{
 			"x": -447.2873071045799,
@@ -3235,6 +3499,48 @@
 			"typeName": "shape"
 		},
 		{
+			"x": 157.96441320688683,
+			"y": 557.0854801645993,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:g9CHvQugE77rC9G1V40Qb",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 242.41709899902344,
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "3) enable AutoSave"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:q-uvljEN0eLsqKWYljBmC",
+			"index": "a3EgI",
+			"typeName": "shape"
+		},
+		{
 			"meta": {},
 			"id": "page:page",
 			"name": "Page 1",
@@ -3298,7 +3604,7 @@
 				"x": 0,
 				"y": 0,
 				"w": 963.1943969726562,
-				"h": 136.11109924316406
+				"h": 454.861083984375
 			},
 			"insets": [
 				false,
@@ -3315,7 +3621,7 @@
 			"isFocused": true,
 			"devicePixelRatio": 2.880000114440918,
 			"isCoarsePointer": false,
-			"isHoveringCanvas": null,
+			"isHoveringCanvas": true,
 			"openMenus": [],
 			"isChangingStyle": false,
 			"isReadonly": false,
@@ -3323,7 +3629,7 @@
 			"duplicateProps": null,
 			"cameraState": "idle",
 			"id": "instance:instance",
-			"currentPageId": "page:8jUQwlIWSN_YD3UeBl4V4",
+			"currentPageId": "page:q-uvljEN0eLsqKWYljBmC",
 			"typeName": "instance"
 		},
 		{
@@ -3696,6 +4002,48 @@
 			},
 			"parentId": "page:8jUQwlIWSN_YD3UeBl4V4",
 			"index": "aSKh2",
+			"typeName": "shape"
+		},
+		{
+			"x": -2311.4164151767795,
+			"y": 3941.3161505312737,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:eZvrkOqRPSZUlDlZjAfij",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 21.090059280395508,
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "1)"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a1OTU",
 			"typeName": "shape"
 		},
 		{
