@@ -384,6 +384,137 @@
 # obj1.test()
 
 
+# static
+# object data(self), class data (cls)
+# independent operations
+# @staticmethod
+
+# class Test:
+#     @staticmethod
+#     def add():
+#         num1 = 200
+#         num2 = 100
+#         res = num1 + num2
+#         print(res)
+
+#     def is_even(num1):
+#         return num1 % 2 == 0
+# Test.add()
+# print(Test.is_even(10))
+# print(Test.is_even(9))
+
+
+# class Test:
+#     def __init__(self,salary):
+#         self.salary = salary
+
+#     @staticmethod
+#     def get_salary(salary):
+#         return salary
+
+# obj = Test(100000)
+# print(obj.salary)   # accessing instance
+
+# print(Test.get_salary(2000))    # acceesing static
+
+
+# class Test:
+#     # class member
+#     salary = 10000
+
+#     # instance member
+#     def __init__(self):
+#         self.salary = 20000
+
+#     @staticmethod
+#     def get_salary(salary):     # static member
+#         return salary
+
+
+# print(Test.salary)
+# obj = Test()
+# print(obj.salary)
+# print(Test.get_salary(30000))
+
+
+# class Test:
+#     def __init__(self):
+#         self.name = "VPro"
+
+#     @staticmethod
+#     def access_name():
+#         print(self.name)
+
+# Test.access_name()
+
+
+# class Test:
+#     def __init__(self):
+#         self.name = "VPro"
+
+#     @staticmethod
+#     def access_name(obj):
+#         print(obj.name)
+
+# obj = Test()
+# Test.access_name( obj )
+
+
+# class Test:
+#     college = "CBIT"
+#     @staticmethod
+#     def test():
+#         print(Test.college)
+# Test.test()
+
+
+# by default test() is the static method
+# class Test:
+#     def test():
+#         print("Hello")
+
+# Test.test()
+
+
+# class Test:
+#     def __init__(self):
+#         self.__name = "VPro"
+
+#     def set_name(self):
+#         self.__name = "VPro Skills"
+
+#     def get_name(self):
+#         return self.__name
+
+
+# obj = Test()
+# obj.__name
+
+class Salary:
+    def __init__(self):
+        self.__sal = 100000
+
+    def reveal_sal(self,username,password):
+        if username == "admin" and password == "admin@123":
+            print(self.__sal)
+        else:
+            print("Unauthorized access")
+
+
+obj = Salary()
+obj.reveal_sal("admin","admin@123")
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
