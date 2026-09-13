@@ -1,0 +1,113 @@
+Agenda
+******
+1) execution agent application
+
+2) build pipeline
+        1) GitHub
+        2) GitHub Hooks
+        3) Docker
+        4) Jenkins
+        5) EC2 (AWS)
+
+
+PIPELINE
+********
+1) launch EC2 from aws (13.53.193.26)
+        ec2 instance name : vpro-server
+        storage : 20GB
+
+2) open below ports
+        8080 (Jenkins)
+        5173 (React)
+        80 (nginx)
+        8000 (fastapi)
+
+3) connect to ec2 from vscode terminal
+        chmod 400 vpro-server.pem
+        ssh -i vpro-server.pem ubuntu@13.53.193.26
+
+4) update and upgrade EC2
+        sudo apt update -y
+        sudo apt upgrade -y
+
+5) install git in EC2
+    sudo apt install -y git
+    git --version
+
+6) install Docker 
+    sudo apt install -y ca-certificates curl gnupg
+    sudo install -m 0755 -d /etc/apt/keyrings
+    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+    sudo chmod a+r /etc/apt/keyrings/docker.gpg
+
+
+    echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+    sudo apt update -y
+    sudo apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+    sudo usermod -aG docker $USER
+    sudo docker --version
+    exit
+
+6) Reconnect to EC2
+        ssh -i vpro-server.pem ubuntu@13.53.193.26
+
+6) install java
+        sudo apt install -y fontconfig openjdk-21-jre-headless
+        java --version
+
+7) install jenkins in EC2
+curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io-2026.key | sudo tee /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/debian-stable binary/" | sudo tee /etc/apt/sources.list.d/jenkins.list > /dev/null
+sudo apt update -y
+sudo apt install -y jenkins
+jenkins --version
+sudo systemctl enable jenkins
+sudo systemctl start jenkins
+sudo systemctl status jenkins
+
+8) enable Permissions between Jenkins and Docker
+sudo usermod -aG docker jenkins
+sudo systemctl restart jenkins
+
+9) get jenkins password
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+f57a01e86b9a429d9316c2576805c976
+
+10) move secrets to ec2 server
+sudo mkdir -p /opt/agent-secrets
+sudo chown $USER:$USER /opt/agent-secrets
+
+ssh -i vpro-server.pem ubuntu@13.53.193.26 "ls -la /opt/agent-secrets"
+scp -i vpro-server.pem backend/.env ubuntu@13.53.193.26:/opt/agent-secrets/.env
+scp -i vpro-server.pem backend/credentials.json ubuntu@13.53.193.26:/opt/agent-secrets/credentials.json
+scp -i vpro-server.pem backend/token.json ubuntu@13.53.193.26:/opt/agent-secrets/token.json
+ssh -i vpro-server.pem ubuntu@13.53.193.26 "ls -la /opt/agent-secrets"
+
+
+11) connect to jenkins
+***********************
+http://13.53.193.26:8080/     install suggested plugins
+
+
+12) build Docker files
+        agent-development1
+            backend
+                Dockerfile  (build backend docker image) (1)
+
+            frontend
+                Dockerfile  (build frontend docker image) (2)
+                nginx.conf      (proxy server) (3)
+        
+        docker-compose.yml      (provides communication between docker containers) (4)
+        Jenkinsfile (prepare the pipeline) (5)
+
+
+13) modify App.jsx file
+        "/query" ===> "/api/query"
+
+14) push code to github
+        https://github.com/toolsknowledge/ws-pipeline.git
+
+
+15) build pipeline
+    
