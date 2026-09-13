@@ -6965,7 +6965,7 @@
 			"typeName": "binding"
 		},
 		{
-			"editingShapeId": "shape:T3EfEFIy7InBFx-Af8QNM",
+			"editingShapeId": null,
 			"croppingShapeId": null,
 			"selectedShapeIds": [
 				"shape:T3EfEFIy7InBFx-Af8QNM"
@@ -9005,9 +9005,9 @@
 			"typeName": "shape"
 		},
 		{
-			"x": 7.49999970197679,
-			"y": -174.16665974590543,
-			"z": 1,
+			"x": 3553.201599494271,
+			"y": 436.3322290752245,
+			"z": 0.11979654120040692,
 			"meta": {},
 			"id": "camera:page:N-lTa-Zgk5GA_m3HxvZAX",
 			"typeName": "camera"
@@ -10942,8 +10942,8 @@
 			"screenBounds": {
 				"x": 0,
 				"y": 0,
-				"w": 1142.5,
-				"h": 438.33331298828125
+				"w": 942.361083984375,
+				"h": 162.5
 			},
 			"insets": [
 				false,
@@ -10958,9 +10958,9 @@
 			"isChatting": false,
 			"highlightedUserIds": [],
 			"isFocused": true,
-			"devicePixelRatio": 2.4000000953674316,
+			"devicePixelRatio": 2.880000114440918,
 			"isCoarsePointer": false,
-			"isHoveringCanvas": true,
+			"isHoveringCanvas": null,
 			"openMenus": [],
 			"isChangingStyle": false,
 			"isReadonly": false,
