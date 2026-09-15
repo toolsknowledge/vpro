@@ -1,3 +1,20 @@
+1) FAQ'S (Agentic AI) (Senario Based)
+
+2) Resume
+
+3) Vector DataBases (ChromaDB,FAISS,PineCone)
+
+4) LLM (Internals) --> Build Our own LLM
+
+5) Gen AI Tools (Image, Audio, Video,.....)
+
+6) VectorLess & Prompt Engg  & Loop Engg & Harness Engg
+
+7) RAG EVALUATION (GUARDRAILS & SECURITY & MEMORY)
+
+
+
+
 McP Server
 
 MCp Plugin
