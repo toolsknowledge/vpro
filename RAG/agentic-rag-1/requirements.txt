@@ -1,5 +1,0 @@
-langchain_anthropic 
-langchain_mcp_adapters 
-langchain 
-streamlit 
-python-dotenv
