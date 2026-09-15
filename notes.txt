@@ -51,3 +51,38 @@ variables
         Ex.
                 msg = "Hello"
                 print(msg)
+
+        
+pandas
+******
+    pandas is the "3rd party python" library
+    1) Tabular Data (Rows & Cols)
+    2) Excel / CSV / JSON /......
+    3) DataBases
+    4) Large Datasets
+
+step1.
+    create virtual environment
+        > python -m venv venv
+            (or)
+        > python3 -m venv venv
+step2.
+    activate virtual environment
+        > source venv\bin\activate (mac book)
+        > venv\Scripts\activate (windows) (cmd)
+step3.
+        prepare requirements.txt file
+        requirements.txt
+        ****************
+        pandas
+step4.
+        download libraries
+
+        > pip install -r requirements.txt
+            (or)
+        > pip3 install -r requirements.txt
+            (or)
+        > python -m pip install -r requirements.txt
+
+
+
