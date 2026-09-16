@@ -52,20 +52,117 @@
 # list1[0] = 1000
 # print(list1)
 
-# tuple
-# collection of "hetrogeneous" elements
-# () / tuple() constructor
+# Tuple
+# collection of hetrogeneous elements
+# () / tuple()
 # index starts from "0"
-# immutable (unable to "modify" the data)
+# Immutable
+# allows duplicates
 
-# import sys
-# tuple1 = (100,200,300,400,500)
-# list1 = [100,200,300,400,500]
-# print(sys.getsizeof(tuple1))        # 80
-# print(sys.getsizeof(list1))         # 104
+# t1 = (10,20,30,40,50)
+# print(t1[0])
+# print(t1[-3])
+# print(t1[-1])
+# print(t1[::2])
+# print(t1[::3])
+# print(t1[::-1])
+# print(t1[::-2])
 
-# tuple1 = (10,20,30,40,50)
-# tuple1[0] = 1000
 
-# tuple1 = (10,20,30,40,50)
-# print(tuple1[0])
+# t1 = (1000,2000,3000,4000,5000)
+# e1,e2,e3,e4,e5 = t1
+# print(e1,e2,e3,e4,e5,sep=" ➡️ ")
+
+
+# t1 = (1000,2000,3000,4000,5000)
+# e1,*list1 = t1
+# a,b,c,d = list1
+# print(a,b,c,d)
+
+# t1 = ("Python","ML","DL","NLP","GENAI","AGENTICAI")
+# x,*y,z = t1
+# print(y)
+
+# t1 = (10,20,30,10)
+# t1[0] = 100
+# print(t1.count(10))
+# print(t1.count(20))
+# print(t1.count(40))
+# print(t1.index(10))
+
+
+# key & value pairs - dictionary
+# {} / dict()
+# keys must be "immutable" and values are "mutable"
+
+# d1 = {
+#     "num1" : 200,
+#     "num2" : 100
+# }
+# print(d1.keys())
+# print(d1.values())
+# print(d1.items())
+
+# d1 = {
+#     "num1" : 200,
+#     "num2" : 100
+# }
+# print(d1["num1"])
+# d1["num3"] = 300
+# print(d1)
+
+# d1 = {
+#     (10,20,30) : (100,200,300)
+# }
+# print(d1[(10,20,30)])
+
+# Set
+# Never allowd duplicates
+# {} / set()
+# Unordered
+
+# s1 = {10,20,30,10,20}
+# print(s1)
+
+# s1 = {"Python","Python","python"}
+# print(s1)
+
+# s1 = {1,True,1.0}
+# print(s1)
+
+# s1 = {1,True,1.0,False,0,0.0}
+# print(s1)
+
+# None (Empty / Blank)
+# chair = None
+# print(chair)
+
+
+# string - "" / '' / """ """
+# int - positive / negative / zero
+# float - decimal
+# boolean - True(1) / False(0)  -- child datatype of int
+# List - mutable
+# Tuple - immutable
+# dictionary - key & value pairs
+# Set - never allows duplicates
+# None
+
+# x = list( range(5) )            # 0,1,2,3,4
+# print(x)
+
+# y = tuple( range(1,10) )
+# print(y)
+
+# x1 = list( range(1,10,2) )
+# print(x1)
+
+# y1 = tuple( range(10,1,-2) )
+# print(y1)
+
+list1 = [10,20,30,40,50]
+# for element in list1:
+#     print(element,end=" | ")
+
+for index,element in enumerate(list1):
+    print(index,element,sep="---->")
