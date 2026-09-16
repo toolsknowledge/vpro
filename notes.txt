@@ -1,12 +1,36 @@
-Python Installation
-*******************
-website : https://www.python.org/downloads/
+Python
+******
+    High Level "functional programming" language
+    Python is the Prerequisite:
+            1) ML
+            2) DL
+            3) NLP
+            4) Gen AI
+            5) Agentic AI
+            6) Quantum Computing
+            ---
+            ---
+            ---
+    ".py"
+        Ex.
+                demo.py,
+                variables.py
+    # (comment the python code)
 
-> python --version (or) python3 --version
+    we will execute with the help of either "python" / "python3"
+    Ex.
+            python demo.py
+               (or)
+            python3 demo.py
 
+installation of python
+    https://www.python.org/downloads/
 
-Visual Studio Code
-******************
+    > python --version
+            (or)
+    > python3 --version
 
-website : https://code.visualstudio.com/download?_exp_download=fb315fc982
+installation of vscode (visual studio code)
+        https://code.visualstudio.com/download?_exp_download=fb315fc982
 
+    
