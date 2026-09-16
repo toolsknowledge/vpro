@@ -88,6 +88,126 @@
 # print(data.groupby("dept")["salary"].max())
 # print(data.groupby("dept")["salary"].min())
 
+# import pandas as pd
+# students = pd.DataFrame({
+#     "student_id":[101,102,103,104],
+#     "name":["Std1","Std2","Std3","Std4"]
+# })
+# marks = pd.DataFrame({
+#     "student_id":[101,102,103,105],
+#     "marks":[80,90,75,88]
+# })
+# result = pd.merge(students,marks,on="student_id",how="inner")
+# print(result)
+
+# result = pd.merge(students,marks,on="student_id",how="left")
+# print(result)
+
+# result = pd.merge(students,marks,on="student_id",how="right")
+# print(result)
+
+# result = pd.merge(students,marks,on="student_id",how="outer")
+# print(result)
+
+
+# import pandas as pd
+# df = pd.DataFrame({
+#     "name":["Std1","Std2","Std3","Std4"],
+#     "marks":[80,90,70,60],
+#     "age":[20,21,22,23]
+# })
+
+
+# df["marks"] = 100
+# print(df)
+
+# df["marks"] = df["marks"] + 10
+# print(df)
+
+# df[["marks","age"]] = 0
+# print(df)
+
+
+# import pandas as pd
+# df = pd.DataFrame({
+#     "Name":["Ram","Ram","Ravi","Ravi"],
+#     "products":["Laptop","Mobile","Laptop","Mobile"],
+#     "sales":[50000,20000,60000,30000]
+# })
+# print(df)
+# print("------------------------")
+# result = df.pivot(index="Name",columns="products",values="sales")
+# print(result)
+
+# merge two excel sheets and generate output.xlsx
+# (one.xlsx & two.xlsx) --> output.xlsx (left)
+
+
+# import pandas as pd
+# df = pd.DataFrame({
+#     "Name":["Ram","Ravi","Anil","Kiran"],
+#     "marks":[80,None,90,None]
+# })
+
+# df.drop(1,inplace=True)
+# print(df)
+
+# df.drop([0,2,3],inplace=True)
+# print(df)
+
+
+# df.fillna(100,inplace=True)
+# print(df)
+
+
+
+# df["marks"] = df["marks"].ffill()
+# print(df)
+
+# df["marks"] = df["marks"].bfill()
+# print(df)
+
+# res = df.fillna(0)
+# print(res)
+
+# df["marks"] = df["marks"].fillna(50)
+# print(df)
+
+# df["marks"] = df["marks"].fillna( df["marks"].mean() )
+# print(df)
+
+
+# res = df.dropna()
+# print(res)      # 2 rec
+# print(df)       # 4 rec
+
+# df.dropna(inplace=True)       # modifies original data frame
+# print(df)       # 2rec
+
+
+
+# print(df)
+# print(df.isnull())    # Missed Data : True
+# print(df.isna())      # Missed Data : True
+
+# print(df.isnull().sum())    # Name: 0 Marks:2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

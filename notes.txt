@@ -85,4 +85,7 @@ step4.
         > python -m pip install -r requirements.txt
 
 
+        pip install pandas
+
+
 
