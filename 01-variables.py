@@ -1,3 +1,120 @@
+# Nested Tuple
+
+
+# list1 = [[10,20,30],
+#          [40,50,60],
+#          [70,80,90]]
+# for inner_list in list1:
+#     for element in inner_list:
+#         print(element)
+#     print("------------------")
+
+
+
+# list1 = ["QC","FDE","MLOps","LLOps","AgenticOps"]
+# list2 = [10,20,30,40,50]
+# for element1,element2 in zip(list1,list2):
+#     print(element1,element2,sep="---->")
+
+
+# list1 = [1000,2000,3000,4000,5000]
+# for index,element in enumerate(list1):
+#     print(index,element,sep="---->")
+
+# list1 = [10,20,30,40,50]
+# for element in list1:
+#     print(element,end=" | ")
+
+
+# t1 = tuple( range(10,1,-2) )      #10 8 6 4 2 
+# print(t1)
+
+# res2 = list( range(1,10,2) )       # 1 included, 10 excluded and step 2    # 1,3,5,7,9
+# print(res2)
+
+# t1 = tuple( range(1,5) )      #1 included and 5 excluded  1,2,3,4
+# print(t1)
+
+# res1 = list( range(5) )        
+# print(res1)     # [0, 1, 2, 3, 4]
+
+# num1 = 0.1
+# num2 = 0.2
+# num3 = num1 + num2
+# print(num3) # 0.30000000000000004
+
+
+
+# num1 = 0x123ABC
+# print(num1)
+
+# num2 = 0o123
+# print(num2)
+
+# num3 = 0b1010
+# print(num3)
+
+
+
+# from colorama import Fore
+# num1 = 2_00     # 200
+# num2 = 1_0_0    # 100
+# add = num1 + num2
+# print(Fore.RED + f"Addition : {add}")
+
+
+# num1 = 10
+# num2 = 3
+
+# res = num1 / num2
+# print(res)
+
+# res1 = num1 // num2
+# print(res1)
+
+# res2 = num1 % num2
+# print(res2)
+
+# res3 = num1 ** num2
+# print(res3)
+
+# para = """
+#     Course Includes
+#         1) Python
+#         2) ML + QC
+#         3) DL
+#         4) NLP
+#         5) GenAI
+#         6) AgenticAI
+#         7) Deployment (AWS,Azure,GCP)
+# """
+# print(para)
+
+
+# name = "emp1"
+# age = 30
+# msg = "{} age is {}".format(name,age)
+# print(msg)
+
+
+
+# name = "emp1"
+# dept = "R&D"
+# msg = f"{name} working in {dept}"
+# print(msg)
+
+
+
+# name = "VPro"
+# wish = f"Welcome to {name}"
+# print(wish)
+
+
+
+
+
+
+
 # variables - are used to store the data
 # Ex. msg = "Hello,VPro"
 # "Hello" -- string, 100 -- int, 100.12345 -- float, True/False -- boolean, ........
