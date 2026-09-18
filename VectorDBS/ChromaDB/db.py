@@ -1,7 +1,10 @@
 import chromadb
-client = chromadb.Client()
+# client = chromadb.Client()    # RAM
+# client = chromadb.PersistentClient(path="./chroma_db") # Persistant
+client = chromadb.HttpClient(host="localhost",port=8000)    # Http Connection   #chroma run --path ./chroma_db
 print("--Connected--")
-collection = client.create_collection(name="courses")
+#collection = client.create_collection(name="courses")
+collection = client.get_or_create_collection(name="courses")
 print("courses table created !!!")
 collection.add(
     documents=["Python is a programming language",
