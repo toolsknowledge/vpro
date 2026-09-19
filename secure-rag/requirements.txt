@@ -1,0 +1,7 @@
+fastapi                     # GET,POST,PUT,DELETE,.....
+uvicorn[standard]           # run api calls
+python-multipart            # upload documents
+openai                      # OpenAI
+chromadb                    # VectorDB
+pypdf                       # read data from pdf
+python-dotenv               # read .env file

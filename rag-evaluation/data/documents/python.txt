@@ -1,0 +1,14 @@
+Python is a high-level programming language.
+
+Python is commonly used for web development, data science,
+machine learning, artificial intelligence, and automation.
+
+Python supports object-oriented programming.
+
+Python functions are reusable blocks of code.
+
+Pandas is a Python library used for data analysis and data manipulation.
+
+NumPy is a Python library used for numerical computing.
+
+Matplotlib is a Python library used for data visualization.
