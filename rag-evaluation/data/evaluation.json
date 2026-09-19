@@ -1,0 +1,22 @@
+[
+    {
+        "question": "What is Python?",
+        "expected_answer": "Python is a high-level programming language.",
+        "expected_sources": ["python.txt"]
+    },
+    {
+        "question": "What is Pandas?",
+        "expected_answer": "Pandas is a Python library used for data analysis and data manipulation.",
+        "expected_sources": ["python.txt"]
+    },
+    {
+        "question": "What is NumPy?",
+        "expected_answer": "NumPy is a Python library used for numerical computing.",
+        "expected_sources": ["python.txt"]
+    },
+    {
+        "question": "What is Matplotlib?",
+        "expected_answer": "Matplotlib is a Python library used for data visualization.",
+        "expected_sources": ["python.txt"]
+    }
+]

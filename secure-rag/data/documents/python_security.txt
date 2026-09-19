@@ -1,0 +1,25 @@
+Python is a high-level programming language.
+
+Python is commonly used for:
+- Web development
+- Data Science
+- Machine Learning
+- Artificial Intelligence
+- Automation
+
+FastAPI is a Python framework used to build APIs.
+
+RAG means Retrieval-Augmented Generation.
+RAG retrieves relevant information from a knowledge base
+and provides that information to an LLM as context.
+
+ChromaDB can be used as a vector database for storing
+and retrieving embeddings.
+
+Prompt injection is a security problem where an attacker
+tries to manipulate an LLM using specially crafted input.
+
+Guardrails are security controls that inspect input,
+retrieved content, model output, or actions.
+
+
