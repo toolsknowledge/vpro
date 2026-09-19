@@ -1,3 +1,30 @@
+import matplotlib.pyplot as plt
+axes, fig = plt.subplot()
+axes[0] = [2,2,1]
+
+
+
+
+# import pandas as pd
+# df = pd.DataFrame({
+#     "name":["Ravi","Sita","John","Anil"],
+#     "age":[25,30,28,35],
+#     "city":["Hyderabad","Delhi","Mumbai","Chennai"]
+# },index=["A","B","C","D"])
+# print(df)
+# print(df.loc["A"])
+# print(df.loc["B":"D"])
+# print(df.loc["C","name"])
+# print(df.loc[:,"name"])
+# print(df.loc[:,"age"])
+# print(df.loc["A":"B","name"])
+# print(df.loc["A":"C",["name","age"]])
+
+# print(df.iloc[0])
+# print(df.iloc[0:3])
+# print(df.iloc[:,1])
+# print(df.iloc[0:2,0])
+
 # heatmap
 # python std1 - 90(dark green). std2 - 60(green). std3 - 40(light green)
 # import matplotlib.pyplot as plt
@@ -7,7 +34,7 @@
 #          [90,85,88,92],
 #          [60,65,70,68],
 #          [85,90,92,88]]
-# plt.imshow(marks,cmap="plasma")
+# plt.imshow(marks,cmap="coolwarm")        # viridis, plasma,magma, cividis,coolwarm,
 # plt.xticks(range(len(subjects)),subjects)
 # plt.yticks(range(len(students)),students)
 # plt.colorbar(label="marks")
