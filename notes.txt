@@ -1,5 +1,88 @@
 Python
 ******
+        Python is the High Level "functional programming language"
+
+        Python used to build
+                1) ML
+                2) DL
+                3) NLP
+                4) GenAI
+                5) Agentic AI
+        
+        ".py"
+                Ex.
+                        demo.py
+                           (or)
+                        variables.py
+
+        we will execute python files
+              > python demo.py
+                    (or)
+              > python3 demo.py 
+
+1) download and install python
+        website : https://www.python.org/downloads/
+
+        > python --version
+                (or)
+        > python3 --version
+
+2) install visualstudio code
+
+        website : https://code.visualstudio.com/download?_exp_download=fb315fc982
+
+
+3) Enable AutoSave
+        File ---> AutoSave
+
+        Note : application will save automatically
+
+4) Change powershell to cmd (windows) 
+
+                view ---> terminal
+
+                powershell --> cmd
+
+
+pip is the tool, used to download python libraries
+Ex.
+        pip install colorama (Styles)
+                (or)
+        pip install numpy
+
+        pip install pandas
+
+        pip install matplotlib
+                ---
+                ---
+                ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Python
+******
     High Level "functional programming" language
     Python is the Prerequisite:
             1) ML
