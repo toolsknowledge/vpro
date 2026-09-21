@@ -101,3 +101,98 @@
 # test()
 # test(1)
 # test(1,2,3,4,5,num1=100,num2=200)
+
+
+# def outer():
+#     def inner():
+#         print("Hello")
+#     inner()
+
+# outer()
+
+
+# Closure
+# def outer():
+#     name = "VPro"
+
+#     def inner():
+#         print(name)
+#     inner()
+
+# outer()
+
+
+# def outer():
+#     course = "AgenticAI"
+
+#     def inner():
+#         print(course)
+
+#     return inner        # outer function return inner function definition
+
+# x = outer()
+# x()
+
+
+# def outer():
+#     count = 0
+
+#     def inner():
+#         nonlocal count
+#         count += 1
+#         return count
+
+#     return inner
+
+# x = outer()
+# print(x())
+# print(x())
+# print(x())
+
+
+# def print_numbers(num):
+#     if num == 0:
+#         return
+
+#     print_numbers(num-1)
+#     print(num)
+
+# print_numbers(5)
+
+
+# def factorial(num):
+#     if num == 1:
+#         return 1
+
+#     return num * factorial(num-1)
+
+# factorial(5)
+
+
+# res = lambda num1:num1 * num1
+# print(res(10))
+
+
+# add = lambda num1,num2: num1 + num2
+# print(add(200,100))
+
+
+# print( list( map(lambda num1:num1*100, [10,20,30,40,50]) ) )
+
+# print( list( filter(lambda num1:num1>=3,[1,2,3,4,5]) ) )
+
+from functools import reduce
+print( reduce(lambda num1,num2:num1+num2,[10,20,30,40,50]) )
+
+
+
+
+
+
+
+
+
+
+
+
+
