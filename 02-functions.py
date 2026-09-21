@@ -182,3 +182,84 @@
 # from functools import reduce
 # res = reduce(lambda num1,num2:num1+num2,[10,20,30,40,50])
 # print(res)
+
+
+
+# Recursion
+# def print_numbers(n):
+#     if n == 0:
+#         return
+#     print_numbers(n-1)
+#     print(n)
+
+# print_numbers(5)
+
+
+# def fact(n):
+#     if n == 1:
+#         return 1
+#     return n * fact(n-1)
+# fact(5)
+
+
+# def outer():
+#     def inner():
+#         print("Hello, from inner function !!!")
+#     inner()
+
+# outer()
+
+# clouser - inner functions able to access outer function
+# def outer():
+#     name = "VPro"
+
+#     def inner():
+#         print(name)
+
+#     return inner        # inner func definition
+
+# inner_fun = outer()
+# print(type(inner_fun))
+# inner_fun()
+
+
+# def outer():
+#     count = 0
+#     def inner():
+#         nonlocal count
+#         count += 1
+#         return count
+#     return inner
+
+# inner = outer()
+# print(inner())
+# print(inner())
+# print(inner())
+
+# def decorator(func):
+#     def wrapper():
+#         print("Hello !!!")
+#         func()
+#         print("Good Morning !!!")
+#     return wrapper
+
+# @decorator
+# def test():
+#     print("Developer")
+
+# test()
+
+
+# 4 types of functions 1. no para - no return 2......
+# variable-length (*)
+# default-parameters param1=100
+# keyword-length parameters
+# *
+# /
+# lambda
+# closure
+# nonlocal
+# recursion
+
+
+
