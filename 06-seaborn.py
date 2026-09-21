@@ -44,14 +44,14 @@
 
 
 # heatmap
-import seaborn as sns
-import matplotlib.pyplot as plt
+# import seaborn as sns
+# import matplotlib.pyplot as plt
 
-flights = sns.load_dataset("flights")
-print(flights.head(10))
-pivot = flights.pivot(index="month",columns="year",values="passengers")
-sns.heatmap(pivot,annot=True,fmt="d",cmap="plasma")
-plt.show()
+# flights = sns.load_dataset("flights")
+# print(flights.head(10))
+# pivot = flights.pivot(index="month",columns="year",values="passengers")
+# sns.heatmap(pivot,annot=True,fmt="d",cmap="plasma")
+# plt.show()
 
 
 
