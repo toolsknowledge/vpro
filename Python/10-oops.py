@@ -455,14 +455,14 @@
 
 # Encapsulation - wrapping the properties and behaviour
 # "class" keyword
-# class Test:
-#     cmp = "TCS !!!"
+class Test:
+    cmp = "TCS !!!"
 
-#     def __init__(self):
-#         self.cmp = "Infosys !!!"
+    def __init__(self):
+        self.cmp = "Infosys !!!"
 
-#     def func_one(self):
-#         pass
+    def func_one(self):
+        pass
 
-#     def func_two(cls):
-#         pass
+    def func_two(cls):
+        pass
