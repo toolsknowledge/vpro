@@ -33,4 +33,133 @@ installation of python
 installation of vscode (visual studio code)
         https://code.visualstudio.com/download?_exp_download=fb315fc982
 
+
+
+Python
+******
+        - High level functional programming language
+        - Prerequisite : 1) ML
+                        2) DL
+                        3) NLP
+                        4) Gen AI
+                        5) Agentic AI
+        - .py
+                Ex.
+                        demo.py
+
+        - python / python3
+                Ex.
+                        python demo.py
+                                (or)
+                        python3 demo.py
+
+        - comment "#"
+
+
+1) variables
+        store the data
+
+        num1 = 200
+
+2) datatypes
+        "Hello" --- string
+        100 -- int
+        100.12 -- float
+        True/False -- boolean
+        [10,20,....] -- list (mutable)
+        (100,200,....) -- tuple (immutable)
+        {"name":"hello"} -- dictionary
+        {10,20,10} - {10,20} -- set
+        Blank/Empty - None 
+
+3) functions
+        business logic
+        reuse the business logic
+        lambda function
+        ---
+        ---
+        ---
+4) numpy
+        numerical python
+        1D,2D,3D,....ND Array
+        better memory management
+        operations - speed
+
+        pip / pip3
+        Ex.
+                pip install numpy
+
+5) pandas
+        Tabular Data (Rows & Cols)
+        Excel Sheets / CSV Files / JSON Files /.........
+        data cleaning
+
+        pip install pandas
+
+
+6) matplotlib
+        Draw Plots and Graphs
+        Ex.
+                Line Plot
+                Pie Chart
+                Bar Chart
+                Scatter Plot
+                Box Plot
+                Heat Map
+                ---
+                ---
+                ---
+        pip install matplotlib
+
+7) seaborn
+        styled graphs
+                pip install seaborn
+
+8) Lists
+
+9) Tuples
+
+10) Dictionary
+
+11) Set
+
+12) OOPS
+        Object Oriented Programming System
+        1) Abstraction
+        2) Encapsulation
+        3) Polymorphism
+        4) Inheritance
+
+13) Loops &  Conditions
+        for
+        while
+        --
+        --
+
+        if
+        elif
+        else
+
+        match
+
+1) download and install python  
+        https://www.python.org/downloads/
+
+        > python --version
+                (or)
+        > python3 --version
+
+2) download and install visual studio code
+        https://code.visualstudio.com/download?_exp_download=fb315fc982
+
+
+3) enable autosave
+        File ---> AutoSave
+        application saves automatically
+
+
+
+
+
+
     
