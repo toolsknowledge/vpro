@@ -82,6 +82,92 @@
 # print(e1,e2,e3,e4)
 
 
+# t1 = 100,500,200,400,300
+# print(max(t1))
+# print(min(t1))
+# print(len(t1))
+# print(sum(t1))
+# print(sum(t1)/len(t1))
+# res = sorted(t1)
+# print(res)
+
+
+# t1 = (10,20,30,40,50)
+# print(30 in t1)
+# print(300 not in t1)
+
+
+# t1 = ((10,20,30),
+#       (40,50,60),
+#       (70,80,90))
+# for inner in t1:
+#     for index,element in enumerate(inner):
+#         print(index,element,sep="→")
+#         print("-------------")
+
+
+# dictionary
+# keys - immutable
+# values - mutable
+
+# d1 = {
+#     (10,20) : "VPro"
+# }
+# print(d1)
+
+# t1 = (10,20,30,40,50)
+# found = False
+# e1 = input("Enter Element : ")
+# for element in t1:
+#     if element == int(e1):
+#         found = True
+
+# res = "Element Found" if found else "Element Not Found"
+# print(res)
+
+
+
+
+# t1 = (10,50,20,40,30,100)
+# large = t1[0]       # 100
+# for element in t1:
+#     if element>large:
+#         large = element
+
+# print(large)
+
+
+# t1 = (10,20,30,40,50)
+# print(type(t1))     # <class 'tuple'>
+
+# l1 = list(t1)           # list() -- tuple to list
+# print(type(l1))
+
+# l1[0] = 100
+# print(l1)
+
+# t1 = tuple(l1)
+# print(t1)
+
+
+# t1 = ([10],[20],[30])
+# t1[0][0] = 100
+# print(t1)
+
+# num1 = 200
+# num2 = 100
+# num2,num1 = num1,num2
+# print(num1,num2)
+
+t1 = (10,20,30,40,50)
+print(*t1)
+
+
+
+
+
+
+
 
 
 
