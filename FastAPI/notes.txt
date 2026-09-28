@@ -1,0 +1,118 @@
+As a Developer, we are unable to interact with "Backend"
+Backend, used to provide security to business logic
+Ex.
+    Java
+    dotnet
+    FastAPI
+    Laravel
+    NodeJS
+    PERL
+    ---
+    ---
+    ---
+FastAPI, is the "python Backend"
+
+by using FastAPI, able to build "API'S"
+
+API'S
+*****
+    1) GET
+        reading data from backend
+    2) POST
+        sending data to backend
+    3) PUT
+        updating backend data
+    4) PATCH
+        updating partial data
+    5) DELETE
+        deleting backend data
+    6) HEAD
+    7) TRACE
+    ---
+    ---
+    ---
+
+DataBases
+*********
+we have three types of DataBases
+1) relational databases
+    Ex.
+        oracle, mysql, sqlserver, postgress.....
+2) non relational databases
+    Ex.
+        mongodb, casandradb, dynamo,....
+3) vector databases  (AI)
+    Ex.
+        chromadb, pinecone, Qdrant, FAISS,.....
+
+mongodb
+*******
+    mongodb is no relational database
+
+    SQL                                     NoSQL
+    ***************************************************
+    Ex.
+        oracle                          mongodb
+        mysql                           casandradb 
+        sqlserver                       dynamodb
+                                        couchdb
+
+        Tables                          Collection
+
+        Records                         documents
+
+        DataBases                       DataBases
+
+        primary key                     _id
+
+        joins                           lookup
+    ****************************************************
+
+    mongodb supports objects
+    Ex.
+        {
+            "id":101,
+            "name":"Emp1",
+            "age":20
+        }
+
+    mongodb supports cloud (mongodb atlas)
+        https://account.mongodb.com/account/login
+
+
+**************************************************************************
+IP : 0.0.0.0/0
+username : admin
+password : admin
+db name : college_db
+collection : students
+URL : mongodb+srv://admin:admin@vpro.zqjch7g.mongodb.net/?appName=VPro
+**************************************************************************
+
+Step 1.
+    view -- terminal
+    powershell -- cmd (windows)
+    cd FastAPI
+    python -m venv venv
+    source venv/bin/activate (mac book)
+            (or)
+    venv\Scripts\activate (windows)
+
+    pip install -r requirements.txt
+
+
+download
+*******
+    pip install -r requirements.txt
+            (or)
+    python -m pip install -r requirements.txt
+
+run
+***
+    uvicorn main:app --reload
+        (or)
+    python -m uvicorn main:app --reload
+
+google chrome
+*************
+    http://127.0.0.1:8000/docs      (swagger) (test api calls)
