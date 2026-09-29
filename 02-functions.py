@@ -1,198 +1,188 @@
-# function definition
+"""
+    functions
+    *********
+        particular "business logic" called as "function"
+                (or)
+        set of "statements" also called as function
 
-# no parameters - no return
-# def square():
-#     num1 = 2
-#     res = num1 * num1
-#     print(res)
+        functions are used to "reuse" the business logic
 
-# function calling
-# square()
+        "def" is the keyword, used to "define" the function
+
+        "pass" is the keyword, used to define the "empty function"
+"""
+
+# Example-1
+# Function Defintion
+# No Parameters - No Return
+# def addition():
+#     num1 = 200
+#     num2 = 100
+#     res = num1 + num2
+#     print(f"Addition : {res}")
+
+# Function Calling
+# addition()
 
 
-# no parameter - with return
-# def square():
-#     num1 = 10
-#     res = num1 * num1
+# Example-2
+# No Parameters - with Return Type
+# def addition():
+#     num1 = 200
+#     num2 = 100
+#     res = num1 + num2
 #     return res
 
-# x = square()
-# print(x)
+# x = addition()
+# print(f"Addition : {x}")
 
-# with parameters - no return
-# def square(num1):
-#     res = num1 * num1
-#     print(res)
+# Example-3
+# With Parameters - No Return Type
+# def addition(num1,num2):
+#     res = num1 + num2
+#     print(f"Addition : {res}")
 
-# square(100)
+# addition(200,100)
 
-# with parameters - with return
-# def square(num1):
-#     res = num1 * num1
+
+# Example-4
+# with parameters and with return type
+# def addition(num1,num2):
+#     res = num1 + num2
 #     return res
 
-# x = square(10)
-# print(x)
+# x = addition(200,100)
+# print(f"Addition : {x}")
 
 
-# in definition itself, initilize parameters called ad default parameters in functions
-# def test(num1=200,num2=100):
-#     print(num1, num2)
-
-# test()
-# test(1,2)
-# test(num2=1000)
-# test(2000)
-
-# param1 & param2 - positional parameters
-# param3 - default paramerer
-# def test(param1,param2,param3="Hello"):
-#     print(param1, param2, param3)
-
-# test()
-# test(100)
-# test(1,2)
-# test(1,2,3)
-
-
-# def test(*param1):
+"""
+    variable-length parameter
+    *************************
+        * used to create the variable-length parameter
+        because of variable-length parameter, param behaves like tuple
+        Note : we are allowed to pass only one variable-length parameter per function
+"""
+# Example-5
+# def test_func(*param1):
 #     print(param1)
 
-# test(10,20,30,40,50)
-# test()
-# test("Python","ML","DL","NLP","GENAI","AGENTICAI")
+# test_func(10,20,30,40,50)
 
-# Note : functions wont allows more than one variable-length parameter
-# def test(*param1,*param2):
+
+# Example-6
+# def test_func(*param1,*param2):
 #     pass
 
-# param1 - positional
-# param2 - default
-# param3 - variable-length parameters
-
-# def test(param1,param2="Hello",*param3):
+# Example-7
+# param1 & param2 - positional parameters (mandatory)
+# param3 - variable-length parameter
+# def test_func(param1,param2,*param3):
 #     print(param1, param2, param3)
 
-# test()
-# test(100)
-# test(1,2,3,4,5)
-
-# keyword-length parameters
-# last
-# only one keyword-length parameter allowed
-# param1 - dictionary
-# key-value pairs
-
-# def test(**param1):
-#     print(param1)
-
-# test()
-# test(name="VPro")
-# test(name="VPro",course="AgenticAI")
+# test_func()           # Error
+# test_func(200)        # Error
+# test_func(200,100)    # 200 100 ()
+# test_func(200,100,300,400,500)
 
 
+# Example-8
+# variable-lenght parameter always last in parameters-list
+# def test_func(*param1,param2,param3):
+#     pass
+# test_func(10,20,30,40,50)
+
+
+"""
+    initilizing parameters during function defintion itself called as
+    default parameters in functions
+"""
+# Example-9
+# def test_func(param1="Hello",param2="VPro"):
+#     print(param1, param2)
+
+# test_func()
+# test_func("FDE")
+# test_func(param2="VPro EduTech")
+# test_func(None)
+
+
+# Example-10
+# param1 & param2 - positional parameters (mandatory)
+# param3 & param4 - default parameters
+# def test_func(param1,param2,param3=100,param4=200):
+#     print(param1,param2,param3,param4)
+
+# test_func()
+# test_func(1)
+# test_func(1,2)
+
+# Example-11
+# in positional and default combination, default must be last in parameters list
+# def test_func(param1=100,param2):
+#     print(param1,param2)
+
+
+# Example-12
 # param1 - positional
 # param2 - default
-# param3 - variable-length
-# param4 - keyword-length parameter
-# def test(param1,param2=100,*param3,**param4):
+# param3 - variable-length parameter
+# Rule 1: in positional and default -- default must be 2nd priority
+# Rule 2: in position and variable-length - variable-length must be 2nd priority
+# def test_func(param1,param2=100,*param3):
+#     print(param1,param2,param3)
+# test_func(10,20,30,40,50)
+
+# Example-13
+# def test_func(param1,*param2,param3=100):
+#     print(param1, param2, param3)
+
+# test_func(10,20,30,40,50)
+
+
+"""
+    keyword-length parameters
+    *************************
+        ** - used to create "keyword-length" parameter
+        param behaves like a "dictionary" (key & value pairs)
+        keyword-length parameters always "last"
+        only "one" keyword-length parameter allowed
+"""
+# Example-14
+# def test_func(**param1):
+#     print(param1)
+
+# test_func(name="Samba",cmp="VPro")
+    
+
+# Example-15
+# def test_func(**param1,**param2):
+#     pass
+
+
+# Example-16
+# def test_func(param1,param2=100,*param3,**param4):
 #     print(param1, param2, param3, param4)
-
-# test()
-# test(1)
-# test(1,2,3,4,5,num1=100,num2=200)
+# test_func()
+# test_func(10)
 
 
-# def outer():
-#     def inner():
-#         print("Hello")
-#     inner()
+# Example-17
+# def test_func(num1,num2):
+#     print(num1,num2)
 
-# outer()
-
-
-# Closure
-# def outer():
-#     name = "VPro"
-
-#     def inner():
-#         print(name)
-#     inner()
-
-# outer()
+# test_func(200,100)
+# test_func(num1=2,num2=1)              # keyword-only parameters
+# test_func(num2=2000,num1=1000)
+# test_func(num1=10000,20000)
 
 
-# def outer():
-#     course = "AgenticAI"
+# Example-18
+# * - keyword-only
+# after * compulsary keyword-only
+# def test_func(num1,*,num2,num3):
+#     print(num1,num2,num3)
 
-#     def inner():
-#         print(course)
-
-#     return inner        # outer function return inner function definition
-
-# x = outer()
-# x()
-
-
-# def outer():
-#     count = 0
-
-#     def inner():
-#         nonlocal count
-#         count += 1
-#         return count
-
-#     return inner
-
-# x = outer()
-# print(x())
-# print(x())
-# print(x())
-
-
-# def print_numbers(num):
-#     if num == 0:
-#         return
-
-#     print_numbers(num-1)
-#     print(num)
-
-# print_numbers(5)
-
-
-# def factorial(num):
-#     if num == 1:
-#         return 1
-
-#     return num * factorial(num-1)
-
-# factorial(5)
-
-
-# res = lambda num1:num1 * num1
-# print(res(10))
-
-
-# add = lambda num1,num2: num1 + num2
-# print(add(200,100))
-
-
-# print( list( map(lambda num1:num1*100, [10,20,30,40,50]) ) )
-
-# print( list( filter(lambda num1:num1>=3,[1,2,3,4,5]) ) )
-
-from functools import reduce
-print( reduce(lambda num1,num2:num1+num2,[10,20,30,40,50]) )
-
-
-
-
-
-
-
-
-
-
-
-
+# test_func(1,num2=2,num3=3)
+# test_func(num1=1,num2=2,num3=3)
+# test_func(1,2,3)
 
