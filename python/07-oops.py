@@ -148,10 +148,205 @@
 # Example-7
 # python wont support multiple constructors (overloading)
 # internally overriding will happen
-class Test:
-    def __init__(self):
-        pass
-    def __init__(self, param1):
-        pass
-    def __init__(self, param1,param2):
-        pass
+# class Test:
+#     def __init__(self):
+#         pass
+#     def __init__(self, param1):
+#         pass
+#     def __init__(self, param1,param2):
+#         pass
+
+
+"""
+    inheritance
+        getting the data from "parent" class to child "class" called as inheritance
+        1) single level
+        2) multi level
+        3) multiple
+        4) hirarichal
+        5) hybrid
+"""
+
+# Example-8
+# Single Level
+# class Parent:
+#     def __init__(self):
+#         self.num1 = 20
+
+# class Child(Parent):
+#     def __init__(self):
+#         super().__init__()
+#         self.num2 = 10
+
+# obj = Child()
+# print(obj.num1 + obj.num2)
+
+
+"""
+    child class will communicate with parent class with super()
+"""
+# Example-9
+# class Parent:
+#     def __init__(self,num1):
+#         self.num1 = num1
+
+# class Child(Parent):
+#     def __init__(self, num1,num2):
+#         super().__init__(num1)
+#         self.num2 = num2
+
+# obj = Child(20,10)
+# print(obj.num1 + obj.num2)
+
+
+# Example-10
+# class Parent:
+#     def func1(self):
+#         print("Hello")
+
+#     def func2(self):
+#         print("Python")
+
+# class Child(Parent):
+#     def func3(self):
+#         print("AgenticAI")
+#     def func4(self):
+#         super().func1()
+
+# obj = Child()
+# obj.func1()
+# obj.func2()
+# obj.func3()
+# obj.func4()
+
+# Example-11
+# class Parent:
+#     def __init__(self):
+#         self.x = "Frontend"
+# class Child(Parent):
+#     def __init__(self):
+#         super().__init__()
+#         self.y="Backend"
+# class Subchild(Child):
+#     def __init__(self):
+#         super().__init__()
+#         self.z = "DataBase"
+# obj = Subchild()
+# print(obj.x,obj.y,obj.z,sep="-->")
+
+
+# Example-12
+# Multiple
+# class Parent1:
+#     def __init__(self):
+#         self.num1 = 30
+
+# class Parent2:
+#     def __init__(self):
+#         self.num2 = 20
+
+# class Child(Parent1,Parent2):
+#     def __init__(self):
+#         Parent1.__init__(self)
+#         Parent2.__init__(self)
+#         self.num3 = 10
+
+# obj = Child()
+# print(obj.num1 + obj.num2 + obj.num3)
+
+
+# Example-13
+# class Parent1:
+#     def __init__(self):
+#         self.num1 = 1000
+# class Parent2:
+#     def __init__(self):
+#         self.num1 = 2000
+# class Child(Parent1,Parent2):
+#     def __init__(self):
+#         Parent1.__init__(self)
+#         Parent2.__init__(self)
+#         self.num2 = 500
+# print(Child().num1, Child().num2)
+
+
+# Example-14
+# Hirarichal
+# class Parent:
+#     def func1(self):
+#         print("Python !!!")
+
+# class Child1(Parent):
+#     def func2(self):
+#         print("Gen AI !!!")
+
+# class Child2(Parent):
+#     def func2(self):
+#         print("Agentic AI !!!")
+
+# Child2().func1() 
+# Child2().func2()
+
+# Child1().func1()
+# Child1().func2()
+
+
+
+# Example-15
+# hybrid
+# class Parent:
+#     def __init__(self):
+#         self.num1 = 1
+
+# class Child1(Parent):
+#     def __init__(self):
+#         super().__init__()
+#         self.num2 = 2
+
+# class Child2(Parent):
+#     def __init__(self):
+#         super().__init__()
+#         self.num3 = 3
+
+# class Child3(Child1,Child2):
+#     def __init__(self):
+#         super().__init__()
+#         self.num4 = 4
+# obj3 = Child3()
+# print(obj3.num1, obj3.num2, obj3.num3, obj3.num4)
+
+
+"""
+    __, used to create private members
+    unable to access with the help of objects
+    unable to access in child classes also
+    private members accessable with in the same class
+"""
+# Example-16
+# class Account:
+#     def __init__(self):
+#         self.__bal = 1000
+
+# class Bank(Account):
+#     pass
+
+# obj = Account()
+# obj.__bal
+
+# obj = Bank()
+# obj.__bal
+
+
+# Example-17
+# class Account:
+#     def __init__(self):
+#         self.__bal = 1000 
+
+#     def get_bal(self,passcode):
+#          if passcode == "vpro@123":
+#              print(self.__bal)
+#          else:
+#             print("Unauthoprized Access")
+
+# obj = Account()
+# obj.get_bal("vpro@1234")
