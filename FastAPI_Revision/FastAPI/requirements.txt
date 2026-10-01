@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+pymongo
+python-dotenv
+pwdlib[argon2]      # hash the passwords
+                    # light weight library
+                    # lms (less cost)
+
+PyJWT               # generate tokens
+                    # json web token
+                    # auth (JWT Auth)
+
