@@ -469,3 +469,4 @@ class Test:
 # print(Test.name)
 obj = Test()
 print(obj.name)     # __init__()
+
