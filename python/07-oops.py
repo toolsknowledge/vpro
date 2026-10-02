@@ -350,3 +350,122 @@
 
 # obj = Account()
 # obj.get_bal("vpro@1234")
+
+
+
+# Example-18 (Encapsulation)
+# class Test:
+#     def __init__(self,num):
+#         self.__num = num
+
+#     def set_num(self,num):
+#         self.__num = num
+
+#     def get_num(self):
+#         print(self.__num)
+
+# obj = Test(100)
+# obj.get_num()
+
+# change private variable
+# obj.set_num(200)
+# access private variable
+# obj.get_num()
+
+
+# Example-19
+# same function name, but different parameters called as function overrloading
+# python wont supports function overloading
+# function overloading comes under "polymorphism"
+# with the help of variable-lenght (tuple) , we can achieve overloading
+
+# class Test:
+#     def addn(self,num1,num2):
+#         res = num1 + num2
+#         print(res)
+#     def addn(self,num1,num2,num3):
+#        res = num1 + num2 + num3
+#        print(res)
+
+# obj = Test()
+# obj.addn(10,20,30)
+
+# Example-20
+# class Test:
+#     def addn(self,*num):
+#         print(sum(num))
+
+# obj = Test()
+# obj.addn(10,20)
+# obj.addn(100,200,300)
+# obj.addn(1,2,3,4)
+
+
+
+# Example-21
+# overriding parent class functionality with child class, called as function overriding
+# overriding is the part of polymorphsim
+# to achieve function overriding, inheritance mandatory
+# both parent and child must contain same function name
+
+# class Parent:
+#     def property(self):
+#         return "2bhk house"
+
+# class Child(Parent):
+#     def property(self):
+#         return "3bhk house + car"
+
+# obj = Child()
+# print( obj.property() )
+
+
+
+# Example-22
+# function without implementation called as abstraction
+# @abstractmethod and ABC
+# child classes will provide implementation
+
+# from abc import ABC,abstractmethod
+# class Test(ABC):
+#     @abstractmethod
+#     def start_business(self):
+#         pass
+
+# class Frnd1(Test):
+#     def start_business(self):
+#         print("---Startup---")
+
+# class Frand2(Test):
+#     def start_business(self):
+#         print("---Training----")
+
+# obj = Frand2()
+# obj.start_business()
+
+# obj1 = Frnd1()
+# obj1.start_business()
+
+# Example-23
+# property is the predefined decorator
+# by using property, we are able to call functions like variables
+
+# class Test:
+#     @property
+#     def addn(self):
+#         num1 = 10
+#         num2 = 20
+#         res = num1 + num2
+#         print(res)
+
+# obj = Test()
+# obj.addn
+
+
+# Example-24
+class Test:
+    name = "CBIT"
+
+# print(Test.name)
+obj = Test()
+print(obj.name)     # __init__()
