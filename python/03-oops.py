@@ -189,3 +189,134 @@
 # print(obj.num1, obj.num2)
 
 
+
+# Example-12 (Hirarichal Inheritance)
+# class Parent:
+#     def __init__(self):
+#         self.num1 = 200
+
+# class Child1(Parent):
+#     def __init__(self):
+#         super().__init__()
+#         self.num2 = 100
+
+# class Child2(Parent):
+#     def __init__(self):
+#         super().__init__()
+#         self.num2 = 10
+
+# obj1 = Child1()
+# print(obj1.num1, obj1.num2)
+
+# obj2 = Child2()
+# print(obj2.num1, obj2.num2)
+
+# Example-13
+# Hybrid Inheritance
+# class Test1:
+#     def __init__(self):
+#         self.num1 = 40
+
+# class Test2(Test1):
+#     def __init__(self):
+#         super().__init__()
+#         self.num2 = 30
+
+# class Test3(Test1):
+#     def __init__(self):
+#         super().__init__()
+#         self.num3 = 20
+
+# class Test4(Test2,Test3):
+#     def __init__(self):
+#         Test2.__init__(self)
+#         Test3.__init__(self)
+#         self.num4 = 10
+
+# obj = Test4()
+# print(obj.num1, obj.num2, obj.num3, obj.num4)
+
+
+# Example-14
+# overloading : same function names, but different parameters list called as overloading
+# polymorphism
+# overloading not supported by python 
+# class Test:
+#     def add(self,num1,num2):
+#         print(num1+num2)
+#     def add(self,num1,num2,num3):
+#         print(num1+num2+num3)
+#     def add(self,num1,num2,num3,num4):
+#         print(num1+num2+num3+num4)
+# obj = Test()
+# obj.add(10,20,30,40)
+
+
+# Example-15
+# achieving overloading with the help of variable-length parameter
+# class Test:
+#     def add(self,*nums):
+#         print(sum(nums))
+
+# obj = Test()
+# obj.add(10,20)
+# obj.add(10,20,30)
+# obj.add(10,20,30,40)
+# obj.add(10,20,30,40,50)
+
+# Example-16
+# class Test:
+#     def __init__(self):
+#         pass
+#     def __init__(self, param1):
+#         pass
+#     def __init__(self, param1,param2):
+#         pass
+# obj = Test(10,20)
+
+
+# Example-17
+# Overriding : overriding parent class functionality with child class functionality
+# Polymorphsim
+# Inheritance
+# both Parent and Child must contain same function
+# class Parent:
+#     def dbfunc(self):
+#         print("Oracle Conn Soon...!")
+# class Child(Parent):
+#     def dbfunc(self):
+#         print("VectorDB Conn Soon...!")
+
+# obj = Child()
+# obj.dbfunc()
+
+
+# Example-18
+# class Bank:
+#     def __init__(self):
+#         self.__balance = 1000       # __, used to declare the private variables
+                                    # "unable" to access with the help of objects
+                                    # private variables "unable" to access to child classes also
+                                    # private variables, able to access with in the same class
+# obj = Bank()
+# obj.__balance               
+
+# class Axis(Bank):
+#     pass
+
+# obj = Axis()
+# obj.__balance
+
+
+# Example-19
+# Encapsulation
+# class Bank:
+#     def __init__(self):
+#         self.__bal = 1000
+#     def setBal(self):
+#         self.__bal = 10000 
+#     def getBal(self):
+#         return self.__bal
+# obj = Bank()
+# obj.setBal()
+# print(obj.getBal())
