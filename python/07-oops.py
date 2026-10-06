@@ -463,10 +463,126 @@
 
 
 # Example-24
-class Test:
-    name = "CBIT"
+# class Test:
+#     name = "CBIT"
 
+# # print(Test.name)
+# obj = Test()
+# print(obj.name)     # __init__()
+
+
+
+# Example-25
+# class Test:
+#     # class level member/static variable
+#     name = "CBIT"
+
+# # print(Test.name)
+# Test.name = "CBIT College"
+
+# obj = Test()
+# print(obj.name)
+
+# Example-26
+# class Test:
+#     name = "CBIT"
+
+#     @classmethod
+#     def change_name(cls):
+#         cls.name = "CBIT College"
+
+# Test.change_name()
 # print(Test.name)
-obj = Test()
-print(obj.name)     # __init__()
+
+
+# Example-27
+# class Test:
+#     name = "hello"
+
+# obj = Test()
+# print(obj.name) # if no instance member, automatically priority goes to class member
+
+
+# Example-28
+# class Test:
+#     name = "Hello"
+#     def __init__(self):
+#         self.x = 20
+#         self.y = 10
+# print(Test.__dict__)
+
+# obj = Test()
+# obj.x = 200
+# print(obj.__dict__)
+
+# obj1 = Test()
+# print(obj1.__dict__)
+
+# """
+#     static methods
+#     **************
+#         define utility methods
+#         we are not using any self,cls
+#         @staticmethod
+# """
+# class Calculator:
+#     @staticmethod
+#     def square(number):
+#         return number*number
+
+# print(Calculator.square(10))
+
+
+# MRO - Method Resolution Order
+# class A:
+#     def show(self):
+#         print("A")
+# class B:
+#     def show(self):
+#         print("B")
+# class C(B,A):
+#     pass
+
+# obj = C()
+# obj.show()
+# print(C.mro())
+
+# C --> B --> A --> object
+
+# class Parent:
+#     def show(self):
+#         print("Parent")
+# class Child(Parent):
+#     pass
+# class Subchild(Child):
+#     pass
+
+# obj = Subchild()
+# obj.show()
+# print(Subchild.mro())
+# # Subchild --> Child --> Parent ---> object
+
+
+# """
+#     adding additional functionality to original function called as decorator
+#     we will use decorator with "@" symbol
+# """
+# def test_func(func):
+#     def wrapper():
+#         print("Gift By:")
+#         func()
+#         print("VPro !!!")
+#     return wrapper
+
+# @test_func
+# def greet():
+#     print("Hello")
+
+# greet()
+
+
+
+
+
+
 
