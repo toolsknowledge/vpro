@@ -1,45 +1,14 @@
-"""
-model.py
-
-Purpose
--------
-Build a very small Language Model.
-
-Architecture
-
-Input IDs
-
-↓
-
-Embedding
-
-↓
-
-Linear
-
-↓
-
-ReLU
-
-↓
-
-Linear
-
-↓
-
-Predicted Next Word
-"""
-
 import torch
 import torch.nn as nn
 
-class MiniLLM(nn.Module):       # Python - 18 - [0.2,0.33,0.44,-0.11]
+
+class MiniLLM(nn.Module):
 
     def __init__(self, vocab_size, embedding_dim):
 
         super().__init__()
 
-        # Convert Word IDs into vectors
+        # Convert word IDs into vectors
         self.embedding = nn.Embedding(
             num_embeddings=vocab_size,
             embedding_dim=embedding_dim
@@ -56,13 +25,14 @@ class MiniLLM(nn.Module):       # Python - 18 - [0.2,0.33,0.44,-0.11]
 
         # Output Layer
         self.linear2 = nn.Linear(
-            64,
+            512,
             vocab_size
         )
 
+    # forward propagation
     def forward(self, x):
 
-        # Convert IDs to vectors
+        # Word IDs → vectors
         x = self.embedding(x)
 
         # Average all word vectors

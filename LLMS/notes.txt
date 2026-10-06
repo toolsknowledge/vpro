@@ -3,3 +3,40 @@ https://colab.research.google.com/drive/1w9zNVu9_LIQ-fn-XHTPjL0sn79_9RAP8?usp=sh
 https://huggingface.co/
 
 https://colab.research.google.com/drive/1S0DPg4cVDu7QSS4AU0dD5TRe9x-GSfv4?usp=sharing
+
+
+LLM - Large Language Model
+
+Predict
+
+10 + 10 = 19.9999 / 20.11111 / 20
+
+OpenAI / Antropic / Gemini / DeepSeek / Mastro / ......
+
+
+
+LLM Arch
+********
+
+1) DataSet 
+
+2) Tokenization
+
+3) ID'S
+
+4) Embeddings (Hugging Face)
+
+5) Positional Encoding
+
+6) Transformers
+        Attention
+        multi head Attention
+
+        Forward
+
+7) Prediction
+
+8) Output
+
+Build our LLMS
+**************

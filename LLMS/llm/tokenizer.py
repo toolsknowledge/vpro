@@ -8,10 +8,13 @@ It performs:
 1. Read text file
 2. Convert to lowercase
 3. Split text into words (Tokenization)
-4. Build Vocabulary (Word -> ID)
-5. Build Reverse Vocabulary (ID -> Word)
+4. Build Vocabulary (Word -> ID).  ("python":18)
+5. Build Reverse Vocabulary (ID -> Word). (18:"python").   18 (python)
 6. Encode text into numbers
 7. Decode numbers back into text
+
+> cd llm
+> python tokenizer.py
 """
 
 # -----------------------------
@@ -94,3 +97,12 @@ print("=" * 50)
 print("Decoded Tokens")
 print("=" * 50)
 print(decoded_tokens)
+
+
+# python is eazy, python is good
+# ["python","is","eazy","python","is","good"]
+#["python","is","eazy","good"]
+# {0:"python",1:"is",2:"eazy"}
+# {"python:0",is:1}
+# [100,200,300]
+# ["python","is"....]

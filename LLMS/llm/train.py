@@ -6,13 +6,14 @@ Purpose
 Train the Mini LLM.
 
 Steps
-
+-----
 1. Load Dataset
 2. Create Model
 3. Define Loss Function
 4. Define Optimizer
 5. Train
-6. Save Model
+6. Stop when loss is sufficiently low
+7. Save Model
 """
 
 import torch
@@ -22,6 +23,7 @@ import torch.optim as optim
 from tokenizer import vocab
 from dataset import inputs, outputs
 from model import MiniLLM
+
 
 # ---------------------------------
 # Hyper Parameters
@@ -35,6 +37,9 @@ EPOCHS = 1000
 
 LEARNING_RATE = 0.01
 
+LOSS_THRESHOLD = 0.001
+
+
 # ---------------------------------
 # Create Model
 # ---------------------------------
@@ -44,11 +49,13 @@ model = MiniLLM(
     embedding_dim=EMBEDDING_DIM
 )
 
+
 # ---------------------------------
 # Loss Function
 # ---------------------------------
 
 criterion = nn.CrossEntropyLoss()
+
 
 # ---------------------------------
 # Optimizer
@@ -59,35 +66,57 @@ optimizer = optim.Adam(
     lr=LEARNING_RATE
 )
 
+
 # ---------------------------------
 # Training Loop
 # ---------------------------------
 
 for epoch in range(EPOCHS):
 
-    total_loss = 0
+    total_loss = 0.0
 
     for x, y in zip(inputs, outputs):
 
-        x = torch.tensor([x])
+        # Convert input and output to tensors
+        x = torch.tensor([x], dtype=torch.long)
 
-        y = torch.tensor([y])
+        y = torch.tensor([y], dtype=torch.long)
 
+        # Forward propagation
         prediction = model(x)
 
+        # Calculate loss
         loss = criterion(prediction, y)
 
+        # Clear previous gradients
         optimizer.zero_grad()
 
+        # Backward propagation
         loss.backward()
 
+        # Update weights
         optimizer.step()
 
+        # Add loss
         total_loss += loss.item()
 
+    # Display loss
     print(
-        f"Epoch {epoch+1}/{EPOCHS}  Loss = {total_loss:.4f}"
+        f"Epoch {epoch + 1}/{EPOCHS} "
+        f"Loss = {total_loss:.8f}"
     )
+
+    # ---------------------------------
+    # Early Stopping
+    # ---------------------------------
+
+    if total_loss < LOSS_THRESHOLD:
+
+        print("\nLoss reached the threshold.")
+        print("Training stopped early.")
+
+        break
+
 
 # ---------------------------------
 # Save Model
@@ -99,5 +128,4 @@ torch.save(
 )
 
 print("\nTraining Completed.")
-
 print("Model Saved Successfully.")
