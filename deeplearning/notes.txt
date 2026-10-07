@@ -1,9 +1,0 @@
-1) Artificial Intelligence
-2) Machine Learning
-3) Deep Learning
-4) Weight
-5) Bias
-6) Activation Function
-7) Forward Propagation
-8) Backward Propagation
-9) Gradient Decent
