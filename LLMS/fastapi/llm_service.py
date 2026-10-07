@@ -59,11 +59,11 @@ model.eval()
 # Prediction Function
 # ---------------------------------------
 
-def generate_text(text: str):
+def generate_text(text: str):       # what is python ?
 
-    text = text.lower()
+    text = text.lower()             # what is python ?
 
-    tokens = text.split()
+    tokens = text.split()           # ["what", "is", "python", "?"]
 
     encoded = []
 
@@ -101,3 +101,10 @@ def generate_text(text: str):
         )
 
     return " ".join(generated_words)
+
+# read question from user
+# connect to llm_service.py
+# question ---> model input (torch)
+# we need to give input to the model
+# model will predict the result
+# return result

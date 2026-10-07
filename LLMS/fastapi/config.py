@@ -20,6 +20,8 @@ Advantages
 
 MODEL_PATH = "../llm/model.pth" 
 
+
+
 EMBEDDING_DIM = 16
 
 MAX_GENERATED_WORDS = 20
@@ -28,7 +30,7 @@ MAX_GENERATED_WORDS = 20
 # API Configuration
 # -------------------------------------
 
-API_TITLE = "Mini LLM API"
+API_TITLE = "VPro GPT"
 
 API_VERSION = "1.0.0"
 
