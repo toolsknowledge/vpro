@@ -320,3 +320,124 @@
 # obj = Bank()
 # obj.setBal()
 # print(obj.getBal())
+
+
+# Example-20
+# from abc import ABC,abstractmethod
+# class Test(ABC):
+#     @abstractmethod
+#     def start_busiess(self):
+#         pass
+
+# class Frnd1(Test):
+#     def start_busiess(self):
+#         print("Start EduTech")
+
+# class Frnd2(Test):
+#     def start_busiess(self):
+#         print("Start Development")
+
+# obj = Frnd1()
+# obj.start_busiess()
+
+
+# Example-21
+# """
+#     we are able to call functions as "variables" with the help @property
+# """
+# class Test:
+#     @property
+#     def func1(self):
+#         print("Hello")
+
+# obj = Test()
+# obj.func1
+
+
+# Example-22
+# class Test:
+#     # class level variable
+#     name = "Hello"
+
+# print(Test.name)
+
+
+# Example-23
+# class Test:
+#    name = "Hello" 
+   
+
+# obj = Test()
+# print(obj.name)     # accessing instance variable, but we dont have any instance variable, so priority goes to class variable
+
+
+# Example-24
+# class Test:
+#     name = "Hello"
+#     def __init__(self):
+#         self.x = 200
+#         self.y = 100
+
+# print(Test.__dict__)
+# obj = Test()
+# print(obj.__dict__)
+
+
+# Example-25
+# class Test:
+#     # class level variable
+#     name = "Hello"
+#     # class level function
+#     # cls (rename possible)
+#     def test_func(cls):
+#         cls.name = "Welcome"
+
+# # call class level function
+# Test.test_func(Test)
+# print(Test.name)
+
+# Example-26
+# class Company:
+#     @staticmethod
+#     def cafetaria():
+#         print("Accessable to all Dept !!!")
+
+# Company.cafetaria()
+
+# self - instance
+# cls - class
+# --  - static method
+
+
+# """
+#     additing additional functionality called as decorator
+#     we will use decorator with "@"
+# """
+# Example-27
+# def add_initial(func):
+#     def wrapper():
+#         print("Mr.",end=" ")
+#         func()
+#     return wrapper
+
+# @add_initial
+# def display():
+#     print("Samba")
+
+# display()
+
+
+# Example-28 (MRO) (Subchil -- Child --- Parent)
+# class Parent:
+#     def display(self):
+#         print("Parent !!!")
+
+# class Child(Parent):
+#     pass
+
+# class Subchild(Child):
+#     pass
+
+# obj = Subchild()
+# obj.display()
+# print(Subchild.mro())
