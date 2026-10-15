@@ -1,6 +1,0 @@
-torch 
-fastapi 
-uvicorn 
-numpy 
-pandas 
-requests
