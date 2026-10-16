@@ -1,0 +1,17 @@
+fastapi     # API'S - GET,POST,PUT,DELETE
+uvicorn     # light weight http server
+anthropic   # llm
+chromadb    # vecordb
+requests    # send requests and receives responses
+beautifulsoup4 # read content from html pages
+python-dotenv # load .env file
+sentence-transformers   # create embeddings
+scikit-learn    # keyword-search
+numpy   # numerical python
+streamlit   # used to build user interfaces 
+
+
+# python -m venv venv
+# source venv/bin/activate (mac)
+# venv\Scripts\activate(widiows)
+# pip install -r requirements.txt
