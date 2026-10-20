@@ -1,0 +1,52 @@
+<section class="panel chat">
+  <h2>Ask the documents</h2>
+
+  <div class="exchanges">
+    @for (exchange of exchanges(); track $index) {
+      <article class="exchange">
+        <p class="question">{{ exchange.question }}</p>
+
+        @if (exchange.error) {
+          <p class="status error" role="alert">{{ exchange.error }}</p>
+        } @else if (exchange.answer === undefined) {
+          <p class="muted">Thinking…</p>
+        } @else {
+          <p class="answer">{{ exchange.answer }}</p>
+
+          @if (exchange.sources.length > 0) {
+            <details class="sources">
+              <summary>Sources ({{ exchange.sources.length }})</summary>
+              <ol>
+                @for (source of exchange.sources; track source.document_id + '#' + source.chunk_index) {
+                  <li>
+                    <div class="source-meta">
+                      {{ source.filename }} · chunk {{ source.chunk_index + 1 }} · score
+                      {{ source.score | number: '1.2-2' }}
+                    </div>
+                    <blockquote>{{ source.text }}</blockquote>
+                  </li>
+                }
+              </ol>
+            </details>
+          }
+        }
+      </article>
+    } @empty {
+      <p class="muted">Upload a DOCX document, then ask a question about it.</p>
+    }
+  </div>
+
+  <form class="ask" [formGroup]="form" (ngSubmit)="submit()">
+    <textarea
+      formControlName="question"
+      rows="3"
+      placeholder="Ask a question about your documents…"
+      [attr.maxlength]="maxLength"
+      (keydown.enter)="$event.preventDefault(); submit()"
+      aria-label="Question"
+    ></textarea>
+    <button type="submit" [disabled]="form.invalid || pending()">
+      {{ pending() ? 'Asking…' : 'Ask' }}
+    </button>
+  </form>
+</section>

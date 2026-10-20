@@ -1,0 +1,13 @@
+RAGS
+    modular
+         backend
+            requirements.txt
+
+
+> cd RAGS
+> cd modular
+> cd backend
+
+> python -m venv venv
+> source venv/bin/activate               venv\Scripts\activate
+> python -m pip install -r requirements.txt
