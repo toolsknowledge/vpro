@@ -1,0 +1,50 @@
+<section class="panel">
+  <h2>Documents</h2>
+
+  <div class="upload">
+    <input #fileInput type="file" accept=".docx" (change)="onFileSelected($event)" [disabled]="isBusy()" />
+    <button type="button" (click)="upload(fileInput)" [disabled]="!selectedFile() || isBusy()">Upload</button>
+  </div>
+
+  @if (statusMessage(); as status) {
+    <p class="status" [class]="status.tone" [attr.role]="status.tone === 'error' ? 'alert' : 'status'">
+      {{ status.text }}
+    </p>
+  }
+
+  <div class="list-header">
+    <h3>Indexed documents</h3>
+    <button type="button" class="link" (click)="refresh()" [disabled]="loading()">Refresh</button>
+  </div>
+
+  @if (listError(); as error) {
+    <p class="status error" role="alert">{{ error }}</p>
+  }
+
+  @if (loading()) {
+    <p class="muted">Loading…</p>
+  } @else if (documents().length === 0) {
+    <p class="muted">No documents indexed yet.</p>
+  } @else {
+    <ul class="documents">
+      @for (document of documents(); track document.document_id) {
+        <li>
+          <div>
+            <strong>{{ document.filename }}</strong>
+            <span class="muted">
+              {{ document.chunk_count }} chunks · {{ document.uploaded_at | date: 'medium' }}
+            </span>
+          </div>
+          <button
+            type="button"
+            class="danger"
+            (click)="remove(document)"
+            [disabled]="deletingId() === document.document_id"
+          >
+            {{ deletingId() === document.document_id ? 'Deleting…' : 'Delete' }}
+          </button>
+        </li>
+      }
+    </ul>
+  }
+</section>

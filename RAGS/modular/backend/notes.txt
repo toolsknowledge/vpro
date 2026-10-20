@@ -1,0 +1,8 @@
+RAGS
+    modular
+        backend
+            requirements.txt
+            .env
+            document_loader.py
+            vector_store.py
+            app.py
