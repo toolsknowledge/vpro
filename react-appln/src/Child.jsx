@@ -1,8 +1,6 @@
 const Child = (props)=>{
     return(
-        <>
-            <p>{props.key1}</p>
-        </>
+        <h1>{props.key1}</h1>
     )
 }
-export default Child
+export default Child;

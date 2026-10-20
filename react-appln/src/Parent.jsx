@@ -1,9 +1,7 @@
-import Child from "./Child"
-import { useState } from "react";
+import Child from "./Child.jsx"
 const Parent = ()=>{
-    const [msg,setMsg] = useState("VPro")
     return(
-        <Child key1={msg}></Child>
+        <Child key1={"Hello"}></Child>
     )
 }
-export default Parent
+export default Parent;

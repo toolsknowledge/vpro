@@ -1,21 +1,61 @@
+React
+*****
+    React is the frontend library
+    React released by Facebook
+    used to build reusable UI Components
+    we will develop React applications with "JSX"
+    JSX Stands for "JavaScript + XML"
+
+Concepts
+********
+1) components
+    partition of web page called as component
+    we are able to create more than one component
+    components are reusable
+
+2) single page applications
+        loading one component to another component without refreshing whole webpage called as single page application
+
+3) state
+        state representing component data
+        state is mutable
+
+4) props
+    child components receiving the data from parent component with the help of props
+    props are immutable
+
+5) state management
+    managing data across multiple components
+    we will implement state management in two ways
+    1) context api
+        context api provided by Facebook
+        context api suitable for static and small scale web applications
+    2) redux
+        redux given by 3rd party
+        redux for dynamic and large scale web applications
+
+softwares installation
+**********************
+1) NodeJS
+    node -v
+    npm -v
+
+2) VSCode (Visual Studio Code)
+
+steps to create react application
+*********************************
+
 > npm create vite@latest
 
-ctrl + c
+    do you want to proceed ? (y) --- optional
 
-npm riun dev
-
-
-import { useState } from "react"
-const App = ()=>{
-
-    const [num1,setNum1] = useState(200)
-    const [num2,setNum2] = useState(100)
-
-    return(
-        <>
-                <p>Addition. {num1 + num2} </p>             # Expression / Interpolation
-        </>
-    )
-
-}
-export default App
+    project name : react-appln
+    framework : react
+    variant :JavaScript
+    Lint : 0xLint (Err)
+    yes
+    yes
+    ---
+    ---
+    ---
+    http://localhost:5173/
