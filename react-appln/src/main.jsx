@@ -6,8 +6,9 @@ import Header from "./Header.jsx"
 import Comp2 from './Comp2.jsx'
 import Parent from './Parent.jsx'
 import StateEx from './StateEx.jsx'
+import Electronics from "./Electronics.jsx"
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <StateEx />
+    <Electronics />
   </StrictMode>,
 )
