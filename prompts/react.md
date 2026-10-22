@@ -32,3 +32,16 @@ use Below Components to demonistrate application
 
 never add any unnecessary codes
 eazily able to understand
+
+api calls
+*********wants to build api calls
+Ex.GET,POST,PUT,DELETE using axios library
+create below components
+1) GetEx
+2) PostEx
+----
+
+----
+
+take dummy url from your end
+generate developer friendly code
