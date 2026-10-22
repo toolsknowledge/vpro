@@ -1,10 +1,9 @@
-import Comp1 from "./Comp1";
-
+import { useContext } from "react"
+import { MyContext } from "./MyContext"
 const Comp2 = ()=>{
+    const res = useContext(MyContext)
     return(
-        <>
-            <Comp1></Comp1>
-        </>
+        <h1>{res}</h1>
     )
 }
-export default Comp2;
+export default Comp2

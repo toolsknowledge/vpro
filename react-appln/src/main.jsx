@@ -7,8 +7,12 @@ import Comp2 from './Comp2.jsx'
 import Parent from './Parent.jsx'
 import StateEx from './StateEx.jsx'
 import Electronics from "./Electronics.jsx"
+import Get from './Get.jsx'
+import Post from './Post.jsx'
+import Put from './Put.jsx'
+import Delete from './Delete.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Electronics />
+    <Delete />
   </StrictMode>,
 )

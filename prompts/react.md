@@ -15,3 +15,20 @@ build spa application based on attached screenshot
 as a developer wants to understand nested routing in single page application
 use the existed components like Master,Child1,......
 if required then only create new components like Subchild1,Subchild2,......
+
+State Management
+****************
+implement context api demo in "vibe-coding" project
+share all datatypes
+Ex.
+String
+int
+---
+---
+---
+use Below Components to demonistrate application
+1) Demo1 (Provider)
+2) Demo2 (Consumer)
+
+never add any unnecessary codes
+eazily able to understand
