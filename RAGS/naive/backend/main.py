@@ -40,7 +40,7 @@ vector_index = None
 
 # STEP 3: Split text into chunks
 def split_into_chunks(text, chunk_size=800, overlap=150):
-    text = " ".join(text.split())
+    text = " ".join(text.split())       
     result = []
 
     start = 0

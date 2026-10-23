@@ -1,0 +1,28 @@
+Build Resume with Realstic Project
+
+"Project" -- Resume
+
+
+1) RAGS Architecture
+
+2) which model, used to chunking
+
+3) chunking internals  (overlapping, chunk size,.....) (Revise)
+
+4) embedding dimensions (Revise)
+
+5) are any process between chunking & embeddings
+
+6) distance, probability related question, more focus on [[]]
+
+7) rag evaluation
+
+8) guardrails (Architecture)
+
+
+PrepInsta (3rd) (Exp) (MNC'S)
+
+---------------
+Scalar - Fibo
+
+
