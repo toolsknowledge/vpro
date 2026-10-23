@@ -1,0 +1,6 @@
+Exercise	Question
+1	What is RAG?
+2	Why do we use chunking?
+3	What is the role of ChromaDB?
+4	What is the difference between chunking and indexing?
+5	Why do we retrieve relevant chunks before generating an answer?
