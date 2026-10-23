@@ -11,8 +11,14 @@ import Get from './Get.jsx'
 import Post from './Post.jsx'
 import Put from './Put.jsx'
 import Delete from './Delete.jsx'
+import UseStateEx from "./UseStateEx.jsx"
+import UseEffectEx from "./UseEffectEx.jsx"
+import ContextEx from "./ContextEx.jsx"
+import UseRefEx from "./UseRefEx.jsx"
+import UseMemoEx from './UseMemoEx.jsx'
+import CustomHook from './CustomHook.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Delete />
+    <CustomHook />
   </StrictMode>,
 )

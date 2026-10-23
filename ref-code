@@ -1,0 +1,501 @@
+
+# React Hooks — Complete Beginner Examples
+
+## 1. `useState` — Store and update data
+
+```
+import { useState } from "react";
+
+function App() {
+  const [count, setCount] = useState(0);
+
+  return (
+    <div>
+      <h2>Count: {count}</h2>
+      <button onClick={() => setCount(count + 1)}>
+        Increase
+      </button>
+    </div>
+  );
+}
+
+export default App;
+```
+
+Use: Counter, form inputs, login status, and other changing values.
+
+## 2. `useEffect` — Run code after rendering
+
+```
+import { useEffect } from "react";
+
+function App() {
+  useEffect(() => {
+    console.log("Component loaded");
+  }, []);
+
+  return <h2>Hello React</h2>;
+}
+
+export default App;
+```
+
+Use: API calls, timers, and synchronization with external systems.
+
+- — run when the component mounts.
+- `[count]` — run when `count` changes.
+- No dependency array — run after every render.
+
+In development Strict Mode, React may run an extra setup and cleanup cycle.
+
+## 3. `useContext` — Share data between components
+
+```
+import { createContext, useContext } from "react";
+
+const NameContext = createContext();
+
+function Child() {
+  const name = useContext(NameContext);
+
+  return <h2>Hello {name}</h2>;
+}
+
+function App() {
+  return (
+    <NameContext.Provider value="Ravi">
+      <Child />
+    </NameContext.Provider>
+  );
+}
+
+export default App;
+```
+
+Output: `Hello Ravi`
+
+Use: Share user details, themes, or language settings without passing props through every intermediate component.
+
+## 4. `useRef` — Store a value or access an element
+
+```
+import { useRef } from "react";
+
+function App() {
+  const inputRef = useRef(null);
+
+  function focusInput() {
+    inputRef.current.focus();
+  }
+
+  return (
+    <div>
+      <input ref={inputRef} placeholder="Enter name" />
+      <button onClick={focusInput}>Focus Input</button>
+    </div>
+  );
+}
+
+export default App;
+```
+
+Use: Focus input fields, access DOM elements, or store values that don't need to trigger a render.
+
+## 5. `useReducer` — Manage state using actions
+
+```
+import { useReducer } from "react";
+
+function reducer(count, action) {
+  if (action === "increase") return count + 1;
+  if (action === "decrease") return count - 1;
+  return count;
+}
+
+function App() {
+  const [count, dispatch] = useReducer(reducer, 0);
+
+  return (
+    <div>
+      <h2>{count}</h2>
+      <button onClick={() => dispatch("increase")}>
+        Increase
+      </button>
+      <button onClick={() => dispatch("decrease")}>
+        Decrease
+      </button>
+    </div>
+  );
+}
+
+export default App;
+```
+
+Use: Manage more complex state and related actions.
+
+## 6. `useMemo` — Cache a calculated value
+
+```
+import { useMemo, useState } from "react";
+
+function App() {
+  const [number, setNumber] = useState(2);
+
+  const square = useMemo(() => {
+    console.log("Calculating square");
+    return number * number;
+  }, [number]);
+
+  return (
+    <div>
+      <h2>Square: {square}</h2>
+      <button onClick={() => setNumber(number + 1)}>
+        Change Number
+      </button>
+    </div>
+  );
+}
+
+export default App;
+```
+
+Use: Avoid repeating expensive calculations when their dependencies haven't changed. For simple calculations, you usually don't need it.
+
+## 7. `useCallback` — Cache a function
+
+```
+import { useCallback, useState } from "react";
+
+function App() {
+  const [count, setCount] = useState(0);
+
+  const sayHello = useCallback(() => {
+    console.log("Hello React");
+  }, []);
+
+  return (
+    <div>
+      <h2>{count}</h2>
+      <button onClick={() => setCount(count + 1)}>
+        Increase
+      </button>
+      <button onClick={sayHello}>
+        Say Hello
+      </button>
+    </div>
+  );
+}
+
+export default App;
+```
+
+Use: Preserve a function reference between renders when useful, especially with memoized child components or other hook dependencies.
+
+## 8. `useLayoutEffect` — Run an effect before browser repaint
+
+```
+import { useLayoutEffect, useRef } from "react";
+
+function App() {
+  const boxRef = useRef(null);
+
+  useLayoutEffect(() => {
+    console.log(
+      boxRef.current.getBoundingClientRect().width
+    );
+  }, []);
+
+  return (
+    <div ref={boxRef} style={{ width: 200 }}>
+      Hello React
+    </div>
+  );
+}
+
+export default App;
+```
+
+Use: Measure or adjust layout before the browser paints. Prefer `useEffect` for most other side effects.
+
+## 9. `useId` — Generate an ID for accessibility
+
+```
+import { useId } from "react";
+
+function App() {
+  const id = useId();
+
+  return (
+    <div>
+      <label htmlFor={id}>Student Name</label>
+      <input id={id} />
+    </div>
+  );
+}
+
+export default App;
+```
+
+Use: Connect labels to inputs and generate unique IDs for accessibility. Don't use it for list keys.
+
+## 10. `useTransition` — Mark an update as non-urgent
+
+```
+import { useState, useTransition } from "react";
+
+function App() {
+  const [tab, setTab] = useState("Home");
+  const [isPending, startTransition] = useTransition();
+
+  function changeTab() {
+    startTransition(() => {
+      setTab("Courses");
+    });
+  }
+
+  return (
+    <div>
+      <h2>{tab}</h2>
+      <button onClick={changeTab}>
+        Show Courses
+      </button>
+      {isPending && <p>Loading update...</p>}
+    </div>
+  );
+}
+
+export default App;
+```
+
+Use: Keep urgent interactions responsive while React processes non-urgent UI updates. For this tiny example, it isn't necessary, and `isPending` may never visibly become true.
+
+## 11. `useDeferredValue` — Defer updating a value
+
+```
+import { useState, useDeferredValue } from "react";
+
+function App() {
+  const [text, setText] = useState("");
+  const deferredText = useDeferredValue(text);
+
+  return (
+    <div>
+      <input
+        value={text}
+        onChange={(e) => setText(e.target.value)}
+        placeholder="Search courses"
+      />
+
+      <p>Deferred text: {deferredText}</p>
+    </div>
+  );
+}
+
+export default App;
+```
+
+Use: Keep typing responsive when a dependent UI is expensive to render. It doesn't debounce API calls or guarantee a fixed delay.
+
+## 12. `useImperativeHandle` — Customize a component's ref
+
+This is an advanced hook, commonly used when a parent needs access to a specific method exposed by a child component.
+
+```
+import {
+  useRef,
+  useImperativeHandle,
+  forwardRef
+} from "react";
+
+const MyInput = forwardRef(function MyInput(props, ref) {
+  const inputRef = useRef(null);
+
+  useImperativeHandle(ref, () => ({
+    focus() {
+      inputRef.current.focus();
+    }
+  }), []);
+
+  return <input ref={inputRef} />;
+});
+
+function App() {
+  const myRef = useRef(null);
+
+  return (
+    <div>
+      <MyInput ref={myRef} />
+      <button onClick={() => myRef.current.focus()}>
+        Focus
+      </button>
+    </div>
+  );
+}
+
+export default App;
+```
+
+Use: Expose selected imperative methods to a parent instead of exposing the entire DOM element.
+
+## 13. `useSyncExternalStore` — Subscribe to an external store
+
+```
+import { useSyncExternalStore } from "react";
+
+let count = 0;
+const listeners = new Set();
+
+function subscribe(callback) {
+  listeners.add(callback);
+  return () => listeners.delete(callback);
+}
+
+function getSnapshot() {
+  return count;
+}
+
+function increase() {
+  count++;
+  listeners.forEach((callback) => callback());
+}
+
+function App() {
+  const value = useSyncExternalStore(
+    subscribe,
+    getSnapshot
+  );
+
+  return (
+    <div>
+      <h2>Count: {value}</h2>
+      <button onClick={increase}>Increase</button>
+    </div>
+  );
+}
+
+export default App;
+```
+
+Use: Subscribe to external stores or browser APIs that provide a subscription mechanism.
+
+## 14. `useDebugValue` — Display information in React DevTools
+
+```
+import { useDebugValue, useState } from "react";
+
+function useOnlineStatus() {
+  const [isOnline] = useState(true);
+
+  useDebugValue(isOnline ? "Online" : "Offline");
+
+  return isOnline;
+}
+
+function App() {
+  const isOnline = useOnlineStatus();
+
+  return <h2>{isOnline ? "Online" : "Offline"}</h2>;
+}
+
+export default App;
+```
+
+Use: Help developers inspect custom hooks in React DevTools. This example uses a fixed initial status, not real network detection.
+
+# 15. Custom Hook — Create your own reusable hook
+
+A custom hook is a JavaScript function whose name starts with `use` and that can use other React hooks.
+
+For example, let's create a reusable counter hook.
+
+File 1: `useCounter.js`
+
+```
+import { useState } from "react";
+
+function useCounter() {
+  const [count, setCount] = useState(0);
+
+  function increase() {
+    setCount((previous) => previous + 1);
+  }
+
+  return { count, increase };
+}
+
+export default useCounter;
+```
+
+File 2: `App.jsx`
+
+```
+import useCounter from "./useCounter";
+
+function App() {
+  const { count, increase } = useCounter();
+
+  return (
+    <div>
+      <h2>Count: {count}</h2>
+      <button onClick={increase}>
+        Increase
+      </button>
+    </div>
+  );
+}
+
+export default App;
+```
+
+Why custom hooks?
+
+- Reuse logic across components.
+- Keep components cleaner.
+- Share stateful behavior without duplicating code.
+
+Each component calling `useCounter()` gets its own independent counter state.
+
+# 16. Bonus: `useInsertionEffect`
+
+This is a specialized hook mainly intended for CSS-in-JS library authors to insert styles before layout effects run.
+
+```
+import { useInsertionEffect } from "react";
+
+function App() {
+  useInsertionEffect(() => {
+    // Specialized style-insertion logic goes here.
+  }, []);
+
+  return <h2>Hello React</h2>;
+}
+
+export default App;
+```
+
+For normal application development, you generally won't need this hook.
+
+## Quick revision table
+
+| Hook                   | Simple purpose                          |
+| ---------------------- | --------------------------------------- |
+| `useState`             | Store changing data                     |
+| `useEffect`            | Synchronize with external systems       |
+| `useContext`           | Share data across components            |
+| `useRef`               | Keep a value or access a DOM element    |
+| `useReducer`           | Manage state with actions               |
+| `useMemo`              | Cache a calculation                     |
+| `useCallback`          | Cache a function                        |
+| `useLayoutEffect`      | Work with layout before repaint         |
+| `useId`                | Generate accessibility IDs              |
+| `useTransition`        | Mark updates as non-urgent              |
+| `useDeferredValue`     | Defer rendering a value                 |
+| `useImperativeHandle`  | Expose selected methods through refs    |
+| `useSyncExternalStore` | Subscribe to an external store          |
+| `useDebugValue`        | Debug custom hooks                      |
+| `useInsertionEffect`   | Insert styles for specialized libraries |
+| Custom hooks           | Reuse React logic                       |
+
+Important: React also provides newer APIs and specialized hooks in some versions. The examples above cover the main built-in hooks and the custom-hook pattern.
+
+For beginners, focus on this order: `useState` → `useEffect` → `useContext` → `useRef` → custom hooks. Learn the remaining hooks after you are comfortable building basic React applications.

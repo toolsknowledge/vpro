@@ -60,4 +60,22 @@ steps to create react application
     ---
     http://localhost:5173/
 
-Hello
+
+1) useState() hook - variables
+2) useEffect() - api calls,once
+3) useRef() - read data from text boxes
+4) useMemo() - remember heavy calculations
+5) useCallBack() - separate events
+
+custom hooks
+    define custom logic
+
+
+Life Cycle Methods
+Build End to End Project in class (Vibe Coding)
+
+i will share prompts
+
+
+
+Sat - 8AM / 1.5 hous
