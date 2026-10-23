@@ -1,0 +1,76 @@
+as a developer, we are unable to interact with the backend
+
+by using backend, we are able to provide security to business logic
+
+below technologies are used to build the backend
+
+1) Java
+2) dotnet
+3) laravel (php)
+4) nodejs (javascript)
+5) fastapi (python)
+---
+---
+---
+
+GET : read the data from backend
+POST : adding new content to backend
+PUT : updating backend data
+PATCH : updating partial backend data
+DELETE : deleting backend data
+
+above requests technically called as "REST API'S"
+
+below tools are used to test api calls
+1) Postman
+2) Swagger
+--
+--
+--
+
+backend able to content to databases with the help of DB Drivers
+Ex.
+        Oracle
+        MySQL
+        MongoDB
+        CasandraDB
+        --
+        --
+        --
+
+MongoDB
+*******
+    MongoDB is the NoSQL database
+
+                SQL                 NoSQL
+
+1)          Ex. Oracle              MongoDB
+                MySQL               PostGress
+                SQLServer           CasandraDB
+                ---                 DynamoDB
+                ---                 PouchDB
+                ---                 CouchDB
+                                    --
+                                    --
+
+2)              tables              collections
+
+3)              databases           databases
+
+4)              rows                documents (JSON)
+
+5)              primary key         _id
+
+
+MongoDB supports "cloud environment"
+
+Connection URL
+**************
+mongodb+srv://admin:admin@cluster0.i4v0o2c.mongodb.net/
+
+
+FastAPI - API
+
+HTTPException - Errord ,
+
+Depends - link the token

@@ -1,0 +1,11 @@
+fastapi             # develop rest api calls Ex. GET,POST,PUT,DELETE
+uvicorn             # light weight http server, used to api calls
+pymongo             # connect mongodb (clouddb)
+python-dotenv       # read data from .env file
+pwdlib[argon2]      # hash the passwords
+                    # light weight library
+                    # lms (less cost)
+
+PyJWT               # generate tokens
+                    # json web token
+                    # auth (JWT Auth)
