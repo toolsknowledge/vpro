@@ -1,0 +1,346 @@
+prompt-1
+
+
+# Project: VPRO Skills EDUTECH — Student Dashboard
+
+## 1. Role
+Act as a senior UI/UX designer, senior React developer, and frontend architect with expertise in building modern, professional, production-quality educational dashboards.
+
+Use the `/frontend-design` skill before designing or implementing the UI. This skill is already installed in Claude Code. Follow its instructions and recommendations throughout the project.
+
+## 2. Goal
+Build a modern, attractive, responsive Student Dashboard for VPRO Skills EDUTECH, an educational training institute.
+
+The dashboard should help students view their courses, track learning progress, check attendance, access assignments, view upcoming classes, and monitor their learning activities.
+
+The result must look like a professionally designed EdTech SaaS product, not a basic tutorial project.
+
+## 3. Context
+- Organization: VPRO Skills EDUTECH
+- Website: https://vproskills.com/
+- Application: Student Dashboard
+- Target users: B.Tech, degree, MCA, and other students attending technical training programs.
+- Primary objective: Provide students with a single, easy-to-use interface to manage their learning activities.
+- Initial version: Frontend-only prototype.
+- Use realistic static sample data.
+- Do not connect to a database or external backend.
+- Do not add authentication or real API integrations.
+- Keep the application easy to extend in the future.
+
+## 4. Functional Requirements
+
+Create the following sections:
+
+### A. Application Layout
+- Professional left sidebar navigation.
+- Top navigation bar with page title, search field, notification icon, and student profile.
+- Main dashboard content area.
+- Sidebar collapse and expand functionality.
+- Responsive mobile navigation.
+
+### B. Sidebar Navigation
+Include:
+1. Dashboard
+2. My Courses
+3. My Learning
+4. Attendance
+5. Assignments
+6. Projects
+7. Certificates
+8. Announcements
+9. Help & Support
+10. Settings
+
+Each navigation item should have an appropriate icon and a clear active state.
+
+### C. Welcome Section
+Display:
+- Greeting such as "Good morning, Rahul!"
+- A short motivational message.
+- Current learning program.
+- A visually attractive call-to-action to continue learning.
+
+### D. Summary Cards
+Create four attractive statistic cards:
+- Enrolled Courses
+- Overall Progress
+- Attendance Percentage
+- Pending Assignments
+
+Each card should include:
+- Relevant icon.
+- Main statistic.
+- Short descriptive label.
+- Subtle visual indicator or progress indicator where appropriate.
+
+Use realistic sample values.
+
+### E. My Courses
+Display course cards for programs such as:
+- Python Full Stack Development
+- Java Full Stack Development
+- MERN Stack Development
+- Generative AI and Agentic AI
+
+Each card should show:
+- Course title.
+- Instructor name.
+- Course thumbnail or visual.
+- Progress percentage.
+- Completed and total lessons.
+- Next lesson.
+- A functional "Continue Learning" button.
+
+### F. Learning Progress
+Include:
+- Overall course completion.
+- Weekly learning activity chart.
+- Lessons completed.
+- Learning hours.
+- A simple visualization of learning progress.
+
+Use a suitable charting library only if it is already installed or can be added without unnecessary complexity. Otherwise, create lightweight CSS-based visualizations.
+
+### G. Attendance
+Display:
+- Attendance percentage.
+- Classes attended.
+- Total classes.
+- Recent attendance records.
+- Clear visual indicators for present and absent statuses.
+
+### H. Assignments
+Display:
+- Assignment title.
+- Related course.
+- Due date.
+- Status: Pending, Submitted, or Overdue.
+- A button to view assignment details.
+
+Add filters for assignment status where practical.
+
+### I. Upcoming Classes
+Display:
+- Class or session title.
+- Course name.
+- Date and time.
+- Trainer name.
+- A "View Details" action.
+
+Use static sample data and do not generate actual meeting links.
+
+### J. Announcements
+Display recent institute announcements with:
+- Title.
+- Short description.
+- Publication date.
+- Appropriate category or priority indicator.
+
+### K. Student Profile
+Display sample student information:
+- Name.
+- Student ID using fictional sample data.
+- Email using fictional sample data.
+- Enrolled program.
+- Profile avatar.
+
+Do not use real personal information.
+
+## 5. Design Requirements
+Follow the `/frontend-design` skill carefully.
+
+Create a distinctive, polished EdTech dashboard with:
+- A modern SaaS dashboard layout.
+- Professional typography and a clear visual hierarchy.
+- A consistent color palette inspired by VPRO Skills EDUTECH branding.
+- A deep navy or blue primary color, clean neutral backgrounds, and tasteful accent colors.
+- White or lightly tinted cards.
+- Consistent spacing, border radii, shadows, and alignment.
+- High-quality icons.
+- Attractive progress bars and charts.
+- Subtle hover states and transitions.
+- Clear visual distinction between primary and secondary actions.
+- Readable text and accessible contrast.
+- Proper loading-free rendering with no layout shifts.
+
+Avoid:
+- Generic, outdated dashboard designs.
+- Excessive gradients and unnecessary animations.
+- Too many colors.
+- Oversized headings.
+- Excessive rounded cards.
+- Unnecessary decorative elements.
+- Emoji used as a replacement for professional interface icons.
+- Fake functionality or buttons that do nothing.
+
+The dashboard must look intentional, cohesive, and suitable for a real EdTech company.
+
+## 6. Technology Requirements
+- React with functional components.
+- Use the existing project setup and package manager.
+- Use the existing styling solution if one is already configured.
+- If the project is empty, use Vite with React.
+- Use reusable components and clean component organization.
+- Use Lucide React icons if available; otherwise, use an appropriate existing icon library.
+- Use static JavaScript data objects for all sample content.
+- Use React state for interactive elements.
+- Keep components modular and maintainable.
+- Do not introduce unnecessary dependencies.
+- Do not add a backend, database, API keys, or environment secrets.
+
+## 7. Interaction Requirements
+Implement meaningful frontend interactions:
+- Sidebar navigation between dashboard sections.
+- Sidebar collapse and expand.
+- Search through available courses or assignments.
+- Course status filters.
+- Assignment status filters.
+- Continue Learning actions.
+- Notification panel.
+- Student profile dropdown.
+- Upcoming class details.
+- Responsive mobile navigation.
+
+For features that are outside the prototype scope, clearly indicate that they are demonstrations rather than real integrations.
+
+Do not create buttons or controls that appear interactive but have no working behavior.
+
+## 8. Output and Implementation Requirements
+Before writing code:
+1. Inspect the existing project structure.
+2. Read and follow the `/frontend-design` skill.
+3. Identify the existing framework, dependencies, and styling approach.
+4. Plan the dashboard layout and reusable components.
+5. Implement the dashboard in the existing project without unnecessarily replacing working files.
+
+Create a clean component structure, for example:
+- App
+- Sidebar
+- Header
+- WelcomeSection
+- StatCard
+- CourseCard
+- LearningProgress
+- AttendanceSummary
+- AssignmentList
+- UpcomingClasses
+- Announcements
+- StudentProfile
+
+Adapt this structure when a better architecture is appropriate.
+
+## 9. Verification and Quality Checks
+After implementation:
+- Run the application using the appropriate development command.
+- Check for compilation errors and console errors.
+- Verify that all major sections render correctly.
+- Test navigation and interactive controls.
+- Check mobile, tablet, and desktop layouts.
+- Verify that text does not overflow and cards align properly.
+- Fix any reproducible errors.
+- Check accessibility basics, including keyboard focus and semantic elements.
+- Confirm that no database or real API integration was introduced.
+
+Do not claim that tests passed unless you actually ran them.
+
+## 10. Final Response
+After completing the implementation, provide:
+1. A summary of the dashboard features.
+2. The files created or modified.
+3. The commands required to run the application.
+4. Any dependencies added.
+5. The verification checks actually performed.
+6. Any limitations that remain.
+
+## Final Instruction
+Prioritize exceptional UI quality, clear student workflows, maintainable React code, and a responsive design.
+
+Use `/frontend-design` before implementation. Make sensible design decisions independently, avoid unnecessary clarification questions, and complete the working frontend prototype rather than providing only a design description or code snippets.
+
+
+
+prompt-2 (follow up)
+
+Use `/frontend-design` again to review the existing VPRO Skills EDUTECH Student Dashboard.
+
+Act as a senior UI/UX designer performing a professional design review.
+
+Do not rebuild the application from scratch. Inspect the current implementation and improve the existing design.
+
+Focus on:
+1. Visual hierarchy and typography.
+2. Sidebar and header alignment.
+3. Consistent spacing and card sizing.
+4. Course card layouts and progress indicators.
+5. Chart readability and dashboard balance.
+6. Responsive behavior on mobile, tablet, and desktop.
+7. Accessible colors, keyboard focus, and readable text.
+8. Functional navigation, filters, and buttons.
+
+Remove unnecessary visual elements and fix inconsistent styling.
+
+Preserve existing working features and the current technology stack. Run the application and verify the improvements where possible.
+
+The final result should look like a polished, production-quality EdTech SaaS dashboard for VPRO Skills EDUTECH.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-----------
+Use the frontend-design skill to build a premium, modern React UI for VPro Skills EduTech.
+
+Design requirements:
+- Professional edtech startup design
+- Modern typography and a consistent color palette
+- Beautiful hero section and course cards
+- Professional navigation bar and footer
+- Smooth hover effects and subtle animations
+- Fully responsive mobile, tablet, and desktop layouts
+- Consistent spacing, shadows, borders, and button styles
+- Use Lucide icons instead of emojis
+- Use reusable React components
+- Use Tailwind CSS if configured in the project
+- Avoid generic AI-generated designs
+
+First inspect the existing project and its dependencies. Preserve working functionality and install only necessary packages. Implement the UI, run the application, and fix any errors you can verify.
+
+
+Review the UI like a senior product designer.
+Identify visual weaknesses in layout, spacing, typography,
+colors, responsiveness, and component consistency.
+Improve the actual code and verify the result.
+
+
+npx skills add anthropics/skills --skill frontend-design --agent claude-code --global
+
+/skills
+

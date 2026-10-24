@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Figtree", ui-sans-serif, system-ui, sans-serif;
+
+  /* Brand colours sampled from the VPro Skills logo: orange mark on charcoal. */
+  --color-brand: #f28a24;
+  --color-brand-deep: #dc7410;
+  --color-brand-tint: #fdeedd;
+  --color-ink: #232428;
+  --color-ink-soft: #3d3e44;
+  --color-paper: #f6f6f7;
+  --color-slate: #62646e;
+  --color-line: #e3e3e8;
+
+  /* Supporting colours, used only to tell course tracks apart. */
+  --color-cobalt: #2e4bff;
+  --color-cobalt-deep: #1f36d6;
+  --color-cobalt-tint: #e8ecff;
+  --color-mint: #17a684;
+  --color-mint-tint: #ddf5ee;
+  --color-rose: #e5486b;
+  --color-rose-tint: #fde6ec;
+
+  --radius-surface: 1.5rem;
+
+  --shadow-card: 0 1px 2px rgb(35 36 40 / 0.06), 0 8px 24px -12px rgb(35 36 40 / 0.18);
+  --shadow-lift: 0 2px 4px rgb(35 36 40 / 0.06), 0 24px 40px -20px rgb(35 36 40 / 0.35);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+  body {
+    @apply bg-paper font-sans text-ink antialiased;
+  }
+  h1, h2, h3, h4 {
+    @apply font-display;
+    text-wrap: balance;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  :focus-visible {
+    outline: 3px solid var(--color-brand);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+}
+
+/* The one orchestrated moment: timetable blocks settle into the week on load. */
+@keyframes slot-in {
+  from { opacity: 0; transform: translateY(10px) scale(0.97); }
+  to   { opacity: 1; transform: none; }
+}
+@keyframes live-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgb(23 166 132 / 0.55); }
+  50%      { box-shadow: 0 0 0 6px rgb(23 166 132 / 0); }
+}
+
+.slot-in {
+  animation: slot-in 520ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+.live-dot {
+  animation: live-pulse 1.8s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
