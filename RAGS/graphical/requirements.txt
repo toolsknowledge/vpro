@@ -1,0 +1,4 @@
+streamlit           # ui library
+neo4j               # connect to neo4j database (VPro Skills)
+openai              # llm
+python-dotenv       # reads the data from .env file
