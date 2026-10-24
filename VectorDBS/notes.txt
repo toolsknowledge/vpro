@@ -1,0 +1,35 @@
+DataBases are used to store the Data
+we have three types of databases
+1) SQL databases
+        Ex.
+                Oracle
+                MySQL
+                SQLServer
+                ---
+                ---
+                ---
+2) NoSQL databases
+                MongoDB
+                CasandraDB
+                ---
+                ---
+3) Vector DataBases
+                ChromaDB
+                FAISS
+                PineCone
+                Qdrant
+                ---
+                ---
+                ---
+
+
+VectorDBS (Root)
+        ChromaDB (Subfolder)
+                requirements.txt
+                db.py
+
+> cd VectorDBS
+> cd ChromaDB
+> python -m venv venv
+> venv\Scripts\activate
+> python -m pip install -r requirements.txt
