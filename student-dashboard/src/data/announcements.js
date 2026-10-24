@@ -1,0 +1,42 @@
+export const announcements = [
+  {
+    id: 'n1',
+    title: 'Mid-programme assessment on 7 November',
+    body: 'All full stack batches will take a 90-minute assessment covering modules completed so far. The syllabus list is available with your mentor.',
+    date: '2026-10-23',
+    category: 'Exam',
+    priority: 'high',
+  },
+  {
+    id: 'n2',
+    title: 'Placement drive registrations are open',
+    body: 'Students with 75% attendance or more can register for the November placement drive. Update your resume before registering.',
+    date: '2026-10-22',
+    category: 'Placements',
+    priority: 'high',
+  },
+  {
+    id: 'n3',
+    title: 'No classes on 1 November',
+    body: 'The institute will be closed for a public holiday. Recorded sessions remain available as usual.',
+    date: '2026-10-20',
+    category: 'Holiday',
+    priority: 'normal',
+  },
+  {
+    id: 'n4',
+    title: 'Weekend hackathon: build with AI agents',
+    body: 'Teams of three will build a working agent prototype in 24 hours. Mentors will be available on both days.',
+    date: '2026-10-17',
+    category: 'Event',
+    priority: 'normal',
+  },
+  {
+    id: 'n5',
+    title: 'Lab 2 systems upgraded',
+    body: 'Lab 2 now has JDK 21, Node 22 and Python 3.13 installed. Report any setup issues at the front desk.',
+    date: '2026-10-14',
+    category: 'General',
+    priority: 'normal',
+  },
+]

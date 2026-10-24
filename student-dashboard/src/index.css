@@ -1,0 +1,94 @@
+@import 'tailwindcss';
+
+/*
+  Design tokens
+  Navy carries structure and primary actions; VPRO orange (from the logo) is
+  reserved for progress and the single "resume learning" moment.
+*/
+@theme {
+  --font-display: 'Schibsted Grotesk', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Public Sans', ui-sans-serif, system-ui, sans-serif;
+
+  --color-navy-950: #0c1834;
+  --color-navy-900: #13254d;
+  --color-navy-800: #1c3366;
+  --color-navy-700: #284583;
+  --color-navy-500: #4f6aa8;
+  --color-navy-300: #a9b8d9;
+  --color-navy-100: #e4e9f4;
+  --color-navy-50: #f1f4fa;
+
+  --color-brand: #f08a1a;
+  --color-brand-600: #d4730b;
+  --color-brand-700: #a85700;
+  --color-brand-100: #fdecd6;
+
+  --color-canvas: #f2f4f8;
+  --color-line: #e1e5ee;
+  --color-ink: #18203a;
+  --color-ink-2: #4a5470;
+  --color-ink-3: #5d667e;
+
+  --color-ok: #1d7d52;
+  --color-ok-bg: #e3f3eb;
+  --color-bad: #b83a26;
+  --color-bad-bg: #fbe8e4;
+  --color-wait: #284583;
+  --color-wait-bg: #e4e9f4;
+
+  --radius-card: 12px;
+  --shadow-pop: 0 12px 32px -8px rgb(19 37 77 / 0.22), 0 2px 6px rgb(19 37 77 / 0.08);
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-canvas font-sans text-ink antialiased;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  h1, h2, h3, h4 {
+    @apply font-display text-ink;
+    letter-spacing: -0.01em;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-navy-700);
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
+  .on-dark :focus-visible {
+    outline-color: var(--color-brand);
+  }
+  dialog::backdrop {
+    background: rgb(12 24 52 / 0.45);
+  }
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* The one orchestrated motion: the current lesson on the resume track. */
+@keyframes lesson-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgb(240 138 26 / 0.55); }
+  50% { box-shadow: 0 0 0 5px rgb(240 138 26 / 0); }
+}
+.lesson-current {
+  animation: lesson-pulse 2.4s ease-in-out infinite;
+}
+
+@keyframes toast-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: none; }
+}
+.toast-in {
+  animation: toast-in 180ms ease-out;
+}
