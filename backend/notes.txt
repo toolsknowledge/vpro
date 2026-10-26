@@ -1,0 +1,46 @@
+Python
+******
+    Python is the "high level functional programming" language
+    Python is the prerequisite to build "AI Applications"
+        1) ML (Machine Learning)
+        2) DL (Deep Learning)
+        3) NLP (Natural Language Processing)
+        4) Gen AI (Generative AI)
+        5) Agentic AI
+        6) Automation Scripts
+        7) Web Applications
+            --
+            --
+    we will save Python coding files with ".py"
+    Ex.
+            demo.py
+    we will execute Python Script with the help of below tools
+    Ex.
+            python / python3
+
+            > python demo.py
+                (or)
+            > python3 demo.py
+
+installation
+************
+    link : https://www.python.org/downloads/windows/
+
+    > python --version
+        (or)
+    > python3 --version
+    
+
+variables
+*********
+    variables are used to store the data
+    Ex.
+        int     Ex. 100
+        float   Ex. 100.12345
+        string  Ex. "VPro" / 'Hello' / """Welcome"""
+        boolean Ex. True / False
+        list    Ex [1000,200,300,400,500] --> [] / mutable (allows modifications)
+        tuple   Ex (100,200,300,400,500,"Vikas) --> () / immutable (wont allows modifications)
+        dictionary Ex {"key1":100, "key2": 200}     / keys are "immutable" and values are "mutable"
+        None    
+        Set    Ex. {100,100} -- {100} / never allows the "duplicates"
