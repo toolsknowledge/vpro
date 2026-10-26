@@ -1,0 +1,21 @@
+VPro Skills EduTech: Course Overview
+
+Introduction:
+VPro Skills EduTech offers job-oriented training programmes with live classes, mentor support and
+hands-on projects. This overview describes the Generative AI and RAG course.
+
+Course modules:
+1. Python refresher and working with APIs
+2. Large language models and prompt engineering
+3. Document extraction: PDF, Word, Excel and text files
+4. Chunking strategies and token limits
+5. Embeddings and vector databases (ChromaDB)
+6. Building a RAG application with Streamlit
+7. Evaluation, grounding and citations
+
+Learning outcomes:
+By the end of the course, learners can build a document question-answering application that retrieves
+relevant chunks from a vector database and generates grounded answers with source citations.
+
+Support:
+Mentor doubt-clearing sessions are held every Saturday from 10:00 AM to 12:00 PM.
