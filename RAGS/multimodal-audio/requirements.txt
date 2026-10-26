@@ -1,0 +1,16 @@
+streamlit>=1.40,<2
+openai>=1.50
+chromadb>=1.0
+pypdf>=5.0
+python-docx>=1.1
+openpyxl>=3.1
+xlrd>=2.0
+pandas>=2.2
+python-dotenv>=1.0
+tiktoken>=0.8
+numpy>=1.26
+scikit-learn>=1.5
+plotly>=5.24
+pytest>=8.0
+reportlab>=4.2
+pillow>=10.0

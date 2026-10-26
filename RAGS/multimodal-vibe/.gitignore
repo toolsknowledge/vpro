@@ -1,0 +1,19 @@
+# Secrets
+.env
+
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Generated data: uploads, vector database, registry and pipeline traces
+data/uploads/*
+data/chroma_db/*
+data/traces/
+data/document_registry.json
+!data/uploads/.gitkeep
+!data/chroma_db/.gitkeep
+
+.DS_Store
