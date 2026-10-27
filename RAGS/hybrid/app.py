@@ -56,7 +56,7 @@ if uploaded_files and st.button("Index uploaded files", type="primary"):
     total = 0
     for uploaded in uploaded_files:
         try:
-            text, _ = load_file(uploaded.name, uploaded.getvalue())
+            text = load_file(uploaded.name, uploaded.getvalue())
             chunks = chunk_text(text)
             if not chunks:
                 st.warning(f"No readable text found in {uploaded.name}")
