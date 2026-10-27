@@ -1,0 +1,30 @@
+# Secrets
+.env
+backend/.env
+frontend/.env
+frontend/.env.local
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.deps-installed
+
+# Node / Vite
+frontend/node_modules/
+frontend/dist/
+
+# Logs
+*.log
+logs/
+
+# Local vector store and runtime state
+backend/storage/*
+!backend/storage/.gitkeep
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/

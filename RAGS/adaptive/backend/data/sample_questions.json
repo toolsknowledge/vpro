@@ -1,0 +1,30 @@
+{
+  "note": "Expected routes are what the classifier is designed to choose. The route actually taken is decided per question by the LLM and shown on every answer; borderline questions may route differently.",
+  "DIRECT": [
+    "Hi, how are you?",
+    "Hello",
+    "What is RAG in simple words?",
+    "Thanks for the help!"
+  ],
+  "RETRIEVE": [
+    "Explain Adaptive RAG from the course notes.",
+    "What is the difference between Hybrid RAG and Advanced RAG in our documents?",
+    "What is ChromaDB according to the sample documents?",
+    "What are the limitations of RAG described in the notes?",
+    "What relevance threshold does the course project use?",
+    "Which concepts are defined in the concepts spreadsheet?"
+  ],
+  "CLARIFY": [
+    "Explain it.",
+    "What about the second one?",
+    "Compare these two."
+  ],
+  "BORDERLINE": [
+    "What are embeddings?",
+    "How does reranking work?"
+  ],
+  "OUT_OF_SCOPE": [
+    "What is the capital of France according to our course notes?",
+    "What does our documentation say about Kubernetes pod autoscaling?"
+  ]
+}
