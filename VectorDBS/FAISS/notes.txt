@@ -1,0 +1,7 @@
+cd VectorDBS
+cd ChromaDB
+python -m venv venv
+source venv/bin/activate (Mac)
+    (or)
+venv\Scripts\activate (windows)
+python -m pip install -r requirements.txt

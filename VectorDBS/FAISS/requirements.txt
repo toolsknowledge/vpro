@@ -1,0 +1,7 @@
+sentence-transformers       # used to create embeddings
+faiss-cpu                   # connect to faiss
+numpy                       # mathematical calculations
+
+
+
+# python -m pip install -r requirements.txt
