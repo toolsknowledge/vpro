@@ -1,0 +1,277 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  overflow: hidden;
+}
+
+/* Header ---------------------------------------------------------------- */
+.app-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-height: var(--header-height);
+  padding: 10px 20px;
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  border-top: 3px solid var(--accent);
+  flex-shrink: 0;
+  min-width: 0;
+}
+
+.brand-logo {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.brand-text {
+  min-width: 0;
+  padding-left: 14px;
+  border-left: 1px solid var(--color-border);
+}
+
+.brand-text h1 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.brand-text p {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.header-status {
+  margin-left: auto;
+  min-width: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.icon-button.menu-toggle {
+  display: none;
+}
+
+.banner {
+  padding: 8px 20px;
+  font-size: 0.9rem;
+  border-bottom: 1px solid var(--color-border);
+  flex-shrink: 0;
+}
+
+.banner--danger {
+  background: var(--danger-soft);
+  color: var(--danger);
+}
+
+.banner--warning {
+  background: var(--warning-soft);
+  color: var(--warning);
+}
+
+/* Body ------------------------------------------------------------------ */
+.app-body {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+  position: relative;
+}
+
+.sidebar {
+  width: var(--sidebar-width);
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 18px 14px;
+  background: var(--color-surface);
+  border-right: 1px solid var(--color-border);
+  overflow-y: auto;
+}
+
+.sidebar-new-chat {
+  width: 100%;
+  justify-content: center;
+}
+
+.sidebar-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sidebar-link {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border: 0;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--color-text-muted);
+  font-weight: 500;
+  text-align: left;
+}
+
+.sidebar-link:hover {
+  background: var(--color-surface-muted);
+  color: var(--color-text);
+}
+
+.sidebar-link--active {
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+  box-shadow: inset 3px 0 0 var(--accent);
+}
+
+.sidebar-footer {
+  margin-top: auto;
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+}
+
+.sidebar-backdrop {
+  display: none;
+}
+
+.app-main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Tablet: icon-only sidebar ------------------------------------------- */
+@media (max-width: 1024px) {
+  :root {
+    --sidebar-width: 76px;
+  }
+
+  .sidebar {
+    padding: 16px 10px;
+    align-items: center;
+  }
+
+  .sidebar-label {
+    display: none;
+  }
+
+  .sidebar-link,
+  .sidebar-new-chat {
+    justify-content: center;
+    padding: 12px;
+  }
+}
+
+/* Mobile: off-canvas sidebar ------------------------------------------- */
+@media (max-width: 720px) {
+  :root {
+    --header-height: 60px;
+    --sidebar-width: 260px;
+  }
+
+  .app-header {
+    padding: 8px 12px;
+    gap: 10px;
+  }
+
+  .icon-button.menu-toggle {
+    display: inline-flex;
+    flex-shrink: 0;
+  }
+
+  .brand-logo {
+    height: 36px;
+  }
+
+  .brand-text {
+    padding-left: 10px;
+  }
+
+  .brand-text h1 {
+    font-size: 1rem;
+  }
+
+  .brand-text p {
+    display: none;
+  }
+
+  /* Only the offline pill stays on phones; the warning banner covers the rest. */
+  .header-status .pill:not(.pill--danger) {
+    display: none;
+  }
+
+  .header-status .pill {
+    font-size: 0.72rem;
+  }
+
+  .brand-text h1 {
+    white-space: normal;
+  }
+
+  .sidebar {
+    position: absolute;
+    inset: 0 auto 0 0;
+    z-index: 30;
+    align-items: stretch;
+    padding: 18px 14px;
+    transform: translateX(-100%);
+    transition: transform 0.2s ease;
+    box-shadow: var(--shadow-md);
+    visibility: hidden;
+  }
+
+  .sidebar--open {
+    transform: translateX(0);
+    visibility: visible;
+  }
+
+  .sidebar-label {
+    display: inline;
+  }
+
+  .sidebar-link {
+    justify-content: flex-start;
+  }
+
+  .sidebar-new-chat {
+    justify-content: center;
+  }
+
+  .sidebar-backdrop {
+    display: block;
+    position: absolute;
+    inset: 0;
+    z-index: 20;
+    border: 0;
+    background: rgba(17, 17, 19, 0.35);
+  }
+
+  .banner {
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 420px) {
+  .brand-logo {
+    height: 30px;
+  }
+
+  .brand-text {
+    padding-left: 8px;
+  }
+
+  .brand-text h1 {
+    font-size: 0.92rem;
+    white-space: normal;
+  }
+}

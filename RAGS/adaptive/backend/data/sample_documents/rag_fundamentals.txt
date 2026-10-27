@@ -1,0 +1,34 @@
+RAG FUNDAMENTALS - VPRO Skills Course Notes
+
+1. What is Retrieval-Augmented Generation (RAG)?
+Retrieval-Augmented Generation (RAG) is a technique that combines a large language model (LLM) with an external knowledge source. Instead of relying only on what the model memorised during training, a RAG system first retrieves relevant passages from a document collection and then gives those passages to the LLM as context. The LLM writes its answer using that context. RAG lets an assistant answer questions about private, recent, or domain-specific information such as course notes, company policies, or product manuals.
+
+2. The two phases of RAG
+A RAG system has an offline indexing phase and an online retrieval-and-generation phase.
+
+Indexing phase: documents are loaded, their text is extracted, the text is split into chunks, each chunk is converted into an embedding vector, and the vectors are stored in a vector database together with the original text and metadata such as the file name.
+
+Retrieval and generation phase: when a user asks a question, the question is converted into an embedding with the same embedding model, the vector database returns the chunks whose embeddings are most similar to the question, and the LLM generates an answer grounded in those chunks.
+
+3. Embeddings
+An embedding is a list of numbers (a vector) that represents the meaning of a piece of text. Texts with similar meaning have vectors that point in similar directions. Similarity is usually measured with cosine similarity, where 1.0 means identical direction and values near 0 mean unrelated. In this course we use the OpenAI model text-embedding-3-small, which produces 1536-dimensional vectors. The same embedding model must be used for documents and for queries, otherwise the vectors are not comparable.
+
+4. Chunks and chunking
+Documents are usually too long to embed or to send to an LLM in one piece, so they are split into chunks. A typical chunk is a few hundred to a thousand characters. Chunk overlap repeats a small amount of text between neighbouring chunks so that a sentence cut at a boundary still appears whole in at least one chunk. Chunk size is a trade-off: small chunks are precise but may lose context, large chunks keep context but dilute similarity scores and use more of the LLM context window. Good chunkers split at natural boundaries such as paragraphs and sentences.
+
+5. Vector databases
+A vector database stores embeddings and finds the nearest vectors to a query vector quickly. ChromaDB is an open-source vector database that can run locally and persist its data to disk. Each record holds an id, the embedding, the chunk text, and metadata. Metadata such as source file name, page number, or chunk index makes it possible to show citations to users.
+
+6. Advantages of RAG
+- Answers can use private and up-to-date information without retraining the model.
+- Answers can cite their sources, which improves trust and makes verification easy.
+- Hallucination is reduced because the model is instructed to answer from supplied context.
+- Updating knowledge is cheap: re-index the changed documents instead of fine-tuning.
+- Access control can be applied at retrieval time.
+
+7. Limitations of RAG
+- Answer quality depends on retrieval quality: if the right chunk is not retrieved, the answer will be incomplete or wrong.
+- Poor chunking can split important information across chunks.
+- Every query that retrieves costs an embedding call and adds latency.
+- Retrieved context can be irrelevant; without a relevance check the LLM may be distracted or may invent connections.
+- A fixed pipeline retrieves even for greetings and general questions, wasting time and money. Adaptive RAG addresses this.
