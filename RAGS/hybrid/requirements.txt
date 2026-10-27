@@ -1,0 +1,11 @@
+streamlit>=1.38
+openai>=1.40
+chromadb>=0.5
+sentence-transformers>=3.0
+rank-bm25>=0.2.2                    # keyword search
+python-dotenv>=1.0
+pymupdf>=1.24                       # parse pdf file
+python-docx>=1.1                    # parse doxc file
+pandas>=2.2
+openpyxl>=3.1                       # parse excel sheets
+pytest>=8.0                         # implement test cases
