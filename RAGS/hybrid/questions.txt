@@ -1,0 +1,100 @@
+Here are sample questions you can ask your VPro Skills Hybrid RAG Assistant after uploading and indexing the sample files.
+
+## 1. Basic questions
+
+These test whether the application can retrieve information from your documents.
+
+1. What is RAG?
+2. What is Hybrid RAG?
+3. What is semantic search?
+4. What is BM25?
+5. What is ChromaDB?
+6. What is Reciprocal Rank Fusion (RRF)?
+
+## 2. Keyword search questions
+
+These test whether BM25 can find exact technical terms.
+
+1. What is `JWT_SECRET_KEY`?
+2. Which document mentions `JWT_SECRET_KEY`?
+3. What does `EMBEDDING_MODEL` refer to?
+4. Which technology names are mentioned in the sample notes?
+5. Find information about `ChromaDB`.
+
+## 3. Semantic search questions
+
+These test whether the application understands meaning rather than only matching exact words.
+
+1. How can a system find relevant information when the question uses different words from the document?
+2. How does a language model use retrieved documents to answer a question?
+3. Why are embeddings useful for document search?
+4. How can a search system find information about signing a token?
+5. What is the purpose of storing document vectors?
+
+## 4. Hybrid search questions
+
+These are especially useful for demonstrating the difference between keyword and semantic retrieval.
+
+1. Explain how BM25 and semantic search work together.
+2. Why is Hybrid RAG useful for searching technical documentation?
+3. Find information about JWT signing and explain the role of `JWT_SECRET_KEY`.
+4. Explain how ChromaDB and BM25 contribute to Hybrid RAG.
+5. How does RRF combine results from two search methods?
+
+## 5. Questions about the sample course catalog
+
+These test retrieval from the CSV and Excel files.
+
+1. Which course has the highest number of enrolled students?
+2. How many students enrolled in Python for AI?
+3. What is the duration of Full Stack Development?
+4. Which course covers ChromaDB, BM25, and OpenAI?
+5. Compare the enrollment numbers for Python for AI and Data Science Foundations.
+
+## 6. Questions to test answer reliability
+
+These help you check whether the application avoids making up information.
+
+1. According to the uploaded notes, what is the difference between BM25 and semantic search?
+2. Answer using only the uploaded documents and cite the sources.
+3. If the documents don't contain the answer, tell me that the information is unavailable.
+4. What is the price of the Hybrid RAG Workshop? (The sample catalog does not contain pricing information.)
+5. What is the name of the trainer mentioned in the uploaded documents? (Check whether the documents actually contain a trainer's name.)
+
+## 7. Best five questions for your live demo
+
+I'd recommend asking these in sequence:
+
+### 1
+
+What is Hybrid RAG?
+
+&#x20;Copy
+
+### 2
+
+What is JWT_SECRET_KEY used for?
+
+&#x20;Copy
+
+### 3
+
+Explain how BM25 and semantic search work together.
+
+&#x20;Copy
+
+### 4
+
+Which course has the highest number of enrolled students?
+
+&#x20;Copy
+
+### 5
+
+What is the price of the Hybrid RAG Workshop?
+
+&#x20;Copy
+
+These questions demonstrate conceptual retrieval, exact keyword matching, combined retrieval, tabular data retrieval, and insufficient-evidence handling.
+
+Important: Upload and index the sample files before asking questions. The final question is intentional: your application should say that pricing information is not available in the indexed documents rather than inventing a price.
