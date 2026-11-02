@@ -1,0 +1,3 @@
+pinecone                         # used to connect to pinecone db
+sentence-transformers            # create embeddings (huggingface)
+python-dotenv                    # loads the .env file
