@@ -242,5 +242,131 @@
 # print( tuple( filter(lambda num1:num1>=300,(100,200,300,400,500)) ) )
 
 # Example-27
-from functools import reduce
-print( reduce(lambda num1,num2:num1+num2,[1,2,3,4,5]) )
+# from functools import reduce
+# print( reduce(lambda num1,num2:num1+num2,[1,2,3,4,5]) )
+
+
+
+
+# print( list( map(lambda num1:num1*1000,[1,2,3,4,5]) ) )
+
+# (1,2,3,4,5) -- (0.5,1,1.5,2,2.5) map()
+
+# print( tuple( filter(lambda num1:num1>=18, (15,16,18,20,22,24)) ) )
+
+
+# salaries = (10000,20000,30000,40000,50000)
+# need whose have salaries <30000
+
+# print( list( filter(lambda num1:num1>=300 ,list(map(lambda num1:num1*100,[1,2,3,4,5]))) ) )
+
+
+# from functools import reduce
+# print( reduce(lambda num1,num2:num1+num2,[1,2,3,4,5]) )
+
+# from functools import reduce
+# print( reduce(lambda num1,num2:num1+num2,list(filter(lambda num1:num1<=3,list( map(lambda num1:num1/1000,[1000,2000,3000,4000,5000]) ))) ))
+
+
+
+# Example-28
+# def display(n):         # n = 5
+#     if n == 0:          
+#         return
+#     print(n)            # 5 4 3 2 1
+#     display(n-1)        # display(0)
+
+# display(5)
+
+# Example-29
+# def factorial(n):
+#     if n == 1:
+#         return 1
+#     return n * factorial(n-1)       # 5 * factorial(4)
+#                                     # 5 x 4 x factorial(3)
+#                                     # 5 x 4 x 3 x 2 x 1 = 120
+
+# print(factorial(5))
+
+# def test_func():
+#     yield 100
+#     yield 200
+#     yield 300
+
+# x = test_func()
+# print(next(x))
+# print(next(x))
+# print(next(x))
+
+# def test_func():
+#     yield 100
+#     yield 200
+#     print("Hello")
+#     yield 300
+
+# x = test_func()
+# print(next(x))
+# print(next(x))
+
+
+def test_func():
+    pass
+
+# pass : empty function
+
+
+# lead
+def connect_postgress():
+    pass 
+
+# team 
+
+def start_business():
+    pass
+
+# frnd1 (AI - startup)
+
+
+# basic functions
+# types 1. without para - without return
+# 2. with para - without return type
+# 3. without para - with return type
+# 4. with para - with return type
+
+# * (tuple)
+# ** (dictionary)
+# default parameters
+# keyword parameters
+# /
+# *
+# lambda
+# map(), filter() and reduce()
+# recursion
+# pass
+
+# def outer():
+#     def inner():
+#         print("Hello")
+#     inner()
+
+# outer()
+
+def outer():
+    msg = "Hello"
+
+    def inner():
+        print(msg)
+    return inner
+
+x = outer()
+print(x())
+
+
+
+
+
+
+
+
+
+
