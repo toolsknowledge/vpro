@@ -1,0 +1,8 @@
+fastapi                             # develop api calls Ex. GET,POST,PUT,DELETE
+uvicorn                             # light weight http server, used to run api calls
+python-multipart                    # used to upload pdf files
+pypdf                               # read the data from pdf file
+openai                              # connect to openai llm
+python-dotenv                       # loads .env file
+faiss-cpu                           # connect to FAISS
+numpy                               # numerical calculations
