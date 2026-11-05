@@ -1,2 +1,0 @@
-chromadb                # connect to vectordb (chromadb)
-sentence-transformers   # to create embeddings

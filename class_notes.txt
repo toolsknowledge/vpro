@@ -1,0 +1,94 @@
+- Python is the high level functional programming language
+
+- Python is the prerequisite to build
+        1) Web Applications
+        2) Machine Learning
+        3) Deep Learning
+        4) Natural Language Processing
+        5) Agents
+        6) Automation Scripts
+        ---
+        ---
+        ---
+
+- we will save Python files with ".py" extension
+    Ex.
+            demo.py
+
+- we will execute Python code with the below commands
+
+        > python demo.py
+                (or)
+        > python3 demo.py
+
+- Visual Studio Code is the suggested IDE(Integrated Development Environment), used to 
+  build Python Applications
+
+Software Installation
+*********************
+1) python
+        https://www.python.org/downloads/
+
+        > python --version
+            (or)
+        > python3 --version
+
+2) download and install Visual Studio Code
+    https://code.visualstudio.com/download
+
+3) enable AutoSave
+
+        File ---> AutoSave
+
+        code saves automatically
+
+- Python is dynamically Typed
+    Ex.
+            num1 = 200
+            msg = "VPro"
+
+- python supports libraries / modules
+
+        Ex.
+                numpy
+                pandas
+                matplotlib
+                seaborn
+                fastapi
+                scikit-learn
+                nltk
+                ---
+                ---
+
+- pip is the tool,used to download/install the libraries
+
+  Ex.
+            pip install numpy
+            pip install scikit-learn
+
+
+- python provides, so many ready made ready made functionalities
+  as a python developer we are able to use it
+
+  Ex.
+        print("Hello,VPro !!!")
+
+- Python is the interpreted language
+    Ex.
+            python interpreter will execute code line by line
+
+- Python supports OOPS (Object Oriented programming system)
+    Inheritance
+    Polymorphism
+    Abstraction
+    Encapsulation
+
+- Python is the Open Source (1991)
+
+- Python will works in all OS
+        mac
+        windows
+        ubuntu
+        --
+        --
+        --
