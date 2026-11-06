@@ -44,3 +44,25 @@ variables
         dictionary Ex {"key1":100, "key2": 200}     / keys are "immutable" and values are "mutable"
         None    
         Set    Ex. {100,100} -- {100} / never allows the "duplicates"
+
+Pandas
+******
+    Pandas library/module, used to handle Excel Sheets / CSV Files / JSON Files /.....
+    Pandas library able to deal Tabular Data (Rows & Cols)
+    Pandas library able to clean the data
+
+1) create requirements.txt file
+        pandas
+
+2) create virtal environment
+    > python -m venv venv
+
+3) activate virtal environment
+    change from powershell to cmd prompt
+    > source venv/bin/activate (mac book)
+            (or)
+    > venv\Scripts\activate (windows)
+4) download libraries
+    > python -m pip install -r requirements.txt
+            (or)
+    > pip install -r requirements.txt
