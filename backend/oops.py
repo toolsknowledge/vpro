@@ -221,17 +221,197 @@
 # create obj to Child2
 
 # Example-16
-class Parent:
-    a = 400
+# class Parent:
+#     a = 400
 
-class Child1(Parent):
-    b = 300
+# class Child1(Parent):
+#     b = 300
 
-class Child2(Parent):
-    c = 200
+# class Child2(Parent):
+#     c = 200
 
-class Subchild(Child1,Child2):
-    d = 100
+# class Subchild(Child1,Child2):
+#     d = 100
+
+
+# Example-17
+# overriding parent class functionality with child child class functionality called as function overriding
+# function overriding comes under polymorphsim
+# function overriding technically called as dynamic polymorphism
+# rule : both parent & child must have same function name
+# class Parent:
+#     def property(self):
+#         print("2BHK-House !!!")
+# class Child(Parent):
+#     def property(self):
+#         print("3 BHK House !!! + Car + Land")
+# obj = Child()
+# obj.property()
+
+
+# Example - 18
+# same "function name" with "different parameters" called as function overloading
+# function overloading not supported by python
+# function overloading also comes under polymorphism
+# function overloading also called as static polymorphsim
+# class Test:
+#     def add(self,num1,num2):
+#         print(num1+num2)
+#     def add(self,num1,num2,num3):
+#         print(num1+num2+num3)
+#     def add(self,num1,num2,num3,num4):
+#         print(num1+num2+num3+num4)
+# obj = Test()
+# obj.add(40,30,20,10)
+
+# Example-19
+# class Test:
+#     def add(self,*nums):
+#         print(sum(nums))
+# obj = Test()
+# obj.add(10,20)
+# obj.add(10,20,30)
+# obj.add(10,20,30,40)
+
+# Example-20
+# class Test:
+#     def __init__(self):
+#         pass
+#     def __init__(self, param1):
+#         print(param1)
+#     def __init__(self, param1,param2):
+#         print(param1, param2)
+# obj = Test(200,100)
+
+# Example-21
+# class Test:
+#     def __init__(self,*nums):
+#         print(sum(nums))
+
+# Test(20,10,5,1)
+
+# Example-22
+# class Bank:
+#     def __init__(self):
+#         self.__balance = 2000
+
+# obj = Bank()
+# print(obj.balance)
+
+# Example-23
+# class Parent:
+#     def __init__(self):
+#         self.__num = 1000
+
+# class Child(Parent):
+#     pass
+
+# obj = Child()
+# obj.__num
+
+
+# Example-24
+# we can't access private members with the help of objects
+# private members wont accessable to child classes
+# we will create private members with the help of __
+# we can acccess private members with the help of "public functions" with in the same class
+# Encapsulation
+# class Test:
+#     def __init__(self,param1):
+#         self.__x = param1
+#     def getX(self):
+#         return self.__x
+#     def setX(self,new_x):
+#         self.__x = new_x
+
+# obj = Test(100)
+# obj.setX(1000)
+# print( obj.getX() )
+
+
+# Example-25
+# class Test:
+#     college_name = "CBIT"
+
+# obj1 = Test()
+# obj2 = Test()
+# obj3 = Test()
+# print(obj1.college_name)
+# print(obj2.college_name)
+# print(obj3.college_name)
+
+# Example-26
+# class Test:
+#     # class level variable
+#     college_name = "CBIT"
+
+#     def __init__(self):
+#         # instance variable
+#         self.college_name = "Vasavi"
+
+# obj = Test()
+# print(obj.college_name)
+
+# Example-27
+# class Test:
+#     college_name = "CBIT"
+#     def __init__(self):
+#         self.college_name = "Vasavi"
+# print(Test.college_name)
+
+
+# Revision
+# class Test:
+#     # class level variable
+#     num1 = 200
+#     num2 = 100
+#     def __init__(self):
+#         # instance variables
+#         self.num1 = 2000
+#         self.num2 = 1000
+
+# obj = Test()
+# print(obj.num1 + obj.num2)
+# print(Test.num1 + Test.num2)
+
+# Example-28
+# class Test:
+#     pass
+
+# obj = Test()
+# obj.x = 100
+
+# # print(obj.x)
+# print(Test.x)
+
+# Example-29
+# class Test:
+#     pass
+
+# Test.msg = "Hello"
+# print(Test.msg)
+# obj = Test()
+# print(obj.msg)
+
+# Example-30
+# class Test:
+#     name = "Hello"
+
+# Test.name = "Welcome"
+# print(Test().name)
+
+
+# Example-31
+# class Test:
+#     name = "Hello"
+    
+#     @classmethod
+#     def test_func(cls):
+#         cls.name = "Welcome"
+
+# Test.test_func()
+# print(Test.name)
+
 
 
 
