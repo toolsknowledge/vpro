@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VPro Skills | Classroom RAG Lab</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand-mark"><span class="brand-v">V</span><span class="brand-pro">Pro</span><span class="brand-skills">SKILLS</span></div>
+    <div class="top-copy"><span class="eyebrow">HANDS-ON LEARNING LAB</span><h1>Understand RAG, step by step</h1><p>PDF · DOCX · TXT &nbsp;|&nbsp; ChromaDB &nbsp;|&nbsp; Claude</p></div>
+    <div class="status-pill"><span class="pulse"></span><span id="statusText">Connecting…</span></div>
+  </header>
+
+  <main class="container">
+    <section class="hero-card">
+      <div><span class="section-tag">THE LEARNING JOURNEY</span><h2>From files to a grounded answer</h2><p>Follow each stage. Then choose whether the app should retrieve relevant chunks for your question.</p></div>
+      <div class="hero-icon">✦</div>
+    </section>
+
+    <section class="steps" aria-label="RAG pipeline">
+      <div class="step"><span class="step-num">01</span><div class="step-icon">📚</div><b>Read files</b><small>PDF, DOCX, TXT</small></div>
+      <div class="step-arrow">→</div>
+      <div class="step"><span class="step-num">02</span><div class="step-icon">✂️</div><b>Chunk text</b><small>Split into pieces</small></div>
+      <div class="step-arrow">→</div>
+      <div class="step"><span class="step-num">03</span><div class="step-icon">🧭</div><b>Index</b><small>Embeddings + ChromaDB</small></div>
+      <div class="step-arrow">→</div>
+      <div class="step"><span class="step-num">04</span><div class="step-icon">💬</div><b>Ask question</b><small>Choose Yes or No</small></div>
+      <div class="step-arrow">→</div>
+      <div class="step"><span class="step-num">05</span><div class="step-icon">✨</div><b>Claude answers</b><small>With or without context</small></div>
+    </section>
+
+    <div id="notice" class="notice hidden" role="status"></div>
+
+    <section class="grid-layout">
+      <div class="panel">
+        <div class="panel-heading"><div><span class="section-tag">STEP 1–3</span><h2>Load and index documents</h2></div><span class="round-icon">↥</span></div>
+        <p class="muted">Start with the included sample files, or add your own learning materials.</p>
+        <button id="sampleBtn" class="btn btn-primary">Index sample files <span>→</span></button>
+        <div class="separator"><span>OR UPLOAD YOUR FILES</span></div>
+        <label class="upload-zone" for="fileInput"><span class="upload-symbol">＋</span><b>Choose PDF, DOCX, or TXT</b><small>Multiple files supported</small><input id="fileInput" type="file" accept=".pdf,.docx,.txt" multiple></label>
+        <button id="uploadBtn" class="btn btn-secondary" disabled>Upload and index files</button>
+        <div id="indexResult" class="result-box hidden"></div>
+        <div class="mini-note"><b>What does indexing do?</b><br>Text is split into chunks. ChromaDB creates embeddings automatically and stores each chunk for later similarity search.</div>
+      </div>
+
+      <div class="panel question-panel">
+        <div class="panel-heading"><div><span class="section-tag">STEP 4–5</span><h2>Ask a question</h2></div><span class="round-icon">✦</span></div>
+        <label class="field-label" for="question">Your question</label>
+        <textarea id="question" rows="3" placeholder="Example: What is RAG and why do we use chunking?"></textarea>
+        <div class="field-row"><label class="field-label" for="topK">Chunks to retrieve</label><select id="topK"><option value="2">2 chunks</option><option value="4" selected>4 chunks</option><option value="6">6 chunks</option><option value="8">8 chunks</option></select></div>
+        <div class="decision-title">Do we need to retrieve chunks?</div>
+        <div class="choice-grid">
+          <label class="choice-card selected" id="yesCard"><input type="radio" name="retrieve" value="yes" checked><span class="choice-check">✓</span><span class="choice-icon">🔎</span><b>YES, retrieve</b><small>Search ChromaDB and give matching chunks to Claude.</small><em>RAG path</em></label>
+          <label class="choice-card" id="noCard"><input type="radio" name="retrieve" value="no"><span class="choice-check">✓</span><span class="choice-icon">💭</span><b>NO, skip retrieval</b><small>Ask Claude without context from your indexed files.</small><em>Baseline path</em></label>
+        </div>
+        <button id="askBtn" class="btn btn-primary btn-wide">Generate answer <span>→</span></button>
+        <p class="tiny-note">Claude API key is read only by the Python backend, never by browser JavaScript.</p>
+      </div>
+    </section>
+
+    <section id="answerPanel" class="panel answer-panel hidden">
+      <div class="panel-heading"><div><span class="section-tag">RESULT</span><h2>Claude’s answer</h2></div><span id="modeBadge" class="mode-badge">RAG</span></div>
+      <div id="answerText" class="answer-text"></div>
+      <div class="evidence-heading"><h3>Retrieved chunks</h3><span id="chunkCount" class="count-badge">0 chunks</span></div>
+      <p id="evidenceIntro" class="muted"></p>
+      <div id="chunksList" class="chunks-list"></div>
+    </section>
+
+    <section class="concept-strip">
+      <div><span>01</span><b>Chunking</b><p>Break long text into smaller passages.</p></div>
+      <div><span>02</span><b>Indexing</b><p>Store chunks and their vector embeddings.</p></div>
+      <div><span>03</span><b>Retrieval</b><p>Find chunks similar to the question.</p></div>
+      <div><span>04</span><b>Generation</b><p>Claude writes an answer using the available context.</p></div>
+    </section>
+    <footer>VPro Skills EduTech · Beginner-friendly RAG demonstration</footer>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>

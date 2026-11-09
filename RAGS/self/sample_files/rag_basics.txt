@@ -1,0 +1,29 @@
+RAG BASICS — STUDENT HANDOUT
+
+Retrieval-Augmented Generation (RAG) is a pattern that combines information retrieval with a language model. Instead of asking a language model to answer only from its learned knowledge, an application can search a collection of documents and provide relevant passages as context.
+
+The basic RAG pipeline has four main stages:
+1. Read source documents.
+2. Split the extracted text into smaller chunks.
+3. Create vector embeddings and store the chunks in a vector database.
+4. Retrieve relevant chunks for a question and pass them to a language model to generate an answer.
+
+Chunking means splitting long text into smaller pieces. A chunk should contain enough information to make sense, but should not be unnecessarily large. Overlap means that neighboring chunks share a small amount of text. Overlap can preserve context when a sentence or idea crosses a chunk boundary.
+
+Indexing means preparing content for later search. In this classroom application, ChromaDB stores text chunks and creates embeddings automatically using its default embedding function. At question time, ChromaDB compares the question embedding with stored chunk embeddings and returns nearby results.
+
+Retrieval means searching the indexed collection for chunks related to the user's question. The top-k setting controls how many chunks are returned. For example, top-k = 4 asks the database for up to four matching chunks.
+
+Generation means sending the question and selected context to a language model such as Claude. The model uses the context to produce a natural-language answer. The model may still make mistakes, so applications should inspect evidence and evaluate answers.
+
+In this learning app, students can select YES or NO for retrieval:
+- YES: retrieve relevant chunks from ChromaDB and provide them to Claude. This is the RAG path.
+- NO: skip retrieval and send the question to Claude without indexed document context. This is a baseline comparison, not RAG.
+
+Example question: What is chunking?
+Expected idea: Chunking divides a long document into smaller text passages so that retrieval can find focused evidence.
+
+Example question: What is the role of ChromaDB?
+Expected idea: ChromaDB stores text chunks with vector embeddings and searches for chunks similar to a question.
+
+Important limitation: a text-based PDF can be read directly, but a scanned PDF containing only images needs OCR. This beginner project does not include OCR.
