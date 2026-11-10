@@ -1,0 +1,6 @@
+openai>=1.40.0
+chromadb>=0.5.5
+faiss-cpu>=1.8.0
+numpy>=1.26.0
+python-docx>=1.1.2
+python-dotenv>=1.0.1
