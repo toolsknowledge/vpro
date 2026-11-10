@@ -413,12 +413,104 @@
 # print(Test.name)
 
 
+# Example-32
+
+# from abc import ABC,abstractmethod
+# class VPro(ABC):
+#     @abstractmethod
+#     def start_business(self):
+#         pass
+
+# class Frnd1(VPro):
+#     def start_business(self):
+#         print("Start AI Company !!!")
+
+# class Frnd2(VPro):
+#     def start_business(self):
+#         print("EduTech !!!")
+
+# obj = Frnd2()
+# obj.start_business()
 
 
+# Example-33
+# class Test:
+#     msg = "Hello"
+# print(Test.msg)
+# obj = Test()
+# print(obj.msg)
 
 
+# Example-34
+# class Test:
+#     # pass
+
+#     def __str__(self):
+#         return "VPro"
+
+# obj = Test()
+# print(obj)
+
+# Example-35
+# class Test:
+#     def __init__(self,param1):
+#         self.param1 = param1
+
+#     def __len__(self):
+#         return len(self.param1)
+
+# obj = Test([10,20,30,40,50])
+# print( len(obj) )
+
+# list1 = [10,20,30,40,50]
+# len(list1)
 
 
+# Example-36
+# class Test:
+#     @staticmethod
+#     def add():
+#         num1 = 200
+#         num2 = 100
+#         print(num1 + num2)
+
+
+#     def is_even(num1):
+#         return "Even" if num1%2 == 0 else "Odd"
+
+# Test.add()
+# print(Test.is_even(2))
+
+# Example-37
+# class Test:
+#     # class level members / static members
+#     msg = "Hello"
+#     msg1 = "Hi"
+
+#     def __init__(self):
+#         self.x = 100
+
+# print(Test.__dict__)
+
+# obj = Test()
+# print(obj.__dict__)
+
+
+# Example-38
+# class College:
+#     # static / class level
+#     college_name = "CBIT"
+
+#     def __init__(self,num):
+#         # instance variable
+#         self.r_n = num
+
+# obj1 = College(101)
+
+# obj2 = College(102)
+
+# print(obj1.r_n, College.college_name)
+# print(obj2.r_n, College.college_name)
 
 
 
