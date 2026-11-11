@@ -10,3 +10,32 @@ vpro
 > pip install -r requirements.txt
         (or)
 > python -m pip install -r requirements.txt
+
+
+Graphs
+******
+        matplotlib is the python module, used to display the Graphs
+        Ex.
+                Line Plot
+                Bar Chart
+                Pie Chart
+                Scatter Plot
+                Histo
+                Box
+                Heatmap
+
+vpro
+        backend
+                requirements.txt
+
+                        numpy
+                        pandas
+                        matplotlib
+
+
+        > cd backend
+        > python -m venv venv
+        > source venv/bin/activate (mac)
+                (or)
+        > venv\Scripts\activate (windows)
+        > python -m pip install -r requirements.txt
