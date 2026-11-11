@@ -69,6 +69,20 @@
         () / tuple()
         immutable
 
+    dictionary
+    **********
+        storing the data in the form of a "key & value" pairs
+        keys are immutable
+        values are mutable
+        {} / dict() constructor
+        key and value separated by using ":"
+
+    Set
+    ***
+        set never allows "duplicates"
+        {} / set() constructor
+        unordered
+        hetrogeneous elements
 """
 
 # str = "VPro !!!"
@@ -275,9 +289,102 @@
 # print(sys.getsizeof(t1))
 
 
-t1 = (10,20,30,40,50)
-print(t1[0])
-print(t1[-1])
-print(t1[0:2])
-print(t1[-2:])
+# t1 = (10,20,30,40,50)
+# print(t1[0])
+# print(t1[-1])
+# print(t1[0:2])
+# print(t1[-2:])
 
+
+
+# d1 = {
+#     "module1":"python",
+#     "module2":"fastapi",
+#     "module3":"llms",
+#     "module4":"RAGS & Agents",
+#     "module5":"Cloud Deployment"
+# }
+# print(d1["module1"])
+# print(d1["module5"])
+# print(d1.keys())
+# print(d1.values())
+# print(d1.items())
+
+
+# d1 = {
+#     "num1" : 100,
+#     "num1" : 1000
+# }
+# print(d1["num1"])
+
+# d1 = {
+#     [10,20] : "Hello"
+# }
+
+# key1 = (10,20)
+# d1 = {
+#     key1 : "Hello"
+# }
+# print(d1[key1])
+
+
+# s1 = {10,20,30,10,20}
+# print(s1)
+
+# s2 = {1,1.0,True}
+# print(s2)
+
+# s3 = {"Samba","Samba","samba"}
+# print(s3)
+
+# s4 = {}
+# print(type(s4))
+
+# s5 = set()
+# print(type(s5))
+
+
+# employee = None
+# print(employee)
+
+# x = 200
+# y = 100
+# res = x if x>y else y
+# print(res)
+
+
+# x = 300
+# y = 200
+# z = 1000
+# res = x if (x>y) and (x>z) else y if (y>z) else z
+# print(res)
+
+
+# num1 = 1_0_0_0
+# num2 = 2_000
+# res = num1 + num2
+# print(res)
+
+# num3 = _1000
+# print(num3)
+
+# num1 = num2 = 100
+# print(num1 + num2)
+
+# x,y,z = 100,200,300
+# print(x+y+z)
+
+
+# num = 100
+# Num = 200
+# NUM = 300
+# print(NUM)
+
+# x = 100
+# x = 1000
+# print(x)
+
+
+# 123num = 100
+
+# @num = 100
