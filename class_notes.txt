@@ -93,3 +93,46 @@ Software Installation
         --
         --
 
+matplotlib
+**********
+        matplotlib is the python library/module
+        matplotlib used to display the graphs
+        Ex.
+                Line Plot
+                Bar Chart
+                Pie Chart
+                Scatter Plot
+                Histogram
+                ---
+                ---
+                ---
+step 1.
+        create requirements.txt file
+
+        vpro
+                requirements.txt
+                        matplotlib
+
+step 2.
+        create virtual environment (powershell - cmd)
+                > python -m venv venv
+
+step 3.
+        activate virtual environment
+
+        mac book
+        ********
+        source venv/bin/activate
+
+        windows (cmd)
+        *************
+        venv\Scripts\activate
+        S is the capital
+
+step 4.
+        download libraries
+
+        > pip install -r requirements.txt
+                        (or)
+        > python -m pip install -r requirements.txt
+
