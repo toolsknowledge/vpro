@@ -1,0 +1,18 @@
+VPro Skills Python Course
+
+The Python course duration is 30 days.
+Classes are conducted online.
+The course covers Python basics, variables, data types,
+conditions, loops, functions, OOP, NumPy, and Pandas.
+
+The React course duration is 45 days.
+React classes cover components, props, state, hooks,
+API calls, and single-page applications.
+
+The FastAPI course duration is 15 days.
+It covers REST APIs, MongoDB CRUD operations,
+JWT authentication, and Swagger documentation.
+
+The Python course fee is 10000 rupees.
+The React course fee is 12000 rupees.
+The FastAPI course fee is 8000 rupees.

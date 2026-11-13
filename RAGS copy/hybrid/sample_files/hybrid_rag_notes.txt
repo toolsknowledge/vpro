@@ -1,0 +1,15 @@
+VPRO Skills EduTech — Hybrid RAG Sample Notes
+
+RAG retrieves relevant information from a knowledge base and supplies it to a language model before answer generation.
+
+Semantic search represents queries and document chunks as embedding vectors. It finds chunks with similar meaning, even when exact words differ. Sentence Transformers can create embeddings locally, and ChromaDB stores vectors and metadata.
+
+Keyword search ranks text based on matching terms. BM25 is useful for exact identifiers, function names, error messages, and technical phrases such as JWT_SECRET_KEY.
+
+Hybrid RAG combines semantic retrieval and BM25 keyword retrieval. Reciprocal Rank Fusion (RRF) combines ranked lists. Each result receives a contribution of 1 / (k + rank), where k is often 60.
+
+ChromaDB stores embeddings, text chunks, and metadata. An OpenAI language model reads the question and retrieved context, then generates a grounded answer with source citations.
+
+JWT_SECRET_KEY is an example identifier. In real applications, store signing secrets in environment variables and never commit them to source control.
+
+Good RAG practices include clean document extraction, sensible chunk sizes, source metadata, retrieval evaluation, and citations. The model should say when indexed documents do not contain enough evidence.

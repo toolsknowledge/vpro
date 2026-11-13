@@ -1,0 +1,106 @@
+Step 1.
+    download the libraries
+
+    RAGS
+        self
+           requirements.txt
+
+    > cd self
+    > python -m venv venv
+    > venv\Scripts\activate
+    > python -m pip install -r requirements.txt
+
+
+Step 2.
+    create sample files for indexing
+
+    self
+        sample_files
+            class_notes.docx
+            rag_basics.txt
+            rag_quick_guide.pdf
+
+    
+Step 3.
+    build RAG Application
+
+    self
+        app.py
+
+Step 4.
+    create .env file
+    
+    self
+        .env
+
+Step 5.
+    create presentation
+        self
+            static
+                index.html
+                styles.css
+                app.js
+
+Step 6.
+    execute the application
+
+    > cd self
+    > python -m uvicorn app:app --reload
+
+    http://127.0.0.1:8000
+
+
+
+Steps to build modular RAG Application
+
+step 1.
+    download libraries
+
+RAGS
+    modular
+        backend
+            requirements.txt
+                openai>=1.40.0
+                chromadb>=0.5.5
+                faiss-cpu>=1.8.0
+                numpy>=1.26.0
+                python-docx>=1.1.2
+                python-dotenv>=1.0.1
+
+        > cd modular
+        > cd backend
+        > python -m venv venv
+        > source venv/bin/activate
+        > python -m pip install -r requirements.txt
+
+step 2.
+
+    backend
+        .env
+
+    create .env file
+
+    OPENAI_API_KEY=
+    VECTOR_DB=faiss
+
+step 3.
+    create docx file
+
+        backend
+            sample_guide.docx
+
+
+step 4.
+        create below reusable modules
+
+        backend
+            document_loader.py
+            vector_store.py
+            app.py
+
+step 5.
+    run the rag application
+
+    > python app.py
+
+

@@ -1,0 +1,10 @@
+VPro Skills EduTech Course Overview
+
+About the Generative AI and RAG course:
+This 10-week course teaches learners to build document question answering applications with Python, OpenAI models and ChromaDB.
+
+Course modules:
+Module 1 covers embeddings and vector search. Module 2 covers chunking strategies and metadata. Module 3 covers prompt design and grounded answers with citations. Module 4 covers evaluation and deployment.
+
+Prerequisites:
+Learners should know basic Python and be comfortable using the command line.

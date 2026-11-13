@@ -1,0 +1,5 @@
+openai                  # connect to open ai llm
+faiss-cpu               # connect to faiss
+numpy                   # implement list operations
+python-dotenv           # loads environment file
+streamlit               # presentation layer

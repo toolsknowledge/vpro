@@ -1,0 +1,18 @@
+i want to build corrective rag application
+use below tech stack
+1) knowledge source : pdf (create sample pdf file from your end)
+2) open ai llm
+3) chromadb
+4) use react as frontend
+5) backend as fastapi
+
+ui should be responsive
+use professional styles and need rich css styles
+in header use my company logo (logo.jpeg)
+
+application should be student friendly application
+never add any unnecessary snippets (code)
+application should be less error thown application
+
+want to build this application with claude code
+give me master prompt

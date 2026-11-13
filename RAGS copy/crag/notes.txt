@@ -1,0 +1,46 @@
+1) create requirements.txt file
+
+            RAGS
+                crag
+                    requirements.txt
+                        openai
+                        faiss-cpu
+                        numpy
+                        python-dotenv
+                        streamlit
+
+            > cd crag
+            > python -m venv venv
+            > source venv/bin/activate
+            > python -m pip install -r requirements.txt
+
+2) create .env file
+        RAGS
+            crag
+                backend
+                    .env
+
+3) create knowledge file
+        backend
+            sample.txt
+
+4) make backend as module
+    backend
+        __init__.py
+
+5) create RAG application
+        backend
+            main.py
+
+
+6) create UI (streamlit)
+
+    crag
+        frontend
+            app.py
+
+7) execute the application
+
+        > cd crag
+        > cd frontend
+        > python -m streamlit run app.py

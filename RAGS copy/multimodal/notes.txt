@@ -1,0 +1,15 @@
+Step 1.
+    download libraries
+
+    RAGS
+        multimodal
+            requirements.txt
+
+                    openai
+                    python-dotenv
+                    scikit-learn
+                    networkx
+                    numpy
+
+Step 2.
+    

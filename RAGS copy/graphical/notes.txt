@@ -1,0 +1,20 @@
+Step 1.
+RAGS
+    graphical
+        requirements.txt
+
+> cd graphical
+
+> python -m venv venv
+
+> source venv/bin/activate (mac)
+        (or)
+> venv\Scripts\activate
+
+> python -m pip install -r requirements.txt
+
+Step 2.
+    prepare RAG Application with streamlit UI
+
+    graphical
+        app.py

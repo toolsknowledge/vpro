@@ -1,0 +1,76 @@
+step 1.
+    create requirements.txt file
+
+RAGS
+    hybrid
+        requirements.txt
+
+                streamlit>=1.38
+                openai>=1.40
+                chromadb>=0.5
+                sentence-transformers>=3.0
+                rank-bm25>=0.2.2                    # keyword search
+                python-dotenv>=1.0
+                pymupdf>=1.24                       # parse pdf file
+                python-docx>=1.1                    # parse doxc file
+                pandas>=2.2
+                openpyxl>=3.1                       # parse excel sheets
+                pytest>=8.0                         # implement test cases
+
+    > cd hybrid
+    > python -m venv venv
+    > source venv/bin/activate (mac)
+            (or)
+    > venv\Scripts\activate (windows)
+    > python -m pip install -r requirements.txt
+
+step 2.
+    create sample documents for indexing purpose
+        hybrid
+            sample_files
+                course_catalog.csv
+                course_catalog.xlsx
+                hybrid_rag_notes.docx
+                hybrid_rag_notes.pdf
+                hybrid_rag_notes.txt
+
+step 3.
+    create ingestion.py
+        loads sample_files, create chunks
+
+step 4.
+    create hybrid_search.py
+
+    hybrid
+        hybrid_search.py
+
+    used to implement the hybrid search
+        (BM25 - Keyword + VectorDB Search)
+
+step 5.
+    create .env file
+
+    hybrid
+        .env
+
+    OPENAI_API_KEY=
+    OPENAI_MODEL=
+    EMBEDDING_MODEL=
+    CHROMA_PATH=
+    CHROMA_COLLECTION=
+
+step 6.
+    create streamlit ui
+    
+    hybrid  
+        app.py
+
+step 6.
+    run application
+        
+        > python -m streamlit run app.py
+
+
+
+
+

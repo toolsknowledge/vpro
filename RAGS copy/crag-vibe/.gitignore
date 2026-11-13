@@ -1,0 +1,19 @@
+# Python
+backend/venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Secrets
+backend/.env
+frontend/.env
+
+# Vector database (rebuilt by ingestion)
+backend/chroma_db/*
+!backend/chroma_db/.gitkeep
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+.DS_Store
