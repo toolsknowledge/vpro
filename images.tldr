@@ -127,6 +127,13 @@
 			"typeName": "shape"
 		},
 		{
+			"meta": {},
+			"id": "page:Xw4P1ADjK2ld830k6sR2O",
+			"name": "Page 4",
+			"index": "a4mgv",
+			"typeName": "page"
+		},
+		{
 			"x": 275.77581787109375,
 			"y": 84.29904460906982,
 			"rotation": 0,
@@ -1145,6 +1152,21 @@
 			"typeName": "shape"
 		},
 		{
+			"editingShapeId": "shape:WTY3hHKoBMwJVLUuUpG7j",
+			"croppingShapeId": null,
+			"selectedShapeIds": [
+				"shape:WTY3hHKoBMwJVLUuUpG7j"
+			],
+			"hoveredShapeId": "shape:WTY3hHKoBMwJVLUuUpG7j",
+			"erasingShapeIds": [],
+			"hintingShapeIds": [],
+			"focusedGroupId": null,
+			"meta": {},
+			"id": "instance_page_state:page:Xw4P1ADjK2ld830k6sR2O",
+			"pageId": "page:Xw4P1ADjK2ld830k6sR2O",
+			"typeName": "instance_page_state"
+		},
+		{
 			"x": 593.1538126044619,
 			"y": 525.5157900614196,
 			"rotation": 0,
@@ -1529,6 +1551,14 @@
 			"typeName": "shape"
 		},
 		{
+			"x": -71.18055370919895,
+			"y": -28.935184434633744,
+			"z": 1,
+			"meta": {},
+			"id": "camera:page:Xw4P1ADjK2ld830k6sR2O",
+			"typeName": "camera"
+		},
+		{
 			"x": 1458.1705038459233,
 			"y": 810.6499294462063,
 			"rotation": 0,
@@ -1646,6 +1676,102 @@
 			},
 			"parentId": "page:JSlvXGBcGOitnjU8nPzHz",
 			"index": "aIP0b",
+			"typeName": "shape"
+		},
+		{
+			"x": 177.9378204345703,
+			"y": 41.71187782287598,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:WTY3hHKoBMwJVLUuUpG7j",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 597.8786010742188,
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "Rich Graphs (Styled Graphs)"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "Less Codings"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "Ready Made DataSets (Flights,Diamions,Hea……)"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "seaborn"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\t\t\t\t\t\tmatplotlib"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:Xw4P1ADjK2ld830k6sR2O",
+			"index": "a1tZX",
 			"typeName": "shape"
 		},
 		{
@@ -1870,13 +1996,11 @@
 		{
 			"followingUserId": null,
 			"opacityForNextShape": 1,
-			"stylesForNextShape": {
-				"tldraw:geo": "rectangle"
-			},
+			"stylesForNextShape": {},
 			"brush": null,
 			"scribbles": [],
 			"cursor": {
-				"type": "cross",
+				"type": "default",
 				"rotation": 0
 			},
 			"isFocusMode": false,
@@ -1886,8 +2010,8 @@
 			"screenBounds": {
 				"x": 0,
 				"y": 0,
-				"w": 963.8888549804688,
-				"h": 311.8055419921875
+				"w": 792.245361328125,
+				"h": 319.4444580078125
 			},
 			"insets": [
 				false,
@@ -1902,7 +2026,7 @@
 			"isChatting": false,
 			"highlightedUserIds": [],
 			"isFocused": true,
-			"devicePixelRatio": 2.880000114440918,
+			"devicePixelRatio": 3.4560000896453857,
 			"isCoarsePointer": false,
 			"isHoveringCanvas": true,
 			"openMenus": [],
@@ -1912,7 +2036,7 @@
 			"duplicateProps": null,
 			"cameraState": "idle",
 			"id": "instance:instance",
-			"currentPageId": "page:JSlvXGBcGOitnjU8nPzHz",
+			"currentPageId": "page:Xw4P1ADjK2ld830k6sR2O",
 			"typeName": "instance"
 		},
 		{
@@ -2236,9 +2360,9 @@
 			"typeName": "shape"
 		},
 		{
-			"x": -1127.7777329639164,
-			"y": -672.2221955105148,
-			"z": 1,
+			"x": 2482.855378633317,
+			"y": 725.9858321255377,
+			"z": 0.08331422615791184,
 			"meta": {},
 			"id": "camera:page:JSlvXGBcGOitnjU8nPzHz",
 			"typeName": "camera"
