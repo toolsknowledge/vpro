@@ -1,41 +1,60 @@
-vpro
-    backend
-        requirements.txt
+- React is the Frontend library
+- React given by Facebook
+- we will develop React Application with the help of JSX
+- JSX Stands for JavaScript + XML
+- React Applications are Component Based
+- as a React Developer we are able to create more than one component
+- React Components are Reusable
 
-> cd backend
-> python -m venv venv
-> source venv/bin/activate (Mac Book)
-        (or)
-> venv\Scripts\activate (windows)
-> pip install -r requirements.txt
-        (or)
-> python -m pip install -r requirements.txt
+Software Installation
+*********************
+1) download and install NodeJS
 
+    website : https://nodejs.org/en/download
 
-Graphs
-******
-        matplotlib is the python module, used to display the Graphs
-        Ex.
-                Line Plot
-                Bar Chart
-                Pie Chart
-                Scatter Plot
-                Histo
-                Box
-                Heatmap
+    version:
 
-vpro
-        backend
-                requirements.txt
-
-                        numpy
-                        pandas
-                        matplotlib
+    node --version
+    npm --version
 
 
-        > cd backend
-        > python -m venv venv
-        > source venv/bin/activate (mac)
-                (or)
-        > venv\Scripts\activate (windows)
-        > python -m pip install -r requirements.txt
+Steps to create React Application
+
+Step 1.
+    create folder / directory
+    Ex.
+            ReactJS
+
+
+Step 2.
+        Open Folder with VSCode
+
+        manage --> Trust this folder
+
+
+Step 3.
+        Open Terminal
+                Powershell - cmd prompt
+
+Step 4.
+        create React Application with below Commnads
+
+        > npm create vite@latest
+
+        1) do you want to install  (y)
+
+        2) enter project name: react-appln
+
+        3) Framework : React
+
+        4) Varient : JavaScript
+
+        5) OxLint (Select)
+
+        6) Install and Run (y)
+                ---
+                ---
+
+Step 5.
+        http://localhost:5173/
+
