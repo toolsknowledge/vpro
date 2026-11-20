@@ -58,3 +58,16 @@ Step 4.
 Step 5.
         http://localhost:5173/
 
+
+
+
+Component
+*********
+    portion of webpage called as "Component"
+    as a react developer, we are able to create more "than one" component
+    these components are "reusable"
+    we are able to include one component to another component
+
+
+
+

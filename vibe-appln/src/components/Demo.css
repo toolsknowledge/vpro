@@ -1,0 +1,9 @@
+.demo { max-width: 800px; margin: 0 auto; padding: 2rem 1rem; text-align: center; }
+.demo__header h1 { font-size: 2.2rem; margin-bottom: .25rem; }
+.demo__header p { opacity: .7; }
+.demo__cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 2rem 0; }
+.demo__card { padding: 1.25rem; border: 1px solid #8884; border-radius: 12px; box-shadow: 0 2px 8px #0001; }
+.demo__icon { font-size: 2rem; }
+.demo__counter { display: inline-flex; align-items: center; gap: 1rem; font-size: 1.5rem; }
+.demo__counter button { width: 2.5rem; height: 2.5rem; font-size: 1.25rem; border-radius: 50%; border: none; background: #646cff; color: #fff; cursor: pointer; }
+.demo__counter button:hover { background: #535bf2; }
