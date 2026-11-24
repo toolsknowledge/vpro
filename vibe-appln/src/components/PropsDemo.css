@@ -1,0 +1,6 @@
+.pd { max-width: 700px; margin: 2rem auto; padding: 0 1rem; font-family: system-ui, sans-serif; }
+.pd__card { border: 1px solid #ddd; border-radius: 8px; padding: 1rem; margin: 1rem 0; }
+.pd__card--active { border-color: #2e9e5b; }
+.pd__card h3 { margin: 0 0 .5rem; }
+.pd__msg { font-weight: 600; }
+.pd button { padding: .35rem .7rem; }
