@@ -1,0 +1,132 @@
+- DataBases are used to persist the data
+- we have three types of DataBases
+    1) SQL
+    2) NoSQL
+    3) VectorDBS
+
+- SQL DataBases are used to maintain the structured data (Tables)
+    Ex.
+            Oracle
+            MySQL
+            SQLServer
+            ---
+            ---
+            ---
+- NoSQL DataBases are used to maintain the unstructured data (Objects)
+    Ex.
+            MongoDB
+            CassandraDB
+            ---
+            ---
+            ---
+- VectorDBS are used to store the vectors/embeddings
+- LLM'S only understands embeddings
+    Ex.
+            chromadb
+            faiss
+            pinecone
+            Qdrant (Oracle)
+            pgvector (Postgress)
+
+
+Differences Between SQL & NoSQL ?
+
+        SQL                                     NoSQL
+****************************************************************
+1) Ex.                                      Ex.
+        Oracle                                      MongoDB
+        MySQL                                       CassandraDB
+        SQLServer
+
+2) Tables                                   collections
+
+3) rows                                     documents
+
+4) primary key                              _id
+
+5) DataBases                                DataBases
+
+6) data (rows & cols)                       objects
+*******************************************************************
+
+MongoDB
+*******
+    MongoDB Supports cloud environment
+    (MongoDB Atlas)
+
+    link : https://www.mongodb.com/cloud/atlas/register
+
+    username : noreply_db_user
+    password : rlOc4lAph2x0t2KW
+
+    Network Access:
+                Add IP Address:
+                        0.0.0.0/0
+
+    DataBase Access:
+            user: admin
+            password : admin
+            Build in Role : Read & Write to any DataBase
+
+    URL : mongodb+srv://admin:admin@cluster0.uvbqm5r.mongodb.net/
+
+Backend
+*******
+    as a developer, we are unable to interact with the Backend
+    by using Backend technologies, we are able to provide secuity to business logic
+    Ex.
+            Java
+            dotnet
+            FastAPI (Python)
+            laravel (PHP)
+            NodeJS
+            --
+            --
+            --
+    reading the data from Backend called as GET Request
+    sending the new data/adding the new record to Backend called as "POST" Request
+    updating/modifying Backend data called as PUT Request
+    updating partial data called as PATCH Request
+    deleting existed data called as DELETE Request
+
+    GET / POST / PUT / DELETE / PATCH / ..... called as API Calls (or) Rest API Calls
+
+
+we will authentocate our Backend API calls with the help of either tokens / oauth
+
+authentocation with respect to tokend techinically called as JWT authentocation / token based authentocation
+
+JWT Stands for "JSON Web Token"
+
+Step 1.
+        create requirements.txt
+
+vpro
+        FastAPI
+                requirements.txt
+
+> cd FastAPI
+> python -m venv venv
+> source venv/bin/activate (mac book)
+        (or)
+  venv/Scripts/activate (windows)
+> python -m pip install -r requirements.txt
+
+
+Step 2.
+        create .env file
+
+        FastAPI
+                .env
+
+Step 3.
+        create CRUD Operations on mongodb with authentocation
+
+        C - Create
+        R - Read
+        U - Update
+        D - Delete
+
+        main.py
+
+    

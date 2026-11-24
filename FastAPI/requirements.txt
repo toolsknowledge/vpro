@@ -1,0 +1,23 @@
+# develop api calls
+fastapi
+
+# run api calls
+# light weight server
+# http protocol
+uvicorn
+
+# used to connect to mongo altas
+pymongo
+
+# hash the passwords
+pwdlib[argon2]
+
+# generate the tokens
+# authentication purpose
+PyJWT
+
+
+# used to load the env file
+# store secuirirty credentials
+python-dotenv
+
