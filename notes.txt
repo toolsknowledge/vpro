@@ -1,4 +1,80 @@
+- python is the high level programming language
+- python is the prerequisite for
+                1) ML (Machine Learning)
+                2) DL (Deep Learning)
+                3) NLP (Natural Language Processing)
+                4) Gen AI (Generative AI)
+                5) Agentic AI
+                6) Automation Scripts
+                --
+                --
+                --
+- python is dynamically typed programming language
+- python file extension must be ".py"
+Ex.
+                demo.py
 
+- we will execute python codes(files) with the help of either python / python3
+Ex.
+                python demo.py
+                        (or)
+                python3 demo.py
+
+- IDE Stands for Integrated Development Environment
+
+- IDE'S are used to develop Applications / Code Snippets
+Ex.
+                VSCode
+                Jupiter Notebook
+                Google Colab
+                --
+                --
+                --
+- VSCode (Visual Studio Code) provided by microsoft and Open Source
+
+- python supports OOPS
+        1) Inheritance
+        2) Polymorphism
+        3) Abstraction
+        4) Encapsulation
+
+- "pip"/"pip3" is the packaging manager, used to download the libraries/modules
+Ex.
+        pip install numpy (10sec)
+                (or)
+        pip3 install scikit-learn
+
+Softwarwe Installations
+**********************
+1) download and install python
+
+        website : https://www.python.org/downloads/
+
+        terminal/cmd
+        ************
+
+        > python3 --version
+                (or
+        > python --version
+
+2) download and install VSCode
+        website : https://code.visualstudio.com/download
+
+
+3) enable AutoSave in VSCode
+        Application will save automatically
+
+        File --> AutoSave
+
+
+4) install ClaudeCode/Codex/Kiro/Gemini.... extension
+
+5) windows
+   *******
+
+   View -- Terminal
+
+   Powershell -- CMD
 
 
 
