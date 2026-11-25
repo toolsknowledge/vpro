@@ -1,6 +1,6 @@
 const Comp1 = ()=>{
     return(
-        <h2 style={{color:"green"}}>Comp1 !!!</h2>
+        <h1>Comp1 !!!</h1>
     )
 }
 export default Comp1

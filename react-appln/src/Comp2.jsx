@@ -1,10 +1,10 @@
-import Comp1 from "./Comp1"
+import Comp1 from "./Comp1.jsx"
 
 const Comp2 = ()=>{
     return(
         <>
             <Comp1></Comp1>
-            <p>Comp2 !!!</p>
+            <h1> Comp2 !!!</h1>
         </>
     )
 }

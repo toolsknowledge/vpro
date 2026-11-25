@@ -1,13 +1,7 @@
-import Demo from './components/Demo';
-import StateTypes from './components/StateTypes';
-import PropsDemo from './components/PropsDemo';
+import Basic from './components/Basic'
 
-export default function App() {
-  return (
-    <>
-      <Demo />
-      <StateTypes />
-      <PropsDemo />
-    </>
-  );
+function App() {
+  return <Basic />
 }
+
+export default App
