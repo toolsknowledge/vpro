@@ -82,3 +82,87 @@
 # print(str[-2:])
 # print(str[-4:])
 # print(str[-7:-5])
+
+# Example - 8 (FAQ)
+# strings are immutable
+# str = "Hello"
+# str[0] = "h"
+
+# Example-9
+# str = "Hello"   # ello
+# res = "h" + str[1:]
+# print(res)
+
+# integer
+# whole numbers
+# num1 = 200
+# num2 = 100
+# add = num1 + num2
+# print(f"Addition : {add}")
+# sub
+# mul
+# div
+
+# x = 2_0_0_0
+# y = 1_0_0_0
+# z = x + y
+# print(z)
+
+
+# float (accurate) (python & js)
+# fractional numbers
+# x = 0.1
+# y = 0.2
+# z = x + y
+# print(z)        # 0.3
+                # 0.30000000000000004
+
+
+# Boolean
+# True & False (T is the Catital) (F is the Capital)
+# Boolean Datatype is the Child DataType of Integer 
+# True - 1 & False - 0
+# flag = True
+# flag1 = False
+# res = "AgenticAI" if flag else "Gen AI"
+# print(res)
+
+# res1 = "AgenticAI" if flag1 else "Gen AI"
+# print(res1)
+
+# print(1 + True)
+# print(True + True)
+# print(True + 1 + False + True)
+# print(True / False)
+# print(False / True)
+
+# type() - used to know the datatype
+# print( type("Hello") )      # <class 'str'>
+# print( type(100) )          # <class 'int'>
+# print( type(10.1) )         # <class 'float'>
+# print( type(True) )         # <class 'bool'>
+# print( isinstance(1,int) )
+# print( isinstance(True,int) )
+
+# sub1 = "gen ai"
+# sub2 = "agentic ai"
+# print(sub1,sub2,sep=" ➜ ")
+
+# x = 200
+# y = 100
+# print(x,end=" & ")
+# print(y)
+
+
+# num1 = 200
+# num2 = 100
+
+# res = num1 if num1 > num2 else num2
+# print(res)
+
+# num1 = 300
+# num2 = 2000
+# num3 = 30000
+
+# res = num1 if ((num1 > num2) and (num1>num3)) else num2 if num2>num3 else num3
+# print(res)
