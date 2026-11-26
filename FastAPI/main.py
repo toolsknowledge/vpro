@@ -52,60 +52,63 @@ class Students(BaseModel):
     course : str
 
 
-# read _id from dict
+# read _id from student (dict)
 # convert to string
-# update string in dict
+# add string to student again (id)
 def format_student(student):
     student["id"] = str( student.pop("_id") )
     return student
 
-# it is used to hash the passwords
+
+# password_hash - function
+# used to hash the passwords
+# admin@123 - asbcsjkdgakjdgkagadkAGDKA (secuirity)
 password_hash = PasswordHash.recommended()
 
 
-
+# app object used create GET,POST,PUT and DELETE
+# @app.get()            @app.put()
+# @app.post()           @app.delete
 app = FastAPI()
-# app object used to develop API Calls
-# get, post,put,delete,head,trace, patch....
-# @app.get()
-# @app.post()
-# @app.put()
 
-# create post request
+
+
 @app.post("/register")
 def register(user:Users):
-    hashed_password = password_hash.hash( user.password )
+        # user.username
+        # user.password
+    hashed_password = password_hash.hash(user.password)
     try:
         users.insert_one({"username":user.username,"password":hashed_password})
     except DuplicateKeyError:
         raise HTTPException(status_code=409,detail="user name already existed")
-    return {"message":"Registration Successful !!!"}
+
+    return {"message":"registration success !!!"}
 
 
-# create post request
 @app.post("/login")
-def login(user:Users):          # user - data coming from frontend user.username, user.password
+def login(user:Users):              # abc, abc@123
     try:
-        existed_user = users.find_one({"username":user.username})
-        # existed_user (db record) # username = existed_user["username"], existed_user["password"]
+        # compare "username" with "db username"
+        existed_user = users.find_one({"username":user.username})           # existed_user - db (_id, username & hash password)
+        print(existed_user)
         if(existed_user is None or not password_hash.verify(user.password,existed_user["password"])):
-            return HTTPException(status_code = 401, detail="username or password not matches")
-        
-        # readable (Vikas) (Samba) user.username  - unreadable (secrete key)
-        
-        token = jwt.encode({
-            "sub":existed_user["username"],
-            "exp":datetime.now(timezone.utc) + timedelta(minutes=30)},
-            "7d018e57b6c0b6f61ea8728e66c6ae59ea16bc5d1065e2ea5902f8bc6812734d",
-            algorithm="HS256")
+            raise HTTPException(status_code=401,detail="username or password not matches !!!")
+
+        # token
+        # hello --- unreadable (secrete key) (exp) (algorithm)
+        token = jwt.encode({"sub":existed_user["username"],
+                    "exp":datetime.now(timezone.utc)+timedelta(minutes=30)},
+                    "xxxxx",
+                    algorithm="HS256")
         return {
-            "message" : "login successful !!!",
+            "message" : "login success !!!",
             "access_token" : token,
             "token_type" : "bearer"
         }
-        
+                   
     except:
-        print("Error !!!")
+        print("DB Operations Fail !!!")
 
 
-    
+
