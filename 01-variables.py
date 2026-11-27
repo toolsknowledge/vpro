@@ -166,3 +166,102 @@
 
 # res = num1 if ((num1 > num2) and (num1>num3)) else num2 if num2>num3 else num3
 # print(res)
+
+
+# list
+# collection of hetrogeneous elements called as list
+# [] / list(30)
+# supports both positive and negative indexes
+# mutable
+# list1 = [10,20,30,40,50]
+# print( list1[0] )
+# print( list1[-1] )
+# print( list1[2] )
+# print( list1[::2] )
+# print( list1[::3] )
+# print( list1[::-1] )
+# print( list1[::-2] )
+# print( list1[::-3] )
+# print( list1[0:2] ) # 0 included and 2 excluded
+# print( list1[3:] )
+# print( list1[-3:] )
+
+# list2 = [1,10,100,1000,10000]
+# list2[0] = 2    # mutable
+# print(list2)
+
+
+# list3 = [10,50,20,40,30]
+# print( max(list3) )
+# print( min(list3) )
+# print( len(list3) )
+# print( sum(list3) )
+# print( sum(list3) / len(list3) )
+# x = sorted(list3)   # immutable function
+# print(x)            # [10, 20, 30, 40, 50]
+# print(list3)        # [10, 50, 20, 40, 30]
+
+
+# list4 = [1,5,2,4,3]
+# list4.sort()        # mutable
+# print(list4)        # [1, 2, 3, 4, 5]
+
+
+# tuple
+# collection of hetrogeneous elements called as tuple
+# () / tuple()
+# supports both positive index (0) and negative index (-1)
+# immutable
+
+# t1 = (10,20,30,40,50)
+# print(t1[0])
+
+
+# t3 = (10,50,20,40,30)
+# max, min, len, sum, avg and sorted()
+
+
+# t2 = (10,20,30,40,50)
+# t2[0] = 100         # TypeError
+
+# dictionary
+# key & value pairs
+# keys are immutable and values are mutable
+# {} / dict()
+# d1 = {
+#     "frontend" : "ReactJS",
+#     "backend" : "FastAPI",
+#     "database" : "MongoDB"
+# }
+# print( d1.keys() ) 
+# print( d1.values() )
+# print( d1.items() )
+# print( d1["frontend"] )
+# FastAPI 
+# MongoDB
+
+# set
+# never allows duplicates
+# unordered
+# hetrogeneous
+# {} / set()
+# wont supports indexes
+# s1 = {1,1,2,3}
+# print(s1)       # {1, 2, 3}
+
+# s2 = {1,True,1.0}
+# print(s2)       # {1}
+
+# s3 = {"VPro","VPro","vpro"}
+# print(s3)
+
+# s4 = {} 
+# print(type(s4))         # <class 'dict'>
+
+# s5 = set()
+# print(type(s5))         # <class 'set'>
+
+
+# None
+x = None
+print(x)
