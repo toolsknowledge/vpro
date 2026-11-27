@@ -69,5 +69,104 @@ Component
     we are able to include one component to another component
 
 
+State
+*****
+    - component data called as state
+    - state is mutable
+    - useState() hook, used to define the state
+    - useState() hook is the predefined hook
+    - useState() hook, available in react package
+    Ex.
+            import { useState } from "react"        
+            
+    - {} called as expression / interpolation
+    - {} used to display the results on webpages
+
+
+1) create the folder
+Ex.
+        Demo
+
+2) open Demo folder in VSCode
+
+        File ---> Open Folder ---> Desktop ---> Demo
+
+3) Enable AutoSave
+
+        File ---> AutoSave
+
+4) Install ClaudeCode Extension
+
+        Extensions --> Claude Code ---> install
+                        (Claude Code for VS Code)
+                        (Anthropic)
+
+5) check nodejs installation
+
+        > node --version
+            (and)
+        > npm --version
+
+    npm stands for node packaging manager
+    npm helps to create react application
+
+6) create react application with below commands
+
+        > npm create vite@latest
+
+        Q1: do you want to proceed ? (y) (optional)
+
+        Q2: project name : react-appln
+
+        Q3: framework : React
+
+        Q4 : varient : JavaScript
+
+        Q5: Linter : 0xLint (find the syntax related issues)
+
+        Q6: install and run application with npm (y)
+
+        ---
+        ---
+        ---
+
+7) http://localhost:5173/ (browser)
+
+            by default react application running with "5173" port
+
+
+Stop : ctrl + c
+Run : npm install   
+        (and)
+      npm run dev
+
+
+react-appln
+        src
+           State.jsx
+
+                component name : "State"
+
+                "S" should be capital
+
+          main.jsx (registration file / module file)  
+
+
+props
+*****
+        child component receives the data from parent component with the help of props
+        props are immuable
+
+
+single page applications
+************************
+ - loading one component to another component called as single page application
+ - react-router-dom@6 is the 3rd party library, used to implement the single page applications
+ - we will download above library with the help of "npm"
+ Ex.
+        npm install
+        npm install react-router-dom@6
+
+
 
 

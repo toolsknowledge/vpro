@@ -5,8 +5,9 @@ import App from './App.jsx'
 import Demo from './Demo.jsx'
 import Comp2 from './Comp2.jsx'
 import Master from './Master.jsx'
+import ECommerce from "./ECommerce.jsx"
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Master />
+    <ECommerce />
   </StrictMode>,
 )
