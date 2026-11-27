@@ -2,6 +2,8 @@
 import Laptops from "./Laptops"
 import Mobiles from "./Mobiles"
 import Watches from "./Watches"
+import Dell from "./Dell"
+import Hp from "./Hp"
 
 /**
  * Link - create the router links (hyperlinks)
@@ -25,12 +27,22 @@ const ECommerce = ()=>{
                     Watches
                 </Link>
                 <Routes>
-                    <Route path="/laptops" element={<Laptops></Laptops>}></Route>
-                    <Route path="/mobiles" element={<Mobiles></Mobiles>}></Route>
-                    <Route path="/watches" element={<Watches></Watches>}></Route>
+                    <Route path="/laptops" element={<Laptops></Laptops>}>
+                        <Route path="laptops/dell" element={<Dell></Dell>}></Route>
+                        <Route path="laptops/hp" element={<Hp></Hp>}></Route>
+                    </Route>
+
+
+                    <Route path="/mobiles" element={<Mobiles></Mobiles>}>
+
+                    </Route>
+
+                    <Route path="/watches" element={<Watches></Watches>}>
+                        
+                    </Route>
                 </Routes>
             </BrowserRouter>
-            
+
         </>
     )
 }

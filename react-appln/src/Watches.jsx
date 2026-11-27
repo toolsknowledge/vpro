@@ -1,7 +1,10 @@
+
+
 const Watches = ()=>{
     return(
         <>
             <p>Watches Info Soon...!</p>
+
         </>
     )
 }
