@@ -1057,6 +1057,38 @@
 			"typeName": "shape"
 		},
 		{
+			"x": 381.29880403037424,
+			"y": 197.0106238082605,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:GOV-BQEeRG-PphmCcVvXI",
+			"type": "draw",
+			"props": {
+				"segments": [
+					{
+						"type": "free",
+						"path": "AAAAAAAAAADDrSk4AAD2PQAA3EEAAKZEAABXRhQy+0dxOfdI7DtTSVw7WklcNztJZipNRx+tyEB7rGaqAAAKrx+lzTQAAJo+H6HxQHuw0kFItXFEXLPpRM2wuEQKr0hEH63DQ82w5kN7rNJCAAAaQgAArkEAAMNBAAAKQgAAGkIAAEhBAAAUPwAASDwAAHE5H6XhNh+tpDR7sCkw",
+						"dim": 2
+					}
+				],
+				"color": "black",
+				"fill": "none",
+				"dash": "draw",
+				"size": "m",
+				"isComplete": true,
+				"isClosed": false,
+				"isPen": false,
+				"scale": 1,
+				"scaleX": 1,
+				"scaleY": 1
+			},
+			"parentId": "page:CSi2Q62kfpvy3Se-tqOA_",
+			"index": "a23Yn",
+			"typeName": "shape"
+		},
+		{
 			"meta": {},
 			"id": "page:C2Hd8S3o6dbnEeEJcmVqX",
 			"name": "Page 5",
@@ -1106,6 +1138,21 @@
 			"parentId": "page:-BlkeWU4txNrkFpv9yIbc",
 			"index": "a2mBJ",
 			"typeName": "shape"
+		},
+		{
+			"editingShapeId": "shape:lvh83uDo3Bl_sKAQnb76W",
+			"croppingShapeId": null,
+			"selectedShapeIds": [
+				"shape:lvh83uDo3Bl_sKAQnb76W"
+			],
+			"hoveredShapeId": null,
+			"erasingShapeIds": [],
+			"hintingShapeIds": [],
+			"focusedGroupId": null,
+			"meta": {},
+			"id": "instance_page_state:page:CSi2Q62kfpvy3Se-tqOA_",
+			"pageId": "page:CSi2Q62kfpvy3Se-tqOA_",
+			"typeName": "instance_page_state"
 		},
 		{
 			"x": 414.47905324444855,
@@ -1904,6 +1951,14 @@
 			"typeName": "binding"
 		},
 		{
+			"x": -525.6944235552257,
+			"y": -973.611072423286,
+			"z": 1,
+			"meta": {},
+			"id": "camera:page:CSi2Q62kfpvy3Se-tqOA_",
+			"typeName": "camera"
+		},
+		{
 			"x": 775.1941716526517,
 			"y": 446.2625737395914,
 			"rotation": 0,
@@ -2380,6 +2435,72 @@
 			"typeName": "shape"
 		},
 		{
+			"x": 586.9086069873091,
+			"y": 595.301623077306,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:XTqPlvduY4sG3h4ipK3Lo",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 126.83549499511719,
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "java"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "     SMS"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "      oracle"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:CSi2Q62kfpvy3Se-tqOA_",
+			"index": "a5Gv6",
+			"typeName": "shape"
+		},
+		{
 			"x": 1236.7988733482707,
 			"y": 429.3354955631636,
 			"rotation": 0,
@@ -2577,11 +2698,133 @@
 			"typeName": "shape"
 		},
 		{
+			"x": 159.0223388671875,
+			"y": 96.11001873016357,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:9HyuGO1oBvbrKlz0N6_jn",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 476.03253173828125,
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "bulletList",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "listItem",
+									"attrs": {
+										"dir": "auto"
+									},
+									"content": [
+										{
+											"type": "paragraph",
+											"attrs": {
+												"dir": "auto"
+											},
+											"content": [
+												{
+													"type": "text",
+													"text": "some students  - create react appln"
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "npm create vite@latest"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "feedback:"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "1 / 2 students"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "> 50%"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:CSi2Q62kfpvy3Se-tqOA_",
+			"index": "a1s5j",
+			"typeName": "shape"
+		},
+		{
 			"editingShapeId": null,
 			"croppingShapeId": null,
-			"selectedShapeIds": [
-				"shape:f6xE_jtPk6CcqTgfnU0-Z"
-			],
+			"selectedShapeIds": [],
 			"hoveredShapeId": null,
 			"erasingShapeIds": [],
 			"hintingShapeIds": [],
@@ -2875,6 +3118,84 @@
 			"typeName": "shape"
 		},
 		{
+			"x": 448.2367600555774,
+			"y": 188.67186540585988,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:q62_6TG9v9w9R2QDzhW57",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 206.0347137451172,
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "watch the video"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "correct"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "chatgpt / claude"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:CSi2Q62kfpvy3Se-tqOA_",
+			"index": "a3GmE",
+			"typeName": "shape"
+		},
+		{
 			"x": 227.69521500105282,
 			"y": 280.2686587314173,
 			"rotation": 0,
@@ -2993,11 +3314,318 @@
 			"typeName": "shape"
 		},
 		{
+			"x": 276.6818510194622,
+			"y": 395.36130959016367,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:sP96qEwqWKjDwOYuKLDiB",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 298.4338073730469,
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "course"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "me"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "today is reactjs"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "5 min"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "10 points"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "react given by facebook"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "     — why facebook"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:CSi2Q62kfpvy3Se-tqOA_",
+			"index": "a4JAI",
+			"typeName": "shape"
+		},
+		{
+			"meta": {},
+			"id": "page:CSi2Q62kfpvy3Se-tqOA_",
+			"name": "Page 6",
+			"index": "a67f6",
+			"typeName": "page"
+		},
+		{
 			"meta": {},
 			"id": "page:pMiT4MYuq9yBXxP_pWu4h",
 			"name": "Page 3",
 			"index": "a3Rpr",
 			"typeName": "page"
+		},
+		{
+			"x": 641.124106263674,
+			"y": 820.5728872528812,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:lvh83uDo3Bl_sKAQnb76W",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 249.6653594970703,
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "Problem:"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "Respond"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "How to create react"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "Feedback"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "Dummy Examples"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "Agents"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						}
+					]
+				}
+			},
+			"parentId": "page:CSi2Q62kfpvy3Se-tqOA_",
+			"index": "a6qEf",
+			"typeName": "shape"
 		},
 		{
 			"meta": {},
@@ -3094,13 +3722,11 @@
 		{
 			"followingUserId": null,
 			"opacityForNextShape": 1,
-			"stylesForNextShape": {
-				"tldraw:geo": "rectangle"
-			},
+			"stylesForNextShape": {},
 			"brush": null,
 			"scribbles": [],
 			"cursor": {
-				"type": "cross",
+				"type": "default",
 				"rotation": 0
 			},
 			"isFocusMode": false,
@@ -3136,7 +3762,7 @@
 			"duplicateProps": null,
 			"cameraState": "idle",
 			"id": "instance:instance",
-			"currentPageId": "page:C2Hd8S3o6dbnEeEJcmVqX",
+			"currentPageId": "page:CSi2Q62kfpvy3Se-tqOA_",
 			"typeName": "instance"
 		},
 		{
@@ -3274,9 +3900,9 @@
 			"typeName": "shape"
 		},
 		{
-			"x": -169.0797728950357,
-			"y": 70.3281258514272,
-			"z": 0.5,
+			"x": -219.99561069166992,
+			"y": -1556.8054921374553,
+			"z": 0.34841709312952696,
 			"meta": {},
 			"id": "camera:page:C2Hd8S3o6dbnEeEJcmVqX",
 			"typeName": "camera"
