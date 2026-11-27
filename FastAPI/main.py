@@ -29,7 +29,7 @@ from datetime import datetime,timedelta,timezone
 from fastapi.security import HTTPBearer,HTTPAuthorizationCredentials
 
 from pydantic import BaseModel
-
+from bson import ObjectId
 
 load_dotenv()       # loads into memory
 client = MongoClient("mongodb+srv://admin:admin@cluster0.uvbqm5r.mongodb.net/")
@@ -109,6 +109,76 @@ def login(user:Users):              # abc, abc@123
                    
     except:
         print("DB Operations Fail !!!")
+
+
+
+# post
+@app.post("/students",status_code=201)
+def create_student(student:Students):
+    try:
+        res = collection.insert_one(student.model_dump()) 
+        print(res) 
+        return{
+            "message" : "student registered successfully !!!",
+            "id":str(res.inserted_id)
+        }
+    except:
+        print("Invalid DB Operations")
+
+# get request
+@app.get("/students")
+def get_students():
+    records = collection.find()
+    return [format_student(record) for record in records]
+
+
+@app.get("/students/{student_id}")
+def get_studentbyid(student_id:str):
+    if not ObjectId.is_valid(student_id):
+        raise HTTPException(status_code=404,detail="Invalid Object ID")
+    record = collection.find_one({"_id":ObjectId(student_id)})
+    if record is None:
+        raise HTTPException(status_code=404,detail="Student Not Existed")
+    return format_student(record)
+
+
+# put request
+@app.put("/students/{student_id}")
+def update_student(student_id:str,student:Students):
+    if not ObjectId.is_valid(student_id):
+            raise HTTPException(status_code=404,detail="Invalid Object ID") 
+    res = collection.update_one({"_id":ObjectId(student_id)},{"$set":student.model_dump()})   
+    if res.matched_count == 0:
+        raise HTTPException(status_code=404,detail="Student Not Existed")
+    return {"message":"record updated successfully !!!"}
+
+
+# delete record
+@app.delete("/students/{student_id}")
+def student_delete(student_id:str):
+    if not ObjectId.is_valid(student_id):
+        raise HTTPException(status_code=404,detail="Invalid Object ID") 
+    res = collection.delete_one({"_id":ObjectId(student_id)})
+    if res.deleted_count == 0:
+            raise HTTPException(status_code=404,detail="Student Not Existed")
+    
+    return {"message":"record deleted successfully !!!"}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
