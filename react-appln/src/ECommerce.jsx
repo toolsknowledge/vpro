@@ -30,6 +30,7 @@ const ECommerce = ()=>{
                     <Route path="/watches" element={<Watches></Watches>}></Route>
                 </Routes>
             </BrowserRouter>
+            
         </>
     )
 }
